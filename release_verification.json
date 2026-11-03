@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-03",
+  "published_tensors_unchanged": {
+    "bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102": true,
+    "bc_training_nav_ring_r08/run_20261103_022339_570160": true,
+    "bc_training_arm_ring_r08_finetune/run_20261103_111655_849512": true,
+    "bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306": true
+  },
+  "python_files": 31,
+  "markdown_links_checked": 6,
+  "closed_loop_smoke": {
+    "target": [
+      -1.5827733453143615,
+      -0.04169457644129078,
+      0.75
+    ],
+    "success": true,
+    "end_time_s": 8.924,
+    "final_error_m": 0.00998804074857152,
+    "full_batch_repeated": false
+  },
+  "navigation_one_epoch_smoke": {
+    "best_epoch": 1,
+    "last_epoch": 1,
+    "val_loss": 445.8744032006543,
+    "smoke_only": true
+  },
+  "arm_finetune_one_epoch_smoke": {
+    "best_epoch": 0,
+    "last_epoch": 1,
+    "best_balanced_validation_arm_mse": 0.019050849295791355,
+    "navigation_unchanged": true,
+    "smoke_only": true
+  },
+  "rebuilt_split_counts": {
+    "full": {
+      "train": 651,
+      "val": 140,
+      "test": 140
+    },
+    "r08": {
+      "train": 558,
+      "val": 116,
+      "test": 124
+    }
+  },
+  "limits": [
+    "One-point rollout smoke, not a full evaluation rerun",
+    "Training smoke uses tiny subsets and is not model-quality evidence",
+    "All raw training trajectories remain external to Git",
+    "No GUI automation or cross-platform environment reinstall performed"
+  ]
+}

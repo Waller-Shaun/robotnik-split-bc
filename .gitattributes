@@ -1,0 +1,8 @@
+*.py -text
+*.json -text
+*.csv -text
+*.md text eol=lf
+*.pt binary
+*.npz binary
+*.lock -text
+*.toml -text

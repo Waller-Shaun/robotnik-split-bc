@@ -1,0 +1,50 @@
+{
+  "planned_targets": 144,
+  "processed_targets": 144,
+  "successes": 111,
+  "unsuccessful_completed_episodes": 33,
+  "process_errors": 0,
+  "unprocessed_targets": 0,
+  "success_rate_percent": 77.08333333333333,
+  "mean_final_error_m_finite_results": 0.024527054821717815,
+  "median_final_error_m_finite_results": 0.009995108875316145,
+  "finite_error_results": 144,
+  "mean_success_time_s": 9.034324324324324,
+  "all_planned_targets_processed": true,
+  "state": "completed",
+  "split": "val",
+  "partial_subset": false,
+  "available_split_targets": 144,
+  "output_dir": "@WORKSPACE@/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/batch_tests/val_20261103_144341_235210",
+  "subset": "all",
+  "by_target_source": {
+    "base": {
+      "planned_targets": 116,
+      "processed_targets": 116,
+      "successes": 97,
+      "unsuccessful_completed_episodes": 19,
+      "process_errors": 0,
+      "unprocessed_targets": 0,
+      "success_rate_percent": 83.62068965517241,
+      "mean_final_error_m_finite_results": 0.018805390543399327,
+      "median_final_error_m_finite_results": 0.009994259966158556,
+      "finite_error_results": 116,
+      "mean_success_time_s": 9.035051546391752,
+      "all_planned_targets_processed": true
+    },
+    "supplement": {
+      "planned_targets": 28,
+      "processed_targets": 28,
+      "successes": 14,
+      "unsuccessful_completed_episodes": 14,
+      "process_errors": 0,
+      "unprocessed_targets": 0,
+      "success_rate_percent": 50.0,
+      "mean_final_error_m_finite_results": 0.048231092546180146,
+      "median_final_error_m_finite_results": 0.012559438760693386,
+      "finite_error_results": 28,
+      "mean_success_time_s": 9.029285714285713,
+      "all_planned_targets_processed": true
+    }
+  }
+}

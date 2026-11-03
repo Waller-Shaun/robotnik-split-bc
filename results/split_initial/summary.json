@@ -1,0 +1,19 @@
+{
+  "planned_targets": 116,
+  "processed_targets": 116,
+  "successes": 94,
+  "unsuccessful_completed_episodes": 22,
+  "process_errors": 0,
+  "unprocessed_targets": 0,
+  "success_rate_percent": 81.03448275862068,
+  "mean_final_error_m_finite_results": 0.01814875304485527,
+  "median_final_error_m_finite_results": 0.009994057359139552,
+  "finite_error_results": 116,
+  "mean_success_time_s": 8.767670212765957,
+  "all_planned_targets_processed": true,
+  "state": "completed",
+  "split": "val",
+  "partial_subset": false,
+  "available_split_targets": 116,
+  "output_dir": "@WORKSPACE@/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/batch_tests/val_20261103_024111_247391"
+}
