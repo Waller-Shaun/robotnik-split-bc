@@ -1,0 +1,241 @@
+{
+  "checked_date": "2026-11-05",
+  "policy": "Existing citations distinguished from newly checked background; not a claim of complete paper reproduction.",
+  "references": [
+    {
+      "id": "R01",
+      "key": "ross2011dagger",
+      "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+      "short": "DAgger",
+      "authors": "Stephane Ross, Geoffrey Gordon and Drew Bagnell",
+      "year": "2011",
+      "url": "https://proceedings.mlr.press/v15/ross11a.html",
+      "stage": "闭环失败分析；D0–D3恢复示范",
+      "status": "原记录已有引用",
+      "idea": "解释行为克隆在自己访问的状态上出现分布变化；支持让专家为模型偏离后访问的状态提供纠正监督。",
+      "boundary": "我们按近目标停滞条件分叉诊断，只保留专家独有恢复的训练片段并与原数据混合微调；没有完整实现多轮DAgger，不套用其理论保证。",
+      "evidence": [
+        [
+          "research/docs/研究过程与结果分析.md",
+          "1243"
+        ],
+        [
+          "research/source/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/恢复示范采集与微调说明.md",
+          null
+        ]
+      ]
+    },
+    {
+      "id": "R02",
+      "key": "du2018gradient",
+      "title": "Adapting Auxiliary Losses Using Gradient Similarity",
+      "short": "Gradient Similarity",
+      "authors": "Yunshu Du et al.",
+      "year": "2018预印本，2020修订",
+      "url": "https://arxiv.org/abs/1812.02224",
+      "stage": "B2辅助监督背景；B3/B4梯度门控",
+      "status": "原记录已有引用，B3直接方法参考",
+      "idea": "辅助目标可能帮助也可能损害主任务，用主辅梯度余弦相似度调节共享主干的辅助贡献。",
+      "boundary": "本实现是g_main + lambda*max(0,cos)*g_aux，门控值不反向求导。没有实现PCGrad投影；参考角/参考速度标签是本任务设计，方向一致也不保证闭环成功率提高。",
+      "evidence": [
+        [
+          "research/source/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/B3_梯度门控辅助训练说明.md",
+          "4"
+        ],
+        [
+          "research/source/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/arm_aux_gradient_gate.py",
+          "14"
+        ]
+      ]
+    },
+    {
+      "id": "R03",
+      "key": "johannink2018residual",
+      "title": "Residual Reinforcement Learning for Robot Control",
+      "short": "Residual RL",
+      "authors": "Tobias Johannink et al.",
+      "year": "2018预印本",
+      "url": "https://arxiv.org/abs/1812.03201",
+      "project": "https://residualrl.github.io/",
+      "stage": "R1/R2残差结构背景；RL1/RL2在线残差",
+      "status": "原记录已有项目页引用，本次补列论文地址",
+      "idea": "将已有控制信号与学习到的残差相加，尝试保留基础能力并修正不足。",
+      "boundary": "我们的基础策略是冻结的行为克隆MLP；R1/R2用专家标签监督残差，不是强化学习。RL1/RL2才用TD3交互训练；其奖励、力矩限幅、门控与验证保护是本项目设置，不是原机器人任务复现。",
+      "evidence": [
+        [
+          "research/docs/RL残差强化学习_失败分析_20261104.md",
+          "115"
+        ],
+        [
+          "research/source/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/残差力矩修正使用说明.md",
+          null
+        ]
+      ]
+    },
+    {
+      "id": "R04",
+      "key": "fujimoto2018td3",
+      "title": "Addressing Function Approximation Error in Actor-Critic Methods",
+      "short": "TD3",
+      "authors": "Scott Fujimoto, Herke van Hoof and David Meger",
+      "year": "2018",
+      "url": "https://proceedings.mlr.press/v80/fujimoto18a.html",
+      "stage": "RL1/RL2的优化算法",
+      "status": "原实现引用Spinning Up；本次补核对原论文",
+      "idea": "TD3使用双critic的较小目标值、延迟actor更新和目标策略平滑，降低actor–critic函数逼近误差的影响。",
+      "boundary": "在我们冻结BC策略上的7维有界力矩残差原型中使用；不等于复现论文基准。训练交互回合和回报不当作验证成功率，两版在本项目没有确认有效提升。",
+      "evidence": [
+        [
+          "research/source/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/RL残差试验_使用说明.md",
+          "42"
+        ],
+        [
+          "research/source/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_arm_rl_policy.py",
+          null
+        ]
+      ],
+      "documentation": "https://spinningup.openai.com/en/latest/algorithms/td3.html"
+    },
+    {
+      "id": "R05",
+      "key": "foumani2023convtran",
+      "title": "Improving Position Encoding of Transformers for Multivariate Time Series Classification",
+      "short": "ConvTran",
+      "authors": "Navid Mohammadi Foumani, Chang Wei Tan, Geoffrey I. Webb and Mahsa Salehi",
+      "year": "2023预印本",
+      "url": "https://arxiv.org/abs/2305.16642",
+      "stage": "T1 CNN＋Transformer直接力矩",
+      "status": "原实现说明已有引用",
+      "idea": "借鉴先用卷积提取多变量时间序列局部特征，再交由Transformer处理时间关系的结构思路。",
+      "boundary": "原文为时间序列分类；我们改为因果短历史力矩回归，使用可学习位置编码，没有复现其tAPE/eRPE。不能把本模型称为完整ConvTran复现，也不能借用原文准确率。",
+      "evidence": [
+        [
+          "research/source/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/CNN_Transformer直接力矩模型_使用说明.md",
+          "110"
+        ],
+        [
+          "research/source/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_arm_cnn_transformer_policy.py",
+          null
+        ]
+      ]
+    },
+    {
+      "id": "R06",
+      "key": "andrychowicz2017her",
+      "title": "Hindsight Experience Replay",
+      "short": "HER",
+      "authors": "Marcin Andrychowicz et al.",
+      "year": "2017",
+      "url": "https://arxiv.org/abs/1707.01495",
+      "stage": "RL失败后的未来方向讨论",
+      "status": "原记录已有引用；未实施",
+      "idea": "在目标条件强化学习中，用实际达到的状态重标记目标，使失败回合也能提供学习信号。",
+      "boundary": "本项目没有实现HER目标重标记，没有对应训练模型或成绩；不能把现有恢复片段采集或低高度重采样叫作HER。",
+      "evidence": [
+        [
+          "research/docs/RL残差强化学习_失败分析_20261104.md",
+          "117"
+        ]
+      ]
+    },
+    {
+      "id": "R07",
+      "key": "rajeswaran2017demonstrations",
+      "title": "Learning Complex Dexterous Manipulation with Deep Reinforcement Learning and Demonstrations",
+      "short": "RL with Demonstrations",
+      "authors": "Aravind Rajeswaran et al.",
+      "year": "2017预印本，RSS 2018",
+      "url": "https://arxiv.org/abs/1709.10087",
+      "stage": "讨论从零RL与利用既有示范",
+      "status": "原记录已有引用；未实施其算法",
+      "idea": "说明机器人RL可以利用示范降低样本需求，为是否舍弃已有专家示范提供背景。",
+      "boundary": "其任务、机器人和算法不同；我们没有实现DAPG，原文结果不保证本项目从零RL会更好。",
+      "evidence": [
+        [
+          "research/docs/RL残差强化学习_失败分析_20261104.md",
+          "118"
+        ]
+      ]
+    },
+    {
+      "id": "R08",
+      "key": "cho2014gru",
+      "title": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation",
+      "short": "GRU基础",
+      "authors": "Kyunghyun Cho et al.",
+      "year": "2014",
+      "url": "https://arxiv.org/abs/1406.1078",
+      "stage": "B1短历史结构背景",
+      "status": "本次补核对的基础引用；非旧记录中的开发来源声明",
+      "idea": "为GRU门控循环单元和序列状态编码提供基础出处。",
+      "boundary": "我们用16帧历史预测力矩修正，不复现翻译系统；引用基础结构不证明GRU一定优于单帧控制，也不将其称为新算法。",
+      "evidence": [
+        [
+          "research/source/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/B1_GRU使用说明.md",
+          null
+        ],
+        [
+          "research/source/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_arm_gru_policy.py",
+          null
+        ]
+      ]
+    },
+    {
+      "id": "R09",
+      "key": "vaswani2017attention",
+      "title": "Attention Is All You Need",
+      "short": "Transformer基础",
+      "authors": "Ashish Vaswani et al.",
+      "year": "2017",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "stage": "T1注意力结构背景",
+      "status": "本次补核对的基础引用；非旧记录中的开发来源声明",
+      "idea": "为多头自注意力与Transformer结构提供基础出处。",
+      "boundary": "本项目仅用小型encoder处理机器人短历史，不是原翻译encoder–decoder模型，也不是大型预训练机器人模型。",
+      "evidence": [
+        [
+          "research/source/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/CNN_Transformer直接力矩模型_使用说明.md",
+          null
+        ]
+      ]
+    },
+    {
+      "id": "R10",
+      "key": "bai2018tcn",
+      "title": "An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling",
+      "short": "TCN背景",
+      "authors": "Shaojie Bai, J. Zico Kolter and Vladlen Koltun",
+      "year": "2018",
+      "url": "https://arxiv.org/abs/1803.01271",
+      "stage": "理解组员TCN架构",
+      "status": "本次补核对的相关背景；不推断组员作者的引用来源",
+      "idea": "为用因果、膨胀卷积编码时间序列，以及与循环网络比较提供背景。",
+      "boundary": "组员的学习运动场＋积分＋固定PD是独立发布结构；此引用不能说明其99%由TCN单因素带来，也不将组员方法归为我们的复现。",
+      "evidence": [
+        [
+          "collaborator/README.md",
+          null
+        ]
+      ]
+    },
+    {
+      "id": "R11",
+      "key": "silver2018residual",
+      "title": "Residual Policy Learning",
+      "short": "Residual Policy Learning",
+      "authors": "Tom Silver, Kelsey Allen, Josh Tenenbaum and Leslie Kaelbling",
+      "year": "2018预印本",
+      "url": "https://arxiv.org/abs/1812.06298",
+      "stage": "R1/R2/RL1/RL2的补充背景",
+      "status": "本次补核对的相关文献；不是新增实验",
+      "idea": "为在已有不完美策略上学习额外修正，而不必完全从零学习，提供另一条原始文献背景。",
+      "boundary": "原文使用model-free RL优化残差；我们的监督残差不是其算法复现。本次增加引用不构成新训练或新提升。",
+      "evidence": [
+        [
+          "research/source/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/残差力矩修正使用说明.md",
+          null
+        ]
+      ]
+    }
+  ]
+}

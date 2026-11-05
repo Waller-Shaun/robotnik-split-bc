@@ -4916,6 +4916,11 @@
       "sha256": "fd1c1b44c2b319a64ae18582134e54a09d4a1f8eb17b81d4435e171fbbbc9333"
     },
     {
+      "path": "research/docs/文献与方法来源.md",
+      "bytes": 11179,
+      "sha256": "59ea5b070b7ee2152f169cfcadf5d11b45a232008d49585becab8d8864700eb8"
+    },
+    {
       "path": "research/docs/环状采集进度快照_20261102.json",
       "bytes": 859,
       "sha256": "6197be5857c25ad321c9cfe1979f8e718b18b73777f8430dffbfae0ae4af8fd0"
@@ -4969,6 +4974,16 @@
       "path": "research/PUBLICATION_REVIEW.json",
       "bytes": 609,
       "sha256": "b3f12b2981467c6534fea9d3b33e9c2ede1f6ed0a50ee16654a63fde1ba36423"
+    },
+    {
+      "path": "research/references.bib",
+      "bytes": 4379,
+      "sha256": "78c1a12420b654a33bcc0d2f9d1e3a324309cda939f5892e399c7d4c2ba981b2"
+    },
+    {
+      "path": "research/references.json",
+      "bytes": 11485,
+      "sha256": "b8b454ebb6c3e636078eb269df52c7711cbdb7cca267725a60772063bcb0ef8b"
     },
     {
       "path": "research/results/paired_comparisons.json",
@@ -6221,5 +6236,6 @@
       "sha256": "d843f1182df3028555fb98f977141015c375c806bfd49095717539f771f3f7ff"
     }
   ],
-  "excludes": "this self-referential seal; unchanged baseline files are governed by the original release manifest"
+  "excludes": "this self-referential seal; unchanged baseline files are governed by the original release manifest",
+  "latest_documentation_update": "2026-11-05: checked literature links and explicit experiment mapping; models and original snapshots unchanged"
 }
