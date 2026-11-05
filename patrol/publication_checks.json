@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-05",
+  "unit_tests_passed": 33,
+  "unit_test_command": "python -m unittest discover -s patrol -p check_patrol_*.py",
+  "bundle_checksums_passed": 7,
+  "python_files_syntax_checked": 16,
+  "original_vs_portable_forward_check": "32 normalized inputs per policy; exact equality, rtol=0, atol=0",
+  "original_class_outputs_bitwise_equal": true,
+  "entry_point_help_import_check_passed": true,
+  "source_provenance_verified": true,
+  "relative_markdown_links_checked": true,
+  "credential_pattern_scan_passed": true,
+  "new_simulation_started": false,
+  "new_collection_started": false,
+  "new_training_started": false,
+  "new_machine_full_runtime_verified": false,
+  "published_recorded_summary_count": 13,
+  "recorded_raw_rollout_npz_uploaded": false
+}

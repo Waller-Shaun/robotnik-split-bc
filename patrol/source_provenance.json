@@ -1,0 +1,48 @@
+{
+  "source_files": {
+    "test_patrol_120.py": {
+      "source_sha256": "2a482db45d66b5a6c256726c1160c29ed65e8572197c831600807551526dcaf9",
+      "published_sha256": "401cda074ed781040f72ad9c8f267a652c0396ea58266b0a063d291c7bd9ca54",
+      "publication_changes": [
+        "Portable byte-verified model loader instead of absolute historical parent-run dependency resolution",
+        "--roboenv-root and --robot-config; use bundled absolute config path without modifying RoboEnv",
+        "No changes to main control loop, features, limits, routing, random targets, hold timing or physics"
+      ]
+    },
+    "patrol_task_state.py": {
+      "source_sha256": "37001d95569fca40add06b77945fbbb176f1b21e8d2205ff94f18442f07f90a3",
+      "published_sha256": "37001d95569fca40add06b77945fbbb176f1b21e8d2205ff94f18442f07f90a3"
+    },
+    "patrol_parking_geometry.py": {
+      "source_sha256": "9df5d91a344b9d269668bd4dca708d98599c970798149f981356ee41d2c6dbd5",
+      "published_sha256": "9df5d91a344b9d269668bd4dca708d98599c970798149f981356ee41d2c6dbd5"
+    },
+    "patrol_route_planner.py": {
+      "source_sha256": "7a81d1b1a10c4027b7a59b5606ca1a9850faec891d2fa28215024f1c815008a3",
+      "published_sha256": "7a81d1b1a10c4027b7a59b5606ca1a9850faec891d2fa28215024f1c815008a3"
+    },
+    "patrol_route_display.py": {
+      "source_sha256": "580bad0c746e1cff868ca6f3b72bb6ee05f8e2828277cb1c13a9c881c25b6bb5",
+      "published_sha256": "580bad0c746e1cff868ca6f3b72bb6ee05f8e2828277cb1c13a9c881c25b6bb5"
+    },
+    "patrol_target_sampling.py": {
+      "source_sha256": "7125a49ac8d49222b460a4687afc020f10781341130ea9d637dcf21770ea70b4",
+      "published_sha256": "7125a49ac8d49222b460a4687afc020f10781341130ea9d637dcf21770ea70b4"
+    },
+    "robotnik_arm_control.py": {
+      "source_sha256": "f863b91c882f8570c082d4bcbd7879ac7d9d8805a4488be218b15d49d2214dcf",
+      "published_sha256": "f863b91c882f8570c082d4bcbd7879ac7d9d8805a4488be218b15d49d2214dcf"
+    },
+    "robotnik_bodyframe_features.py": {
+      "source_sha256": "c8abd9315afe1b615600a3f089f56487fd41586786338287e63c426d0d3d3478",
+      "published_sha256": "c8abd9315afe1b615600a3f089f56487fd41586786338287e63c426d0d3d3478"
+    },
+    "robotnik_navigation_policy.py": {
+      "source_sha256": "878995bc75ce5bba8aafecfb99c22405c49d67032a4873825a3106ae20ca422c",
+      "published_sha256": "878995bc75ce5bba8aafecfb99c22405c49d67032a4873825a3106ae20ca422c"
+    }
+  },
+  "local_snapshot_date": "2026-11-05",
+  "original_local_scripts_left_unchanged": true,
+  "snapshot_scope": "current multi-target patrol; historical benchmark code retained elsewhere in this branch"
+}

@@ -1,0 +1,2 @@
+﻿target_index,target,observed_task_completed,true_first_reach_elapsed_s,true_longest_continuous_hold_s,true_hold_passed,navigation_completed,elapsed_s,final_true_error_m,min_true_error_m,termination_reason
+1,"[0.4, 1.2, 1.0]",True,7.2330000000000005,1.5079999999999991,True,True,8.741,0.002296519274846703,0.00229426800864401,observed_hold_completed
