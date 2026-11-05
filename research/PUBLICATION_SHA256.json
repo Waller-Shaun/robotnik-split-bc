@@ -4917,8 +4917,8 @@
     },
     {
       "path": "research/docs/文献与方法来源.md",
-      "bytes": 11179,
-      "sha256": "59ea5b070b7ee2152f169cfcadf5d11b45a232008d49585becab8d8864700eb8"
+      "bytes": 11185,
+      "sha256": "dada5dc49dbc9fbd88148084c97b018d5f7a2b6601073da85b4fa88dbda2119a"
     },
     {
       "path": "research/docs/环状采集进度快照_20261102.json",
@@ -6237,5 +6237,5 @@
     }
   ],
   "excludes": "this self-referential seal; unchanged baseline files are governed by the original release manifest",
-  "latest_documentation_update": "2026-11-05: checked literature links and explicit experiment mapping; models and original snapshots unchanged"
+  "latest_documentation_update": "2026-11-05: fix strong emphasis adjacent to Chinese punctuation; format gradient formula as inline code; models and original snapshots unchanged"
 }
