@@ -1,0 +1,17 @@
+{
+  "standalone_vs_persistent_worker_exactly_equal": true,
+  "target_index": 100,
+  "repeat_index": 1,
+  "arrays": [
+    "timestamps",
+    "observations",
+    "actions",
+    "raw_actions",
+    "ee_positions",
+    "estimated_ee_positions",
+    "ee_errors",
+    "ground_truth_states",
+    "success"
+  ],
+  "conclusion": "No observed cross-episode memory or simulation contamination; identical seed reproduces identical trajectory"
+}

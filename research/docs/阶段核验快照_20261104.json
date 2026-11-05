@@ -1,0 +1,1242 @@
+{
+  "record_date": "2026-11-04",
+  "timezone": "Europe/London",
+  "audit_scope": "read-only completed logs, no training/evaluation launched",
+  "runs": {
+    "E15_MLP": {
+      "path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306",
+      "finished": {
+        "best_epoch": 30,
+        "last_epoch": 30,
+        "best_balanced_validation_arm_mse": 0.012940863156767147,
+        "navigation_unchanged": true,
+        "smoke_only": false
+      },
+      "initial_validation": {
+        "arm_mse": 0.011277134976839137,
+        "low_arm_mse": 0.020265309992733044,
+        "other_arm_mse": 0.006823269787342365,
+        "balanced_arm_mse": 0.013544289890037704
+      },
+      "best_history_row": {
+        "epoch": "30",
+        "seconds": "34.427662700007204",
+        "train_arm_mse": "0.01338727771132333",
+        "train_low_arm_mse": "0.01992404942098033",
+        "train_other_arm_mse": "0.006826616283623791",
+        "train_balanced_arm_mse": "0.01337533285230206",
+        "val_arm_mse": "0.010654794444592712",
+        "val_low_arm_mse": "0.019717953544909274",
+        "val_other_arm_mse": "0.006163772768625018",
+        "val_balanced_arm_mse": "0.012940863156767147"
+      },
+      "settings": {
+        "source_model_run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_finetune\\run_20261103_111655_849512",
+        "source_model_epoch": 11,
+        "resumed_from_run_dir": null,
+        "aux_weight": null,
+        "learning_rate": 1e-05,
+        "batch_size": 4096,
+        "samples_per_epoch": 500000,
+        "train_samples": 7306407,
+        "val_samples": 1481313,
+        "patience": 8,
+        "max_epochs": 30,
+        "smoke_only": false,
+        "optimizer_initialization": null,
+        "optimizer_state_restored": null
+      }
+    },
+    "B1_30": {
+      "path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_203745_353439",
+      "finished": {
+        "best_epoch": 30,
+        "last_epoch": 30,
+        "best_balanced_validation_arm_mse": 0.012921895801352981,
+        "navigation_unchanged": true,
+        "smoke_only": false
+      },
+      "initial_validation": {
+        "arm_mse": 0.011277135477813909,
+        "low_arm_mse": 0.02026531099502742,
+        "other_arm_mse": 0.006823270039900756,
+        "balanced_arm_mse": 0.013544290517464088
+      },
+      "best_history_row": {
+        "epoch": "30",
+        "seconds": "1.8274962999857962",
+        "train_arm_mse": "0.013371853881004139",
+        "train_low_arm_mse": "0.019909690995655895",
+        "train_other_arm_mse": "0.0068101231546103145",
+        "train_balanced_arm_mse": "0.013359907075133105",
+        "val_arm_mse": "0.010635768850996642",
+        "val_low_arm_mse": "0.019699158837596504",
+        "val_other_arm_mse": "0.006144632765109458",
+        "val_balanced_arm_mse": "0.012921895801352981"
+      },
+      "settings": {
+        "source_model_run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_finetune\\run_20261103_111655_849512",
+        "source_model_epoch": null,
+        "resumed_from_run_dir": null,
+        "aux_weight": null,
+        "learning_rate": 1e-05,
+        "batch_size": 4096,
+        "samples_per_epoch": 500000,
+        "train_samples": 7306407,
+        "val_samples": 1481313,
+        "patience": 8,
+        "max_epochs": 30,
+        "smoke_only": false,
+        "optimizer_initialization": null,
+        "optimizer_state_restored": null
+      }
+    },
+    "B1_55": {
+      "path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_214030_030129",
+      "finished": {
+        "best_epoch": 55,
+        "last_epoch": 60,
+        "resume_start_epoch": 30,
+        "best_balanced_validation_arm_mse": 0.012858481365003978,
+        "optimizer_state_restored": false,
+        "navigation_unchanged": true,
+        "smoke_only": false
+      },
+      "initial_validation": {
+        "arm_mse": 0.010635768850996642,
+        "low_arm_mse": 0.019699158837596504,
+        "other_arm_mse": 0.006144632765109458,
+        "balanced_arm_mse": 0.012921895801352981
+      },
+      "best_history_row": {
+        "epoch": "55",
+        "seconds": "1.9379846999654546",
+        "train_arm_mse": "0.013219542755417762",
+        "train_low_arm_mse": "0.019823422462814003",
+        "train_other_arm_mse": "0.006626484537120588",
+        "train_balanced_arm_mse": "0.013224953499967294",
+        "val_arm_mse": "0.010573282104522385",
+        "val_low_arm_mse": "0.01963299424850719",
+        "val_other_arm_mse": "0.006083968481500764",
+        "val_balanced_arm_mse": "0.012858481365003978"
+      },
+      "settings": {
+        "source_model_run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_finetune\\run_20261103_111655_849512",
+        "source_model_epoch": null,
+        "resumed_from_run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_203745_353439",
+        "aux_weight": null,
+        "learning_rate": 1e-05,
+        "batch_size": 4096,
+        "samples_per_epoch": 500000,
+        "train_samples": 7306407,
+        "val_samples": 1481313,
+        "patience": 8,
+        "max_epochs": 60,
+        "smoke_only": false,
+        "optimizer_initialization": null,
+        "optimizer_state_restored": false
+      }
+    },
+    "B1_96": {
+      "path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_215456_176247",
+      "finished": {
+        "best_epoch": 96,
+        "last_epoch": 100,
+        "resume_start_epoch": 55,
+        "best_balanced_validation_arm_mse": 0.012812402913324486,
+        "patience": 15,
+        "max_epochs": 100,
+        "optimizer_state_restored": true,
+        "navigation_unchanged": true,
+        "smoke_only": false
+      },
+      "initial_validation": {
+        "arm_mse": 0.010573282104522385,
+        "low_arm_mse": 0.01963299424850719,
+        "other_arm_mse": 0.006083968481500764,
+        "balanced_arm_mse": 0.012858481365003978
+      },
+      "best_history_row": {
+        "epoch": "96",
+        "seconds": "1.8835934000089765",
+        "train_arm_mse": "0.013123077917258964",
+        "train_low_arm_mse": "0.019609556397786245",
+        "train_other_arm_mse": "0.006661149615989966",
+        "train_balanced_arm_mse": "0.013135353006888105",
+        "val_arm_mse": "0.010529646632614291",
+        "val_low_arm_mse": "0.01957967354088019",
+        "val_other_arm_mse": "0.006045132285768781",
+        "val_balanced_arm_mse": "0.012812402913324486"
+      },
+      "settings": {
+        "source_model_run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_finetune\\run_20261103_111655_849512",
+        "source_model_epoch": null,
+        "resumed_from_run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_214030_030129",
+        "aux_weight": null,
+        "learning_rate": 1e-05,
+        "batch_size": 4096,
+        "samples_per_epoch": 500000,
+        "train_samples": 7306407,
+        "val_samples": 1481313,
+        "patience": 15,
+        "max_epochs": 100,
+        "smoke_only": false,
+        "optimizer_initialization": null,
+        "optimizer_state_restored": true
+      }
+    },
+    "B1_269": {
+      "path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_220030_514697",
+      "finished": {
+        "best_epoch": 269,
+        "last_epoch": 289,
+        "resume_start_epoch": 96,
+        "best_balanced_validation_arm_mse": 0.012688186121939346,
+        "patience": 20,
+        "max_epochs": 400,
+        "optimizer_state_restored": true,
+        "navigation_unchanged": true,
+        "smoke_only": false
+      },
+      "initial_validation": {
+        "arm_mse": 0.010529646632614291,
+        "low_arm_mse": 0.01957967354088019,
+        "other_arm_mse": 0.006045132285768781,
+        "balanced_arm_mse": 0.012812402913324486
+      },
+      "best_history_row": {
+        "epoch": "269",
+        "seconds": "1.8603277000365779",
+        "train_arm_mse": "0.012987963448711472",
+        "train_low_arm_mse": "0.019254779801359773",
+        "train_other_arm_mse": "0.0067181884605067325",
+        "train_balanced_arm_mse": "0.012986484130933253",
+        "val_arm_mse": "0.010414824982205726",
+        "val_low_arm_mse": "0.019427604690950832",
+        "val_other_arm_mse": "0.005948767552927861",
+        "val_balanced_arm_mse": "0.012688186121939346"
+      },
+      "settings": {
+        "source_model_run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_finetune\\run_20261103_111655_849512",
+        "source_model_epoch": null,
+        "resumed_from_run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_215456_176247",
+        "aux_weight": null,
+        "learning_rate": 1e-05,
+        "batch_size": 4096,
+        "samples_per_epoch": 500000,
+        "train_samples": 7306407,
+        "val_samples": 1481313,
+        "patience": 20,
+        "max_epochs": 400,
+        "smoke_only": false,
+        "optimizer_initialization": null,
+        "optimizer_state_restored": true
+      }
+    },
+    "B2_aux_01": {
+      "path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2\\run_20261104_024810_354398",
+      "finished": {
+        "best_epoch": 2,
+        "last_epoch": 17,
+        "best_balanced_validation_arm_mse": 0.012938776840350245,
+        "smoke_only": false,
+        "navigation_unchanged": true,
+        "aux_weight": 0.1
+      },
+      "initial_validation": {
+        "arm_mse": 0.010654794896045993,
+        "low_arm_mse": 0.019717954318869906,
+        "other_arm_mse": 0.006163773060267852,
+        "balanced_arm_mse": 0.012940863689568878,
+        "aux_mse": 1.0202975346989467,
+        "balanced_aux_mse": 1.1253807501874449,
+        "aux_rmse_rad": 0.012554512791574457,
+        "total_loss": 0.11268454836594068
+      },
+      "best_history_row": {
+        "epoch": "2",
+        "seconds": "1.0678247000323609",
+        "train_arm_mse": "0.01388587438205541",
+        "train_low_arm_mse": "0.02026756164005666",
+        "train_other_arm_mse": "0.007488596786933349",
+        "train_balanced_arm_mse": "0.013878079213495004",
+        "train_aux_mse": "1.0755507295987847",
+        "train_balanced_aux_mse": "1.0751971977164274",
+        "train_aux_rmse_rad": "0.012659033899195237",
+        "train_total_loss": "0.12144094734193389",
+        "val_arm_mse": "0.010652027662053084",
+        "val_low_arm_mse": "0.019717884482127503",
+        "val_other_arm_mse": "0.006159669198572987",
+        "val_balanced_arm_mse": "0.012938776840350245",
+        "val_aux_mse": "0.9855769643605022",
+        "val_balanced_aux_mse": "1.0822341236192385",
+        "val_aux_rmse_rad": "0.01230849203642157",
+        "val_total_loss": "0.10920972409810331"
+      },
+      "settings": {
+        "source_model_run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306",
+        "source_model_epoch": 30,
+        "resumed_from_run_dir": null,
+        "aux_weight": 0.1,
+        "learning_rate": 1e-05,
+        "batch_size": 4096,
+        "samples_per_epoch": 500000,
+        "train_samples": 7306407,
+        "val_samples": 1481313,
+        "patience": 15,
+        "max_epochs": 300,
+        "smoke_only": false,
+        "optimizer_initialization": "new_Adam_for_multitask_experiment",
+        "optimizer_state_restored": null
+      }
+    },
+    "B2_aux_001": {
+      "path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2\\run_20261104_025320_198389",
+      "finished": {
+        "best_epoch": 2,
+        "last_epoch": 22,
+        "best_balanced_validation_arm_mse": 0.012924774738544574,
+        "smoke_only": false,
+        "navigation_unchanged": true,
+        "aux_weight": 0.01
+      },
+      "initial_validation": {
+        "arm_mse": 0.010654794896045993,
+        "low_arm_mse": 0.019717954318869906,
+        "other_arm_mse": 0.006163773060267852,
+        "balanced_arm_mse": 0.012940863689568878,
+        "aux_mse": 1.0202975346989467,
+        "balanced_aux_mse": 1.1253807501874449,
+        "aux_rmse_rad": 0.012554512791574457,
+        "total_loss": 0.020857770243035458
+      },
+      "best_history_row": {
+        "epoch": "2",
+        "seconds": "1.1403236000332981",
+        "train_arm_mse": "0.013879564396867671",
+        "train_low_arm_mse": "0.020258789872138236",
+        "train_other_arm_mse": "0.007484754598563344",
+        "train_balanced_arm_mse": "0.01387177223535079",
+        "train_aux_mse": "1.0766185885491018",
+        "train_balanced_aux_mse": "1.0762645488106108",
+        "train_aux_rmse_rad": "0.012665615335688624",
+        "train_total_loss": "0.02464575028235869",
+        "val_arm_mse": "0.01063988674566357",
+        "val_low_arm_mse": "0.01969836486384159",
+        "val_other_arm_mse": "0.006151184613247557",
+        "val_balanced_arm_mse": "0.012924774738544574",
+        "val_aux_mse": "0.9875768475900588",
+        "val_balanced_aux_mse": "1.0845171641335458",
+        "val_aux_rmse_rad": "0.012321600805265403",
+        "val_total_loss": "0.020515655221564157"
+      },
+      "settings": {
+        "source_model_run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306",
+        "source_model_epoch": 30,
+        "resumed_from_run_dir": null,
+        "aux_weight": 0.01,
+        "learning_rate": 1e-05,
+        "batch_size": 4096,
+        "samples_per_epoch": 500000,
+        "train_samples": 7306407,
+        "val_samples": 1481313,
+        "patience": 20,
+        "max_epochs": 300,
+        "smoke_only": false,
+        "optimizer_initialization": "new_Adam_for_multitask_experiment",
+        "optimizer_state_restored": null
+      }
+    },
+    "B2_control": {
+      "path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2_control\\run_20261104_025706_206181",
+      "finished": {
+        "best_epoch": 185,
+        "last_epoch": 205,
+        "best_balanced_validation_arm_mse": 0.01275347033285627,
+        "smoke_only": false,
+        "navigation_unchanged": true,
+        "aux_weight": 0.0
+      },
+      "initial_validation": {
+        "arm_mse": 0.010654794896045993,
+        "low_arm_mse": 0.019717954318869906,
+        "other_arm_mse": 0.006163773060267852,
+        "balanced_arm_mse": 0.012940863689568878,
+        "aux_mse": 1.0202975346989467,
+        "balanced_aux_mse": 1.1253807501874449,
+        "aux_rmse_rad": 0.012554512791574457,
+        "total_loss": 0.010654794896045993
+      },
+      "best_history_row": {
+        "epoch": "185",
+        "seconds": "1.0061168000102043",
+        "train_arm_mse": "0.01295859938101131",
+        "train_low_arm_mse": "0.019283596595025362",
+        "train_other_arm_mse": "0.006645532499503431",
+        "train_balanced_arm_mse": "0.012964564547264397",
+        "train_aux_mse": "1.1051395847185055",
+        "train_balanced_aux_mse": "1.1054294234544364",
+        "train_aux_rmse_rad": "0.012875829847109613",
+        "train_total_loss": "0.01295859938101131",
+        "val_arm_mse": "0.010476225982328488",
+        "val_low_arm_mse": "0.019504400747687646",
+        "val_other_arm_mse": "0.006002539918024892",
+        "val_balanced_arm_mse": "0.01275347033285627",
+        "val_aux_mse": "1.0202975346989467",
+        "val_balanced_aux_mse": "1.1253807501874449",
+        "val_aux_rmse_rad": "0.012554512791574457",
+        "val_total_loss": "0.010476225982328488"
+      },
+      "settings": {
+        "source_model_run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306",
+        "source_model_epoch": 30,
+        "resumed_from_run_dir": null,
+        "aux_weight": 0.0,
+        "learning_rate": 1e-05,
+        "batch_size": 4096,
+        "samples_per_epoch": 500000,
+        "train_samples": 7306407,
+        "val_samples": 1481313,
+        "patience": 20,
+        "max_epochs": 300,
+        "smoke_only": false,
+        "optimizer_initialization": "new_Adam_for_multitask_experiment",
+        "optimizer_state_restored": null
+      }
+    }
+  },
+  "evaluations": {
+    "E15_off": {
+      "path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306\\batch_tests\\val_20261103_144341_235210",
+      "summary": {
+        "planned_targets": 144,
+        "processed_targets": 144,
+        "successes": 111,
+        "unsuccessful_completed_episodes": 33,
+        "process_errors": 0,
+        "unprocessed_targets": 0,
+        "success_rate_percent": 77.08333333333333,
+        "mean_final_error_m_finite_results": 0.024527054821717815,
+        "median_final_error_m_finite_results": 0.009995108875316145,
+        "finite_error_results": 144,
+        "mean_success_time_s": 9.034324324324324,
+        "all_planned_targets_processed": true,
+        "state": "completed",
+        "split": "val",
+        "partial_subset": false,
+        "available_split_targets": 144,
+        "output_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306\\batch_tests\\val_20261103_144341_235210",
+        "subset": "all",
+        "by_target_source": {
+          "base": {
+            "planned_targets": 116,
+            "processed_targets": 116,
+            "successes": 97,
+            "unsuccessful_completed_episodes": 19,
+            "process_errors": 0,
+            "unprocessed_targets": 0,
+            "success_rate_percent": 83.62068965517241,
+            "mean_final_error_m_finite_results": 0.018805390543399327,
+            "median_final_error_m_finite_results": 0.009994259966158556,
+            "finite_error_results": 116,
+            "mean_success_time_s": 9.035051546391752,
+            "all_planned_targets_processed": true
+          },
+          "supplement": {
+            "planned_targets": 28,
+            "processed_targets": 28,
+            "successes": 14,
+            "unsuccessful_completed_episodes": 14,
+            "process_errors": 0,
+            "unprocessed_targets": 0,
+            "success_rate_percent": 50.0,
+            "mean_final_error_m_finite_results": 0.048231092546180146,
+            "median_final_error_m_finite_results": 0.012559438760693386,
+            "finite_error_results": 28,
+            "mean_success_time_s": 9.029285714285713,
+            "all_planned_targets_processed": true
+          }
+        }
+      },
+      "height_groups": {
+        "low_z_le_035": {
+          "n": 47,
+          "successes": 21
+        },
+        "mid_035_z_05": {
+          "n": 14,
+          "successes": 7
+        },
+        "high_z_ge_05": {
+          "n": 83,
+          "successes": 83
+        },
+        "base_z02": {
+          "n": 16,
+          "successes": 8
+        },
+        "base_z035": {
+          "n": 17,
+          "successes": 6
+        }
+      }
+    },
+    "B1_30_off": {
+      "path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_203745_353439\\batch_tests\\val_20261103_204505_560024",
+      "summary": {
+        "planned_targets": 144,
+        "processed_targets": 144,
+        "successes": 112,
+        "unsuccessful_completed_episodes": 32,
+        "process_errors": 0,
+        "unprocessed_targets": 0,
+        "success_rate_percent": 77.77777777777777,
+        "mean_final_error_m_finite_results": 0.02105325456301352,
+        "median_final_error_m_finite_results": 0.009996220798203488,
+        "finite_error_results": 144,
+        "mean_success_time_s": 9.023607142857143,
+        "all_planned_targets_processed": true,
+        "state": "completed",
+        "split": "val",
+        "partial_subset": false,
+        "available_split_targets": 144,
+        "output_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_203745_353439\\batch_tests\\val_20261103_204505_560024",
+        "subset": "all",
+        "by_target_source": {
+          "base": {
+            "planned_targets": 116,
+            "processed_targets": 116,
+            "successes": 95,
+            "unsuccessful_completed_episodes": 21,
+            "process_errors": 0,
+            "unprocessed_targets": 0,
+            "success_rate_percent": 81.89655172413794,
+            "mean_final_error_m_finite_results": 0.017879845862354127,
+            "median_final_error_m_finite_results": 0.009994848072422596,
+            "finite_error_results": 116,
+            "mean_success_time_s": 8.932757894736842,
+            "all_planned_targets_processed": true
+          },
+          "supplement": {
+            "planned_targets": 28,
+            "processed_targets": 28,
+            "successes": 17,
+            "unsuccessful_completed_episodes": 11,
+            "process_errors": 0,
+            "unprocessed_targets": 0,
+            "success_rate_percent": 60.714285714285715,
+            "mean_final_error_m_finite_results": 0.034200233465745286,
+            "median_final_error_m_finite_results": 0.00999892415746537,
+            "finite_error_results": 28,
+            "mean_success_time_s": 9.531294117647057,
+            "all_planned_targets_processed": true
+          }
+        }
+      },
+      "height_groups": {
+        "low_z_le_035": {
+          "n": 47,
+          "successes": 21
+        },
+        "mid_035_z_05": {
+          "n": 14,
+          "successes": 9
+        },
+        "high_z_ge_05": {
+          "n": 83,
+          "successes": 82
+        },
+        "base_z02": {
+          "n": 16,
+          "successes": 6
+        },
+        "base_z035": {
+          "n": 17,
+          "successes": 7
+        }
+      }
+    },
+    "B1_269_off": {
+      "path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_220030_514697\\batch_tests\\parallel_val_20261103_221134_484986",
+      "summary": {
+        "planned_targets": 144,
+        "processed_targets": 144,
+        "successes": 113,
+        "unsuccessful_completed_episodes": 31,
+        "process_errors": 0,
+        "unprocessed_targets": 0,
+        "success_rate_percent": 78.47222222222223,
+        "mean_final_error_m_finite_results": 0.020549501918232852,
+        "median_final_error_m_finite_results": 0.009993870350841504,
+        "finite_error_results": 144,
+        "mean_success_time_s": 8.756575221238938,
+        "all_planned_targets_processed": true,
+        "state": "completed",
+        "split": "val",
+        "partial_subset": false,
+        "available_split_targets": 144,
+        "output_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_220030_514697\\batch_tests\\parallel_val_20261103_221134_484986",
+        "execution_mode": "parallel_independent_subprocesses",
+        "workers": 4,
+        "elapsed_wall_seconds": 609.6778617000091,
+        "completed_success_rate_percent": 78.47222222222223,
+        "subset": "all",
+        "by_target_source": {
+          "base": {
+            "planned_targets": 116,
+            "processed_targets": 116,
+            "successes": 95,
+            "unsuccessful_completed_episodes": 21,
+            "process_errors": 0,
+            "unprocessed_targets": 0,
+            "success_rate_percent": 81.89655172413794,
+            "mean_final_error_m_finite_results": 0.017361018970396592,
+            "median_final_error_m_finite_results": 0.009993468737222108,
+            "finite_error_results": 116,
+            "mean_success_time_s": 8.705126315789471,
+            "all_planned_targets_processed": true
+          },
+          "supplement": {
+            "planned_targets": 28,
+            "processed_targets": 28,
+            "successes": 18,
+            "unsuccessful_completed_episodes": 10,
+            "process_errors": 0,
+            "unprocessed_targets": 0,
+            "success_rate_percent": 64.28571428571429,
+            "mean_final_error_m_finite_results": 0.0337589312735545,
+            "median_final_error_m_finite_results": 0.009996658856554529,
+            "finite_error_results": 28,
+            "mean_success_time_s": 9.02811111111111,
+            "all_planned_targets_processed": true
+          }
+        },
+        "active_processes": 0
+      },
+      "height_groups": {
+        "low_z_le_035": {
+          "n": 47,
+          "successes": 20
+        },
+        "mid_035_z_05": {
+          "n": 14,
+          "successes": 10
+        },
+        "high_z_ge_05": {
+          "n": 83,
+          "successes": 83
+        },
+        "base_z02": {
+          "n": 16,
+          "successes": 3
+        },
+        "base_z035": {
+          "n": 17,
+          "successes": 9
+        }
+      }
+    },
+    "E15_noise_truth": {
+      "path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306\\batch_tests\\parallel_mlp_noise_truth_val_20261104_020434_558903",
+      "summary": {
+        "planned_targets": 144,
+        "processed_targets": 144,
+        "successes": 106,
+        "unsuccessful_completed_episodes": 38,
+        "process_errors": 0,
+        "unprocessed_targets": 0,
+        "success_rate_percent": 73.61111111111111,
+        "mean_final_error_m_finite_results": 0.031074735356103944,
+        "median_final_error_m_finite_results": 0.009996457707448198,
+        "finite_error_results": 144,
+        "mean_success_time_s": 8.863028301886793,
+        "all_planned_targets_processed": true,
+        "observed_reached_but_true_failed": 7,
+        "state": "completed",
+        "split": "val",
+        "partial_subset": false,
+        "available_split_targets": 144,
+        "output_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306\\batch_tests\\parallel_mlp_noise_truth_val_20261104_020434_558903",
+        "execution_mode": "parallel_independent_subprocesses",
+        "workers": 4,
+        "elapsed_wall_seconds": 472.3921926000039,
+        "completed_success_rate_percent": 73.61111111111111,
+        "subset": "all",
+        "by_target_source": {
+          "base": {
+            "planned_targets": 116,
+            "processed_targets": 116,
+            "successes": 94,
+            "unsuccessful_completed_episodes": 22,
+            "process_errors": 0,
+            "unprocessed_targets": 0,
+            "success_rate_percent": 81.03448275862068,
+            "mean_final_error_m_finite_results": 0.023329927510204945,
+            "median_final_error_m_finite_results": 0.009995210750847625,
+            "finite_error_results": 116,
+            "mean_success_time_s": 8.844063829787235,
+            "all_planned_targets_processed": true,
+            "observed_reached_but_true_failed": 4
+          },
+          "supplement": {
+            "planned_targets": 28,
+            "processed_targets": 28,
+            "successes": 12,
+            "unsuccessful_completed_episodes": 16,
+            "process_errors": 0,
+            "unprocessed_targets": 0,
+            "success_rate_percent": 42.857142857142854,
+            "mean_final_error_m_finite_results": 0.06316036786054266,
+            "median_final_error_m_finite_results": 0.03399849834205821,
+            "finite_error_results": 28,
+            "mean_success_time_s": 9.011583333333332,
+            "all_planned_targets_processed": true,
+            "observed_reached_but_true_failed": 3
+          }
+        },
+        "active_processes": 0
+      },
+      "height_groups": {
+        "low_z_le_035": {
+          "n": 47,
+          "successes": 16
+        },
+        "mid_035_z_05": {
+          "n": 14,
+          "successes": 7
+        },
+        "high_z_ge_05": {
+          "n": 83,
+          "successes": 83
+        },
+        "base_z02": {
+          "n": 16,
+          "successes": 6
+        },
+        "base_z035": {
+          "n": 17,
+          "successes": 5
+        }
+      }
+    },
+    "B2_control_noise_truth": {
+      "path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2_control\\run_20261104_025706_206181\\batch_tests\\parallel_aux_b2_noise_truth_val_20261104_030443_830614",
+      "summary": {
+        "planned_targets": 144,
+        "processed_targets": 144,
+        "successes": 113,
+        "unsuccessful_completed_episodes": 31,
+        "process_errors": 0,
+        "unprocessed_targets": 0,
+        "success_rate_percent": 78.47222222222223,
+        "mean_final_error_m_finite_results": 0.022508491996331922,
+        "median_final_error_m_finite_results": 0.009995494310904301,
+        "finite_error_results": 144,
+        "mean_success_time_s": 8.961902654867258,
+        "all_planned_targets_processed": true,
+        "observed_reached_but_true_failed": 4,
+        "state": "completed",
+        "split": "val",
+        "partial_subset": false,
+        "available_split_targets": 144,
+        "output_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2_control\\run_20261104_025706_206181\\batch_tests\\parallel_aux_b2_noise_truth_val_20261104_030443_830614",
+        "execution_mode": "parallel_independent_subprocesses",
+        "workers": 4,
+        "elapsed_wall_seconds": 442.86834000004455,
+        "completed_success_rate_percent": 78.47222222222223,
+        "subset": "all",
+        "by_target_source": {
+          "base": {
+            "planned_targets": 116,
+            "processed_targets": 116,
+            "successes": 94,
+            "unsuccessful_completed_episodes": 22,
+            "process_errors": 0,
+            "unprocessed_targets": 0,
+            "success_rate_percent": 81.03448275862068,
+            "mean_final_error_m_finite_results": 0.02043389764206737,
+            "median_final_error_m_finite_results": 0.009994868412507095,
+            "finite_error_results": 116,
+            "mean_success_time_s": 8.805851063829788,
+            "all_planned_targets_processed": true,
+            "observed_reached_but_true_failed": 4
+          },
+          "supplement": {
+            "planned_targets": 28,
+            "processed_targets": 28,
+            "successes": 19,
+            "unsuccessful_completed_episodes": 9,
+            "process_errors": 0,
+            "unprocessed_targets": 0,
+            "success_rate_percent": 67.85714285714286,
+            "mean_final_error_m_finite_results": 0.031103240035427897,
+            "median_final_error_m_finite_results": 0.009998200473484502,
+            "finite_error_results": 28,
+            "mean_success_time_s": 9.733947368421052,
+            "all_planned_targets_processed": true,
+            "observed_reached_but_true_failed": 0
+          }
+        },
+        "active_processes": 0
+      },
+      "height_groups": {
+        "low_z_le_035": {
+          "n": 47,
+          "successes": 21
+        },
+        "mid_035_z_05": {
+          "n": 14,
+          "successes": 10
+        },
+        "high_z_ge_05": {
+          "n": 83,
+          "successes": 82
+        },
+        "base_z02": {
+          "n": 16,
+          "successes": 6
+        },
+        "base_z035": {
+          "n": 17,
+          "successes": 6
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306\\config.json": "a255d53251a6fac3101f29d071e11c24572bc2f38c1440594adc42b4fe2a7972",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306\\training_finished.json": "a0d357accdd220b0433d3158ae9e11611ba644e00d3dabb5f44979c02de699fb",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306\\history.csv": "c542d03a669b4db4fce7e87181f379ff0cb06329c19214ed9851b3aff0cc035b",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_203745_353439\\config.json": "66a33759dbcb016f1cc37cb5c71511aa90126371b65ee778aa8390a6e33168ae",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_203745_353439\\training_finished.json": "21d4e8657ef7b800c3d82b4838f05527c3560194b88ebe6327287b1598c29c66",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_203745_353439\\history.csv": "cfd99d062b50ff6eb03c000a74779e4385d536e617477922f7305bc69ce8c895",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_214030_030129\\config.json": "0dbfe12edcdc1daa9eab22a693b3b834a4ff7b15df80a3eecdb60483c3360a85",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_214030_030129\\training_finished.json": "f508b7e835c7c633318518aeda555f469f7dad02090e04688da8dfbe1cf8c97c",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_214030_030129\\history.csv": "524826a78d8a82835d1c66515126baaebe3b43f1f5723360ad95a8cf21504b0f",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_215456_176247\\config.json": "b376d7c10da9fa174e6bcbd0c30024aca64aa8b20ccd81dd9a272ccf50231916",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_215456_176247\\training_finished.json": "de6112f5b4f4b00a5ad32c93c72bb4c5b6f1842ae96fdff6d5b9eeec540119ef",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_215456_176247\\history.csv": "5ec5b77f1439c494caa1e08d312f857299b010b7884ab4792a22d1d160aac99a",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_220030_514697\\config.json": "a54595285636c787f9b6a18562e12dcd38b479d8e14e0f558e17f273df7ff222",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_220030_514697\\training_finished.json": "7397530915b28ac33bef4fb1799335c2efb484cb53fe1c9b6ba7ada5b04341ab",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_220030_514697\\history.csv": "7ea608311b96ea58f2c4f4eed83a77fb9beeb64444b33c78401eca7cc0eb0191",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2\\run_20261104_024810_354398\\config.json": "c07b3fc59bf0eceb605828cdf09820d1cf8d58c4ef1a45087c29656bf2cc9530",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2\\run_20261104_024810_354398\\training_finished.json": "dfb1aaf95f7891b2f678e575ed493ae6b26ef7d43d193b57aa0d28c32f5a8e19",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2\\run_20261104_024810_354398\\history.csv": "432349f56a0f0527884a45d4ff57d25065385286aa155adfc53871b288fca7c9",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2\\run_20261104_025320_198389\\config.json": "3f6a7b7148540b644c49180c090491cdc532934f5310d0c799e64d5222ee09ab",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2\\run_20261104_025320_198389\\training_finished.json": "9b13b2148be2448c5c1b200e94c97d1cf4f276d2d6a092e53d559f705413184a",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2\\run_20261104_025320_198389\\history.csv": "ac77e1545fc40b4408adfb70a587fab0279f61bce1a8df2cdded09a8b97f6093",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2_control\\run_20261104_025706_206181\\config.json": "dcc5c3fe362ff9d36384bfb053d28fb32bd47f087b8e622f0b37c1eac85eb752",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2_control\\run_20261104_025706_206181\\training_finished.json": "596805454d71967f25f56fe92c11abeb4f5b9d881023fd24a78fe98a741aebc0",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2_control\\run_20261104_025706_206181\\history.csv": "7361d8d8fe2f2bc7f341e23a048b2a3afba63c71b7dc996694f5179da9b169d8",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306\\batch_tests\\val_20261103_144341_235210\\summary.json": "62b622c2b323e353ef55167d98b01b344009de875d6cad39f00b31bf4529b470",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306\\batch_tests\\val_20261103_144341_235210\\results.csv": "289232eaea1de6d0d869a01198e3c927592da03d47370ecd735eb34ad839d79c",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306\\batch_tests\\val_20261103_144341_235210\\evaluation_config.json": "07eb93e9db87d3f515718f7345ce9a61ee88fd5c2e6ae440bdd7aead8f24a6c0",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_203745_353439\\batch_tests\\val_20261103_204505_560024\\summary.json": "c7e1ff2f4d4febf8c202996e221447005809499198a4bcfe965eac32dbd20ddd",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_203745_353439\\batch_tests\\val_20261103_204505_560024\\results.csv": "4512fe3a18c4f6e3d2e66794cd7db69ad52bed9ad3838360d5998f69e95ce937",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_203745_353439\\batch_tests\\val_20261103_204505_560024\\evaluation_config.json": "8342d8018f212c45bd5bc5c737464ebde31dafcf215f9df2877e587c2c8f4d2c",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_220030_514697\\batch_tests\\parallel_val_20261103_221134_484986\\summary.json": "3c9956e39e3e34a4ea57bde631ebe9dd0ad0960eeb642a4a18d6afec3b7f9ab7",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_220030_514697\\batch_tests\\parallel_val_20261103_221134_484986\\results.csv": "63f7445638270489655aea13026a3f14d4bb24076ed91e35eb42f90eb526c2d0",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_220030_514697\\batch_tests\\parallel_val_20261103_221134_484986\\evaluation_config.json": "1d564006b95bd4bab04fe74b7b301068aa2e4878026d0e40ce6d64021f15fd7c",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306\\batch_tests\\parallel_mlp_noise_truth_val_20261104_020434_558903\\summary.json": "49b2ec6d6457a075c35c7bd31344f198910f0f43a440e4b45cf195dc79a525c5",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306\\batch_tests\\parallel_mlp_noise_truth_val_20261104_020434_558903\\results.csv": "917cb7803cfaae8754f0180289a3ec4038216ddc212c981ae9a706aaec24158d",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_lowz_supplement\\run_20261103_141232_983306\\batch_tests\\parallel_mlp_noise_truth_val_20261104_020434_558903\\evaluation_config.json": "d888932fc7aa654f8279283ffaa5e320d13e431d6a3e7d247ff2a675a5231d7f",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2_control\\run_20261104_025706_206181\\batch_tests\\parallel_aux_b2_noise_truth_val_20261104_030443_830614\\summary.json": "160c9ea63444be7cf8439bce04eb01ae736bce5e5ee1c41b405bc39833888379",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2_control\\run_20261104_025706_206181\\batch_tests\\parallel_aux_b2_noise_truth_val_20261104_030443_830614\\results.csv": "1924b523d4f626b89ebfd3a4dd88aa07d0e1649cbec9b9ca558a91a1df184f87",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2_control\\run_20261104_025706_206181\\batch_tests\\parallel_aux_b2_noise_truth_val_20261104_030443_830614\\evaluation_config.json": "adfcfd87a9211ae48bbe540f74f07ff3a3aac7bbae17976af0d258b71a6214e8"
+  },
+  "pairs": {
+    "E15_off__B1_269_off": {
+      "gains": [
+        [
+          1.456231,
+          -1.058013,
+          0.2
+        ],
+        [
+          -1.081163,
+          -0.52066,
+          0.35
+        ],
+        [
+          1.225671,
+          -1.02846,
+          0.35
+        ],
+        [
+          -1.931852,
+          0.517638,
+          0.35
+        ],
+        [
+          -1.0,
+          -1.732051,
+          0.35
+        ],
+        [
+          -0.497748,
+          -0.665664,
+          0.382799
+        ],
+        [
+          0.289431,
+          -1.065187,
+          0.383712
+        ],
+        [
+          1.049024,
+          -0.859413,
+          0.313626
+        ],
+        [
+          -0.780123,
+          1.359172,
+          0.387555
+        ],
+        [
+          0.427844,
+          -1.623664,
+          0.351959
+        ],
+        [
+          1.194367,
+          1.48376,
+          0.228089
+        ],
+        [
+          1.194367,
+          1.48376,
+          0.306956
+        ]
+      ],
+      "losses": [
+        [
+          -0.247214,
+          -0.760845,
+          0.2
+        ],
+        [
+          -0.866025,
+          -0.5,
+          0.2
+        ],
+        [
+          1.081163,
+          -0.52066,
+          0.2
+        ],
+        [
+          -1.293431,
+          -0.535757,
+          0.2
+        ],
+        [
+          -0.8,
+          1.385641,
+          0.2
+        ],
+        [
+          1.225671,
+          1.02846,
+          0.2
+        ],
+        [
+          -0.647214,
+          0.470228,
+          0.35
+        ],
+        [
+          -0.497748,
+          -0.665664,
+          0.487384
+        ],
+        [
+          0.289431,
+          -1.065187,
+          0.258351
+        ],
+        [
+          0.427844,
+          -1.623664,
+          0.221526
+        ]
+      ],
+      "same_target_and_seed": true,
+      "conditions_equal": {
+        "duration_limit_seconds": true,
+        "sensor_noise_mode": true,
+        "navigation_run_dir": true,
+        "robot_config_snapshot": true,
+        "reach_tolerance_m": true,
+        "min_success_time_seconds": true,
+        "required_hold_seconds": true,
+        "evaluation_position_source": true
+      }
+    },
+    "B1_30_off__B1_269_off": {
+      "gains": [
+        [
+          1.456231,
+          -1.058013,
+          0.2
+        ],
+        [
+          -1.081163,
+          -0.52066,
+          0.35
+        ],
+        [
+          -1.931852,
+          0.517638,
+          0.35
+        ],
+        [
+          -1.0,
+          -1.732051,
+          0.35
+        ],
+        [
+          1.732051,
+          -1.0,
+          0.5
+        ],
+        [
+          -0.497748,
+          -0.665664,
+          0.382799
+        ],
+        [
+          0.427844,
+          -1.623664,
+          0.344276
+        ],
+        [
+          0.427844,
+          -1.623664,
+          0.351959
+        ]
+      ],
+      "losses": [
+        [
+          -0.866025,
+          -0.5,
+          0.2
+        ],
+        [
+          1.081163,
+          -0.52066,
+          0.2
+        ],
+        [
+          -1.293431,
+          -0.535757,
+          0.2
+        ],
+        [
+          1.8,
+          0.0,
+          0.2
+        ],
+        [
+          -0.647214,
+          0.470228,
+          0.35
+        ],
+        [
+          -0.497748,
+          -0.665664,
+          0.487384
+        ],
+        [
+          0.427844,
+          -1.623664,
+          0.221526
+        ]
+      ],
+      "same_target_and_seed": true,
+      "conditions_equal": {
+        "duration_limit_seconds": true,
+        "sensor_noise_mode": true,
+        "navigation_run_dir": true,
+        "robot_config_snapshot": true,
+        "reach_tolerance_m": true,
+        "min_success_time_seconds": true,
+        "required_hold_seconds": true,
+        "evaluation_position_source": true
+      }
+    },
+    "E15_off__E15_noise_truth": {
+      "gains": [
+        [
+          1.8,
+          0.0,
+          0.2
+        ],
+        [
+          1.225671,
+          -1.02846,
+          0.35
+        ],
+        [
+          1.194367,
+          1.48376,
+          0.306956
+        ]
+      ],
+      "losses": [
+        [
+          -0.866025,
+          -0.5,
+          0.2
+        ],
+        [
+          1.081163,
+          -0.52066,
+          0.2
+        ],
+        [
+          1.225671,
+          1.02846,
+          0.2
+        ],
+        [
+          -0.647214,
+          0.470228,
+          0.35
+        ],
+        [
+          -0.866025,
+          -0.5,
+          0.35
+        ],
+        [
+          -0.780123,
+          1.359172,
+          0.347793
+        ],
+        [
+          0.427844,
+          -1.623664,
+          0.221526
+        ],
+        [
+          0.427844,
+          -1.623664,
+          0.344276
+        ]
+      ],
+      "same_target_and_seed": true,
+      "conditions_equal": {
+        "duration_limit_seconds": true,
+        "sensor_noise_mode": false,
+        "navigation_run_dir": true,
+        "robot_config_snapshot": false,
+        "reach_tolerance_m": true,
+        "min_success_time_seconds": true,
+        "required_hold_seconds": true,
+        "evaluation_position_source": false
+      }
+    },
+    "E15_noise_truth__B2_control_noise_truth": {
+      "gains": [
+        [
+          -0.866025,
+          -0.5,
+          0.2
+        ],
+        [
+          1.081163,
+          -0.52066,
+          0.2
+        ],
+        [
+          1.225671,
+          1.02846,
+          0.2
+        ],
+        [
+          1.456231,
+          -1.058013,
+          0.2
+        ],
+        [
+          -1.931852,
+          0.517638,
+          0.35
+        ],
+        [
+          -0.497748,
+          -0.665664,
+          0.382799
+        ],
+        [
+          -0.893461,
+          0.542858,
+          0.254132
+        ],
+        [
+          0.289431,
+          -1.065187,
+          0.383712
+        ],
+        [
+          -0.780123,
+          1.359172,
+          0.347793
+        ],
+        [
+          -0.780123,
+          1.359172,
+          0.387555
+        ],
+        [
+          0.427844,
+          -1.623664,
+          0.344276
+        ],
+        [
+          1.194367,
+          1.48376,
+          0.228089
+        ]
+      ],
+      "losses": [
+        [
+          -0.247214,
+          -0.760845,
+          0.2
+        ],
+        [
+          -0.8,
+          1.385641,
+          0.2
+        ],
+        [
+          -0.277837,
+          1.575692,
+          0.2
+        ],
+        [
+          1.8,
+          0.0,
+          0.2
+        ],
+        [
+          1.732051,
+          -1.0,
+          0.5
+        ]
+      ],
+      "same_target_and_seed": true,
+      "conditions_equal": {
+        "duration_limit_seconds": true,
+        "sensor_noise_mode": true,
+        "navigation_run_dir": true,
+        "robot_config_snapshot": true,
+        "reach_tolerance_m": true,
+        "min_success_time_seconds": true,
+        "required_hold_seconds": true,
+        "evaluation_position_source": true
+      }
+    }
+  }
+}

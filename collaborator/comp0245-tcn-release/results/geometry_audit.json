@@ -1,0 +1,6 @@
+{
+  "random_robot_states": 20,
+  "maximum_FK_vs_pybullet_link_error_m": 3.741162913872443e-8,
+  "noise_free_geometry_agrees": true,
+  "uses_no_benchmark_goals_or_model_results": true
+}

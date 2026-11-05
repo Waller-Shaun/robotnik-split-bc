@@ -1,0 +1,9 @@
+{
+  "best_epoch": 55,
+  "last_epoch": 60,
+  "resume_start_epoch": 30,
+  "best_balanced_validation_arm_mse": 0.012858481365003978,
+  "optimizer_state_restored": false,
+  "navigation_unchanged": true,
+  "smoke_only": false
+}

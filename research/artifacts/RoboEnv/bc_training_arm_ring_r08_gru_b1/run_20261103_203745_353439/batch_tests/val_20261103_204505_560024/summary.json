@@ -1,0 +1,50 @@
+{
+  "planned_targets": 144,
+  "processed_targets": 144,
+  "successes": 112,
+  "unsuccessful_completed_episodes": 32,
+  "process_errors": 0,
+  "unprocessed_targets": 0,
+  "success_rate_percent": 77.77777777777777,
+  "mean_final_error_m_finite_results": 0.02105325456301352,
+  "median_final_error_m_finite_results": 0.009996220798203488,
+  "finite_error_results": 144,
+  "mean_success_time_s": 9.023607142857143,
+  "all_planned_targets_processed": true,
+  "state": "completed",
+  "split": "val",
+  "partial_subset": false,
+  "available_split_targets": 144,
+  "output_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_gru_b1\\run_20261103_203745_353439\\batch_tests\\val_20261103_204505_560024",
+  "subset": "all",
+  "by_target_source": {
+    "base": {
+      "planned_targets": 116,
+      "processed_targets": 116,
+      "successes": 95,
+      "unsuccessful_completed_episodes": 21,
+      "process_errors": 0,
+      "unprocessed_targets": 0,
+      "success_rate_percent": 81.89655172413794,
+      "mean_final_error_m_finite_results": 0.017879845862354127,
+      "median_final_error_m_finite_results": 0.009994848072422596,
+      "finite_error_results": 116,
+      "mean_success_time_s": 8.932757894736842,
+      "all_planned_targets_processed": true
+    },
+    "supplement": {
+      "planned_targets": 28,
+      "processed_targets": 28,
+      "successes": 17,
+      "unsuccessful_completed_episodes": 11,
+      "process_errors": 0,
+      "unprocessed_targets": 0,
+      "success_rate_percent": 60.714285714285715,
+      "mean_final_error_m_finite_results": 0.034200233465745286,
+      "median_final_error_m_finite_results": 0.00999892415746537,
+      "finite_error_results": 28,
+      "mean_success_time_s": 9.531294117647057,
+      "all_planned_targets_processed": true
+    }
+  }
+}

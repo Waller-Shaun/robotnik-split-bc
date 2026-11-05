@@ -1,0 +1,10 @@
+{
+  "best_epoch": 86,
+  "last_epoch": 101,
+  "best_balanced_validation_arm_mse": 0.013874677791914041,
+  "navigation_unchanged": true,
+  "smoke_only": false,
+  "arm_trained_from_scratch": true,
+  "validation_endpoints": 148315,
+  "validation_all_frames": false
+}

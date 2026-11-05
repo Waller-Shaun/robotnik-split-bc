@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "best_epoch": 30,
+  "epochs_completed": 30,
+  "best_validation_loss": 0.03162225258496131,
+  "subset_only": false,
+  "test_evaluated": false
+}

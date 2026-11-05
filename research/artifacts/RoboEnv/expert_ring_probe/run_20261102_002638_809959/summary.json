@@ -1,0 +1,9 @@
+{
+  "state": "completed",
+  "planned_targets": 12,
+  "processed_targets": 12,
+  "held_successes": 8,
+  "process_errors": 0,
+  "sensor_noise": "unchanged_config",
+  "output_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_ring_probe\\run_20261102_002638_809959"
+}

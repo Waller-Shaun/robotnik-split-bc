@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "model_type": "mlp",
+  "mode": "full",
+  "seed": 42,
+  "raw_dt_s": 0.001,
+  "window_size": 20,
+  "stride": 10,
+  "effective_context_samples": 1,
+  "feature_version": "obs23_target_and_ee_error_base_yaw_frame_v1",
+  "start_padding": "repeat_first_observation",
+  "initialization": "same released arm weights; TCN current-tap inflation, historical taps zero",
+  "parent_run": "/Users/mac/Desktop/comp0245(2)/robotnik-split-bc-main/artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306",
+  "parent_sha256": "f758b1a8b54294c4140d96a86d605a4c2dd73a9558ea4ed203418790c08b719b",
+  "parent_normalization_sha256": "9feb9d07c1eb962e705629a35995716160ed6a72f1e7dfbd8a4bf3bd113557bf",
+  "nav_run": "/Users/mac/Desktop/comp0245(2)/robotnik-split-bc-main/artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160",
+  "frozen_nav_file_sha256": {
+    "best_model.pt": "2659ce24ff5264938833045c6d7114da1c3044a068f82704efc80f826b845281",
+    "normalization.npz": "f5c3c274e4f60afa1c2d7f7fc7e9cd18279a7a844a3c46a8a35ea6ff1350b5c4",
+    "config.json": "e54e0a3146f2c8503e3dc41edb4cf222a5d20cdd9b8d1deecc274a6131a22493",
+    "data_split.json": "7fa0879ce2f71b0ed38b1345a561a4e3006394a4a08e35aa1bc9cd928375d4b1"
+  },
+  "source_manifest_sha256": "0a4a7553e7044d6fe2d228be5f28fddf06ad48163b727ffffa36712d69e802b2",
+  "trained_outputs": "7 arm torques only",
+  "sampling": "every tenth frame; low z<=0.35 and other heights 50/50 with replacement",
+  "normalization": "inherited training-only parent statistics; binary phase unchanged",
+  "selection_metric": "balanced validation arm MSE; epoch 0 retained as eligible fallback",
+  "validation_distribution": "all validation trajectories, every tenth frame, no resampling",
+  "samples_per_epoch": 200000,
+  "batch_size": 512,
+  "learning_rate": 1e-05,
+  "max_epochs": 20,
+  "patience": 6,
+  "parameters": 106503,
+  "device": "mps",
+  "torch_version": "2.15.0",
+  "test_evaluated": false,
+  "transfer_checks": {
+    "initial_functions_match": true,
+    "causality_passed": true,
+    "historical_taps_receive_gradient": true,
+    "mlp_parameters": 106503,
+    "tcn_parameters": 316423
+  },
+  "trained_from_scratch": false,
+  "source_sha256": {
+    "train_arm_compare.py": "235f586ab4d5090d58415e284ea060ddc62882748609194528ec46a259a10499",
+    "arm_compare_models.py": "7c802f7da178374b3ce9ec9ae5a0db96987517881c9e1452c21322f1ae7bd4bf",
+    "tcn_dataset.py": "f8bf8be813ba273078f12f58a84e60b50db81dff8012fc6e8d9eb389c2923ecb",
+    "tcn_model.py": "248cd53de0a3f90e4f09e031b5841109bb28546fb53d8812dc522a58ce326883",
+    "robotnik_bodyframe_features.py": "c8abd9315afe1b615600a3f089f56487fd41586786338287e63c426d0d3d3478"
+  }
+}

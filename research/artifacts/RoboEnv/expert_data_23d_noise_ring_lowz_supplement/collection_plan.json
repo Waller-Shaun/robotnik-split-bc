@@ -1,0 +1,2434 @@
+{
+  "dataset_variant": "ring_lowz_continuous_supplement_v1",
+  "plan_seed": 42,
+  "center_xy_m": [
+    0,
+    0
+  ],
+  "radius_range_m": [
+    0.8,
+    2.0
+  ],
+  "height_edges_m": [
+    0.2,
+    0.275,
+    0.35,
+    0.425,
+    0.5
+  ],
+  "horizontal_groups": 50,
+  "total_targets": 200,
+  "entries": [
+    {
+      "target": [
+        0.94747,
+        0.272035,
+        0.264323
+      ],
+      "xy_group": "xy_001",
+      "proposed_split": "test",
+      "height_band": 0,
+      "radius_band": 0,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        0.94747,
+        0.272035,
+        0.327263
+      ],
+      "xy_group": "xy_001",
+      "proposed_split": "test",
+      "height_band": 1,
+      "radius_band": 0,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        0.94747,
+        0.272035,
+        0.357144
+      ],
+      "xy_group": "xy_001",
+      "proposed_split": "test",
+      "height_band": 2,
+      "radius_band": 0,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        0.94747,
+        0.272035,
+        0.498077
+      ],
+      "xy_group": "xy_001",
+      "proposed_split": "test",
+      "height_band": 3,
+      "radius_band": 0,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        0.442017,
+        0.877649,
+        0.209683
+      ],
+      "xy_group": "xy_002",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 0,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        0.442017,
+        0.877649,
+        0.308789
+      ],
+      "xy_group": "xy_002",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 0,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        0.442017,
+        0.877649,
+        0.377836
+      ],
+      "xy_group": "xy_002",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 0,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        0.442017,
+        0.877649,
+        0.494422
+      ],
+      "xy_group": "xy_002",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 0,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        -0.173252,
+        0.938673,
+        0.233267
+      ],
+      "xy_group": "xy_003",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 0,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        -0.173252,
+        0.938673,
+        0.292097
+      ],
+      "xy_group": "xy_003",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 0,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        -0.173252,
+        0.938673,
+        0.391583
+      ],
+      "xy_group": "xy_003",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 0,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        -0.173252,
+        0.938673,
+        0.429874
+      ],
+      "xy_group": "xy_003",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 0,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        -0.645452,
+        0.762009,
+        0.256805
+      ],
+      "xy_group": "xy_004",
+      "proposed_split": "test",
+      "height_band": 0,
+      "radius_band": 0,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -0.645452,
+        0.762009,
+        0.301619
+      ],
+      "xy_group": "xy_004",
+      "proposed_split": "test",
+      "height_band": 1,
+      "radius_band": 0,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -0.645452,
+        0.762009,
+        0.422708
+      ],
+      "xy_group": "xy_004",
+      "proposed_split": "test",
+      "height_band": 2,
+      "radius_band": 0,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -0.645452,
+        0.762009,
+        0.491905
+      ],
+      "xy_group": "xy_004",
+      "proposed_split": "test",
+      "height_band": 3,
+      "radius_band": 0,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -0.872161,
+        0.461663,
+        0.235011
+      ],
+      "xy_group": "xy_005",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 0,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -0.872161,
+        0.461663,
+        0.278377
+      ],
+      "xy_group": "xy_005",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 0,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -0.872161,
+        0.461663,
+        0.361641
+      ],
+      "xy_group": "xy_005",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 0,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -0.872161,
+        0.461663,
+        0.476192
+      ],
+      "xy_group": "xy_005",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 0,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -0.81947,
+        -0.53517,
+        0.224472
+      ],
+      "xy_group": "xy_006",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 0,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -0.81947,
+        -0.53517,
+        0.30281
+      ],
+      "xy_group": "xy_006",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 0,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -0.81947,
+        -0.53517,
+        0.385223
+      ],
+      "xy_group": "xy_006",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 0,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -0.81947,
+        -0.53517,
+        0.439272
+      ],
+      "xy_group": "xy_006",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 0,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -0.497748,
+        -0.665664,
+        0.217073
+      ],
+      "xy_group": "xy_007",
+      "proposed_split": "val",
+      "height_band": 0,
+      "radius_band": 0,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -0.497748,
+        -0.665664,
+        0.325202
+      ],
+      "xy_group": "xy_007",
+      "proposed_split": "val",
+      "height_band": 1,
+      "radius_band": 0,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -0.497748,
+        -0.665664,
+        0.382799
+      ],
+      "xy_group": "xy_007",
+      "proposed_split": "val",
+      "height_band": 2,
+      "radius_band": 0,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -0.497748,
+        -0.665664,
+        0.487384
+      ],
+      "xy_group": "xy_007",
+      "proposed_split": "val",
+      "height_band": 3,
+      "radius_band": 0,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -0.102523,
+        -0.962619,
+        0.262353
+      ],
+      "xy_group": "xy_008",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 0,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        -0.102523,
+        -0.962619,
+        0.335296
+      ],
+      "xy_group": "xy_008",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 0,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        -0.102523,
+        -0.962619,
+        0.379083
+      ],
+      "xy_group": "xy_008",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 0,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        -0.102523,
+        -0.962619,
+        0.446667
+      ],
+      "xy_group": "xy_008",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 0,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        0.397046,
+        -0.878216,
+        0.215053
+      ],
+      "xy_group": "xy_009",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 0,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        0.397046,
+        -0.878216,
+        0.275651
+      ],
+      "xy_group": "xy_009",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 0,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        0.397046,
+        -0.878216,
+        0.408962
+      ],
+      "xy_group": "xy_009",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 0,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        0.397046,
+        -0.878216,
+        0.474831
+      ],
+      "xy_group": "xy_009",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 0,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        0.957558,
+        -0.150025,
+        0.234427
+      ],
+      "xy_group": "xy_010",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 0,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        0.957558,
+        -0.150025,
+        0.317642
+      ],
+      "xy_group": "xy_010",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 0,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        0.957558,
+        -0.150025,
+        0.360557
+      ],
+      "xy_group": "xy_010",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 0,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        0.957558,
+        -0.150025,
+        0.433667
+      ],
+      "xy_group": "xy_010",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 0,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.147574,
+        0.35224,
+        0.24238
+      ],
+      "xy_group": "xy_011",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 1,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        1.147574,
+        0.35224,
+        0.332322
+      ],
+      "xy_group": "xy_011",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 1,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        1.147574,
+        0.35224,
+        0.397577
+      ],
+      "xy_group": "xy_011",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 1,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        1.147574,
+        0.35224,
+        0.466508
+      ],
+      "xy_group": "xy_011",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 1,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        0.791046,
+        0.867764,
+        0.202405
+      ],
+      "xy_group": "xy_012",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 1,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        0.791046,
+        0.867764,
+        0.307766
+      ],
+      "xy_group": "xy_012",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 1,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        0.791046,
+        0.867764,
+        0.366151
+      ],
+      "xy_group": "xy_012",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 1,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        0.791046,
+        0.867764,
+        0.455658
+      ],
+      "xy_group": "xy_012",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 1,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        0.186581,
+        1.230754,
+        0.204461
+      ],
+      "xy_group": "xy_013",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 1,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        0.186581,
+        1.230754,
+        0.296148
+      ],
+      "xy_group": "xy_013",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 1,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        0.186581,
+        1.230754,
+        0.372061
+      ],
+      "xy_group": "xy_013",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 1,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        0.186581,
+        1.230754,
+        0.474611
+      ],
+      "xy_group": "xy_013",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 1,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        -0.83279,
+        0.827045,
+        0.249791
+      ],
+      "xy_group": "xy_014",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 1,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -0.83279,
+        0.827045,
+        0.305498
+      ],
+      "xy_group": "xy_014",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 1,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -0.83279,
+        0.827045,
+        0.410989
+      ],
+      "xy_group": "xy_014",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 1,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -0.83279,
+        0.827045,
+        0.43759
+      ],
+      "xy_group": "xy_014",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 1,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -0.893461,
+        0.542858,
+        0.254132
+      ],
+      "xy_group": "xy_015",
+      "proposed_split": "val",
+      "height_band": 0,
+      "radius_band": 1,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -0.893461,
+        0.542858,
+        0.309648
+      ],
+      "xy_group": "xy_015",
+      "proposed_split": "val",
+      "height_band": 1,
+      "radius_band": 1,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -0.893461,
+        0.542858,
+        0.362163
+      ],
+      "xy_group": "xy_015",
+      "proposed_split": "val",
+      "height_band": 2,
+      "radius_band": 1,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -0.893461,
+        0.542858,
+        0.462578
+      ],
+      "xy_group": "xy_015",
+      "proposed_split": "val",
+      "height_band": 3,
+      "radius_band": 1,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -0.980705,
+        -0.444058,
+        0.233472
+      ],
+      "xy_group": "xy_016",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 1,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -0.980705,
+        -0.444058,
+        0.3036
+      ],
+      "xy_group": "xy_016",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 1,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -0.980705,
+        -0.444058,
+        0.372653
+      ],
+      "xy_group": "xy_016",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 1,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -0.980705,
+        -0.444058,
+        0.472245
+      ],
+      "xy_group": "xy_016",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 1,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -0.855063,
+        -0.73391,
+        0.208927
+      ],
+      "xy_group": "xy_017",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 1,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -0.855063,
+        -0.73391,
+        0.34705
+      ],
+      "xy_group": "xy_017",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 1,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -0.855063,
+        -0.73391,
+        0.418062
+      ],
+      "xy_group": "xy_017",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 1,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -0.855063,
+        -0.73391,
+        0.477438
+      ],
+      "xy_group": "xy_017",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 1,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        0.289431,
+        -1.065187,
+        0.258351
+      ],
+      "xy_group": "xy_018",
+      "proposed_split": "val",
+      "height_band": 0,
+      "radius_band": 1,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        0.289431,
+        -1.065187,
+        0.328723
+      ],
+      "xy_group": "xy_018",
+      "proposed_split": "val",
+      "height_band": 1,
+      "radius_band": 1,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        0.289431,
+        -1.065187,
+        0.383712
+      ],
+      "xy_group": "xy_018",
+      "proposed_split": "val",
+      "height_band": 2,
+      "radius_band": 1,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        0.289431,
+        -1.065187,
+        0.445464
+      ],
+      "xy_group": "xy_018",
+      "proposed_split": "val",
+      "height_band": 3,
+      "radius_band": 1,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        0.802897,
+        -0.696858,
+        0.234192
+      ],
+      "xy_group": "xy_019",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 1,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        0.802897,
+        -0.696858,
+        0.290237
+      ],
+      "xy_group": "xy_019",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 1,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        0.802897,
+        -0.696858,
+        0.372986
+      ],
+      "xy_group": "xy_019",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 1,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        0.802897,
+        -0.696858,
+        0.468426
+      ],
+      "xy_group": "xy_019",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 1,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        1.075583,
+        -0.121515,
+        0.256837
+      ],
+      "xy_group": "xy_020",
+      "proposed_split": "test",
+      "height_band": 0,
+      "radius_band": 1,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.075583,
+        -0.121515,
+        0.328916
+      ],
+      "xy_group": "xy_020",
+      "proposed_split": "test",
+      "height_band": 1,
+      "radius_band": 1,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.075583,
+        -0.121515,
+        0.382421
+      ],
+      "xy_group": "xy_020",
+      "proposed_split": "test",
+      "height_band": 2,
+      "radius_band": 1,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.075583,
+        -0.121515,
+        0.472023
+      ],
+      "xy_group": "xy_020",
+      "proposed_split": "test",
+      "height_band": 3,
+      "radius_band": 1,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.308686,
+        0.5516,
+        0.206416
+      ],
+      "xy_group": "xy_021",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 2,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        1.308686,
+        0.5516,
+        0.306202
+      ],
+      "xy_group": "xy_021",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 2,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        1.308686,
+        0.5516,
+        0.353213
+      ],
+      "xy_group": "xy_021",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 2,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        1.308686,
+        0.5516,
+        0.462051
+      ],
+      "xy_group": "xy_021",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 2,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        1.002362,
+        0.917935,
+        0.207835
+      ],
+      "xy_group": "xy_022",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 2,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        1.002362,
+        0.917935,
+        0.319056
+      ],
+      "xy_group": "xy_022",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 2,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        1.002362,
+        0.917935,
+        0.36286
+      ],
+      "xy_group": "xy_022",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 2,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        1.002362,
+        0.917935,
+        0.494299
+      ],
+      "xy_group": "xy_022",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 2,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        0.122761,
+        1.414136,
+        0.2443
+      ],
+      "xy_group": "xy_023",
+      "proposed_split": "test",
+      "height_band": 0,
+      "radius_band": 2,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        0.122761,
+        1.414136,
+        0.276806
+      ],
+      "xy_group": "xy_023",
+      "proposed_split": "test",
+      "height_band": 1,
+      "radius_band": 2,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        0.122761,
+        1.414136,
+        0.4218
+      ],
+      "xy_group": "xy_023",
+      "proposed_split": "test",
+      "height_band": 2,
+      "radius_band": 2,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        0.122761,
+        1.414136,
+        0.461176
+      ],
+      "xy_group": "xy_023",
+      "proposed_split": "test",
+      "height_band": 3,
+      "radius_band": 2,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        -0.561262,
+        1.356314,
+        0.236502
+      ],
+      "xy_group": "xy_024",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 2,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -0.561262,
+        1.356314,
+        0.311805
+      ],
+      "xy_group": "xy_024",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 2,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -0.561262,
+        1.356314,
+        0.420249
+      ],
+      "xy_group": "xy_024",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 2,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -0.561262,
+        1.356314,
+        0.467865
+      ],
+      "xy_group": "xy_024",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 2,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -1.257353,
+        0.601074,
+        0.224901
+      ],
+      "xy_group": "xy_025",
+      "proposed_split": "test",
+      "height_band": 0,
+      "radius_band": 2,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -1.257353,
+        0.601074,
+        0.314046
+      ],
+      "xy_group": "xy_025",
+      "proposed_split": "test",
+      "height_band": 1,
+      "radius_band": 2,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -1.257353,
+        0.601074,
+        0.382931
+      ],
+      "xy_group": "xy_025",
+      "proposed_split": "test",
+      "height_band": 2,
+      "radius_band": 2,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -1.257353,
+        0.601074,
+        0.426717
+      ],
+      "xy_group": "xy_025",
+      "proposed_split": "test",
+      "height_band": 3,
+      "radius_band": 2,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -1.269338,
+        -0.757747,
+        0.210591
+      ],
+      "xy_group": "xy_026",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 2,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -1.269338,
+        -0.757747,
+        0.316542
+      ],
+      "xy_group": "xy_026",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 2,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -1.269338,
+        -0.757747,
+        0.358221
+      ],
+      "xy_group": "xy_026",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 2,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -1.269338,
+        -0.757747,
+        0.475384
+      ],
+      "xy_group": "xy_026",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 2,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -0.690677,
+        -1.157027,
+        0.254479
+      ],
+      "xy_group": "xy_027",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 2,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -0.690677,
+        -1.157027,
+        0.332595
+      ],
+      "xy_group": "xy_027",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 2,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -0.690677,
+        -1.157027,
+        0.358159
+      ],
+      "xy_group": "xy_027",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 2,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -0.690677,
+        -1.157027,
+        0.493618
+      ],
+      "xy_group": "xy_027",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 2,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -0.345315,
+        -1.289827,
+        0.241603
+      ],
+      "xy_group": "xy_028",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 2,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        -0.345315,
+        -1.289827,
+        0.302845
+      ],
+      "xy_group": "xy_028",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 2,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        -0.345315,
+        -1.289827,
+        0.412168
+      ],
+      "xy_group": "xy_028",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 2,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        -0.345315,
+        -1.289827,
+        0.485557
+      ],
+      "xy_group": "xy_028",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 2,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        1.049024,
+        -0.859413,
+        0.221861
+      ],
+      "xy_group": "xy_029",
+      "proposed_split": "val",
+      "height_band": 0,
+      "radius_band": 2,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        1.049024,
+        -0.859413,
+        0.313626
+      ],
+      "xy_group": "xy_029",
+      "proposed_split": "val",
+      "height_band": 1,
+      "radius_band": 2,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        1.049024,
+        -0.859413,
+        0.369246
+      ],
+      "xy_group": "xy_029",
+      "proposed_split": "val",
+      "height_band": 2,
+      "radius_band": 2,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        1.049024,
+        -0.859413,
+        0.495116
+      ],
+      "xy_group": "xy_029",
+      "proposed_split": "val",
+      "height_band": 3,
+      "radius_band": 2,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        1.10982,
+        -0.71372,
+        0.232645
+      ],
+      "xy_group": "xy_030",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 2,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.10982,
+        -0.71372,
+        0.34933
+      ],
+      "xy_group": "xy_030",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 2,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.10982,
+        -0.71372,
+        0.416797
+      ],
+      "xy_group": "xy_030",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 2,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.10982,
+        -0.71372,
+        0.481096
+      ],
+      "xy_group": "xy_030",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 2,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.490066,
+        0.886414,
+        0.238911
+      ],
+      "xy_group": "xy_031",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 3,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        1.490066,
+        0.886414,
+        0.298731
+      ],
+      "xy_group": "xy_031",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 3,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        1.490066,
+        0.886414,
+        0.407847
+      ],
+      "xy_group": "xy_031",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 3,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        1.490066,
+        0.886414,
+        0.474592
+      ],
+      "xy_group": "xy_031",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 3,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        1.217403,
+        1.053087,
+        0.25596
+      ],
+      "xy_group": "xy_032",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 3,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        1.217403,
+        1.053087,
+        0.294732
+      ],
+      "xy_group": "xy_032",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 3,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        1.217403,
+        1.053087,
+        0.420174
+      ],
+      "xy_group": "xy_032",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 3,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        1.217403,
+        1.053087,
+        0.443125
+      ],
+      "xy_group": "xy_032",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 3,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        -0.288429,
+        1.52238,
+        0.211566
+      ],
+      "xy_group": "xy_033",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 3,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        -0.288429,
+        1.52238,
+        0.288509
+      ],
+      "xy_group": "xy_033",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 3,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        -0.288429,
+        1.52238,
+        0.394934
+      ],
+      "xy_group": "xy_033",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 3,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        -0.288429,
+        1.52238,
+        0.490517
+      ],
+      "xy_group": "xy_033",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 3,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        -0.780123,
+        1.359172,
+        0.25825
+      ],
+      "xy_group": "xy_034",
+      "proposed_split": "val",
+      "height_band": 0,
+      "radius_band": 3,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -0.780123,
+        1.359172,
+        0.347793
+      ],
+      "xy_group": "xy_034",
+      "proposed_split": "val",
+      "height_band": 1,
+      "radius_band": 3,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -0.780123,
+        1.359172,
+        0.387555
+      ],
+      "xy_group": "xy_034",
+      "proposed_split": "val",
+      "height_band": 2,
+      "radius_band": 3,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -0.780123,
+        1.359172,
+        0.435864
+      ],
+      "xy_group": "xy_034",
+      "proposed_split": "val",
+      "height_band": 3,
+      "radius_band": 3,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -1.360205,
+        0.685872,
+        0.20996
+      ],
+      "xy_group": "xy_035",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 3,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -1.360205,
+        0.685872,
+        0.325789
+      ],
+      "xy_group": "xy_035",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 3,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -1.360205,
+        0.685872,
+        0.359213
+      ],
+      "xy_group": "xy_035",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 3,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -1.360205,
+        0.685872,
+        0.462973
+      ],
+      "xy_group": "xy_035",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 3,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -1.578487,
+        -0.594201,
+        0.215043
+      ],
+      "xy_group": "xy_036",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 3,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -1.578487,
+        -0.594201,
+        0.335249
+      ],
+      "xy_group": "xy_036",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 3,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -1.578487,
+        -0.594201,
+        0.403612
+      ],
+      "xy_group": "xy_036",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 3,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -1.578487,
+        -0.594201,
+        0.480376
+      ],
+      "xy_group": "xy_036",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 3,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -1.156398,
+        -1.034289,
+        0.269482
+      ],
+      "xy_group": "xy_037",
+      "proposed_split": "test",
+      "height_band": 0,
+      "radius_band": 3,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -1.156398,
+        -1.034289,
+        0.304839
+      ],
+      "xy_group": "xy_037",
+      "proposed_split": "test",
+      "height_band": 1,
+      "radius_band": 3,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -1.156398,
+        -1.034289,
+        0.372611
+      ],
+      "xy_group": "xy_037",
+      "proposed_split": "test",
+      "height_band": 2,
+      "radius_band": 3,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -1.156398,
+        -1.034289,
+        0.461646
+      ],
+      "xy_group": "xy_037",
+      "proposed_split": "test",
+      "height_band": 3,
+      "radius_band": 3,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        0.427844,
+        -1.623664,
+        0.221526
+      ],
+      "xy_group": "xy_038",
+      "proposed_split": "val",
+      "height_band": 0,
+      "radius_band": 3,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        0.427844,
+        -1.623664,
+        0.344276
+      ],
+      "xy_group": "xy_038",
+      "proposed_split": "val",
+      "height_band": 1,
+      "radius_band": 3,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        0.427844,
+        -1.623664,
+        0.351959
+      ],
+      "xy_group": "xy_038",
+      "proposed_split": "val",
+      "height_band": 2,
+      "radius_band": 3,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        0.427844,
+        -1.623664,
+        0.466629
+      ],
+      "xy_group": "xy_038",
+      "proposed_split": "val",
+      "height_band": 3,
+      "radius_band": 3,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        0.659565,
+        -1.536578,
+        0.210597
+      ],
+      "xy_group": "xy_039",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 3,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        0.659565,
+        -1.536578,
+        0.30645
+      ],
+      "xy_group": "xy_039",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 3,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        0.659565,
+        -1.536578,
+        0.422374
+      ],
+      "xy_group": "xy_039",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 3,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        0.659565,
+        -1.536578,
+        0.469684
+      ],
+      "xy_group": "xy_039",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 3,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        1.726361,
+        -0.246888,
+        0.23506
+      ],
+      "xy_group": "xy_040",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 3,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.726361,
+        -0.246888,
+        0.3338
+      ],
+      "xy_group": "xy_040",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 3,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.726361,
+        -0.246888,
+        0.351434
+      ],
+      "xy_group": "xy_040",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 3,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.726361,
+        -0.246888,
+        0.433264
+      ],
+      "xy_group": "xy_040",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 3,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.735861,
+        0.908137,
+        0.217502
+      ],
+      "xy_group": "xy_041",
+      "proposed_split": "test",
+      "height_band": 0,
+      "radius_band": 4,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        1.735861,
+        0.908137,
+        0.314802
+      ],
+      "xy_group": "xy_041",
+      "proposed_split": "test",
+      "height_band": 1,
+      "radius_band": 4,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        1.735861,
+        0.908137,
+        0.39543
+      ],
+      "xy_group": "xy_041",
+      "proposed_split": "test",
+      "height_band": 2,
+      "radius_band": 4,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        1.735861,
+        0.908137,
+        0.490007
+      ],
+      "xy_group": "xy_041",
+      "proposed_split": "test",
+      "height_band": 3,
+      "radius_band": 4,
+      "angle_sector": 0
+    },
+    {
+      "target": [
+        1.194367,
+        1.48376,
+        0.228089
+      ],
+      "xy_group": "xy_042",
+      "proposed_split": "val",
+      "height_band": 0,
+      "radius_band": 4,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        1.194367,
+        1.48376,
+        0.306956
+      ],
+      "xy_group": "xy_042",
+      "proposed_split": "val",
+      "height_band": 1,
+      "radius_band": 4,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        1.194367,
+        1.48376,
+        0.398864
+      ],
+      "xy_group": "xy_042",
+      "proposed_split": "val",
+      "height_band": 2,
+      "radius_band": 4,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        1.194367,
+        1.48376,
+        0.489988
+      ],
+      "xy_group": "xy_042",
+      "proposed_split": "val",
+      "height_band": 3,
+      "radius_band": 4,
+      "angle_sector": 1
+    },
+    {
+      "target": [
+        0.265596,
+        1.849967,
+        0.217802
+      ],
+      "xy_group": "xy_043",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 4,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        0.265596,
+        1.849967,
+        0.330902
+      ],
+      "xy_group": "xy_043",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 4,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        0.265596,
+        1.849967,
+        0.411179
+      ],
+      "xy_group": "xy_043",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 4,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        0.265596,
+        1.849967,
+        0.432975
+      ],
+      "xy_group": "xy_043",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 4,
+      "angle_sector": 2
+    },
+    {
+      "target": [
+        -1.119093,
+        1.379027,
+        0.211034
+      ],
+      "xy_group": "xy_044",
+      "proposed_split": "test",
+      "height_band": 0,
+      "radius_band": 4,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -1.119093,
+        1.379027,
+        0.336785
+      ],
+      "xy_group": "xy_044",
+      "proposed_split": "test",
+      "height_band": 1,
+      "radius_band": 4,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -1.119093,
+        1.379027,
+        0.373313
+      ],
+      "xy_group": "xy_044",
+      "proposed_split": "test",
+      "height_band": 2,
+      "radius_band": 4,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -1.119093,
+        1.379027,
+        0.435862
+      ],
+      "xy_group": "xy_044",
+      "proposed_split": "test",
+      "height_band": 3,
+      "radius_band": 4,
+      "angle_sector": 3
+    },
+    {
+      "target": [
+        -1.73538,
+        0.955484,
+        0.221397
+      ],
+      "xy_group": "xy_045",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 4,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -1.73538,
+        0.955484,
+        0.28659
+      ],
+      "xy_group": "xy_045",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 4,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -1.73538,
+        0.955484,
+        0.358739
+      ],
+      "xy_group": "xy_045",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 4,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -1.73538,
+        0.955484,
+        0.426682
+      ],
+      "xy_group": "xy_045",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 4,
+      "angle_sector": 4
+    },
+    {
+      "target": [
+        -1.758292,
+        -0.230184,
+        0.204093
+      ],
+      "xy_group": "xy_046",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 4,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -1.758292,
+        -0.230184,
+        0.319318
+      ],
+      "xy_group": "xy_046",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 4,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -1.758292,
+        -0.230184,
+        0.401017
+      ],
+      "xy_group": "xy_046",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 4,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -1.758292,
+        -0.230184,
+        0.454544
+      ],
+      "xy_group": "xy_046",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 4,
+      "angle_sector": 5
+    },
+    {
+      "target": [
+        -1.075555,
+        -1.48837,
+        0.26555
+      ],
+      "xy_group": "xy_047",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 4,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -1.075555,
+        -1.48837,
+        0.338765
+      ],
+      "xy_group": "xy_047",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 4,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -1.075555,
+        -1.48837,
+        0.353352
+      ],
+      "xy_group": "xy_047",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 4,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -1.075555,
+        -1.48837,
+        0.438676
+      ],
+      "xy_group": "xy_047",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 4,
+      "angle_sector": 6
+    },
+    {
+      "target": [
+        -0.256615,
+        -1.798605,
+        0.242828
+      ],
+      "xy_group": "xy_048",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 4,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        -0.256615,
+        -1.798605,
+        0.306236
+      ],
+      "xy_group": "xy_048",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 4,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        -0.256615,
+        -1.798605,
+        0.353784
+      ],
+      "xy_group": "xy_048",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 4,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        -0.256615,
+        -1.798605,
+        0.453046
+      ],
+      "xy_group": "xy_048",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 4,
+      "angle_sector": 7
+    },
+    {
+      "target": [
+        0.739654,
+        -1.734583,
+        0.262443
+      ],
+      "xy_group": "xy_049",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 4,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        0.739654,
+        -1.734583,
+        0.278987
+      ],
+      "xy_group": "xy_049",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 4,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        0.739654,
+        -1.734583,
+        0.419278
+      ],
+      "xy_group": "xy_049",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 4,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        0.739654,
+        -1.734583,
+        0.432514
+      ],
+      "xy_group": "xy_049",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 4,
+      "angle_sector": 8
+    },
+    {
+      "target": [
+        1.955127,
+        -0.169471,
+        0.273372
+      ],
+      "xy_group": "xy_050",
+      "proposed_split": "train",
+      "height_band": 0,
+      "radius_band": 4,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.955127,
+        -0.169471,
+        0.335092
+      ],
+      "xy_group": "xy_050",
+      "proposed_split": "train",
+      "height_band": 1,
+      "radius_band": 4,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.955127,
+        -0.169471,
+        0.408405
+      ],
+      "xy_group": "xy_050",
+      "proposed_split": "train",
+      "height_band": 2,
+      "radius_band": 4,
+      "angle_sector": 9
+    },
+    {
+      "target": [
+        1.955127,
+        -0.169471,
+        0.473158
+      ],
+      "xy_group": "xy_050",
+      "proposed_split": "train",
+      "height_band": 3,
+      "radius_band": 4,
+      "angle_sector": 9
+    }
+  ],
+  "proposed_split_counts": {
+    "test": 32,
+    "train": 140,
+    "val": 28
+  },
+  "split_note": "XY groups stay together; provisional supplement-only split. Old splits are not modified.",
+  "base_split_path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_nav_ring_r08\\run_20261103_022339_570160\\data_split.json",
+  "base_split_sha256": "8cb81d9e33c91b62727f44d614e5e6b0e1ae3542a2c91fc5611a6c0ff2a21717",
+  "robot_config_sha256": "f7e00e19532bd3cc9b024f6d06fd34a6980d1a0773683fcde69cd04de38dbf22",
+  "expert_script_sha256": "b7dcda5925c7e0f77e66b63e2ff5f82a645c2e26d05aac6fd278d74c4fad5e4f",
+  "controller_sha256": "f863b91c882f8570c082d4bcbd7879ac7d9d8805a4488be218b15d49d2214dcf"
+}

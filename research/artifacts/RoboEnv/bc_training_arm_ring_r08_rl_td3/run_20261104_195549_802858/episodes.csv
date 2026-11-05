@@ -1,0 +1,2 @@
+episode,train_target_index,target_x,target_y,target_z,seed,navigation_ready,prefix_min_error_m,initial_fine_error_m,transition_steps,fine_transition_steps,reason,held_success,min_error_m,final_error_m,train_return,critic_loss,actor_loss,wall_seconds
+1,149,-1.0,1.732051,0.35,1968693086,True,0.37812734997824976,0.3781487286501588,12,12,training_budget_reached,False,0.36214821518704593,0.36214821518704593,-0.3648869326831693,0.0038384266663342714,0.14897985756397247,6.697694799979217

@@ -1,0 +1,53 @@
+{
+  "created_utc": "2026-11-04T21:06:47.520160+00:00",
+  "adopt_candidate": false,
+  "paired_improvements": 0,
+  "paired_regressions": 3,
+  "development_only": true,
+  "reserve_evaluated_before_selection": false,
+  "candidate_files": {
+    "/Users/mac/Desktop/comp0245(2)/robotnik-split-bc-main/RoboEnv/nav_coverage_repair_20261104/best_model.pt": "59352a20b24e89e9916ae3723d34e142cb54c9ed130fe2326533f9e1a439b103",
+    "/Users/mac/Desktop/comp0245(2)/robotnik-split-bc-main/RoboEnv/nav_coverage_repair_20261104/normalization.npz": "8e012ce92ebc755a95247d66d71752b279af81e3db22e71d96ddab8ef0a10281",
+    "/Users/mac/Desktop/comp0245(2)/robotnik-split-bc-main/RoboEnv/nav_coverage_repair_20261104/config.json": "de0e6886b7ecb853ca4cd54527ff33a98fd0bf28d375878941645aa3e0f3ee73",
+    "/Users/mac/Desktop/comp0245(2)/robotnik-split-bc-main/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/nav_repair_controller.py": "7bc9547d6b58a0552149a10d0f1ffa19c5db3fdfb522735f231cc52ffb1406bb",
+    "/Users/mac/Desktop/comp0245(2)/robotnik-split-bc-main/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/train_nav_coverage_repair.py": "109449d99b4a0077654e4e3685cfb30573aea6dcdd656db177408d2a39b2b5eb",
+    "/Users/mac/Desktop/comp0245(2)/robotnik-split-bc-main/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/nav_repair_validation.py": "1032dd60a981183ff3d170a23e70af46c2ef9902584cf5c15676bb65342876e1"
+  },
+  "original_frozen_plan_sha256": "d41f7f5a84dc095a47666f78060633523b5f966ca0043659268ffd2faeedd2b4",
+  "rule": "strictly more development successes, zero paired regressions, zero process errors",
+  "development_summary": {
+    "planned": 200,
+    "processed": 200,
+    "successes": 197,
+    "process_errors": 0,
+    "episode_failures": 3,
+    "unprocessed": 0,
+    "success_rate_percent": 98.5,
+    "percentage_is_final": true,
+    "state": "completed",
+    "partition": "development",
+    "wall_s": 1432.0503842090257,
+    "by_variant": {
+      "original": {
+        "planned": 100,
+        "processed": 100,
+        "successes": 100,
+        "process_errors": 0,
+        "episode_failures": 0,
+        "unprocessed": 0,
+        "success_rate_percent": 100.0,
+        "percentage_is_final": true
+      },
+      "candidate": {
+        "planned": 100,
+        "processed": 100,
+        "successes": 97,
+        "process_errors": 0,
+        "episode_failures": 3,
+        "unprocessed": 0,
+        "success_rate_percent": 97.0,
+        "percentage_is_final": true
+      }
+    }
+  }
+}

@@ -6,3 +6,7 @@
 *.npz binary
 *.lock -text
 *.toml -text
+
+# Byte-preserve research snapshots and collaborator release hashes.
+/research/** -text
+/collaborator/** -text

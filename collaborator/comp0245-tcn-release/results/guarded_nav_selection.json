@@ -1,0 +1,53 @@
+{
+  "created_utc": "2026-11-04T21:25:03.038216+00:00",
+  "adopt_candidate": false,
+  "paired_improvements": 0,
+  "paired_regressions": 0,
+  "development_only": true,
+  "reserve_evaluated_before_selection": false,
+  "candidate_files": {
+    "/Users/mac/Desktop/comp0245(2)/robotnik-split-bc-main/RoboEnv/nav_coverage_repair_20261104/best_model.pt": "59352a20b24e89e9916ae3723d34e142cb54c9ed130fe2326533f9e1a439b103",
+    "/Users/mac/Desktop/comp0245(2)/robotnik-split-bc-main/RoboEnv/nav_coverage_repair_20261104/normalization.npz": "8e012ce92ebc755a95247d66d71752b279af81e3db22e71d96ddab8ef0a10281",
+    "/Users/mac/Desktop/comp0245(2)/robotnik-split-bc-main/RoboEnv/nav_coverage_repair_20261104/config.json": "de0e6886b7ecb853ca4cd54527ff33a98fd0bf28d375878941645aa3e0f3ee73",
+    "/Users/mac/Desktop/comp0245(2)/robotnik-split-bc-main/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/guarded_nav_controller.py": "2cf6f3ea586370955e69bda99b1253839b305b74a36668c326ae7797934759b7",
+    "/Users/mac/Desktop/comp0245(2)/robotnik-split-bc-main/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/train_nav_coverage_repair.py": "109449d99b4a0077654e4e3685cfb30573aea6dcdd656db177408d2a39b2b5eb",
+    "/Users/mac/Desktop/comp0245(2)/robotnik-split-bc-main/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/guarded_nav_validation.py": "de79de7de07413e492e0717fd27577a82558b92e982ddb20efb34a15c276bc18"
+  },
+  "original_frozen_plan_sha256": "d41f7f5a84dc095a47666f78060633523b5f966ca0043659268ffd2faeedd2b4",
+  "rule": "strictly more development successes, zero paired regressions, zero process errors",
+  "development_summary": {
+    "planned": 600,
+    "processed": 600,
+    "successes": 598,
+    "process_errors": 0,
+    "episode_failures": 2,
+    "unprocessed": 0,
+    "success_rate_percent": 99.66666666666667,
+    "percentage_is_final": true,
+    "state": "completed",
+    "partition": "development",
+    "wall_s": 910.2723412089981,
+    "by_variant": {
+      "original": {
+        "planned": 300,
+        "processed": 300,
+        "successes": 299,
+        "process_errors": 0,
+        "episode_failures": 1,
+        "unprocessed": 0,
+        "success_rate_percent": 99.66666666666667,
+        "percentage_is_final": true
+      },
+      "candidate": {
+        "planned": 300,
+        "processed": 300,
+        "successes": 299,
+        "process_errors": 0,
+        "episode_failures": 1,
+        "unprocessed": 0,
+        "success_rate_percent": 99.66666666666667,
+        "percentage_is_final": true
+      }
+    }
+  }
+}

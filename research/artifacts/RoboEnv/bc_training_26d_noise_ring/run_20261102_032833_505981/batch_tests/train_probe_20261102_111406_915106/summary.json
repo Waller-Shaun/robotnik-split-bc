@@ -1,0 +1,20 @@
+{
+  "planned_targets": 21,
+  "processed_targets": 21,
+  "successes": 4,
+  "unsuccessful_completed_episodes": 17,
+  "process_errors": 0,
+  "unprocessed_targets": 0,
+  "success_rate_percent": 19.047619047619047,
+  "mean_final_error_m_finite_results": 0.1431723074179591,
+  "median_final_error_m_finite_results": 0.04178630438332889,
+  "finite_error_results": 21,
+  "mean_success_time_s": 10.21325,
+  "all_planned_targets_processed": true,
+  "state": "completed",
+  "split": "train",
+  "partial_subset": true,
+  "evaluation_purpose": "diagnostic_closed_loop_on_seen_training_targets_not_generalization",
+  "available_split_targets": 651,
+  "output_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring\\run_20261102_032833_505981\\batch_tests\\train_probe_20261102_111406_915106"
+}

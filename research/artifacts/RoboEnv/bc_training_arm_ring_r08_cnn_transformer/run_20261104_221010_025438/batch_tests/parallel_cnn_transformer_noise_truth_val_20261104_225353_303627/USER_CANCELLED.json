@@ -1,0 +1,11 @@
+{
+  "reason": "user_cancelled_evaluation",
+  "recorded_at": "2026-11-04T22:59:34.968227+00:00",
+  "completed_targets": 38,
+  "completed_successes": 2,
+  "planned_targets": 144,
+  "full_split_rate_not_reported": true,
+  "completed_npz_not_in_results_csv": [],
+  "model_and_data_unchanged": true,
+  "original_summary_backup": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_cnn_transformer\\run_20261104_221010_025438\\batch_tests\\parallel_cnn_transformer_noise_truth_val_20261104_225353_303627\\summary_before_user_cancellation.json"
+}

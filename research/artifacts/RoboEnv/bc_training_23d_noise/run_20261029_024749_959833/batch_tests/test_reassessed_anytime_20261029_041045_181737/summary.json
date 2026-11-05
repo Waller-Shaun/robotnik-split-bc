@@ -1,0 +1,21 @@
+{
+  "evaluation_method": "retrospective_first_hit_reassessment_of_recorded_trajectories; no new simulations",
+  "source_batch": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_23d_noise\\run_20261029_024749_959833\\batch_tests\\test_20261029_035552_459886",
+  "planned_targets": 71,
+  "processed_targets": 71,
+  "successes": 56,
+  "failures": 15,
+  "process_errors": 0,
+  "success_rate_percent": 78.87323943661971,
+  "duration_limit_seconds": 20.0,
+  "sensor_noise_mode": "off",
+  "reach_tolerance_m": 0.01,
+  "min_success_time_seconds": 0.0,
+  "required_hold_seconds": 0.0,
+  "mean_first_reach_time_s": 7.554767857142857,
+  "median_first_reach_time_s": 7.099500000000001,
+  "changed_target_indices": [
+    38,
+    51
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "best_epoch": 100,
+  "last_epoch": 100,
+  "best_balanced_validation_arm_mse": 0.013078913714261349,
+  "smoke_only": false,
+  "navigation_unchanged": true,
+  "recovery_finetune": true,
+  "recovery_fraction": 0.2,
+  "min_epochs": 50,
+  "baseline_balanced_validation_arm_mse": 0.01275347033285627,
+  "best_finetune_beats_baseline_mse": false,
+  "best_finetune_minus_baseline_mse": 0.0003254433814050793,
+  "checkpoint_selection_scope": "post_finetune_epochs_only_baseline_saved_separately"
+}

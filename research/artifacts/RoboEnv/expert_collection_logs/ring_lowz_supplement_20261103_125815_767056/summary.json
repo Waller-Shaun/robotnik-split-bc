@@ -1,0 +1,18 @@
+{
+  "state": "completed",
+  "dataset_variant": "ring_lowz_continuous_supplement_v1",
+  "total_plan_targets": 200,
+  "selected_targets": 200,
+  "processed_targets": 200,
+  "saved_episodes": 200,
+  "reached_once_count": 200,
+  "held_successes": 200,
+  "episode_failures": 0,
+  "process_errors": 0,
+  "skipped_existing_targets": 0,
+  "missing_after_saved_episodes": 0,
+  "partial_run": false,
+  "data_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_data_23d_noise_ring_lowz_supplement",
+  "log_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_collection_logs\\ring_lowz_supplement_20261103_125815_767056",
+  "old_data_and_splits_modified": false
+}

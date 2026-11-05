@@ -1,185 +1,140 @@
-# Robotnik：分离式底盘导航与机械臂行为克隆
+# Robotnik：控制策略研究与完整结果归档
 
-**COMP0245 Machine Learning for Robotics · 当前实验版本：2026-11-03**
+**COMP0245 Machine Learning for Robotics · 整理日期2026-11-05 · 分支 `research/experiments-20261103-05`**
 
-Mobile manipulator behaviour cloning with separate navigation and arm MLPs, noisy expert demonstrations, frozen data splits, portable checkpoints and closed-loop evaluation.
+本分支归档从原两个MLP基线出发，在11月3—4日完成的全部后续尝试，并在11月5日补充组员TCN发布版的代码阅读分析。训练已暂停。本次发布没有启动新训练、采集或仿真，也没有覆盖`main`上的原baseline。
 
-使用传统专家控制器采集带测量噪声的移动机械臂轨迹，再离线训练两个 MLP：底盘网络预测四轮角速度，机械臂网络预测七个关节力矩。运行时两个网络每一步都计算，规则状态机提供导航阶段信息，最终组合成 11 维动作。
+我们希望解决低高度和连续高度目标接近后无法收敛到1cm的问题。试过短期历史、辅助监督、梯度门控、专家恢复数据、监督残差、在线强化学习和CNN＋Transformer。正结果与负结果都保留，不只发布表现最好的模型。
 
-本仓库整理当前展示版的**采集 → 划分 → 训练 → 单点测试 → 批量验证 → 随机目标演示**流程，附四个有关联的模型快照、固定划分清单、训练曲线原始数据和验证结果。
+任务是**末端位置到达**，目标球是视觉标记，夹爪保持固定姿态，没有实现实体抓取。
 
-> 当前任务是**末端位置到达**，目标球只是视觉标记，夹爪保持固定姿态，没有实现实体物体抓取。模型不能保证所有位置成功；连续高度插值、低高度和训练范围外目标仍可能失败。
+## 先看哪些文件
 
-## 当前方法
+- **[研究过程与结果分析（完整版）](research/docs/研究过程与结果分析.md)**：从2026-10-23开始的完整过程、图表、失败案例与本轮补记；取代原文档“实验记录”的发布名称。
+- **[模型与运行索引](research/MODEL_INDEX.md)**：34个历史运行、61个原始PT检查点；每个运行有用途标注、SHA256、配置、历史和结果目录。
+- **[归档范围与复现边界](research/ARCHIVE_SCOPE.md)**：哪些数据上传、哪些大文件未上传、历史绝对路径如何理解。
+- **[逐目标成对比较](research/results/paired_comparisons.json)**：核对目标与随机种子后计算改善/退步，不只比较总分。
+- **[组员TCN发布版及分析](collaborator/README.md)**：独立来源、原始发布包、模型和结果；明确其固定PD混合控制结构。
+- **[原baseline说明](docs/BASELINE_RELEASE_20261103.md)**：原发布版本的安装、准备、演示与使用说明。
 
-```mermaid
-flowchart TD
-    A[带测量噪声的专家仿真] --> B[NPZ: 23维观测 + 11维动作 + 对齐末端位置]
-    B --> C[按目标分组的固定 train / val / test]
-    C --> D[底盘训练: 8 → 64 → 64 → 4]
-    C --> E[机械臂预训练及微调: 26 → 256 → 256 → 128 → 11]
-    F[当前仿真状态] --> G[规则状态机与特征计算]
-    G --> H[底盘网络: 4个轮速]
-    G --> I[机械臂网络: 仅使用后7个力矩输出]
-    H --> J[组合、限幅、共同执行]
-    I --> J
-    J --> F
-```
+## 评估口径与可确认的结果
 
-- 阶段为 `align → drive → orient → done`；规则负责阶段和停车几何，实际轮速与关节力矩来自网络。
-- 两个模型**不是先后启停**；导航期间机械臂也持续输出力矩。
-- 输入没有历史窗口，没有 Transformer、RNN 或在线强化学习。
-- 训练是离线动作监督学习；闭环到达成功率需要单独仿真评估。
+后续主比较采用同144个开发验证目标、同一目标对应的噪声种子、20s仿真上限、真实末端欧氏误差任意时刻小于1cm即成功。没有8s最短时间，没有测试持续保持1s要求。**专家采集中的保持1s，是训练片段采集条件，不是闭环评估条件。** 噪声是观测噪声，不是对机器人物理状态施加外力。
 
-## 已记录的验证结果
+| 模型／条件 | 成功数 | 成功率 | 可直接比较的变化 |
+|---|---:|---:|---|
+| 原发布机械臂，无噪声 | 111/144 | 77.08% | 历史起点 |
+| 最终GRU，无噪声 | 113/144 | 78.47% | 同无噪声起点+2个，+1.39个百分点 |
+| 原发布机械臂，带噪真实评分 | 106/144 | 73.61% | 带噪起点 |
+| C0：无辅助继续训练，带噪 | 113/144 | 78.47% | 相对106：+7个，+4.86个百分点 |
+| B3：梯度门控，带噪 | 113/144 | 78.47% | 相对C0：0个，0个百分点 |
+| B4：速度辅助，带噪 | 109/144 | 75.69% | 相对C0：−4个，−2.78个百分点 |
+| D3：恢复数据整网微调，带噪 | 120/144 | 83.33% | 相对C0：+7个，+4.86个百分点 |
+| R1：冻结113版＋监督残差，带噪 | 118/144 | 81.94% | 相对C0：+5个；相对D3少2个 |
+| R2：冻结120版＋监督残差，带噪 | 122/144 | 84.72% | 相对D3：+2个，+1.39个百分点 |
+| D3：恢复120版，无噪声 | 119/144 | 82.64% | 与带噪为不同条件，不据此证明噪声改善 |
+| D3：恢复120版，带噪独立测试 | 132/156 | 84.62% | 156点不同于144点，不能相减算提升 |
 
-统一条件：单目标最长 **20 秒**，测量噪声关闭，任意时刻末端欧氏误差 **< 0.01 m** 即成功；没有 8 秒最短时间或测试保持 1 秒要求。
+**当前最高带噪144点验证结果是R2的122/144；已有完整156点测试证据的是D3的132/156。** 不把两者拼成同一个模型的成绩。验证集已多次用于开发，单次+2个不是统计显著性结论。GRU无噪声评分与后续带噪真实评分也不混算。
 
-| 组合 | 验证目标 | 成功 | 成功率 |
-|---|---:|---:|---:|
-| 新底盘 + 原机械臂 | 原验证子集 116 | 94 | 81.03% |
-| 新底盘 + 第一次机械臂微调，`previous` | 相同 116 | 98 | 84.48% |
-| 新底盘 + 补采后机械臂，`supplement`，演示默认 | 合并验证集 144 | 111 | 77.08% |
-| 同一个 `supplement` 模型 | 其中原 116 | 97 | 83.62% |
-| 同一个 `supplement` 模型 | 新增连续低高度 28 | 14 | 50.00% |
+## 每一次尝试：动机、方法、结果与结论
 
-**116 与 144 的成绩不能直接当作同一集合的前后变化。**这些是开发中使用的验证集成绩，不是当前组合在独立 156 点测试集上的成绩。之前模型在固定高层的高成功率，也不能解释成随机连续高度成功率。
+| 编号／尝试 | 为什么做 | 做了什么 | 记录的结果／提升 | 是否成功／结论 | 证据 |
+|---|---|---|---|---|---|
+| **P0 原发布MLP基线** | 阶段、低高度数据补采后的两个MLP，是所有后续优化的起点。 | 底盘8→64→64→4；机械臂26→256→256→128→11，只使用后7个力矩。无额外机械臂PD。 | 无噪声111/144＝77.08%；带噪真实评分106/144＝73.61%。 | 参考起点；两种噪声协议分开记录。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/ARCHIVE_README.md) |
+| **B1a GRU短历史** | 怀疑单帧输入无法区分运动趋势或控制器历史。 | 保留MLP，加入16帧、10ms间隔的GRU历史修正分支，仍输出力矩。 | 最佳30轮；无噪声112/144＝77.78%，较同协议111/144多1个，+0.69个百分点。 | 小幅改善，未解决低高度；不是带噪106基线的直接对比。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_gru_b1/run_20261103_203745_353439/ARCHIVE_README.md) |
+| **B1b GRU续训到最佳55轮** | 检查30轮是否只是训练预算不足。 | 从B1续训；该轮由助手实际执行，最佳55、末轮60，首次续训未恢复旧Adam状态。 | 平衡验证MSE 0.012858；无此中间快照完整闭环成绩。 | 训练指标改善，闭环效果未单独确认。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_gru_b1/run_20261103_214030_030129/ARCHIVE_README.md) |
+| **B1c GRU续训到最佳96轮** | 继续测试训练空间，恢复优化器状态。 | 从55轮快照继续至100轮上限，保留续训状态。 | 最佳96轮，MSE 0.012812；未单独完整闭环评估。 | 训练指标改善，不能写成成功率提升。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_gru_b1/run_20261103_215456_176247/ARCHIVE_README.md) |
+| **B1d GRU长续训** | 测试更多训练是否能补足历史模型。 | 继续训练；实际冻结配置为max_epochs=400、patience=20，以运行元数据为准，不能沿用聊天中的300/15。 | 最佳269、末轮289；无噪声113/144＝78.47%，比原无噪声111多2个，+1.39个百分点。 | 小幅整体改善；低高度仍差，未成为主要路线。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_gru_b1/run_20261103_220030_514697/ARCHIVE_README.md) |
+| **B2a 参考角度辅助监督，权重0.1** | 希望专家参考角偏差给共享特征提供额外训练信号。 | 增加辅助头，预测专家参考角减当前角；推理只取原力矩头。 | 最佳2、末轮17；MSE 0.012939；无完整闭环结果。 | 未证明有效；最佳第2轮不等于训练只执行2轮。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_aux_b2/run_20261104_024810_354398/ARCHIVE_README.md) |
+| **B2b 减小辅助权重至0.01** | 排查辅助梯度太强压制主任务的可能。 | 重新微调，降低辅助损失权重。 | 最佳2、末轮22；MSE 0.012925；无完整闭环结果。 | 仍未证明收益，不能归因为轮数太少或辅助头必然无效。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_aux_b2/run_20261104_025320_198389/ARCHIVE_README.md) |
+| **C0 关闭辅助的继续训练对照** | 区分辅助监督收益与继续训练本身的收益。 | 保留模型兼容结构，辅助权重设0，只优化力矩。 | 最佳185、末轮205；带噪113/144＝78.47%，较106多7个，+4.86个百分点。 | 有改善；提升属于无辅助继续训练，成为新的比较基线。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_aux_b2_control/run_20261104_025706_206181/ARCHIVE_README.md) |
+| **B3 梯度门控辅助监督** | 怀疑辅助目标与力矩目标的梯度冲突。 | 同向才引入辅助共享梯度，冲突时抑制；这是训练梯度门控，不是推理动作门控。 | 最佳31、末轮51；带噪113/144＝78.47%，相对C0净0个、0个百分点。 | 无总体提升；7个变好、7个变差，不能写成完全相同策略。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_gradgate_b3/run_20261104_034810_928084/ARCHIVE_README.md) |
+| **B4 参考角速度辅助标签** | 参考角包含专家内部参考历史，尝试改为运动速度标签。 | 用专家qd_des_arm辅助监督，保留梯度门控，推理不调用辅助专家。 | 最佳31、末轮51；带噪109/144＝75.69%，比C0少4个，−2.78个百分点。 | 负结果；当前设置下退化，不证明所有速度表示无效。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_aux_velocity_b4/run_20261104_041750_567925/ARCHIVE_README.md) |
+| **D0 专家恢复诊断与采集** | 正常专家轨迹缺少模型偏离后如何纠正的状态。 | 只扫描训练目标；模型接近停滞后保存同一物理/随机状态，分别模型续跑与专家接管。只导出专家独有恢复并连续保持1s的片段。 | 300个训练目标诊断，0进程错误；102条专家恢复轨迹，共233,150帧。 | 采集成功；这是混合诊断，不是纯模型成功率。未使用val/test专家标签。 | [采集与诊断](research/data/expert_recovery_data/collection_20261104_112547_770894/diagnostics/summary.json) |
+| **D1 恢复混合微调，旧早停** | 将新恢复状态加入训练，同时保留原数据。 | 原专家数据80%＋恢复片段20%，只更新机械臂；旧规则把第0轮父模型作为选优门槛。 | 末轮15但best仍第0轮，MSE 0.012753；恢复训练误差明显下降。 | 不等于没有训练；旧best等于父模型，不能宣称改善。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_recovery/run_20261104_120308_587271/ARCHIVE_README.md) |
+| **D2 恢复混合微调，修正早停** | 新数据改变分布，前期验证比父模型差，旧选择规则不适合观察适应过程。 | 父模型另存；微调后best从第1轮起选，最低50轮，再用15轮耐心值。重新从父模型训练至100轮。 | 最佳100轮，MSE 0.013079；未单独做正式闭环。 | 达到上限且仍有改善空间，随后续训；不是15轮last直接续。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_recovery/run_20261104_130656_584873/ARCHIVE_README.md) |
+| **D3 恢复微调续训，120版** | 检查恢复状态监督能否改善真实闭环，而不只看离线MSE。 | 从100轮last恢复训练至153轮，最佳138。推理只用学习模型，无专家接管。 | 带噪120/144＝83.33%，比C0多7个、+4.86个百分点；无噪声119/144＝82.64%；带噪test132/156＝84.62%。 | 明确的单次同协议验证改善；12改善/5退步，低高度净+7。恢复数据与额外训练的独立贡献尚未分离。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_recovery/run_20261104_152933_829681/ARCHIVE_README.md) |
+| **R1 冻结113版＋监督残差** | 希望保留基础技能，用小网络专门学习纠偏力矩。 | 冻结C0及导航，残差网从零训练；混合数据与恢复微调相同，最终基础力矩＋有界修正。 | 最佳94轮；118/144＝81.94%，比113多5个、+3.47个百分点，但比整网恢复120少2个、−1.39个百分点。 | 有局部收益，逊于整网恢复微调；不是所有残差都无效。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_residual/run_20261104_171630_415142/ARCHIVE_README.md) |
+| **R2 冻结120版＋监督残差** | 检验更好的父策略上还能否补充精细修正。 | 冻结D3，从零训练新的残差网，没有沿用R1旧修正器。 | 最佳43轮；122/144＝84.72%，比120多2个、+1.39个百分点；10改善/8退步。 | 单次验证小幅改善；未完成该候选的156点测试或多种子评估。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_residual120/run_20261104_174723_237778/ARCHIVE_README.md) |
+| **RL1 TD3在线残差** | 从动作模仿改为交互奖励，尝试自主优化到达精度。 | 冻结120版与导航；TD3学习±2Nm力矩残差，训练有探索，测试关探索。 | 20,000交互步、38回合；固定预算末轮；单点约14.2cm，明显退化；没有完整144点评估。 | 失败尝试。best文件实际上是末轮，不是验证选优；训练回合不能当验证成功率。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_rl_td3/run_20261104_200609_974210/ARCHIVE_README.md) |
+| **RL2 保守TD3残差** | 排查残差幅度、长程信用分配和缺少验证保护。 | ±0.3Nm、近5cm平滑门控、物理时间折扣、critic预热、固定8点验证与初始零修正对照。 | 15,370交互步早停；固定8点7/8→6/8→3/8→4/8，best_step=0。 | 未获得可接受提升；最终best是初始零修正，不能把7/8当RL成功。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_rl_td3_conservative/run_20261104_205012_830783/ARCHIVE_README.md) |
+| **T1 CNN＋Transformer直接力矩** | 检验比GRU更强的短历史编码是否能改善纯模型力矩控制。 | 从零训练；16×26输入，因果CNN＋2层4头Transformer；直接7力矩；原数据＋已有恢复数据。 | 最佳86轮；抽样验证平衡MSE 0.013875。闭环38/144后用户中止，仅2/38成功，完整成功率未知。 | 已完成部分表现很差，暂停；前38高度偏低，不把2/38外推成全144成绩。CNN-only仅提供入口，未正式训练。 | [运行目录](research/artifacts/RoboEnv/bc_training_arm_ring_r08_cnn_transformer/run_20261104_221010_025438/ARCHIVE_README.md) |
 
-结果证据在 [`results/`](results/)，详细解释见 [RESULTS.md](docs/RESULTS.md)。
+额外保留了两次RL程序冒烟模型（12步和8步），在模型索引中标为`smoke_only`，不算正式实验。旧阶段所有现存模型也归档，避免续训父版本无法追溯。
 
-## 仓库内容
+## 更早阶段是怎样走到这里的
+
+| 阶段 | 动机与改动 | 结果及限制 |
+|---|---|---|
+| 22维直接行为克隆 | 单帧状态模仿4轮速＋7力矩 | 离线拟合后闭环会偏离；单点最小约6.9cm后发散，不能只看MSE |
+| 23维阶段输入与损失权重 | 显式告诉模型导航是否结束，强调停止阶段轮速 | 底盘停止改善，机械臂仍可能接近后离开；不是硬把轮速归零 |
+| 加噪声与到达后保持数据 | 补充正常轨迹附近扰动和终点维持动作 | 首次闭环成功；旧测试重新按anytime标准重评为56/71，原54/71带有旧8s口径，二者不能算模型提升 |
+| 低高度重采样与微调 | 让少量困难高度/近目标片段有更多训练机会 | 有低高度改善也有其他高度退步；不同val/test集合分开列在完整版 |
+| 加宽MLP与高度扩展 | 128×2改256/256/128，z扩0.1～1.3m | 旧70点val60/70；扩展完整152点val115/152，集合不同不直接比较 |
+| 26维显式末端误差 | 使用已记录的末端位置构造目标误差，不重采 | 单侧152点val138/152＝90.79%；反向目标暴露分布外导航失败 |
+| 全周环状数据 | r≤2m、多高度和方向覆盖 | 世界坐标整网22/140＝15.71%；改底盘yaw坐标65/140＝46.43%，同集合+30.71个百分点 |
+| r≥0.8m筛选、独立导航和机械臂 | 排除过近目标，把导航和机械臂学习任务拆开 | 116点val94/116→机械臂微调98/116；合并低高度补采后144点111/144，这是本轮P0 |
+
+本表只概括历史动机，精确配置、范围、统计与原图见完整版；所有历史34个模型运行见索引。复合改变并不是单因素消融。
+
+## 组员成果：TCN＋参考积分＋固定PD
+
+组员原包位于[`collaborator/comp0245-tcn-release/`](collaborator/comp0245-tcn-release/README.md)，模型与原始说明保持原字节；来源为用户提供的本地`comp0245-tcn-release`。未臆造其GitHub链接、作者姓名或许可证，也未将其成绩记为我们的实验。
+
+其默认机械臂输入31维，每帧包含关节角sin/cos14、关节速度7、局部目标3、阶段1、局部末端误差3、底盘姿态对应的重力方向3；20帧、间隔10ms。TCN三层因果卷积，通道128、膨胀率1/2/4。
+
+网络输出28维：21维组成7×3运动映射矩阵`A`，与末端位置误差`e`相乘得到参考关节速度；另7维是学习的重力补偿。参考速度积分成参考角度，随后：
 
 ```text
-robotnik-split-bc/
-├── README.md
-├── docs/                         # 数据结构、完整流程、文件索引、结果和来源
-├── LAB_SESSION_COMP_0245_2026_PUBLIC/
-│   └── final/robotnik_arm_task/   # 原实验脚本的精选副本，保留原目录层级
-├── artifacts/
-│   ├── provenance.json           # 源代码哈希、依赖版本、样本来源
-│   └── RoboEnv/                  # 可迁移模型快照、固定清单和采集计划
-├── environment/                  # 本次环境的 pixi.toml + pixi.lock
-├── examples/expert_sample.npz    # 仅一个训练轨迹样本，不来自验证/测试集
-├── results/                      # 三次正式验证的 summary.json / results.csv
-└── tools/                        # 准备工作目录、校验、数据导出、划分重建
+qdot_ref = decode(A × e)         # 包含误差/速度限幅和阶段处理
+q_ref ← q_ref + 0.001 × qdot_ref
+torque = 100 × (q_ref − q) + 30 × (qdot_ref − qdot) + gravity_pred
 ```
 
-运行时会新建 Git 忽略的 `RoboEnv/` 工作目录。保留较长目录层级是为了不改变原脚本的路径计算方式；模型与特征计算代码保持原样，原实验文件没有被覆盖。
+这是**使用机器学习的混合控制**，固定PD承担真实跟踪/阻尼工作；不能描述成网络直接输出全部力矩。运行时没有专家IK或真实重力oracle。课程是否允许这种结构须依据作业要求或助教确认，本分支不自行判定其违规。
 
-### Git 中包含什么？
+训练损失为`L_velocity + 0.2 L_gravity + 0.2 L_teacher_forced_torque`，各项按训练统计缩放。参考速度标签来自`qd_des_arm`；重力标签从专家控制式重建且排除接近力矩饱和的关节；训练力矩项使用记录的专家参考角，而部署参考角是模型速度积分，因此训练力矩损失不等同于完整闭环误差。
 
-- **包含**：当前模型、父模型、归一化统计、配置、完整目标分组清单、训练 history、正式验证结果、一个训练样本。
-- **不包含**：全部原始 NPZ（约 2.75 GB，完整来源为 931 + 200 条）、`.pixi` 环境、仿真依赖的 Git 工作区、机器人网格资产、私人 Word 实验记录。
-- 演示与模型加载**不需要完整数据集**；重新训练或重跑专家动作离线误差需要另行取得数据，或重新采集。仓库没有声称提供尚未上传的下载链接。
+| 组员已记录条件 | 不同目标 | 回合数 | 成功率 |
+|---|---:|---:|---:|
+| 0.001观测噪声，每目标3个种子 | 500 | 1500 | 1486/1500＝99.07% |
+| 相同目标，无噪声 | 500 | 500 | 493/500＝98.60% |
 
-## 安装与准备
+我们已静态重算原包`results.json`的计数，与summary一致；未在本机重跑这2000回合，包中没有完整原始rollout档案。这500点是新的连续目标，不能与我们144点直接算提升；99%也不能仅归因于TCN，因为输入、监督标签、控制结构和协议一起变化。包内还包含匹配结构的MLP及旧直接力矩基线，可供后续公平比较；本次没有新增对比实验。
 
-建议使用 Pixi。以下命令在**本仓库根目录**执行；本机已有环境时可直接使用现有的 `pixi run -e ml python`。
+## 文件与模型使用
 
-### 新电脑
+```text
+research/
+  source/                         当前源码快照；每次实际训练代码另存run目录
+  artifacts/RoboEnv/               34个原始运行、61个PT、统计量、结果与清单
+  data/expert_recovery_data/       102条新增恢复示范及成对诊断
+  docs/研究过程与结果分析.md        完整历史＋本轮补记、图表与依据
+  MODEL_INDEX.md / model_index.json
+  results/paired_comparisons.json  相同目标/种子的改善与退步坐标
+  archive_manifest.json            原样复制文件SHA256和来源
+  verify_archive.py               静态核验，不运行仿真/训练
+collaborator/
+  README.md                       来源、方法区别和结果边界
+  comp0245-tcn-release/            组员原发布包
+docs/BASELINE_RELEASE_20261103.md  原baseline使用说明
+```
+
+模型不能只凭同名`best_model.pt`互换：GRU、辅助头、残差、TD3、Transformer各有对应策略类、归一化与父模型依赖。所有run目录的`ARCHIVE_README.md`标清初始、最佳、末轮和父模型。**TD3保守版的best就是初始零残差，不是强化学习成果。**
 
 ```powershell
-git clone https://github.com/Waller-Shaun/robotnik-split-bc.git
-cd robotnik-split-bc
-
-git clone --recurse-submodules https://github.com/VModugno/RoboEnv.git RoboEnv
-git -C RoboEnv checkout 7bb49439677c2ac111347b40e997025ce87bff50
-git -C RoboEnv submodule update --init --recursive
-
-# 使用本次实验记录的环境定义；只在这个新建的 RoboEnv 副本中操作
-Copy-Item environment/pixi.toml RoboEnv/pixi.toml
-Copy-Item environment/pixi.lock RoboEnv/pixi.lock
-pixi install --manifest-path RoboEnv/pixi.toml -e ml
-pixi run --manifest-path RoboEnv/pixi.toml -e ml python tools/prepare_workspace.py
-pixi run --manifest-path RoboEnv/pixi.toml -e ml python tools/verify_release.py --runtime
+python research/verify_archive.py
 ```
 
-### 已有可用 RoboEnv 环境（本项目作者的使用方式）
+这是静态研究归档：保留原始文件及历史绝对路径，未把所有研究入口迁移为跨机器开箱即用；异机复现要求对应环境、数据和完整依赖，见[归档范围](research/ARCHIVE_SCOPE.md)。原main基线仍按原说明运行。原多GB基础数据、全部大体积测试轨迹与仿真环境未重新提交；新增恢复训练片段已包含。不要将报告中的历史磁盘路径误认为Git内已有对应大文件。
 
-在现有环境的 Pixi shell 中进入本仓库根目录，执行：
+## 目前的判断
 
-```powershell
-python tools/prepare_workspace.py --source-roboenv "F:\UCL\COMP0245 Labs\RoboEnv"
-python tools/verify_release.py --runtime
-```
+最明确的改进来自继续训练及模型偏离状态下的专家恢复监督。监督残差在更好父模型上有小幅验证收益。GRU收益有限；参考辅助与梯度门控没有净收益，速度辅助退化；两版TD3未找到有效修正；CNN＋Transformer部分闭环结果很差并已中止。离线动作MSE更低，不保证闭环成功率更高。
 
-这只复用已有环境中的机器人资产，在**本仓库内部**生成运行副本，不修改原来的 RoboEnv 或实验结果。准备过程会按依赖顺序迁移路径、更新文件指纹；网络张量和归一化数值不变。已经准备过的目录会拒绝覆盖。
+恢复监督与额外训练的独立贡献、不同训练种子稳定性、监督残差122版的独立测试以及TCN与匹配MLP的公平消融仍未完成。失败尝试保留，是为了让后续工作知道哪些假设已试过、哪些结论仍没有证据。
 
-下文用 `python` 表示已激活正确环境；也可以替换为：
+## 来源
 
-```powershell
-pixi run --manifest-path RoboEnv/pixi.toml -e ml python ...
-```
-
-测试过的环境为 Windows、Python 3.14、PyTorch CUDA 12.8 构建。是否使用 GPU 取决于实际安装和驱动；CPU 可用于推理。`environment/` 是本次本机快照，不意味着我们已经在所有平台重新验证过。
-
-## 直接演示
-
-```powershell
-# 推荐的展示条件：整圈随机 XY，水平半径 0.8～2 m，随机选已有高层
-python LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/demo_robotnik_bc.py --height-mode trained
-
-# 明确指定一个世界坐标目标；手动坐标优先于随机范围
-python LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/demo_robotnik_bc.py --target -1.5827733453143615 -0.04169457644129078 0.75 --seed 3543482326
-
-# 随机生成训练半径外的目标：默认水平半径 2.05～3 m
-python LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/demo_robotnik_bc.py --distance outside --height-mode trained
-
-# 连续高度；这也是脚本原始默认行为，层间插值可能失败
-python LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/demo_robotnik_bc.py --height-mode continuous
-
-# 查看计划，不启动仿真
-python LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/demo_robotnik_bc.py --height-mode trained --dry-run
-```
-
-`trained` 的高度为 **0.5、0.75、1.0、1.15、1.3 m**；它只限定采样高度，不会筛选成功点，也不保证成功。`--seed` 可以复现目标；省略时每次生成新随机目标。`--model previous` 可切回第一次微调版本，默认是 `supplement`。
-
-GUI 结束后暂停推进仿真并保留画面，终端按 Enter 关闭和保存；这不代表模型已经学会长时间保持。结果保存在 `RoboEnv/demo_runs/`。`--plot` 显示误差图，`--headless` 无窗口运行。
-
-## 单点测试与完整批量测试
-
-```powershell
-python LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/test_bc_split_nav_arm_lowz_supplement.py --target -1.5827733453143615 -0.04169457644129078 0.75 --duration 20 --sensor-noise off
-
-# 完整合并验证集 144 点
-python LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/batch_test_bc_split_nav_arm_lowz_supplement.py --split val
-
-# 同一模型只查看旧 116 点，便于对照
-python LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/batch_test_bc_split_nav_arm_lowz_supplement.py --split val --subset base
-
-# 独立测试集 156 点；不要把它当作反复调参的验证集
-python LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/batch_test_bc_split_nav_arm_lowz_supplement.py --split test
-```
-
-批量程序从清单读取**目标坐标**，重新闭环运行模型，不回放专家动作，也不需要读取完整 NPZ 轨迹。`summary.json`、`results.csv` 和逐回合结果在模型运行目录的 `batch_tests/` 中。进程错误也计入计划目标分母；`--limit` 仅是子集检查，不能报告成完整集合成绩。
-
-## 数据、划分和训练
-
-完整步骤和可执行命令见 **[PIPELINE.md](docs/PIPELINE.md)**；字段顺序见 **[DATASET.md](docs/DATASET.md)**；脚本职责见 **[FILES.md](docs/FILES.md)**。
-
-目前固定清单：
-
-| 用途 | 总轨迹 | train | val | test |
-|---|---:|---:|---:|---:|
-| 原完整环状预训练 | 931 | 651 | 140 | 140 |
-| 半径 ≥ 0.8 m 的底盘/首次机械臂微调 | 798 | 558 | 116 | 124 |
-| 原 798 + 连续低高度补采 200，当前机械臂 | 998 | 698 | 144 | 156 |
-
-原 931 中较近的 133 条没有删除，只从当前 798/998 任务清单排除；机械臂预训练历史仍用过其中属于训练集的近距离目标。新增 200 条按 50 个 XY 组分配，同组四个高度全部属于同一个集合。原 798 的划分按原目标归属保留，没有追溯改成 XY 分组。
-
-如要给组员发送现有原始数据，在**作者原机器**运行：
-
-```powershell
-python tools/export_dataset.py --source-roboenv "F:\UCL\COMP0245 Labs\RoboEnv" --output-dir "dataset_exports/current998"
-
-# 从最初机械臂预训练开始复现时，还需要那 133 条近距离轨迹
-python tools/export_dataset.py --source-roboenv "F:\UCL\COMP0245 Labs\RoboEnv" --output-dir "dataset_exports/full1131" --include-pretraining-near
-```
-
-每个 ZIP 约不超过 400 MiB，附 SHA-256 索引。接收方先准备运行目录，再把 ZIP 全部解压到仓库根目录，保留 `RoboEnv/expert_data_.../文件名.npz` 路径。不要只按文件名排序重新划分，也不要把整条轨迹打散到不同集合。
-
-## 来源和使用范围
-
-基于 [COMP0245 课程实验仓库](https://github.com/VModugno/LAB_SESSION_COMP_0245_2026_PUBLIC)、[RoboEnv](https://github.com/VModugno/RoboEnv) 和 [simulation_and_control](https://github.com/VModugno/simulation_and_control)。专家控制器、机器人模型和仿真框架的来源与本组修改范围见 [THIRD_PARTY.md](docs/THIRD_PARTY.md)。本仓库没有替第三方材料授予新的开源许可。
-
-当前结果反映固定初始位姿、无障碍仿真中的目标分布，不构成任意初始朝向、任意距离或实体机器人的可靠性保证。
+原课程专家、机器人与仿真来源见[THIRD_PARTY.md](docs/THIRD_PARTY.md)。新增研究代码/模型为本组实验，组员发布包单独归属。没有为上游材料或组员原包擅自追加许可证。所有对外指标均标注集合、噪声、评分方式及完成程度。

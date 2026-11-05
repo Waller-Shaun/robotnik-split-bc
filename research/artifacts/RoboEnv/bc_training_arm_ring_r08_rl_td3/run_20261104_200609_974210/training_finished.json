@@ -1,0 +1,11 @@
+{
+  "transition_steps": 20000,
+  "episodes": 38,
+  "td3_updates": 19010,
+  "navigation_skipped": 1,
+  "budget_reached": true,
+  "smoke_only": false,
+  "base_and_nav_frozen": true,
+  "selection": "last_fixed_budget_no_validation_selection",
+  "wall_seconds": 400.2274662000127
+}

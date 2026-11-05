@@ -1,0 +1,6 @@
+{
+  "best_epoch": 120,
+  "last_epoch": 120,
+  "val_loss": 0.00013471044967480888,
+  "smoke_only": false
+}

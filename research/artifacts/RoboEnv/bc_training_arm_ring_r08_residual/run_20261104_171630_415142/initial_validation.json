@@ -1,0 +1,9 @@
+{
+  "arm_mse": 0.010476225982328488,
+  "low_arm_mse": 0.019504400747687646,
+  "other_arm_mse": 0.006002539918024892,
+  "balanced_arm_mse": 0.01275347033285627,
+  "total_loss": 0.010476225982328488,
+  "correction_rms_nm": 0.0,
+  "correction_near_bound_fraction": 0.0
+}

@@ -1,0 +1,419 @@
+{
+  "input_dim": 26,
+  "source_input_dim": 23,
+  "output_dim": 11,
+  "hidden_dims": [
+    256,
+    256,
+    128
+  ],
+  "input_feature_version": "obs23_target_and_ee_error_base_yaw_frame_v1",
+  "dataset_variant": "ring_r08_base798_plus_continuous_lowz200_v1",
+  "base_active_column": 22,
+  "target_position_frame": "base_yaw_aligned",
+  "ee_error_frame": "base_yaw_aligned",
+  "experiment_variant": "TD3_conservative_near_target_recovery120_v2",
+  "source_model_run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_recovery\\run_20261104_152933_829681",
+  "source_model_epoch": 138,
+  "nav_run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_nav_ring_r08\\run_20261103_022339_570160",
+  "source_model_file_sha256": {
+    "best_model.pt": "751fe1d4d9310ee79ccb36d9d78db820ae930dd8145146938b22b5295534d86d",
+    "normalization.npz": "9feb9d07c1eb962e705629a35995716160ed6a72f1e7dfbd8a4bf3bd113557bf",
+    "config.json": "43c675e944ffb1e6dc27536fbf396963633d953bd6196b4ac8b351cfdc5d0be2",
+    "data_split.json": "55f068dc2126e21661156236d992e68ef7f960b16493308701137f0a0c6c557f"
+  },
+  "frozen_nav_file_sha256": {
+    "best_model.pt": "110e547e46b8bec3deb2b83b5142294be2f60562aabbbd8aecd843bb4ca07aba",
+    "normalization.npz": "f5c3c274e4f60afa1c2d7f7fc7e9cd18279a7a844a3c46a8a35ea6ff1350b5c4",
+    "config.json": "2cc31a85b98e929df116c8d351ada2054ea3078d537f993af62a20f6b16cc340",
+    "data_split.json": "8cb81d9e33c91b62727f44d614e5e6b0e1ae3542a2c91fc5611a6c0ff2a21717"
+  },
+  "base_parameters_frozen": true,
+  "navigation_weights_updated": false,
+  "aux_weight": 0.0,
+  "gru_used": false,
+  "expert_references_used_as_input": false,
+  "true_state_used_as_policy_input": false,
+  "critic_used_at_inference": false,
+  "exploration_used_at_test": false,
+  "residual_limit_nm": 0.3,
+  "control_repeat": 10,
+  "near_inner_m": 0.02,
+  "near_outer_m": 0.05,
+  "gate_observation_columns": [
+    23,
+    24,
+    25
+  ],
+  "gate_uses_true_state": false,
+  "gate_type": "smoothstep_observed_distance",
+  "residual_activation": "navigation_done_AND_observed_near_target_smooth_gate",
+  "sensor_noise_mode": "config",
+  "robot_config_path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\configs\\robotnik_arm.json",
+  "robot_config_sha256": "f7e00e19532bd3cc9b024f6d06fd34a6980d1a0773683fcde69cd04de38dbf22",
+  "robot_config_snapshot": {
+    "sim": {
+      "time_step": 0.001,
+      "experiment_duration": 5,
+      "FL": [
+        [
+          "FL_foot",
+          "FL_foot_fixed"
+        ]
+      ],
+      "FR": [
+        [
+          "FR_foot",
+          "FR_foot_fixed"
+        ]
+      ],
+      "RL": [
+        [
+          "RL_foot",
+          "RL_foot_fixed"
+        ]
+      ],
+      "RR": [
+        [
+          "RR_foot",
+          "RR_foot_fixed"
+        ]
+      ],
+      "feet_contact_names": [
+        [
+          "FR_foot",
+          "FL_foot",
+          "RL_foot",
+          "RR_foot"
+        ]
+      ]
+    },
+    "robot_pybullet": {
+      "base_type": [
+        "floating"
+      ],
+      "collision_enable": [
+        0
+      ],
+      "robot_description_model": [
+        ""
+      ],
+      "urdf_path": [
+        "summit_xl_arm_description/summit_xl_complete.urdf"
+      ],
+      "ros_urdf_path": "",
+      "init_link_base_position": [
+        [
+          0,
+          0,
+          0.0
+        ]
+      ],
+      "init_link_base_vel": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "init_link_base_orientation": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "init_link_base_ang_vel": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "init_motor_angles": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.57,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ],
+      "init_motor_vel": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "motor_offset": [
+        []
+      ],
+      "motor_direction": [
+        []
+      ],
+      "motor_damping": [
+        0
+      ],
+      "motor_damping_coeff": [
+        0
+      ],
+      "motor_elastic_torque": [
+        0
+      ],
+      "motor_elastic_coeff": [
+        0
+      ],
+      "motor_inertia": [
+        0
+      ],
+      "motor_inertia_coeff": [
+        0
+      ],
+      "foot_friction": [
+        2
+      ],
+      "foot_restitution": [
+        0
+      ],
+      "enable_feet_joint_force_sensors": [
+        [
+          "RL_foot_fixed",
+          "RR_foot_fixed",
+          "FL_foot_fixed",
+          "FR_foot_fixed"
+        ]
+      ],
+      "floating_base_name": [
+        "floating_base"
+      ],
+      "servo_pos_gains": [
+        400
+      ],
+      "servo_vel_gains": [
+        3
+      ],
+      "delay_measure_flag": [
+        0
+      ],
+      "delay_measure_steps": [
+        3
+      ],
+      "noise_flag": [
+        1
+      ],
+      "robot_noise": [
+        {
+          "joint_cov": 0.001,
+          "joint_vel_cov": 0.001,
+          "joint_acc_cov": 0.001,
+          "base_pos_cov": 0.001,
+          "base_ori_cov": 0.001,
+          "base_lin_vel_cov": 0.001,
+          "base_ang_vel_cov": 0.001,
+          "joint_torque_cov": 0.001
+        }
+      ]
+    },
+    "env_pybullet": {
+      "env_script_name": ""
+    },
+    "robot_pin": {
+      "base_type": [
+        "floating"
+      ],
+      "robot_description_model": [
+        ""
+      ],
+      "urdf_path": [
+        "summit_xl_arm_description/summit_xl_complete_pin.urdf"
+      ],
+      "ros_urdf_path": [
+        ""
+      ],
+      "floating_base_name": [
+        "robot_base_footprint"
+      ],
+      "joint_state_conversion_active": [
+        1
+      ],
+      "control_groups": [
+        {
+          "wheels_joints": [
+            "robot_front_right_wheel_joint",
+            "robot_front_left_wheel_joint",
+            "robot_back_left_wheel_joint",
+            "robot_back_right_wheel_joint"
+          ],
+          "arms_joints": [
+            "robot_j2s7s300_joint_1",
+            "robot_j2s7s300_joint_2",
+            "robot_j2s7s300_joint_3",
+            "robot_j2s7s300_joint_4",
+            "robot_j2s7s300_joint_5",
+            "robot_j2s7s300_joint_6",
+            "robot_j2s7s300_joint_7"
+          ],
+          "hand_joints": [
+            "robot_j2s7s300_joint_finger_1",
+            "robot_j2s7s300_joint_finger_tip_1",
+            "robot_j2s7s300_joint_finger_2",
+            "robot_j2s7s300_joint_finger_tip_2",
+            "robot_j2s7s300_joint_finger_3",
+            "robot_j2s7s300_joint_finger_tip_3"
+          ]
+        }
+      ]
+    }
+  },
+  "discount_time_constant_s": 10.0,
+  "gamma_10ms": 0.999000499833375,
+  "actor_lr": 2e-05,
+  "critic_lr": 0.0003,
+  "actor_action_penalty": 0.05,
+  "actor_start": 3000,
+  "learning_starts": 1000,
+  "exploration_std": 0.05,
+  "batch_size": 256,
+  "replay_capacity": 100000,
+  "update_every": 10,
+  "gradient_steps": 10,
+  "total_transition_budget": 20000,
+  "max_episodes": 500,
+  "low_target_fraction": 0.5,
+  "seed": 42,
+  "fine_time_limit_s": 6.0,
+  "warmup_time_limit_s": 20.0,
+  "training_hold_s": 0.2,
+  "reward": "time_integrated_distance_and_hold_with_normalized_correction_penalty; discounted_distance_potential; terminal held +5/excursion -5",
+  "validation_cases": [
+    {
+      "index": 29,
+      "target": [
+        -1.058013,
+        -1.456231,
+        0.35
+      ],
+      "seed": 78
+    },
+    {
+      "index": 64,
+      "target": [
+        -1.8,
+        0.0,
+        0.75
+      ],
+      "seed": 118
+    },
+    {
+      "index": 72,
+      "target": [
+        -0.748188,
+        0.938198,
+        1.0
+      ],
+      "seed": 130
+    },
+    {
+      "index": 107,
+      "target": [
+        -0.535757,
+        1.293431,
+        1.3
+      ],
+      "seed": 173
+    },
+    {
+      "index": 108,
+      "target": [
+        -1.503508,
+        -0.547232,
+        1.3
+      ],
+      "seed": 174
+    },
+    {
+      "index": 124,
+      "target": [
+        0.289431,
+        -1.065187,
+        0.258351
+      ],
+      "seed": 10050
+    },
+    {
+      "index": 130,
+      "target": [
+        1.049024,
+        -0.859413,
+        0.369246
+      ],
+      "seed": 10056
+    },
+    {
+      "index": 139,
+      "target": [
+        0.427844,
+        -1.623664,
+        0.466629
+      ],
+      "seed": 10065
+    }
+  ],
+  "validation_count": 8,
+  "validation_duration_s": 20.0,
+  "validation_interval_steps": 5000,
+  "patience_checks": 3,
+  "minimum_training_steps": 10000,
+  "validation_metric": "no_lost_initial_success_then_success_count_then_mean_final_error_1mm_improvement",
+  "validation_is_partial_subset": true,
+  "validation_exploration": false,
+  "validation_replay_included": false,
+  "initial_zero_actor_is_baseline": true,
+  "failed_v1_weights_loaded": false,
+  "smoke_only": false,
+  "inference_module_sha256": {
+    "robotnik_arm_rl_conservative_policy.py": "8936e92386cfe2cc70bb138aa4003f93c8e31a931131f2b838226a13f9d19ed7",
+    "robotnik_arm_rl_policy.py": "1a8f985d1c85ad89c88d26c2978df6edb908b1610398692c57da831e3d4812d9",
+    "recovery_residual120_context.py": "b6a6b23c903975ed444cdb2d32aeeb34966a14ad52fa9bf391c3ee1cc818a6ca",
+    "robotnik_arm_aux_policy.py": "d3dc5e58a97f15bed8102125268c45af1187d6421c8880d43daf563e33dc4b89",
+    "robotnik_bodyframe_features.py": "c8abd9315afe1b615600a3f089f56487fd41586786338287e63c426d0d3d3478",
+    "robotnik_navigation_policy.py": "878995bc75ce5bba8aafecfb99c22405c49d67032a4873825a3106ae20ca422c",
+    "robotnik_arm_control.py": "f863b91c882f8570c082d4bcbd7879ac7d9d8805a4488be218b15d49d2214dcf"
+  },
+  "training_source_sha256": "837b36afd746482f39f337dbd63482e96bc90e40c3a4fae724dcfe9f4dcb3aff",
+  "environment_source_sha256": {
+    "robotnik_arm_rl_env.py": "f5d75b8aa0baeabe8f75900f84ac6d43653aeaa962474e87079c1188e383fbaf",
+    "robotnik_arm_rl_conservative_env.py": "ce965e9fbb6ada848c2925f7b320dc25485d4e135892fda9e4d06f2e6a0d4f5c",
+    "robotnik_arm_rl_conservative_validation.py": "58034913cbd8219c0b5be70d3a534f5c892d6791a5979a86fcacbf7a15afea71"
+  },
+  "learner_device": "cuda",
+  "policy_architecture": "frozen_recovery120_plus_near_gated_TD3_26_64_64_7"
+}

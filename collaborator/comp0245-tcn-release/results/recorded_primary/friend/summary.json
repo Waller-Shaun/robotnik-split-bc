@@ -1,0 +1,16 @@
+{
+  "planned": 1500,
+  "processed": 1500,
+  "successes": 1486,
+  "process_errors": 0,
+  "episode_failures": 14,
+  "unprocessed": 0,
+  "success_rate_percent": 99.06666666666666,
+  "percentage_is_final": true,
+  "state": "completed",
+  "model": "tcn",
+  "condition": "friend",
+  "partition": "primary",
+  "plan_sha256": "d41f7f5a84dc095a47666f78060633523b5f966ca0043659268ffd2faeedd2b4",
+  "wall_s_this_invocation": 3341.768381000031
+}

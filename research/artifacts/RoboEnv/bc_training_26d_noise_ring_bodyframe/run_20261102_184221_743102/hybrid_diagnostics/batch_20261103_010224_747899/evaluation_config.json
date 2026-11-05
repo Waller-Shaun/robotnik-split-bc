@@ -1,0 +1,378 @@
+{
+  "diagnostic_only": true,
+  "selection": "10_fixed_validation_failures_not_a_generalization_sample",
+  "run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring_bodyframe\\run_20261102_184221_743102",
+  "baseline_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring_bodyframe\\run_20261102_184221_743102\\batch_tests\\val_20261102_230205_714031",
+  "modes": [
+    "expert_base_model_arm",
+    "model_base_expert_arm"
+  ],
+  "cases": [
+    {
+      "target": [
+        0.2,
+        0.0,
+        0.2
+      ],
+      "baseline_group": "baseline_navigation_not_switched",
+      "seed": 42
+    },
+    {
+      "target": [
+        0.0,
+        0.6,
+        0.2
+      ],
+      "baseline_group": "baseline_navigation_not_switched",
+      "seed": 45
+    },
+    {
+      "target": [
+        -0.866025,
+        -0.5,
+        0.2
+      ],
+      "baseline_group": "baseline_navigation_not_switched",
+      "seed": 48
+    },
+    {
+      "target": [
+        0.647214,
+        -0.470228,
+        0.75
+      ],
+      "baseline_group": "baseline_navigation_not_switched",
+      "seed": 105
+    },
+    {
+      "target": [
+        -0.424264,
+        -0.424264,
+        1.3
+      ],
+      "baseline_group": "baseline_navigation_not_switched",
+      "seed": 164
+    },
+    {
+      "target": [
+        0.866025,
+        0.5,
+        0.35
+      ],
+      "baseline_group": "baseline_switched_then_failed",
+      "seed": 67
+    },
+    {
+      "target": [
+        1.732051,
+        -1.0,
+        0.5
+      ],
+      "baseline_group": "baseline_switched_then_failed",
+      "seed": 98
+    },
+    {
+      "target": [
+        -0.535757,
+        -1.293431,
+        0.75
+      ],
+      "baseline_group": "baseline_switched_then_failed",
+      "seed": 112
+    },
+    {
+      "target": [
+        0.556231,
+        -1.711902,
+        1.15
+      ],
+      "baseline_group": "baseline_switched_then_failed",
+      "seed": 155
+    },
+    {
+      "target": [
+        0.2,
+        0.34641,
+        1.3
+      ],
+      "baseline_group": "baseline_switched_then_failed",
+      "seed": 163
+    }
+  ],
+  "duration_limit_seconds": 20.0,
+  "sensor_noise_mode": "off",
+  "baseline_conditions_match": true,
+  "reach_tolerance_m": 0.01,
+  "min_success_time_seconds": 0.0,
+  "required_hold_seconds": 0.0,
+  "action_limits": [
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0
+  ],
+  "input_feature_version": "obs23_target_and_ee_error_base_yaw_frame_v1",
+  "expert_reference": "updated_every_step_on_current_observed_state_not_old_trajectory_actions",
+  "robot_config_snapshot": {
+    "sim": {
+      "time_step": 0.001,
+      "experiment_duration": 5,
+      "FL": [
+        [
+          "FL_foot",
+          "FL_foot_fixed"
+        ]
+      ],
+      "FR": [
+        [
+          "FR_foot",
+          "FR_foot_fixed"
+        ]
+      ],
+      "RL": [
+        [
+          "RL_foot",
+          "RL_foot_fixed"
+        ]
+      ],
+      "RR": [
+        [
+          "RR_foot",
+          "RR_foot_fixed"
+        ]
+      ],
+      "feet_contact_names": [
+        [
+          "FR_foot",
+          "FL_foot",
+          "RL_foot",
+          "RR_foot"
+        ]
+      ]
+    },
+    "robot_pybullet": {
+      "base_type": [
+        "floating"
+      ],
+      "collision_enable": [
+        0
+      ],
+      "robot_description_model": [
+        ""
+      ],
+      "urdf_path": [
+        "summit_xl_arm_description/summit_xl_complete.urdf"
+      ],
+      "ros_urdf_path": "",
+      "init_link_base_position": [
+        [
+          0,
+          0,
+          0.0
+        ]
+      ],
+      "init_link_base_vel": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "init_link_base_orientation": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "init_link_base_ang_vel": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "init_motor_angles": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.57,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ],
+      "init_motor_vel": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "motor_offset": [
+        []
+      ],
+      "motor_direction": [
+        []
+      ],
+      "motor_damping": [
+        0
+      ],
+      "motor_damping_coeff": [
+        0
+      ],
+      "motor_elastic_torque": [
+        0
+      ],
+      "motor_elastic_coeff": [
+        0
+      ],
+      "motor_inertia": [
+        0
+      ],
+      "motor_inertia_coeff": [
+        0
+      ],
+      "foot_friction": [
+        2
+      ],
+      "foot_restitution": [
+        0
+      ],
+      "enable_feet_joint_force_sensors": [
+        [
+          "RL_foot_fixed",
+          "RR_foot_fixed",
+          "FL_foot_fixed",
+          "FR_foot_fixed"
+        ]
+      ],
+      "floating_base_name": [
+        "floating_base"
+      ],
+      "servo_pos_gains": [
+        400
+      ],
+      "servo_vel_gains": [
+        3
+      ],
+      "delay_measure_flag": [
+        0
+      ],
+      "delay_measure_steps": [
+        3
+      ],
+      "noise_flag": [
+        0
+      ],
+      "robot_noise": [
+        {
+          "joint_cov": 0.0001,
+          "joint_vel_cov": 0.0001,
+          "joint_acc_cov": 0.0001,
+          "base_pos_cov": 0.0001,
+          "base_ori_cov": 0.0001,
+          "base_lin_vel_cov": 0.0001,
+          "base_ang_vel_cov": 0.0001,
+          "joint_torque_cov": 0.0001
+        }
+      ]
+    },
+    "env_pybullet": {
+      "env_script_name": ""
+    },
+    "robot_pin": {
+      "base_type": [
+        "floating"
+      ],
+      "robot_description_model": [
+        ""
+      ],
+      "urdf_path": [
+        "summit_xl_arm_description/summit_xl_complete_pin.urdf"
+      ],
+      "ros_urdf_path": [
+        ""
+      ],
+      "floating_base_name": [
+        "robot_base_footprint"
+      ],
+      "joint_state_conversion_active": [
+        1
+      ],
+      "control_groups": [
+        {
+          "wheels_joints": [
+            "robot_front_right_wheel_joint",
+            "robot_front_left_wheel_joint",
+            "robot_back_left_wheel_joint",
+            "robot_back_right_wheel_joint"
+          ],
+          "arms_joints": [
+            "robot_j2s7s300_joint_1",
+            "robot_j2s7s300_joint_2",
+            "robot_j2s7s300_joint_3",
+            "robot_j2s7s300_joint_4",
+            "robot_j2s7s300_joint_5",
+            "robot_j2s7s300_joint_6",
+            "robot_j2s7s300_joint_7"
+          ],
+          "hand_joints": [
+            "robot_j2s7s300_joint_finger_1",
+            "robot_j2s7s300_joint_finger_tip_1",
+            "robot_j2s7s300_joint_finger_2",
+            "robot_j2s7s300_joint_finger_tip_2",
+            "robot_j2s7s300_joint_finger_3",
+            "robot_j2s7s300_joint_finger_tip_3"
+          ]
+        }
+      ]
+    }
+  },
+  "file_sha256": {
+    "F:\\UCL\\COMP0245 Labs\\LAB_SESSION_COMP_0245_2026_PUBLIC\\final\\robotnik_arm_task\\batch_diagnose_bc_26d_ring.py": "14a34636576b3cd860cc6c10e12592dc719eb73618d775cfe19b176797c259ed",
+    "F:\\UCL\\COMP0245 Labs\\LAB_SESSION_COMP_0245_2026_PUBLIC\\final\\robotnik_arm_task\\test_bc_26d_ring_hybrid.py": "de5add43d8d45fa2ab4ed2bbb1794aec0bd17c087318c3a2ec0fa0dc4f00c0b0",
+    "F:\\UCL\\COMP0245 Labs\\LAB_SESSION_COMP_0245_2026_PUBLIC\\final\\robotnik_arm_task\\robotnik_arm_control.py": "f863b91c882f8570c082d4bcbd7879ac7d9d8805a4488be218b15d49d2214dcf",
+    "F:\\UCL\\COMP0245 Labs\\LAB_SESSION_COMP_0245_2026_PUBLIC\\final\\robotnik_arm_task\\robotnik_bodyframe_features.py": "c8abd9315afe1b615600a3f089f56487fd41586786338287e63c426d0d3d3478",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring_bodyframe\\run_20261102_184221_743102\\best_model.pt": "69e5c877ea804ceec2407d3e4dd30c3cd1c764098e88786c8c64d51571566e5b",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring_bodyframe\\run_20261102_184221_743102\\normalization.npz": "9feb9d07c1eb962e705629a35995716160ed6a72f1e7dfbd8a4bf3bd113557bf",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring_bodyframe\\run_20261102_184221_743102\\config.json": "e42a32b3606a977d54f2eecfbb529491d116787582ff48d449d649f69800e91c",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring_bodyframe\\run_20261102_184221_743102\\data_split.json": "08d865a10e8a5268e5caf7467cc1c4ea8d0972274befc2c5a0d4138ccf997430",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\configs\\robotnik_arm.json": "c6c461e5ccfec6913e77a1c6366a201c881f07e75b57162fc3fdf53954b9a2c3",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring_bodyframe\\run_20261102_184221_743102\\batch_tests\\val_20261102_230205_714031\\results.csv": "2226ad24585fc4c5d5a9d2415282bb168a5ddc781496cc4fc95be8aa940b35d1",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring_bodyframe\\run_20261102_184221_743102\\batch_tests\\val_20261102_230205_714031\\evaluation_config.json": "9393d15dbca2e5f7b4fd1c8b9a3b27ac4deaa7dec102b9d60bb23cb7b021801f"
+  }
+}

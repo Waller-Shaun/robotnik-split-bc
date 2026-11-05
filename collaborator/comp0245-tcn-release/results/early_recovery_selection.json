@@ -1,0 +1,17 @@
+{
+  "adopt_candidate": false,
+  "decision_stage": "affected_case_regression",
+  "reason": "All 21 predeclared old failed episodes still failed; no navigation failure was rescued. The required rescue criterion failed, so development and reserve evaluation are not justified for this candidate.",
+  "planned": 21,
+  "processed": 21,
+  "successes": 0,
+  "process_errors": 0,
+  "navigation_rescues": 0,
+  "independent_candidate_success_rate": null,
+  "reserve_evaluated_before_selection": false,
+  "reserve_run": false,
+  "default_model_changed": false,
+  "candidate_fingerprints_source": "early_recovery_plan.json",
+  "result_source": "regression_early_recovery/summary.json",
+  "exploratory_selection": true
+}
