@@ -1,0 +1,19 @@
+{
+  "planned_targets": 116,
+  "processed_targets": 116,
+  "successes": 98,
+  "unsuccessful_completed_episodes": 18,
+  "process_errors": 0,
+  "unprocessed_targets": 0,
+  "success_rate_percent": 84.48275862068965,
+  "mean_final_error_m_finite_results": 0.020198720969357976,
+  "median_final_error_m_finite_results": 0.009994357353207093,
+  "finite_error_results": 116,
+  "mean_success_time_s": 9.00638775510204,
+  "all_planned_targets_processed": true,
+  "state": "completed",
+  "split": "val",
+  "partial_subset": false,
+  "available_split_targets": 116,
+  "output_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_finetune\\run_20261103_111655_849512\\batch_tests\\val_20261103_112737_933813"
+}

@@ -1,0 +1,25 @@
+{
+  "stage": "development",
+  "planned": 200,
+  "repeats": 1,
+  "target_count": 100,
+  "frozen_files": {
+    "runs/full/best_model.pt": "eaf7785bca9c2c80e88c2d68b99cc44c0c758dad36c88305a5d8daab0a9484d5",
+    "runs/full/config.json": "0da5a5ce0c55e254b0369ce0ca741227875ce770ad077047f69bb24baa6487c7",
+    "protocol.json": "6ac8cccd7b21c8c62212f7ad5101a9533e88f39e04532e486a3ba3b2905448e6",
+    "dynamic_pd/bootstrap.py": "09f7f1c206da5d9061b212d3f7c6743a91447c730570ab1605f23d6f3483c88c",
+    "dynamic_pd/controller.py": "d4e17d7e9b01e53bdc86f0d645ae18ed330b4a717f9e753bb517f1c37f230b3b",
+    "dynamic_pd/test_dynamic_pd.py": "062f88f4b02d6c925198b9660609096707e831c027858e0ec49d1b5849dd5df8",
+    "dynamic_pd/__init__.py": "72e64b323c3504c685b12c136f32325a1eba8ccf151a9d4a871d866eebd67ccc",
+    "dynamic_pd/summarize.py": "7368c8225687b0cfa5cb57a0dfea9a130a44bbfa193f1e75f05a346be106d1e2",
+    "dynamic_pd/model.py": "bc7771ada0b73872891c77e1817b15a9e31c9d34e26e97193b145a162353860c",
+    "dynamic_pd/dataset.py": "4f3c99efdfd37d7fe4a41a7a86dab98015ff0ea6387a0c5ac933c3b89b4829b5",
+    "dynamic_pd/common.py": "89ac36748cf24183b52924c2751a37411398e1ac82b1cafd01b98d8b07320c89",
+    "dynamic_pd/train.py": "12ded6f616c52ae6c9c257706912c08d82eaf9d1cac03c50d9e0c431f020a6da",
+    "dynamic_pd/evaluate.py": "d26b7e3bf64a57aada5418446748027930df06adcff3606b52732c6012588309",
+    "dynamic_pd/demo.py": "99ddf64f80777829255d9b4d8a84a086904279db9b23fdfa5f4b0b8cd47f66bc"
+  },
+  "protocol_sha256": "6ac8cccd7b21c8c62212f7ad5101a9533e88f39e04532e486a3ba3b2905448e6",
+  "noise": "friend_0p001",
+  "storage": "true scoring positions/errors and actions at 1ms; diagnostic observations/states at 10ms"
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-04",
+  "purpose": "Packaging and portability verification, not a new population success estimate",
+  "original_frozen_model_and_source_files_unchanged": true,
+  "packaged_controller_checks": ["mlp", "tcn", "baseline"],
+  "checkpoint_normalization_and_navigation_load": true,
+  "finite_11d_inference": true,
+  "exact_episode_reset": true,
+  "portable_root_resolution": true,
+  "newly_cloned_pinned_simulator_assets": true,
+  "runtime_used": "Existing locked Pixi ml runtime; separately cloned pinned assets. A fresh independent environment installation was not performed.",
+  "noise_protocol_unit_tests_passed": 5,
+  "display_adapter_unit_tests_passed": 5,
+  "custom_target": {
+    "xyz_m": [-0.9, 1.2, 1.1],
+    "seed": 137,
+    "noise_profile": "friend_0p001",
+    "success": true,
+    "simulation_end_time_s": 9.54,
+    "final_true_ee_error_m": 0.009993695715807426,
+    "exact_original_vs_release_trajectory_arrays": 12
+  },
+  "batch_pipeline_check": {
+    "shared_target_index": 0,
+    "repeats": 3,
+    "successes": 3,
+    "process_errors": 0,
+    "all_12_arrays_exactly_match_original_recorded_primary_trials": true,
+    "not_a_full_benchmark_result": true
+  },
+  "full_500_goal_benchmark_rerun_for_packaging": false,
+  "recorded_population_success_unchanged": "1486/1500 = 99.07% under the original audited prospective protocol",
+  "credential_pattern_scan_findings": 0,
+  "full_training_data_and_raw_evaluation_archive_in_package": false
+}

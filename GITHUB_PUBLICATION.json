@@ -1,0 +1,23 @@
+{
+  "prepared_utc": "2026-11-06T01:19:25.448851+00:00",
+  "repository": "https://github.com/Waller-Shaun/robotnik-split-bc",
+  "requested_main_contents": "assignment source, models, records and documentation",
+  "previous_main_preserved_as": "refs/heads/baseline",
+  "previous_main_commit": "5073b83768a4c4931dbe146558f059d8ab2d70b7",
+  "assignment_zip": "COMP0245_Assignment_Submission_20261106.zip",
+  "assignment_zip_sha256": "2c5b4c0099692769e4fbec2d3030cfe51f16d96e5c0f7bcd9f6e1ca9d88dd087",
+  "readme_default_language": "English",
+  "chinese_readme": "README.zh-CN.md",
+  "original_source_inventory_preserved": true,
+  "model_tensors_or_normalization_changed": false,
+  "github_variant_changes": [
+    "English repository overview and branch links",
+    "Chinese README",
+    "Git ignore/byte-preservation rules",
+    "publication documentation",
+    "updated submission manifest for this actual repository tree"
+  ],
+  "previous_zip_validation_records_are_historical": true,
+  "training_simulation_or_installation_started_for_publication": false,
+  "push_policy": "Create baseline and fast-forward main atomically; no force-push; preserve feature/research branches"
+}

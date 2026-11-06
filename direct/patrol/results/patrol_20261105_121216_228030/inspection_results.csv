@@ -1,0 +1,4 @@
+﻿target_index,input_target_index,target,observed_task_completed,true_first_reach_elapsed_s,true_longest_continuous_hold_s,true_hold_passed,navigation_completed,elapsed_s,final_true_error_m,min_true_error_m,termination_reason
+1,2,"[0.4, 1.2, 1.0]",True,5.989,1.0510000000000002,True,True,7.04,0.013937533955939165,0.013937533955939165,observed_hold_completed
+2,1,"[0.0, 1.2, 1.0]",True,1.8940000000000001,1.0219999999999998,True,True,2.916,0.020303719707551342,0.01945282455198407,observed_hold_completed
+3,3,"[0.8, 1.2, 1.0]",True,4.977,1.0190000000000001,True,True,5.996,0.017057694525371023,0.017057694525371023,observed_hold_completed

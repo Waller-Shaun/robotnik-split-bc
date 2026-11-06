@@ -1,0 +1,71 @@
+{
+  "date_utc": "2026-11-03T18:05:43+00:00",
+  "trajectories": 1131,
+  "original_ring": 931,
+  "supplement": 200,
+  "current_merged_selected": 998,
+  "extra_pretraining_near": 133,
+  "source_npz_bytes": 2756681381,
+  "source_npz_unchanged": true,
+  "all_zip_crc_passed": true,
+  "all_paths_match_frozen_manifests": true,
+  "split_counts": {
+    "full931": {
+      "train": 651,
+      "val": 140,
+      "test": 140
+    },
+    "r08_798": {
+      "train": 651,
+      "val": 140,
+      "test": 140
+    },
+    "merged998": {
+      "train": 698,
+      "val": 144,
+      "test": 156
+    }
+  },
+  "archives": [
+    {
+      "name": "dataset-metadata.zip",
+      "bytes": 54190,
+      "sha256": "71cea6fb473bee0ab2d2bb66a944007dfea69825fe6d84a45614e597f2012e56"
+    },
+    {
+      "name": "dataset-part-01.zip",
+      "bytes": 418001668,
+      "sha256": "5f1e2940bc3014bafcb088988b858452911b6da59d520c6a1d289cf1abbf6730"
+    },
+    {
+      "name": "dataset-part-02.zip",
+      "bytes": 418315817,
+      "sha256": "2cbe9b1130da1797734de3c7b90062533c047d1e23fd120c44283f32cb915865"
+    },
+    {
+      "name": "dataset-part-03.zip",
+      "bytes": 417606755,
+      "sha256": "0a6dd21e4aa29d590f253f8a9a0e1a0f14c67018154a25ca185948a5f314d2d6"
+    },
+    {
+      "name": "dataset-part-04.zip",
+      "bytes": 417969862,
+      "sha256": "774d2581a2dbd5ea34a93f7fe11515d93c6a2885abaa23d6b939d8abb55c4d75"
+    },
+    {
+      "name": "dataset-part-05.zip",
+      "bytes": 418320897,
+      "sha256": "f0b192a0851910dac816d6aa00b35faaf100df073e93ade5c25b3b0d0153638e"
+    },
+    {
+      "name": "dataset-part-06.zip",
+      "bytes": 418516183,
+      "sha256": "011b4ab3a6e0936b4904c0bbbb150757e2b1ab484ff684eea6776c03dff91eea"
+    },
+    {
+      "name": "dataset-part-07.zip",
+      "bytes": 248263402,
+      "sha256": "9f5f834480e41b1e61b84886754d9037842c27730325a6065cf446f38f57a204"
+    }
+  ]
+}

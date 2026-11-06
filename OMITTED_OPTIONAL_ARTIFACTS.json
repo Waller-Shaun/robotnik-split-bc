@@ -1,0 +1,986 @@
+{
+  "reason": "The assignment does not require dataset or pretrained checkpoints; main runnable model bundles ARE retained.",
+  "full_backup_zip": "COMP0245_Assignment_Code_20261106.zip",
+  "original_archive_verifier_needs_omitted_files": true,
+  "submission_verifier_checks_actual_included_files": true,
+  "files": [
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training/run_20261023_135447_849619/best_model.pt",
+      "bytes": 86777,
+      "sha256": "cd26e7d7d2700916cf69c7360bf5272233b9f6882be959dab47aba7b53b5cbcf",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_23d/run_20261028_012502_944390/best_model.pt",
+      "bytes": 87353,
+      "sha256": "d2f797d9b140935b89ccd6370641e63f4d19a6b4d0bb04992e89e973619b1928",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_23d/run_20261028_204007_921743/best_model.pt",
+      "bytes": 87673,
+      "sha256": "b04cf2f52cb7bad82128bf2396dcfffb97191c5c14456b72f601adb5439d323c",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_23d_noise/run_20261029_024749_959833/best_model.pt",
+      "bytes": 87929,
+      "sha256": "6574a31df17bcdce0939275f2e5e2b51725ee0b75580697d349d2af7c38f3f2c",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_23d_noise_finetune/run_20261030_100242_765759/best_model.pt",
+      "bytes": 88953,
+      "sha256": "50e8c8268a4d875169ca7ab2e2426cdc75f2b1a853e03d07b694edb0db4737b8",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_23d_noise_resample/run_20261029_170007_131617/best_model.pt",
+      "bytes": 88633,
+      "sha256": "47c99199aa621e477ac8dcf9c46394f9bf9d7b59d90204dae5acd5f145d6b200",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_23d_noise_wide/run_20261030_112637_239667/best_model.pt",
+      "bytes": 430519,
+      "sha256": "b0cbe1a7e04f52a93c4ead7d90aa24570f79e8fecb6d393664ef45156e8250b0",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_23d_noise_wide_extended/run_20261031_130737_274460/best_model.pt",
+      "bytes": 430583,
+      "sha256": "69017935383506c68482e670dc5bd3a0ccbc55138776a49ff76133c91e125d54",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_23d_noise_wide_finetune/run_20261031_025012_026265/best_model.pt",
+      "bytes": 430775,
+      "sha256": "b55127a671825658d2a569808d2ffd06700a78f7049cbdaa33f0386e7780a723",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_26d_noise_ring/run_20261102_032833_505981/best_model.pt",
+      "bytes": 434359,
+      "sha256": "9b96356bf2e2c239e267631f69c5e20dccab4dd8540d4c1a6b14e020b11643e4",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/best_model.pt",
+      "bytes": 435127,
+      "sha256": "69e5c877ea804ceec2407d3e4dd30c3cd1c764098e88786c8c64d51571566e5b",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_26d_noise_wide_extended/run_20261101_150934_422124/best_model.pt",
+      "bytes": 434167,
+      "sha256": "d47feffdbe0599076c4d80411c8d8a23bc0bf670c77911a5888b7f878ad2bd37",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_aux_b2/run_20261104_024810_354398/best_model.pt",
+      "bytes": 1324981,
+      "sha256": "19a22bf04da194362c12724620095d284aa54e1ca06b459abfd37ae53f9cdccb",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_aux_b2/run_20261104_024810_354398/last_model.pt",
+      "bytes": 1324981,
+      "sha256": "86e809df883b2594e492737995a31f70426b63d7c49f136d6596b6db28db7b19",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_aux_b2/run_20261104_025320_198389/best_model.pt",
+      "bytes": 1324981,
+      "sha256": "419e31c2382fcbc4f3e719aa71258e7da39929b44cd984c0be6be6bf4cd31440",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_aux_b2/run_20261104_025320_198389/last_model.pt",
+      "bytes": 1324981,
+      "sha256": "dd49740b6060b8d1a434276b1e78516fc98af5895fe39770c3c3955fcef9ce32",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_aux_b2_control/run_20261104_025706_206181/best_model.pt",
+      "bytes": 1324981,
+      "sha256": "f3374c43fa37d65df682ced14885181e0b2654bfd1ca28f1acb51155b8ff7168",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_aux_b2_control/run_20261104_025706_206181/last_model.pt",
+      "bytes": 1324981,
+      "sha256": "8202a4fb3f2e5c4dc4a887b4500cbd05536b429a64a200cea8baa9135501c14c",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_aux_velocity_b4/run_20261104_041750_567925/best_model.pt",
+      "bytes": 1325685,
+      "sha256": "3b037da63d86f034f721497ff91ac1c17ae18b4916f8690f09c62d7d536cd09d",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_aux_velocity_b4/run_20261104_041750_567925/last_model.pt",
+      "bytes": 1325685,
+      "sha256": "fc9fb3b1f281e560a49b2c656a1e36fab5da5a0a4b3ac4eed15d3864f1dead73",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_cnn_transformer/run_20261104_221010_025438/best_model.pt",
+      "bytes": 3733375,
+      "sha256": "fdf2187d97ee0dd7426da3501a24eb324e2c06a0f15fb1213b689c1a8e19ebc6",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_cnn_transformer/run_20261104_221010_025438/initial_model.pt",
+      "bytes": 1253833,
+      "sha256": "5435dd5b19e8bca3831f9e92d557169dcb91d2f8ad9e3d4481e0f2545ffbdda6",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_cnn_transformer/run_20261104_221010_025438/last_model.pt",
+      "bytes": 3733375,
+      "sha256": "e17d35c7e386e064bcfafc1e102dde3870984d2e2579c1c16247dd2ebfb3e121",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/best_model.pt",
+      "bytes": 436087,
+      "sha256": "25676e83c4e3a258e67d235602c95560436a3b32c1dbbb31110936750c0e5b5e",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_gradgate_b3/run_20261104_034810_928084/best_model.pt",
+      "bytes": 1325685,
+      "sha256": "fdb0084a83d9b129efea49d74022eeca8f83905e90443a9954b8a5e946658497",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_gradgate_b3/run_20261104_034810_928084/last_model.pt",
+      "bytes": 1325685,
+      "sha256": "5e2a16007c364e55d467a697db5cfbb75374bb2875d87956d9af4f8835d2c8a5",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_gru_b1/run_20261103_203745_353439/best_model.pt",
+      "bytes": 546549,
+      "sha256": "c2e229c772c53311d31042cfc832a2c082849b9b798a19bc7a397f5e928ab475",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_gru_b1/run_20261103_214030_030129/best_model.pt",
+      "bytes": 1645685,
+      "sha256": "d37899d31422c6f2a901939bfbc90ada9df75e3ccd4b1facc495d12255a4bad1",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_gru_b1/run_20261103_214030_030129/last_model.pt",
+      "bytes": 1645685,
+      "sha256": "f162a7fcdd7d89a2fbe4cca3aa8cc0795a4a15d6a1e57106b956ac4a9dfe8074",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_gru_b1/run_20261103_215456_176247/best_model.pt",
+      "bytes": 1645621,
+      "sha256": "d9dc1aad5baccc710e79620ea93bcead6083dcc34b2f68b04804fc9edfdc89ab",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_gru_b1/run_20261103_215456_176247/last_model.pt",
+      "bytes": 1645621,
+      "sha256": "1b1fd095ac454c945f7f87a214294c952714b443fc8d0d95644dfb63e383c591",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_gru_b1/run_20261103_220030_514697/best_model.pt",
+      "bytes": 1645685,
+      "sha256": "2bb5ebd5b38be599990abb9e1e8d50710db1c9a2f704cc576c6d91fdf8a8568b",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_gru_b1/run_20261103_220030_514697/last_model.pt",
+      "bytes": 1645685,
+      "sha256": "aa1ce1a7dc15fafcc90d526bad37265a73df8f60e46b1a67b37847700111d4f9",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/best_model.pt",
+      "bytes": 436471,
+      "sha256": "30dc8b7c9b76e8a2433cd2da20a85c5faa399112fb708f5ca9b6695009fe9215",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_recovery/run_20261104_120308_587271/best_model.pt",
+      "bytes": 448949,
+      "sha256": "3526f63813a9322baa476631a1b37125b91d40dfa699ed398389c184dbc578c7",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_recovery/run_20261104_120308_587271/last_model.pt",
+      "bytes": 1311733,
+      "sha256": "2a1972e2f9a63b46b150ce1b0bfdb4540d5d02cde35f54fdff9ec7dd01c9e725",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_recovery/run_20261104_130656_584873/baseline_model.pt",
+      "bytes": 449273,
+      "sha256": "9c1bb6fe5de8ca87ec401c223d799ae7c64124f7eb8c8926beeb3b52e3550e81",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_recovery/run_20261104_130656_584873/best_model.pt",
+      "bytes": 1311989,
+      "sha256": "1792dfb3af79cdf592c6389415df2548c7392591981ff445dcc77e50ae9b65d6",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_recovery/run_20261104_130656_584873/last_model.pt",
+      "bytes": 1311989,
+      "sha256": "222858fb94129f3cb9e46f7c55e102b362c2fc5727ddee4e2f3f8273144897ee",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_recovery/run_20261104_152933_829681/baseline_model.pt",
+      "bytes": 449593,
+      "sha256": "b7b9fa5db17bb197dc85fa84324dbddf16f99dba19bec1044b9dd54df98a0f28",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_recovery/run_20261104_152933_829681/best_model.pt",
+      "bytes": 1318005,
+      "sha256": "751fe1d4d9310ee79ccb36d9d78db820ae930dd8145146938b22b5295534d86d",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_recovery/run_20261104_152933_829681/last_model.pt",
+      "bytes": 1318005,
+      "sha256": "d27d11d1ef515fc7a1a8a6d1f0ada4311bd8af2ebc264f7130305936a2023f32",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_residual/run_20261104_171630_415142/baseline_model.pt",
+      "bytes": 482529,
+      "sha256": "87b76efbc0f5a7c2d6b668e88b5e765771d3e0c496e9bb838c30e4fd54c7b5e2",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_residual/run_20261104_171630_415142/best_model.pt",
+      "bytes": 538101,
+      "sha256": "80ebc384d64be494fe5f93cecc6a08fd36177f0d998104bb1f847984a8712121",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_residual/run_20261104_171630_415142/last_model.pt",
+      "bytes": 538101,
+      "sha256": "95782c6c118837688f325a9efb16a7e70a0237ef24f76ac1e1eeb7e1cb85b13c",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_residual120/run_20261104_174723_237778/baseline_model.pt",
+      "bytes": 484961,
+      "sha256": "15d441903d77e6951e99e6b957ed6eaa5c5aa6e30d20b139a8cc0392470e5519",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_residual120/run_20261104_174723_237778/best_model.pt",
+      "bytes": 540597,
+      "sha256": "503417db306f21baf68b287107d7acd87348eaf406c6240d05bc359260bc3518",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_residual120/run_20261104_174723_237778/last_model.pt",
+      "bytes": 540597,
+      "sha256": "e704de132c02c6982dc8f94865cbddfe325be7d12ebe5e5665970d2fd9dd98ef",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_rl_td3/run_20261104_195549_802858/best_model.pt",
+      "bytes": 810453,
+      "sha256": "2d4c9e624fd8a3a5cbe2c7c4b11cd28e036f257c63abe80b9ec824e2dfbd39cf",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_rl_td3/run_20261104_195549_802858/initial_model.pt",
+      "bytes": 408113,
+      "sha256": "6cd4d29a14769cdb86f091acdf19487c5d60214151a035f1ea7a68406c4758e1",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_rl_td3/run_20261104_195549_802858/last_model.pt",
+      "bytes": 810453,
+      "sha256": "2d4c9e624fd8a3a5cbe2c7c4b11cd28e036f257c63abe80b9ec824e2dfbd39cf",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_rl_td3/run_20261104_200609_974210/best_model.pt",
+      "bytes": 811541,
+      "sha256": "cd9dcb3ec1c26662a8d4f1a04f1845a4c09b70d1b15bdd9bfb6ef943e5753aa5",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_rl_td3/run_20261104_200609_974210/initial_model.pt",
+      "bytes": 409265,
+      "sha256": "a978c80c1af98074d9eddd75313f7dfcd911692409ec60b5014a43a58b40dfeb",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_rl_td3/run_20261104_200609_974210/last_model.pt",
+      "bytes": 811541,
+      "sha256": "cd9dcb3ec1c26662a8d4f1a04f1845a4c09b70d1b15bdd9bfb6ef943e5753aa5",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_rl_td3_conservative/run_20261104_204551_439479/best_model.pt",
+      "bytes": 408179,
+      "sha256": "3fb51ba99b37616357dc6b49966cdd25e0d5bc7d4b86f9e0e25a404729f0ea94",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_rl_td3_conservative/run_20261104_204551_439479/initial_model.pt",
+      "bytes": 407985,
+      "sha256": "4cb6c99c8354a0ae1831a0a9016bc7928b3e4903200344f025e406c82936f701",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_rl_td3_conservative/run_20261104_204551_439479/last_model.pt",
+      "bytes": 810645,
+      "sha256": "c2967d6cd3af9a27c700fb7da23a1da9037abbc618aabf81f9630cb5f9c2a2ac",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_rl_td3_conservative/run_20261104_205012_830783/best_model.pt",
+      "bytes": 409011,
+      "sha256": "d98b4d77eb7b1559769ca7a374d7253458dd99cacf613709b94c7bb66e63de0f",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_rl_td3_conservative/run_20261104_205012_830783/initial_model.pt",
+      "bytes": 408305,
+      "sha256": "be22d3e68f9973fb4fce1b7a7b8e60aefd3f9fef92ae0b1bf0f56383a6f5e3b8",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_arm_ring_r08_rl_td3_conservative/run_20261104_205012_830783/last_model.pt",
+      "bytes": 811477,
+      "sha256": "a1b8408b9b1aeea844af5e666d82578628a0f9fc7b17ffe6077883c9b1a65503",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/best_model.pt",
+      "bytes": 26041,
+      "sha256": "110e547e46b8bec3deb2b83b5142294be2f60562aabbbd8aecd843bb4ca07aba",
+      "reason": "historical research checkpoint; source/config/result retained, not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0001.npz",
+      "bytes": 381306,
+      "sha256": "b46b052ab68b0efe8a7e85a8fed3fa63d92cadb15dd536fc42338cfaf6b5aaa9",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0002.npz",
+      "bytes": 303883,
+      "sha256": "b668c3807af8df2ef5d895efd200684cd65d163b7b9ef9411ffabd2a7fa77a6b",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0003.npz",
+      "bytes": 337647,
+      "sha256": "e645212f827fd5fc904936e7c4f5e4240b4b391fd3ead3fd5a6aba5791787cb2",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0004.npz",
+      "bytes": 292488,
+      "sha256": "9e0063bb39ed66f5e24ec4b8696b5c15c6502fae628d35b5f15777e08a854f3a",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0005.npz",
+      "bytes": 371733,
+      "sha256": "e9613bbcf3c055395ac5a862dd74528d10f9be6effea81cd4dd823cc26be2bd6",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0006.npz",
+      "bytes": 369438,
+      "sha256": "ca0744be6d3d86284f630616dcf4b323b5675a7b2634f9c45dadf97713e5009d",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0007.npz",
+      "bytes": 375567,
+      "sha256": "e9848d95b298ed1a829988e6e416d32eee0e886ebca232c405e6a5a10b0dd689",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0008.npz",
+      "bytes": 337413,
+      "sha256": "3f7160a79f00978223d9dec1341bf204684ef07f6779e3b6b0da63fefbab60d3",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0009.npz",
+      "bytes": 387703,
+      "sha256": "5bbad97828efc245d59c4b57b116b34438e3b01c6881431d2a3a2ecb5028121e",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0010.npz",
+      "bytes": 380588,
+      "sha256": "63e818fe43c103c45b70d98ae3022f7772b89058f02a4108490d4f0c6c484954",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0011.npz",
+      "bytes": 362231,
+      "sha256": "2bf81a99527d5828808890a6358949659ce4555cbbc036e93da68bee25317dd9",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0012.npz",
+      "bytes": 370401,
+      "sha256": "54f04a8b897026981fd029ed25e1457e94797c19db7a480ea5655dafc04235e7",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0013.npz",
+      "bytes": 326540,
+      "sha256": "c3e18d5963d14ade44146bd04de548fe1e277c62eb453973ba719891100047ab",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0014.npz",
+      "bytes": 401631,
+      "sha256": "e09ada7872c5a0e3f6a25d385eb55cfba222e0c6861c86ac7cfd6c3a7beeffbc",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0015.npz",
+      "bytes": 384402,
+      "sha256": "877ccb9501e1ea0b760b158fa4efedf0d32841f76b306084f676be64cbd3bd3e",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0016.npz",
+      "bytes": 365813,
+      "sha256": "7c04e8b2286bf40adb92acbc60282583d2ebb4966653387baf61ff0568388f1b",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0017.npz",
+      "bytes": 349772,
+      "sha256": "85e0cd03d24449cf74c30ffb1a93d7c90ca1cb9285cd4d47a38f3af769de8492",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0018.npz",
+      "bytes": 353136,
+      "sha256": "9779d0a8a1f8c76be77633873772a2ec11a6b06b804578825897248539867d90",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0019.npz",
+      "bytes": 398569,
+      "sha256": "3652b1e9c2afab3d0781fad9e47a9d0d52578c63ce764d57ee667a7db6cd4e84",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0020.npz",
+      "bytes": 250420,
+      "sha256": "cff6968df7c8d96dbf31f6b79503df71cf1fbec73fa57cb1be8ebf44b924e678",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0021.npz",
+      "bytes": 367020,
+      "sha256": "9cf7cb0a829f8f91ce2a5f39513e80966a91ed44b565a426161d46d304b49d06",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0022.npz",
+      "bytes": 307649,
+      "sha256": "d4feb0ca9abfdc6f74aa7c1a2419deb9bc4ede9231dc02bd7e564f0e39a083be",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0023.npz",
+      "bytes": 259832,
+      "sha256": "4f5156e993bfc2c6661ae831eef4607b95091f3fbfd716bfb937f0f6211c32be",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0024.npz",
+      "bytes": 377877,
+      "sha256": "a09e4a491fefb298dd2365b68f837a6c0758ed2372d06fa9c757e436bcd51434",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0025.npz",
+      "bytes": 373740,
+      "sha256": "bd193fbcc31c8814fada74d8e493119411d70c887e3079ea3e0718d3706c8be6",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0026.npz",
+      "bytes": 361174,
+      "sha256": "1445526f7b28e6735b63cbe5bc45b6dd024cd677e013a506b9cd9f28ef439b22",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0027.npz",
+      "bytes": 380835,
+      "sha256": "2c2f8ed222d0dd8e6ccc877cdf2587b933ef12539920c4a8ebfe252b419933cd",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0028.npz",
+      "bytes": 351331,
+      "sha256": "9528bb040aff29189f46644ebdc576577695276420b824bc59ff8719cccfa01a",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0029.npz",
+      "bytes": 324365,
+      "sha256": "b1deba9cda64ad1c53b031cc35f4eb1a30bde28b3f56a95bcf96557a08094788",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0030.npz",
+      "bytes": 376043,
+      "sha256": "483a6765f1170a7e6bc11316b3fbc8df7254138a7c098ab258859d0d69c1ba31",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0031.npz",
+      "bytes": 374965,
+      "sha256": "44a0d72c361d8a03f28d4dba1d6066dd367949ec7ccf30ed628d2a111628ec24",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0032.npz",
+      "bytes": 333388,
+      "sha256": "745dcb5f5dbbeee4c4d89c3be03ad0e74a1f769d051b292945877373922a4397",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0033.npz",
+      "bytes": 291164,
+      "sha256": "4226aa97c1fcf602a495bdbf1cccb4e4b42dab59bbb16b5464012780666c9b64",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0034.npz",
+      "bytes": 346567,
+      "sha256": "64eb6591c066a7ef754545cb7110e026f5f17ec304f924953520f34016d3374c",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0035.npz",
+      "bytes": 292448,
+      "sha256": "491e6fad6c4741f40ec38c54c94008aaa4642b914ab8825bcbd68937800cd8f5",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0036.npz",
+      "bytes": 376362,
+      "sha256": "4f9c9a68fac3fbf217a61fadfe5953c286eb8af53a50374e0d642d81e2f953ce",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0037.npz",
+      "bytes": 381676,
+      "sha256": "c04bacb04724b9721049b4bd90608be3eadaa2404156ac179db4268e655c0b72",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0038.npz",
+      "bytes": 383185,
+      "sha256": "2ba28fed27ebd80d5533e34666913a5ffec02a6f0139ee3c8a60697717a52248",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0039.npz",
+      "bytes": 377297,
+      "sha256": "6dfdd116fb04f1df133c3d2375ceb4079df54732d22b7ff3963eeed84b19206c",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0040.npz",
+      "bytes": 374623,
+      "sha256": "993e916b8f8092e5aa6f766cd0a72679669c3236f0fd66029e8eb2ff39718850",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0041.npz",
+      "bytes": 358600,
+      "sha256": "2b19389715985b43aca86fa02e6c2a08ab8a25fd9d7b947c71dddd60af26bebc",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0042.npz",
+      "bytes": 363472,
+      "sha256": "92215ecf34cafb79819b1d507bad1532bc8fd4256c7ad69d0be2d904ae1602f2",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0043.npz",
+      "bytes": 187152,
+      "sha256": "723766566a588f5e8be7a593ee3ee96af2998f61b306fa2763f347ee86f05f48",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0044.npz",
+      "bytes": 363635,
+      "sha256": "eb14abdb9880ccac3c9c4848b6803d0396d09e659cca511bf32294ca568c2de6",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0045.npz",
+      "bytes": 346638,
+      "sha256": "bd3306501ae6f4b1a95dd9293345afec40f1c2ce22140f101346fa7125fc6d90",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0046.npz",
+      "bytes": 279047,
+      "sha256": "4058f596cb61807b0a3d66a7a4f4f3a12996fde7d0168c3602ecc0ccf773c824",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0047.npz",
+      "bytes": 323875,
+      "sha256": "cad092a298a76fc618a74dca8334345940d876c62cad5cab4c2cdc44e0e76ff1",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0048.npz",
+      "bytes": 357131,
+      "sha256": "bb21a617c06321019e6d1269dadec42c74569ecbbeddf228170969f87d10f008",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0049.npz",
+      "bytes": 374687,
+      "sha256": "e5d1c3d72e7c72303865776037be910e4d0e8e2e05b161256c2ee26ad51992f9",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0050.npz",
+      "bytes": 375083,
+      "sha256": "515b418eca61ece261e76a5aff8c1cf19caa395dc4dd34f3d17f001c50eab4d1",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0051.npz",
+      "bytes": 361157,
+      "sha256": "270a3a82cef3e5be07404457463c47132b6f1e27d8212973e99146169f49c23d",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0052.npz",
+      "bytes": 372382,
+      "sha256": "ed266d38db726c1b4b2ec41c46de15334fc5428948c5d57bf031b5fc9aa16f9c",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0053.npz",
+      "bytes": 376002,
+      "sha256": "c529379ea06e1d86ab1c6a4aaa6326481c5a13513ff692aa270b6d213d6e900d",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0054.npz",
+      "bytes": 389837,
+      "sha256": "39cc7aab2df03c36847f14706488e8d92b7a47377a03f48f920c2361c5d57acf",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0055.npz",
+      "bytes": 394358,
+      "sha256": "4147b595e6aa7b2551f68d7fc2e58494439e51cade22739160af599b0b1e8b90",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0056.npz",
+      "bytes": 317223,
+      "sha256": "6c211fdf6063b37b298e391d658748a30db5088349c772092652af84fe70ce40",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0057.npz",
+      "bytes": 380502,
+      "sha256": "6a06d88d43ff99a6904c36d5db3fe55627ca61a52f29f812a932159c79350b31",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0058.npz",
+      "bytes": 350654,
+      "sha256": "77d0cc8df0d04d39e0aea6390ef7f16efd4befc1a7c9485ba393eacb54fc7b88",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0059.npz",
+      "bytes": 342878,
+      "sha256": "b5bbe09289daf6d3579fdbaeb1d7349b85d53f3c6051276a522f5dadd6d9e596",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0060.npz",
+      "bytes": 367530,
+      "sha256": "bec84e628e296f69775681f975987f9c24def6ec800abcf8e444052365436b0f",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0061.npz",
+      "bytes": 318568,
+      "sha256": "bf639639e1c601d4994572eea021340a30fa62f781066ee861a44809ea14c080",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0062.npz",
+      "bytes": 383873,
+      "sha256": "4ab9430cc94e94d8808207b956565ec93e7e830c2f2e455ff78520303cea9523",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0063.npz",
+      "bytes": 364363,
+      "sha256": "18132dc7fd99bba75043977437e11dd97343d01a8a6511e764a3e86fa3908e71",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0064.npz",
+      "bytes": 345811,
+      "sha256": "5633533bac4acb6c9fbfa167693ce4257dc6be6262e22bbec5596ea5685f3603",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0065.npz",
+      "bytes": 358354,
+      "sha256": "807d36cee25e77bd6a77a223e62829f9e920617391da294429c647275ce25bbf",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0066.npz",
+      "bytes": 319637,
+      "sha256": "9da2e523f5523b2fed30981c0f73ae8acb28445ec459e625a206ee6567c52a19",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0067.npz",
+      "bytes": 401079,
+      "sha256": "6349b9902fe5bed9ece6152f12f804d7e3a1459354b22ae352f01ac458d5f025",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0068.npz",
+      "bytes": 362440,
+      "sha256": "2b8809a82c1298e19506375b4f16dc06ca7a50149b0aa07701428f1bc5869c74",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0069.npz",
+      "bytes": 393551,
+      "sha256": "c9f7c56e67013e3d65bfd76364c1fade10b5b3f61603f253c34ff874854f8fa2",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0070.npz",
+      "bytes": 366298,
+      "sha256": "c6a48ee960a6c07faf5b2bdcfc3d31261166318acf15a2d86fbb660679966437",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0071.npz",
+      "bytes": 378687,
+      "sha256": "ccd40678a3ee225d84d4937a4a2b4f671eb773c0dfca33e49359c7dc5f756ae7",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0072.npz",
+      "bytes": 346083,
+      "sha256": "84ec96a5ae579e2156fcb1fdfb441354cff0b7d585c30b5c920bee49431e9528",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0073.npz",
+      "bytes": 328633,
+      "sha256": "390b35b757bc148960ab6fa12ef477289fd9b28df645a05d18b0f6ab7e7e9932",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0074.npz",
+      "bytes": 308827,
+      "sha256": "e07423ad8d7c4eb481c27e79d91b33506291ebe8bac730017a484dffe2583f25",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0075.npz",
+      "bytes": 363685,
+      "sha256": "0a0ef3f12e9afc1bcaa8fe475ec91a13c1e64737cfdfbe693d76d0bb4de42b33",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0076.npz",
+      "bytes": 306546,
+      "sha256": "4d7b691d41006a9e19591b0aeb1a6262c83da44baf0ac5f5b7f9c1069560b039",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0077.npz",
+      "bytes": 277683,
+      "sha256": "17be4de610d94b94f2c7b2cf93a4f3dfddf64503c41f9fa9a59c272ca28589d4",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0078.npz",
+      "bytes": 275800,
+      "sha256": "85c51b6386bdacad82854f1eb48c858ab568adc49e22a28276f932ecc5897402",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0079.npz",
+      "bytes": 341760,
+      "sha256": "92142ec613dec058cfa6164be113e51203062b378192b5c10899a28854c4d9d8",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0080.npz",
+      "bytes": 271877,
+      "sha256": "718844e01547a78040e71f75e6a33314bf7f676bdc3ef4d27bff3399bfc35703",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0081.npz",
+      "bytes": 388325,
+      "sha256": "76e18aea5faca53289214846b4cde83b8e4e9a3d17ffa1721e04d63b7e3bdffb",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0082.npz",
+      "bytes": 376012,
+      "sha256": "5223c3bd1dc67be8d506c44e30ab4e7b9d2352b2feecdc0e1669bdbac4593b00",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0083.npz",
+      "bytes": 207248,
+      "sha256": "7273d8f90a97bfdb51822078ddbc9bbe4f6fce8d1b1219c3450b9e98ad5b4728",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0084.npz",
+      "bytes": 374728,
+      "sha256": "3ec252ead84667b62cc414a17260ef78156802cf1d60f193b53c0a75fd325d7b",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0085.npz",
+      "bytes": 384957,
+      "sha256": "192d64402c3edf825678b07d27fe7e1e795896dbcf7441b3ab220bf4dce7294d",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0086.npz",
+      "bytes": 335724,
+      "sha256": "c4a0259c35597e58d3627ac11a84d82f7c89ad3c53251eed3ce7b7dc5b0ab283",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0087.npz",
+      "bytes": 341922,
+      "sha256": "eeca98f4623c29a1f98bcb997c1dfeeac11bb45c639b3348233642f819f21ccd",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0088.npz",
+      "bytes": 378901,
+      "sha256": "c1cf0705be5f6fdaf488049438f06dcb57c4f606a6b4807d5dff5f453ad52d15",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0089.npz",
+      "bytes": 423545,
+      "sha256": "5f9713deb7c7803cc2d1dec289f49dfd4dd82c7f77b5c4231705dd37248e20de",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0090.npz",
+      "bytes": 250738,
+      "sha256": "3b6812c9dc8492e98969a918dbb90d034f44cc0209005be96c01b62514928fa3",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0091.npz",
+      "bytes": 360207,
+      "sha256": "6350630ef3cbf70bc93000d56c3ccbdad5eaa13ea6816340b0c3d2a2d7ee3e7f",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0092.npz",
+      "bytes": 377133,
+      "sha256": "7daefbb0224bc0ded575f741afdee950be0bf5f1fa81a40503c62711e27a9260",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0093.npz",
+      "bytes": 340627,
+      "sha256": "eebb89f76ecae4f79cc6cb27f613c8cf362aa022a3d6a91311167d94725f6b3d",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0094.npz",
+      "bytes": 332558,
+      "sha256": "2e6aea751764a4ca861da84c407d123b19977129d759e1b6edd612b986386acb",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0095.npz",
+      "bytes": 400169,
+      "sha256": "de8304cce3d6a8dc93bb66603e3d8217c90545e7278e9aeaa1fa4bba17f5c011",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0096.npz",
+      "bytes": 256299,
+      "sha256": "b40342dabbbf29f9e9b7670b812b9d62d439b254750c2887934abbee0771a7d4",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0097.npz",
+      "bytes": 297276,
+      "sha256": "42c306992ce88d68f715e0a4401bd18a178c4c0758be92fb5de8d140a6471035",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0098.npz",
+      "bytes": 391069,
+      "sha256": "5a5de350fe2da09c4d5b50f2b93f9acb259c95e3665de823e1f5239e71ae81c4",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0099.npz",
+      "bytes": 216990,
+      "sha256": "323ae035d4ef38533c894f0beb4ecab1f74da9262a5be31e4708fa356f3c0412",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0100.npz",
+      "bytes": 331615,
+      "sha256": "33fb5c9873c063ceb4098a288db675ed8f932fc593416ef3e20971930b33d5cf",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0101.npz",
+      "bytes": 398961,
+      "sha256": "40e3619e96ac6f9728806db800c33b64d06b566993056b893fa11f73f65a705b",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    },
+    {
+      "path": "direct/research/data/expert_recovery_data/collection_20261104_112547_770894/episodes/recovery_0102.npz",
+      "bytes": 367909,
+      "sha256": "68b85007b4d9cf8c6eccf7254d6d58d2ac6005fc79db7bb6d9b8ee17decbf716",
+      "reason": "raw recovery trajectory arrays; not required by coursework"
+    }
+  ]
+}

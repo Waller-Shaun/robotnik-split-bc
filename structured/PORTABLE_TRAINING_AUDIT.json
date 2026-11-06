@@ -1,0 +1,11 @@
+{
+  "portable_trainer_source_sha256": "908f456944f22c6746af73609b362e435a8a4e434b46af908950f4bd73dc31bb",
+  "smoke_runs": 2,
+  "expert_train_trajectories_per_run": 4,
+  "expert_val_trajectories_per_run": 4,
+  "checkpoint_reload_passed": true,
+  "gain_tensors_bit_identical_across_smoke_runs": true,
+  "cache_rng_unit_test_passed": true,
+  "recorded_final_model_unchanged": true,
+  "not_task_success_results": true
+}

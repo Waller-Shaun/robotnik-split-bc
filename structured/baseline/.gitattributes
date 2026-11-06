@@ -1,0 +1,5 @@
+*.py -text
+*.pt binary
+*.npz binary
+*.png binary
+*.lock -text

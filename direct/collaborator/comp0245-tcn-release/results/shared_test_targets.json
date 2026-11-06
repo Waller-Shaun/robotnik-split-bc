@@ -1,0 +1,8046 @@
+{
+  "protocol_id": "d41f7f5a84dc095a47666f78060633523b5f966ca0043659268ffd2faeedd2b4",
+  "purpose": "shared primary target/noise-seed list for fair frozen-model comparison",
+  "distinct_targets": 500,
+  "noise_repeats_per_target": 3,
+  "physical_timestep_s": 0.001,
+  "policy_update_timestep_s": 0.001,
+  "duration_limit_simulation_s": 20,
+  "true_ee_threshold_m": 0.01,
+  "required_hold_s": 0,
+  "minimum_success_time_s": 0,
+  "noise_flag": [
+    1
+  ],
+  "robot_noise": {
+    "joint_cov": 0.001,
+    "joint_vel_cov": 0.001,
+    "joint_acc_cov": 0.001,
+    "base_pos_cov": 0.001,
+    "base_ori_cov": 0.001,
+    "base_lin_vel_cov": 0.001,
+    "base_ang_vel_cov": 0.001,
+    "joint_torque_cov": 0.001
+  },
+  "noise_scale_semantics": "native RoboEnv Gaussian standard deviation, independent per getter call; same seed alone does not guarantee same samples if call order differs",
+  "reset_policy_memory_between_episodes": true,
+  "initial_state": "unchanged robotnik_arm project configuration",
+  "task_distribution": {
+    "radius_m": [
+      0.8,
+      2
+    ],
+    "height_m": [
+      0.2,
+      1.3
+    ],
+    "stratification": "10 height x 5 radius cells; angular jitter; uniform radius, not uniform area",
+    "minimum_xy_distance_from_all_old_targets_m": 0.02,
+    "minimum_new_xy_separation_m": 0.01,
+    "expert_prefiltering": false,
+    "model_outcome_filtering": false
+  },
+  "targets": [
+    {
+      "target": [
+        -0.913348,
+        -0.220244,
+        0.532799
+      ],
+      "noise_seeds": [
+        166104492,
+        3277049279,
+        2562158109
+      ],
+      "height_bin": 3,
+      "radius_bin": 0,
+      "angle_bin": 5,
+      "target_index": 0
+    },
+    {
+      "target": [
+        0.309576,
+        -1.942182,
+        0.521413
+      ],
+      "noise_seeds": [
+        2347358801,
+        3562297241,
+        2236357954
+      ],
+      "height_bin": 2,
+      "radius_bin": 4,
+      "angle_bin": 7,
+      "target_index": 1
+    },
+    {
+      "target": [
+        1.446127,
+        1.015032,
+        0.837855
+      ],
+      "noise_seeds": [
+        1791389658,
+        255016870,
+        211002148
+      ],
+      "height_bin": 5,
+      "radius_bin": 4,
+      "angle_bin": 0,
+      "target_index": 2
+    },
+    {
+      "target": [
+        -0.77156,
+        0.910489,
+        0.45982
+      ],
+      "noise_seeds": [
+        53770294,
+        3715085337,
+        2642736774
+      ],
+      "height_bin": 2,
+      "radius_bin": 1,
+      "angle_bin": 3,
+      "target_index": 3
+    },
+    {
+      "target": [
+        -0.686508,
+        0.58829,
+        0.54452
+      ],
+      "noise_seeds": [
+        2793143615,
+        1406236422,
+        1361974876
+      ],
+      "height_bin": 3,
+      "radius_bin": 0,
+      "angle_bin": 3,
+      "target_index": 4
+    },
+    {
+      "target": [
+        -0.776057,
+        -1.386807,
+        0.282211
+      ],
+      "noise_seeds": [
+        2090898267,
+        1470826712,
+        2922498860
+      ],
+      "height_bin": 0,
+      "radius_bin": 3,
+      "angle_bin": 6,
+      "target_index": 5
+    },
+    {
+      "target": [
+        -0.845907,
+        0.53743,
+        0.770904
+      ],
+      "noise_seeds": [
+        3904943985,
+        2099326904,
+        3326277715
+      ],
+      "height_bin": 5,
+      "radius_bin": 0,
+      "angle_bin": 4,
+      "target_index": 6
+    },
+    {
+      "target": [
+        0.03384,
+        -1.920074,
+        1.271222
+      ],
+      "noise_seeds": [
+        3355129419,
+        562501888,
+        3497735694
+      ],
+      "height_bin": 9,
+      "radius_bin": 4,
+      "angle_bin": 7,
+      "target_index": 7
+    },
+    {
+      "target": [
+        -0.163767,
+        -1.951578,
+        0.90199
+      ],
+      "noise_seeds": [
+        1007482404,
+        1907527669,
+        1095866046
+      ],
+      "height_bin": 6,
+      "radius_bin": 4,
+      "angle_bin": 7,
+      "target_index": 8
+    },
+    {
+      "target": [
+        0.585251,
+        1.002867,
+        1.273704
+      ],
+      "noise_seeds": [
+        3588696174,
+        366354644,
+        3943477161
+      ],
+      "height_bin": 9,
+      "radius_bin": 1,
+      "angle_bin": 1,
+      "target_index": 9
+    },
+    {
+      "target": [
+        0.855986,
+        0.426713,
+        0.587158
+      ],
+      "noise_seeds": [
+        4233814350,
+        1433531448,
+        3092680237
+      ],
+      "height_bin": 3,
+      "radius_bin": 0,
+      "angle_bin": 0,
+      "target_index": 10
+    },
+    {
+      "target": [
+        -0.603979,
+        1.345144,
+        0.610052
+      ],
+      "noise_seeds": [
+        2735979280,
+        1875994242,
+        898102823
+      ],
+      "height_bin": 3,
+      "radius_bin": 2,
+      "angle_bin": 3,
+      "target_index": 11
+    },
+    {
+      "target": [
+        -0.395417,
+        1.502033,
+        1.173487
+      ],
+      "noise_seeds": [
+        3723784760,
+        841630133,
+        925643846
+      ],
+      "height_bin": 8,
+      "radius_bin": 3,
+      "angle_bin": 2,
+      "target_index": 12
+    },
+    {
+      "target": [
+        1.783377,
+        0.499272,
+        0.963779
+      ],
+      "noise_seeds": [
+        1491370327,
+        2196765793,
+        2825175854
+      ],
+      "height_bin": 6,
+      "radius_bin": 4,
+      "angle_bin": 0,
+      "target_index": 13
+    },
+    {
+      "target": [
+        1.457154,
+        0.980631,
+        1.191666
+      ],
+      "noise_seeds": [
+        41011294,
+        635587363,
+        3005758441
+      ],
+      "height_bin": 9,
+      "radius_bin": 3,
+      "angle_bin": 0,
+      "target_index": 14
+    },
+    {
+      "target": [
+        -1.87466,
+        0.00279,
+        0.870532
+      ],
+      "noise_seeds": [
+        501948720,
+        1471983910,
+        2089159852
+      ],
+      "height_bin": 6,
+      "radius_bin": 4,
+      "angle_bin": 4,
+      "target_index": 15
+    },
+    {
+      "target": [
+        -0.750707,
+        -0.838141,
+        0.612617
+      ],
+      "noise_seeds": [
+        4022826205,
+        1091229561,
+        1175494406
+      ],
+      "height_bin": 3,
+      "radius_bin": 1,
+      "angle_bin": 6,
+      "target_index": 16
+    },
+    {
+      "target": [
+        -1.189504,
+        0.836174,
+        0.972013
+      ],
+      "noise_seeds": [
+        437001871,
+        3901838165,
+        263403184
+      ],
+      "height_bin": 7,
+      "radius_bin": 2,
+      "angle_bin": 4,
+      "target_index": 17
+    },
+    {
+      "target": [
+        0.938419,
+        -0.416415,
+        0.47141
+      ],
+      "noise_seeds": [
+        3309728326,
+        3807495101,
+        3017359529
+      ],
+      "height_bin": 2,
+      "radius_bin": 0,
+      "angle_bin": 9,
+      "target_index": 18
+    },
+    {
+      "target": [
+        1.148133,
+        0.878292,
+        0.708053
+      ],
+      "noise_seeds": [
+        3862996609,
+        2337678882,
+        3709267566
+      ],
+      "height_bin": 4,
+      "radius_bin": 2,
+      "angle_bin": 1,
+      "target_index": 19
+    },
+    {
+      "target": [
+        -1.461049,
+        -1.22556,
+        0.702976
+      ],
+      "noise_seeds": [
+        781254910,
+        1760765303,
+        3687160123
+      ],
+      "height_bin": 4,
+      "radius_bin": 4,
+      "angle_bin": 6,
+      "target_index": 20
+    },
+    {
+      "target": [
+        -1.264592,
+        -1.538455,
+        0.299277
+      ],
+      "noise_seeds": [
+        2257453942,
+        3266956515,
+        4025938284
+      ],
+      "height_bin": 0,
+      "radius_bin": 4,
+      "angle_bin": 6,
+      "target_index": 21
+    },
+    {
+      "target": [
+        1.256209,
+        -1.450563,
+        1.010095
+      ],
+      "noise_seeds": [
+        2276450107,
+        2738403131,
+        3141285028
+      ],
+      "height_bin": 7,
+      "radius_bin": 4,
+      "angle_bin": 8,
+      "target_index": 22
+    },
+    {
+      "target": [
+        0.0752,
+        -1.329566,
+        0.460925
+      ],
+      "noise_seeds": [
+        53452026,
+        1164230421,
+        3019570383
+      ],
+      "height_bin": 2,
+      "radius_bin": 2,
+      "angle_bin": 7,
+      "target_index": 23
+    },
+    {
+      "target": [
+        -0.943818,
+        1.112362,
+        1.271415
+      ],
+      "noise_seeds": [
+        602677789,
+        3762211934,
+        4105337921
+      ],
+      "height_bin": 9,
+      "radius_bin": 2,
+      "angle_bin": 3,
+      "target_index": 24
+    },
+    {
+      "target": [
+        -1.301059,
+        0.06862,
+        0.295847
+      ],
+      "noise_seeds": [
+        2361507332,
+        4281736801,
+        4032652572
+      ],
+      "height_bin": 0,
+      "radius_bin": 2,
+      "angle_bin": 4,
+      "target_index": 25
+    },
+    {
+      "target": [
+        0.718889,
+        0.454565,
+        1.096625
+      ],
+      "noise_seeds": [
+        225872555,
+        1050816250,
+        3125871073
+      ],
+      "height_bin": 8,
+      "radius_bin": 0,
+      "angle_bin": 0,
+      "target_index": 26
+    },
+    {
+      "target": [
+        0.854934,
+        1.340613,
+        0.443355
+      ],
+      "noise_seeds": [
+        109398876,
+        1634400775,
+        3139004479
+      ],
+      "height_bin": 2,
+      "radius_bin": 3,
+      "angle_bin": 1,
+      "target_index": 27
+    },
+    {
+      "target": [
+        0.89392,
+        -1.115629,
+        0.422861
+      ],
+      "noise_seeds": [
+        746675343,
+        1955280997,
+        3231186083
+      ],
+      "height_bin": 2,
+      "radius_bin": 2,
+      "angle_bin": 8,
+      "target_index": 28
+    },
+    {
+      "target": [
+        -0.322685,
+        1.608598,
+        0.420421
+      ],
+      "noise_seeds": [
+        3313963069,
+        2931035123,
+        1761754499
+      ],
+      "height_bin": 2,
+      "radius_bin": 3,
+      "angle_bin": 2,
+      "target_index": 29
+    },
+    {
+      "target": [
+        1.266822,
+        1.446941,
+        0.636524
+      ],
+      "noise_seeds": [
+        1884248320,
+        230866107,
+        2890495130
+      ],
+      "height_bin": 3,
+      "radius_bin": 4,
+      "angle_bin": 1,
+      "target_index": 30
+    },
+    {
+      "target": [
+        -1.527466,
+        0.872443,
+        0.561123
+      ],
+      "noise_seeds": [
+        50264382,
+        1074309448,
+        2906968951
+      ],
+      "height_bin": 3,
+      "radius_bin": 3,
+      "angle_bin": 4,
+      "target_index": 31
+    },
+    {
+      "target": [
+        -0.127367,
+        1.958794,
+        1.146473
+      ],
+      "noise_seeds": [
+        1993424982,
+        3793686743,
+        3044410401
+      ],
+      "height_bin": 8,
+      "radius_bin": 4,
+      "angle_bin": 2,
+      "target_index": 32
+    },
+    {
+      "target": [
+        1.426218,
+        -0.730757,
+        1.27151
+      ],
+      "noise_seeds": [
+        4267932517,
+        1043772728,
+        2726359043
+      ],
+      "height_bin": 9,
+      "radius_bin": 3,
+      "angle_bin": 9,
+      "target_index": 33
+    },
+    {
+      "target": [
+        -0.635698,
+        -1.210656,
+        0.872087
+      ],
+      "noise_seeds": [
+        1516140839,
+        352676165,
+        1819535917
+      ],
+      "height_bin": 6,
+      "radius_bin": 2,
+      "angle_bin": 6,
+      "target_index": 34
+    },
+    {
+      "target": [
+        1.257922,
+        -0.568778,
+        0.70646
+      ],
+      "noise_seeds": [
+        2332418692,
+        4256428910,
+        3245933212
+      ],
+      "height_bin": 4,
+      "radius_bin": 2,
+      "angle_bin": 9,
+      "target_index": 35
+    },
+    {
+      "target": [
+        1.07524,
+        1.625593,
+        0.27303
+      ],
+      "noise_seeds": [
+        1917321100,
+        3296951527,
+        2177606440
+      ],
+      "height_bin": 0,
+      "radius_bin": 4,
+      "angle_bin": 1,
+      "target_index": 36
+    },
+    {
+      "target": [
+        1.789101,
+        -0.282479,
+        0.800617
+      ],
+      "noise_seeds": [
+        3755085596,
+        1047584249,
+        3603334866
+      ],
+      "height_bin": 5,
+      "radius_bin": 4,
+      "angle_bin": 9,
+      "target_index": 37
+    },
+    {
+      "target": [
+        -0.194456,
+        -1.210972,
+        0.224409
+      ],
+      "noise_seeds": [
+        1535430441,
+        3196830474,
+        1479728312
+      ],
+      "height_bin": 0,
+      "radius_bin": 1,
+      "angle_bin": 7,
+      "target_index": 38
+    },
+    {
+      "target": [
+        -0.376297,
+        -1.247535,
+        0.894855
+      ],
+      "noise_seeds": [
+        1224785071,
+        2811631117,
+        3979304158
+      ],
+      "height_bin": 6,
+      "radius_bin": 2,
+      "angle_bin": 7,
+      "target_index": 39
+    },
+    {
+      "target": [
+        1.34026,
+        -0.699578,
+        1.0103
+      ],
+      "noise_seeds": [
+        1135462743,
+        2557874999,
+        3625990406
+      ],
+      "height_bin": 7,
+      "radius_bin": 2,
+      "angle_bin": 9,
+      "target_index": 40
+    },
+    {
+      "target": [
+        -1.571211,
+        -0.846081,
+        1.294815
+      ],
+      "noise_seeds": [
+        3861664547,
+        4213058446,
+        2809632527
+      ],
+      "height_bin": 9,
+      "radius_bin": 4,
+      "angle_bin": 5,
+      "target_index": 41
+    },
+    {
+      "target": [
+        0.758533,
+        1.159367,
+        0.88599
+      ],
+      "noise_seeds": [
+        518031096,
+        2662951514,
+        2087377616
+      ],
+      "height_bin": 6,
+      "radius_bin": 2,
+      "angle_bin": 1,
+      "target_index": 42
+    },
+    {
+      "target": [
+        -1.518329,
+        -0.783185,
+        0.224266
+      ],
+      "noise_seeds": [
+        3265200980,
+        2373007209,
+        2130316245
+      ],
+      "height_bin": 0,
+      "radius_bin": 3,
+      "angle_bin": 5,
+      "target_index": 43
+    },
+    {
+      "target": [
+        -0.593599,
+        1.179462,
+        0.269748
+      ],
+      "noise_seeds": [
+        2281002142,
+        2290695445,
+        2573190210
+      ],
+      "height_bin": 0,
+      "radius_bin": 2,
+      "angle_bin": 3,
+      "target_index": 44
+    },
+    {
+      "target": [
+        0.546932,
+        1.116839,
+        0.427974
+      ],
+      "noise_seeds": [
+        2797098182,
+        3644865138,
+        1435562137
+      ],
+      "height_bin": 2,
+      "radius_bin": 1,
+      "angle_bin": 1,
+      "target_index": 45
+    },
+    {
+      "target": [
+        -0.849236,
+        0.204082,
+        0.331754
+      ],
+      "noise_seeds": [
+        2588146983,
+        1638672194,
+        1238797212
+      ],
+      "height_bin": 1,
+      "radius_bin": 0,
+      "angle_bin": 4,
+      "target_index": 46
+    },
+    {
+      "target": [
+        0.009551,
+        -1.535423,
+        0.262121
+      ],
+      "noise_seeds": [
+        2445863244,
+        25073151,
+        2821040474
+      ],
+      "height_bin": 0,
+      "radius_bin": 3,
+      "angle_bin": 7,
+      "target_index": 47
+    },
+    {
+      "target": [
+        -0.510075,
+        0.710098,
+        0.494301
+      ],
+      "noise_seeds": [
+        2799752504,
+        854624369,
+        254177721
+      ],
+      "height_bin": 2,
+      "radius_bin": 0,
+      "angle_bin": 3,
+      "target_index": 48
+    },
+    {
+      "target": [
+        1.264815,
+        -0.267316,
+        0.296744
+      ],
+      "noise_seeds": [
+        2289895801,
+        2354932347,
+        91535856
+      ],
+      "height_bin": 0,
+      "radius_bin": 2,
+      "angle_bin": 9,
+      "target_index": 49
+    },
+    {
+      "target": [
+        1.267697,
+        -0.256027,
+        0.333586
+      ],
+      "noise_seeds": [
+        4037357368,
+        1745054906,
+        729860882
+      ],
+      "height_bin": 1,
+      "radius_bin": 2,
+      "angle_bin": 9,
+      "target_index": 50
+    },
+    {
+      "target": [
+        0.753262,
+        1.339829,
+        1.205887
+      ],
+      "noise_seeds": [
+        1623399856,
+        386738127,
+        2614483374
+      ],
+      "height_bin": 9,
+      "radius_bin": 3,
+      "angle_bin": 1,
+      "target_index": 51
+    },
+    {
+      "target": [
+        1.035902,
+        -0.239666,
+        1.098679
+      ],
+      "noise_seeds": [
+        3159413837,
+        2657714008,
+        2536767605
+      ],
+      "height_bin": 8,
+      "radius_bin": 1,
+      "angle_bin": 9,
+      "target_index": 52
+    },
+    {
+      "target": [
+        0.988486,
+        0.162903,
+        0.337159
+      ],
+      "noise_seeds": [
+        3614205997,
+        2984633286,
+        804777514
+      ],
+      "height_bin": 1,
+      "radius_bin": 0,
+      "angle_bin": 0,
+      "target_index": 53
+    },
+    {
+      "target": [
+        -1.812375,
+        0.242566,
+        0.535874
+      ],
+      "noise_seeds": [
+        1562533605,
+        1909558255,
+        2011197984
+      ],
+      "height_bin": 3,
+      "radius_bin": 4,
+      "angle_bin": 4,
+      "target_index": 54
+    },
+    {
+      "target": [
+        0.899081,
+        -1.51841,
+        0.880181
+      ],
+      "noise_seeds": [
+        1692588521,
+        1905840882,
+        1664397878
+      ],
+      "height_bin": 6,
+      "radius_bin": 4,
+      "angle_bin": 8,
+      "target_index": 55
+    },
+    {
+      "target": [
+        -1.467551,
+        0.84942,
+        0.657275
+      ],
+      "noise_seeds": [
+        3899272427,
+        3287265122,
+        4254667485
+      ],
+      "height_bin": 4,
+      "radius_bin": 3,
+      "angle_bin": 4,
+      "target_index": 56
+    },
+    {
+      "target": [
+        -0.942072,
+        -1.069982,
+        1.023093
+      ],
+      "noise_seeds": [
+        3901380021,
+        343809974,
+        3645588078
+      ],
+      "height_bin": 7,
+      "radius_bin": 2,
+      "angle_bin": 6,
+      "target_index": 57
+    },
+    {
+      "target": [
+        1.612725,
+        -0.977784,
+        0.604413
+      ],
+      "noise_seeds": [
+        3893613598,
+        2548324306,
+        194464716
+      ],
+      "height_bin": 3,
+      "radius_bin": 4,
+      "angle_bin": 9,
+      "target_index": 58
+    },
+    {
+      "target": [
+        1.465308,
+        -1.350266,
+        0.7827
+      ],
+      "noise_seeds": [
+        3272659558,
+        3790450266,
+        1729425644
+      ],
+      "height_bin": 5,
+      "radius_bin": 4,
+      "angle_bin": 8,
+      "target_index": 59
+    },
+    {
+      "target": [
+        0.611779,
+        -0.847111,
+        1.193466
+      ],
+      "noise_seeds": [
+        2066142191,
+        475181965,
+        1602785109
+      ],
+      "height_bin": 9,
+      "radius_bin": 1,
+      "angle_bin": 8,
+      "target_index": 60
+    },
+    {
+      "target": [
+        -0.17556,
+        1.362433,
+        0.347995
+      ],
+      "noise_seeds": [
+        4113448562,
+        3232203682,
+        2595925786
+      ],
+      "height_bin": 1,
+      "radius_bin": 2,
+      "angle_bin": 2,
+      "target_index": 61
+    },
+    {
+      "target": [
+        1.5141,
+        0.30026,
+        0.734911
+      ],
+      "noise_seeds": [
+        697982820,
+        3484416405,
+        2460526813
+      ],
+      "height_bin": 4,
+      "radius_bin": 3,
+      "angle_bin": 0,
+      "target_index": 62
+    },
+    {
+      "target": [
+        0.834724,
+        -0.432307,
+        1.120983
+      ],
+      "noise_seeds": [
+        3136479058,
+        2816861068,
+        2134033975
+      ],
+      "height_bin": 8,
+      "radius_bin": 0,
+      "angle_bin": 9,
+      "target_index": 63
+    },
+    {
+      "target": [
+        0.980708,
+        -1.514525,
+        1.239068
+      ],
+      "noise_seeds": [
+        3275189604,
+        1784252744,
+        3667560201
+      ],
+      "height_bin": 9,
+      "radius_bin": 4,
+      "angle_bin": 8,
+      "target_index": 64
+    },
+    {
+      "target": [
+        -1.139138,
+        -0.283969,
+        0.97874
+      ],
+      "noise_seeds": [
+        257103627,
+        2244481453,
+        3627576232
+      ],
+      "height_bin": 7,
+      "radius_bin": 1,
+      "angle_bin": 5,
+      "target_index": 65
+    },
+    {
+      "target": [
+        1.404927,
+        -1.050394,
+        0.580203
+      ],
+      "noise_seeds": [
+        435046104,
+        2372671382,
+        4192847265
+      ],
+      "height_bin": 3,
+      "radius_bin": 3,
+      "angle_bin": 8,
+      "target_index": 66
+    },
+    {
+      "target": [
+        1.084848,
+        -0.851852,
+        1.047458
+      ],
+      "noise_seeds": [
+        379361854,
+        3718177014,
+        2625484534
+      ],
+      "height_bin": 7,
+      "radius_bin": 2,
+      "angle_bin": 8,
+      "target_index": 67
+    },
+    {
+      "target": [
+        -0.956856,
+        1.522282,
+        1.012584
+      ],
+      "noise_seeds": [
+        3430152691,
+        492280978,
+        610214581
+      ],
+      "height_bin": 7,
+      "radius_bin": 4,
+      "angle_bin": 3,
+      "target_index": 68
+    },
+    {
+      "target": [
+        -0.757871,
+        -1.561011,
+        0.346885
+      ],
+      "noise_seeds": [
+        608908078,
+        366241726,
+        1111526104
+      ],
+      "height_bin": 1,
+      "radius_bin": 3,
+      "angle_bin": 6,
+      "target_index": 69
+    },
+    {
+      "target": [
+        1.212389,
+        0.366243,
+        0.731674
+      ],
+      "noise_seeds": [
+        2315528410,
+        531868745,
+        3029594534
+      ],
+      "height_bin": 4,
+      "radius_bin": 1,
+      "angle_bin": 0,
+      "target_index": 70
+    },
+    {
+      "target": [
+        -1.849195,
+        0.530491,
+        0.261455
+      ],
+      "noise_seeds": [
+        551909874,
+        2905172816,
+        483031037
+      ],
+      "height_bin": 0,
+      "radius_bin": 4,
+      "angle_bin": 4,
+      "target_index": 71
+    },
+    {
+      "target": [
+        -1.485525,
+        0.445064,
+        0.320652
+      ],
+      "noise_seeds": [
+        3287975513,
+        174622220,
+        4080558519
+      ],
+      "height_bin": 1,
+      "radius_bin": 3,
+      "angle_bin": 4,
+      "target_index": 72
+    },
+    {
+      "target": [
+        -1.027713,
+        1.363584,
+        0.511658
+      ],
+      "noise_seeds": [
+        683641416,
+        2700534348,
+        2648819804
+      ],
+      "height_bin": 2,
+      "radius_bin": 3,
+      "angle_bin": 3,
+      "target_index": 73
+    },
+    {
+      "target": [
+        -0.447928,
+        -0.744034,
+        0.867287
+      ],
+      "noise_seeds": [
+        2368103500,
+        308130437,
+        1838653908
+      ],
+      "height_bin": 6,
+      "radius_bin": 0,
+      "angle_bin": 6,
+      "target_index": 74
+    },
+    {
+      "target": [
+        1.352136,
+        -0.944097,
+        0.365074
+      ],
+      "noise_seeds": [
+        1358449825,
+        2951202005,
+        3509915308
+      ],
+      "height_bin": 1,
+      "radius_bin": 3,
+      "angle_bin": 9,
+      "target_index": 75
+    },
+    {
+      "target": [
+        1.818976,
+        0.240591,
+        0.323938
+      ],
+      "noise_seeds": [
+        2030286953,
+        986762905,
+        2814157896
+      ],
+      "height_bin": 1,
+      "radius_bin": 4,
+      "angle_bin": 0,
+      "target_index": 76
+    },
+    {
+      "target": [
+        -0.749959,
+        -1.799344,
+        0.362663
+      ],
+      "noise_seeds": [
+        1213127646,
+        3226081044,
+        1542865088
+      ],
+      "height_bin": 1,
+      "radius_bin": 4,
+      "angle_bin": 6,
+      "target_index": 77
+    },
+    {
+      "target": [
+        -1.299327,
+        0.243435,
+        0.622713
+      ],
+      "noise_seeds": [
+        2669448226,
+        783514805,
+        454699071
+      ],
+      "height_bin": 3,
+      "radius_bin": 2,
+      "angle_bin": 4,
+      "target_index": 78
+    },
+    {
+      "target": [
+        1.019792,
+        -1.412804,
+        1.123596
+      ],
+      "noise_seeds": [
+        344759479,
+        144440350,
+        157132852
+      ],
+      "height_bin": 8,
+      "radius_bin": 3,
+      "angle_bin": 8,
+      "target_index": 79
+    },
+    {
+      "target": [
+        -0.753576,
+        0.819147,
+        0.791107
+      ],
+      "noise_seeds": [
+        2953836325,
+        3684179006,
+        2926216160
+      ],
+      "height_bin": 5,
+      "radius_bin": 1,
+      "angle_bin": 3,
+      "target_index": 80
+    },
+    {
+      "target": [
+        -1.18826,
+        1.200638,
+        1.061576
+      ],
+      "noise_seeds": [
+        818666818,
+        2300129595,
+        2444617936
+      ],
+      "height_bin": 7,
+      "radius_bin": 3,
+      "angle_bin": 3,
+      "target_index": 81
+    },
+    {
+      "target": [
+        0.778839,
+        -0.199641,
+        0.726543
+      ],
+      "noise_seeds": [
+        2387232542,
+        1103563592,
+        2345140473
+      ],
+      "height_bin": 4,
+      "radius_bin": 0,
+      "angle_bin": 9,
+      "target_index": 82
+    },
+    {
+      "target": [
+        -0.65927,
+        1.70214,
+        0.952203
+      ],
+      "noise_seeds": [
+        2228206456,
+        703820641,
+        3884451461
+      ],
+      "height_bin": 6,
+      "radius_bin": 4,
+      "angle_bin": 3,
+      "target_index": 83
+    },
+    {
+      "target": [
+        1.378793,
+        0.969696,
+        0.445411
+      ],
+      "noise_seeds": [
+        12109700,
+        1077917397,
+        430021611
+      ],
+      "height_bin": 2,
+      "radius_bin": 3,
+      "angle_bin": 0,
+      "target_index": 84
+    },
+    {
+      "target": [
+        0.47584,
+        1.056716,
+        1.078162
+      ],
+      "noise_seeds": [
+        1249269534,
+        2530391239,
+        944737629
+      ],
+      "height_bin": 7,
+      "radius_bin": 1,
+      "angle_bin": 1,
+      "target_index": 85
+    },
+    {
+      "target": [
+        0.819564,
+        0.578918,
+        0.523239
+      ],
+      "noise_seeds": [
+        4274263046,
+        3180855136,
+        733065826
+      ],
+      "height_bin": 2,
+      "radius_bin": 0,
+      "angle_bin": 0,
+      "target_index": 86
+    },
+    {
+      "target": [
+        -0.336104,
+        0.850969,
+        0.371675
+      ],
+      "noise_seeds": [
+        1969277683,
+        3024861301,
+        247910339
+      ],
+      "height_bin": 1,
+      "radius_bin": 0,
+      "angle_bin": 3,
+      "target_index": 87
+    },
+    {
+      "target": [
+        -1.162192,
+        -1.339436,
+        1.052023
+      ],
+      "noise_seeds": [
+        1243216750,
+        3508982389,
+        2807024752
+      ],
+      "height_bin": 7,
+      "radius_bin": 4,
+      "angle_bin": 6,
+      "target_index": 88
+    },
+    {
+      "target": [
+        0.938623,
+        0.099587,
+        0.735636
+      ],
+      "noise_seeds": [
+        4107092240,
+        2831291601,
+        1456784522
+      ],
+      "height_bin": 4,
+      "radius_bin": 0,
+      "angle_bin": 0,
+      "target_index": 89
+    },
+    {
+      "target": [
+        -1.099493,
+        0.452365,
+        1.17344
+      ],
+      "noise_seeds": [
+        1121307575,
+        3446885103,
+        2918417749
+      ],
+      "height_bin": 8,
+      "radius_bin": 1,
+      "angle_bin": 4,
+      "target_index": 90
+    },
+    {
+      "target": [
+        -0.994096,
+        0.136594,
+        0.909677
+      ],
+      "noise_seeds": [
+        898589157,
+        3235752183,
+        561183615
+      ],
+      "height_bin": 6,
+      "radius_bin": 0,
+      "angle_bin": 4,
+      "target_index": 91
+    },
+    {
+      "target": [
+        -0.746884,
+        -0.911896,
+        1.271706
+      ],
+      "noise_seeds": [
+        3707680023,
+        3988164565,
+        2254069079
+      ],
+      "height_bin": 9,
+      "radius_bin": 1,
+      "angle_bin": 6,
+      "target_index": 92
+    },
+    {
+      "target": [
+        -1.104985,
+        -0.413166,
+        0.665137
+      ],
+      "noise_seeds": [
+        275070805,
+        2332834413,
+        1997700144
+      ],
+      "height_bin": 4,
+      "radius_bin": 1,
+      "angle_bin": 5,
+      "target_index": 93
+    },
+    {
+      "target": [
+        0.254156,
+        -0.893493,
+        0.753123
+      ],
+      "noise_seeds": [
+        2971809901,
+        4043624244,
+        3414604657
+      ],
+      "height_bin": 5,
+      "radius_bin": 0,
+      "angle_bin": 7,
+      "target_index": 94
+    },
+    {
+      "target": [
+        1.563295,
+        -0.479904,
+        0.893175
+      ],
+      "noise_seeds": [
+        983188343,
+        24044055,
+        388076043
+      ],
+      "height_bin": 6,
+      "radius_bin": 3,
+      "angle_bin": 9,
+      "target_index": 95
+    },
+    {
+      "target": [
+        0.346857,
+        0.854393,
+        1.104213
+      ],
+      "noise_seeds": [
+        737484903,
+        3205608635,
+        3214566833
+      ],
+      "height_bin": 8,
+      "radius_bin": 0,
+      "angle_bin": 1,
+      "target_index": 96
+    },
+    {
+      "target": [
+        -1.034081,
+        -0.390523,
+        0.751337
+      ],
+      "noise_seeds": [
+        3481439945,
+        2821539506,
+        2481622689
+      ],
+      "height_bin": 5,
+      "radius_bin": 1,
+      "angle_bin": 5,
+      "target_index": 97
+    },
+    {
+      "target": [
+        0.48574,
+        1.264546,
+        1.043516
+      ],
+      "noise_seeds": [
+        1430498068,
+        1592475026,
+        243154650
+      ],
+      "height_bin": 7,
+      "radius_bin": 2,
+      "angle_bin": 1,
+      "target_index": 98
+    },
+    {
+      "target": [
+        -0.80632,
+        0.562621,
+        1.047342
+      ],
+      "noise_seeds": [
+        2323527401,
+        1186131343,
+        706294563
+      ],
+      "height_bin": 7,
+      "radius_bin": 0,
+      "angle_bin": 4,
+      "target_index": 99
+    },
+    {
+      "target": [
+        1.009114,
+        1.400639,
+        1.04481
+      ],
+      "noise_seeds": [
+        50305595,
+        418155547,
+        1403394953
+      ],
+      "height_bin": 7,
+      "radius_bin": 3,
+      "angle_bin": 1,
+      "target_index": 100
+    },
+    {
+      "target": [
+        0.646595,
+        -1.282735,
+        0.748651
+      ],
+      "noise_seeds": [
+        4195295309,
+        2239182217,
+        587429756
+      ],
+      "height_bin": 4,
+      "radius_bin": 2,
+      "angle_bin": 8,
+      "target_index": 101
+    },
+    {
+      "target": [
+        -0.375725,
+        -0.865529,
+        1.146016
+      ],
+      "noise_seeds": [
+        1188048757,
+        2235911164,
+        1466678079
+      ],
+      "height_bin": 8,
+      "radius_bin": 0,
+      "angle_bin": 6,
+      "target_index": 102
+    },
+    {
+      "target": [
+        1.102734,
+        1.005103,
+        0.82055
+      ],
+      "noise_seeds": [
+        3859221479,
+        760295031,
+        93213367
+      ],
+      "height_bin": 5,
+      "radius_bin": 2,
+      "angle_bin": 1,
+      "target_index": 103
+    },
+    {
+      "target": [
+        -1.598836,
+        -0.601807,
+        0.939691
+      ],
+      "noise_seeds": [
+        1266443718,
+        1315182272,
+        446320778
+      ],
+      "height_bin": 6,
+      "radius_bin": 3,
+      "angle_bin": 5,
+      "target_index": 104
+    },
+    {
+      "target": [
+        0.564635,
+        0.953901,
+        0.689932
+      ],
+      "noise_seeds": [
+        996594149,
+        1565517260,
+        3044015285
+      ],
+      "height_bin": 4,
+      "radius_bin": 1,
+      "angle_bin": 1,
+      "target_index": 105
+    },
+    {
+      "target": [
+        1.151603,
+        0.624302,
+        0.862893
+      ],
+      "noise_seeds": [
+        4176229978,
+        1851822708,
+        3494882203
+      ],
+      "height_bin": 6,
+      "radius_bin": 2,
+      "angle_bin": 0,
+      "target_index": 106
+    },
+    {
+      "target": [
+        -0.216838,
+        -1.854858,
+        0.67442
+      ],
+      "noise_seeds": [
+        2534945994,
+        1855969139,
+        240778526
+      ],
+      "height_bin": 4,
+      "radius_bin": 4,
+      "angle_bin": 7,
+      "target_index": 107
+    },
+    {
+      "target": [
+        0.180731,
+        1.312855,
+        0.892837
+      ],
+      "noise_seeds": [
+        3461491124,
+        2290836194,
+        2251434222
+      ],
+      "height_bin": 6,
+      "radius_bin": 2,
+      "angle_bin": 2,
+      "target_index": 108
+    },
+    {
+      "target": [
+        -1.828692,
+        -0.312182,
+        0.613508
+      ],
+      "noise_seeds": [
+        1018177708,
+        1901087884,
+        1866953922
+      ],
+      "height_bin": 3,
+      "radius_bin": 4,
+      "angle_bin": 5,
+      "target_index": 109
+    },
+    {
+      "target": [
+        1.41884,
+        -1.28774,
+        0.686492
+      ],
+      "noise_seeds": [
+        4103173911,
+        3942573667,
+        1653501423
+      ],
+      "height_bin": 4,
+      "radius_bin": 4,
+      "angle_bin": 8,
+      "target_index": 110
+    },
+    {
+      "target": [
+        0.982849,
+        1.50307,
+        1.170132
+      ],
+      "noise_seeds": [
+        2699915136,
+        595958689,
+        106547429
+      ],
+      "height_bin": 8,
+      "radius_bin": 4,
+      "angle_bin": 1,
+      "target_index": 111
+    },
+    {
+      "target": [
+        0.165686,
+        -1.884604,
+        0.295793
+      ],
+      "noise_seeds": [
+        2540516387,
+        3645540754,
+        4005979769
+      ],
+      "height_bin": 0,
+      "radius_bin": 4,
+      "angle_bin": 7,
+      "target_index": 112
+    },
+    {
+      "target": [
+        1.08813,
+        0.387174,
+        0.750673
+      ],
+      "noise_seeds": [
+        572025234,
+        451580912,
+        89151342
+      ],
+      "height_bin": 5,
+      "radius_bin": 1,
+      "angle_bin": 0,
+      "target_index": 113
+    },
+    {
+      "target": [
+        -0.86829,
+        -1.374981,
+        1.160459
+      ],
+      "noise_seeds": [
+        4063244157,
+        168025807,
+        190564622
+      ],
+      "height_bin": 8,
+      "radius_bin": 3,
+      "angle_bin": 6,
+      "target_index": 114
+    },
+    {
+      "target": [
+        0.895239,
+        0.291654,
+        0.887456
+      ],
+      "noise_seeds": [
+        122980697,
+        1591155182,
+        1793638826
+      ],
+      "height_bin": 6,
+      "radius_bin": 0,
+      "angle_bin": 0,
+      "target_index": 115
+    },
+    {
+      "target": [
+        -1.774966,
+        -0.426566,
+        0.678842
+      ],
+      "noise_seeds": [
+        1957245876,
+        374877217,
+        1704911624
+      ],
+      "height_bin": 4,
+      "radius_bin": 4,
+      "angle_bin": 5,
+      "target_index": 116
+    },
+    {
+      "target": [
+        1.374841,
+        0.63113,
+        0.689355
+      ],
+      "noise_seeds": [
+        69051710,
+        1522215907,
+        4075492208
+      ],
+      "height_bin": 4,
+      "radius_bin": 2,
+      "angle_bin": 0,
+      "target_index": 117
+    },
+    {
+      "target": [
+        -0.683185,
+        1.052651,
+        0.274819
+      ],
+      "noise_seeds": [
+        3964797843,
+        1869848359,
+        3407329525
+      ],
+      "height_bin": 0,
+      "radius_bin": 1,
+      "angle_bin": 3,
+      "target_index": 118
+    },
+    {
+      "target": [
+        -1.195251,
+        0.922364,
+        1.09353
+      ],
+      "noise_seeds": [
+        3916742486,
+        1317777788,
+        1920548499
+      ],
+      "height_bin": 8,
+      "radius_bin": 2,
+      "angle_bin": 3,
+      "target_index": 119
+    },
+    {
+      "target": [
+        1.319628,
+        -1.069111,
+        1.04201
+      ],
+      "noise_seeds": [
+        3306012387,
+        1540424965,
+        3879689387
+      ],
+      "height_bin": 7,
+      "radius_bin": 3,
+      "angle_bin": 8,
+      "target_index": 120
+    },
+    {
+      "target": [
+        0.09599,
+        1.182976,
+        1.245448
+      ],
+      "noise_seeds": [
+        1002509438,
+        3573640968,
+        2326991489
+      ],
+      "height_bin": 9,
+      "radius_bin": 1,
+      "angle_bin": 2,
+      "target_index": 121
+    },
+    {
+      "target": [
+        -0.647733,
+        -0.955826,
+        0.939059
+      ],
+      "noise_seeds": [
+        2455359005,
+        2983530987,
+        2573985530
+      ],
+      "height_bin": 6,
+      "radius_bin": 1,
+      "angle_bin": 6,
+      "target_index": 122
+    },
+    {
+      "target": [
+        0.388337,
+        0.917233,
+        0.29698
+      ],
+      "noise_seeds": [
+        888756469,
+        2015371893,
+        3768205670
+      ],
+      "height_bin": 0,
+      "radius_bin": 0,
+      "angle_bin": 1,
+      "target_index": 123
+    },
+    {
+      "target": [
+        0.666785,
+        0.700523,
+        0.652966
+      ],
+      "noise_seeds": [
+        3578073286,
+        3097995699,
+        183404407
+      ],
+      "height_bin": 4,
+      "radius_bin": 0,
+      "angle_bin": 1,
+      "target_index": 124
+    },
+    {
+      "target": [
+        0.654065,
+        -1.430312,
+        0.32264
+      ],
+      "noise_seeds": [
+        2236765078,
+        1840908409,
+        2798735457
+      ],
+      "height_bin": 1,
+      "radius_bin": 3,
+      "angle_bin": 8,
+      "target_index": 125
+    },
+    {
+      "target": [
+        0.709325,
+        -0.788824,
+        0.84435
+      ],
+      "noise_seeds": [
+        3995176918,
+        559314550,
+        1552172184
+      ],
+      "height_bin": 5,
+      "radius_bin": 1,
+      "angle_bin": 8,
+      "target_index": 126
+    },
+    {
+      "target": [
+        1.2428,
+        0.49625,
+        0.971436
+      ],
+      "noise_seeds": [
+        921835097,
+        1569498675,
+        3312331479
+      ],
+      "height_bin": 7,
+      "radius_bin": 2,
+      "angle_bin": 0,
+      "target_index": 127
+    },
+    {
+      "target": [
+        -0.612238,
+        1.666981,
+        1.277254
+      ],
+      "noise_seeds": [
+        408510511,
+        802414119,
+        1878147492
+      ],
+      "height_bin": 9,
+      "radius_bin": 4,
+      "angle_bin": 3,
+      "target_index": 128
+    },
+    {
+      "target": [
+        1.249876,
+        1.380383,
+        1.049605
+      ],
+      "noise_seeds": [
+        760863479,
+        2993109799,
+        1595581876
+      ],
+      "height_bin": 7,
+      "radius_bin": 4,
+      "angle_bin": 1,
+      "target_index": 129
+    },
+    {
+      "target": [
+        0.395778,
+        -1.53078,
+        1.011631
+      ],
+      "noise_seeds": [
+        894001346,
+        336180319,
+        3289327240
+      ],
+      "height_bin": 7,
+      "radius_bin": 3,
+      "angle_bin": 7,
+      "target_index": 130
+    },
+    {
+      "target": [
+        -0.497461,
+        -0.788985,
+        0.455883
+      ],
+      "noise_seeds": [
+        772128323,
+        3469538680,
+        3407652773
+      ],
+      "height_bin": 2,
+      "radius_bin": 0,
+      "angle_bin": 6,
+      "target_index": 131
+    },
+    {
+      "target": [
+        -1.119465,
+        -1.087196,
+        0.760848
+      ],
+      "noise_seeds": [
+        166034340,
+        735706549,
+        3024488140
+      ],
+      "height_bin": 5,
+      "radius_bin": 3,
+      "angle_bin": 6,
+      "target_index": 132
+    },
+    {
+      "target": [
+        0.295409,
+        -1.586805,
+        0.346698
+      ],
+      "noise_seeds": [
+        2584153213,
+        161276404,
+        721456673
+      ],
+      "height_bin": 1,
+      "radius_bin": 3,
+      "angle_bin": 7,
+      "target_index": 133
+    },
+    {
+      "target": [
+        -1.643385,
+        -0.386825,
+        0.465726
+      ],
+      "noise_seeds": [
+        2092323136,
+        342007851,
+        3231190041
+      ],
+      "height_bin": 2,
+      "radius_bin": 3,
+      "angle_bin": 5,
+      "target_index": 134
+    },
+    {
+      "target": [
+        0.334916,
+        -1.21476,
+        0.737284
+      ],
+      "noise_seeds": [
+        2177360456,
+        2398356827,
+        3730796692
+      ],
+      "height_bin": 4,
+      "radius_bin": 1,
+      "angle_bin": 7,
+      "target_index": 135
+    },
+    {
+      "target": [
+        -0.821525,
+        -0.752692,
+        0.85577
+      ],
+      "noise_seeds": [
+        3002267574,
+        1027635540,
+        3080751960
+      ],
+      "height_bin": 5,
+      "radius_bin": 1,
+      "angle_bin": 6,
+      "target_index": 136
+    },
+    {
+      "target": [
+        -0.840712,
+        -1.264519,
+        1.233377
+      ],
+      "noise_seeds": [
+        646017708,
+        352231302,
+        1121055016
+      ],
+      "height_bin": 9,
+      "radius_bin": 2,
+      "angle_bin": 6,
+      "target_index": 137
+    },
+    {
+      "target": [
+        1.053579,
+        -0.348531,
+        0.978676
+      ],
+      "noise_seeds": [
+        3994909303,
+        1929451376,
+        3656214081
+      ],
+      "height_bin": 7,
+      "radius_bin": 1,
+      "angle_bin": 9,
+      "target_index": 138
+    },
+    {
+      "target": [
+        0.750699,
+        -0.701232,
+        0.561159
+      ],
+      "noise_seeds": [
+        328922619,
+        1730405900,
+        939916879
+      ],
+      "height_bin": 3,
+      "radius_bin": 0,
+      "angle_bin": 8,
+      "target_index": 139
+    },
+    {
+      "target": [
+        0.627343,
+        1.609463,
+        0.397468
+      ],
+      "noise_seeds": [
+        1823964208,
+        3864880388,
+        3653928002
+      ],
+      "height_bin": 1,
+      "radius_bin": 3,
+      "angle_bin": 1,
+      "target_index": 140
+    },
+    {
+      "target": [
+        0.652166,
+        -0.719927,
+        0.660885
+      ],
+      "noise_seeds": [
+        986165801,
+        3381543984,
+        1000834043
+      ],
+      "height_bin": 4,
+      "radius_bin": 0,
+      "angle_bin": 8,
+      "target_index": 141
+    },
+    {
+      "target": [
+        1.167474,
+        -0.357743,
+        0.719003
+      ],
+      "noise_seeds": [
+        645527116,
+        2685029558,
+        2397139690
+      ],
+      "height_bin": 4,
+      "radius_bin": 1,
+      "angle_bin": 9,
+      "target_index": 142
+    },
+    {
+      "target": [
+        -1.288835,
+        -0.371834,
+        0.966036
+      ],
+      "noise_seeds": [
+        3844528669,
+        3858828711,
+        2631211558
+      ],
+      "height_bin": 6,
+      "radius_bin": 2,
+      "angle_bin": 5,
+      "target_index": 143
+    },
+    {
+      "target": [
+        0.768534,
+        0.804045,
+        0.418871
+      ],
+      "noise_seeds": [
+        2492112031,
+        317125457,
+        2434710313
+      ],
+      "height_bin": 1,
+      "radius_bin": 1,
+      "angle_bin": 1,
+      "target_index": 144
+    },
+    {
+      "target": [
+        -1.827877,
+        -0.792545,
+        0.469788
+      ],
+      "noise_seeds": [
+        3169072821,
+        2612939660,
+        1307055445
+      ],
+      "height_bin": 2,
+      "radius_bin": 4,
+      "angle_bin": 5,
+      "target_index": 145
+    },
+    {
+      "target": [
+        -0.617023,
+        -1.456157,
+        0.961749
+      ],
+      "noise_seeds": [
+        3765810059,
+        2481151782,
+        244811517
+      ],
+      "height_bin": 6,
+      "radius_bin": 3,
+      "angle_bin": 6,
+      "target_index": 146
+    },
+    {
+      "target": [
+        -1.316094,
+        0.020242,
+        0.332386
+      ],
+      "noise_seeds": [
+        3638293371,
+        3101972053,
+        2048584707
+      ],
+      "height_bin": 1,
+      "radius_bin": 2,
+      "angle_bin": 4,
+      "target_index": 147
+    },
+    {
+      "target": [
+        0.369612,
+        0.830111,
+        1.279576
+      ],
+      "noise_seeds": [
+        3928063517,
+        3322823975,
+        2021265043
+      ],
+      "height_bin": 9,
+      "radius_bin": 0,
+      "angle_bin": 1,
+      "target_index": 148
+    },
+    {
+      "target": [
+        -0.549183,
+        -1.266617,
+        0.281559
+      ],
+      "noise_seeds": [
+        3775040802,
+        833162463,
+        2159818242
+      ],
+      "height_bin": 0,
+      "radius_bin": 2,
+      "angle_bin": 6,
+      "target_index": 149
+    },
+    {
+      "target": [
+        0.668767,
+        -1.136239,
+        0.889516
+      ],
+      "noise_seeds": [
+        756002778,
+        3954808126,
+        2493247497
+      ],
+      "height_bin": 6,
+      "radius_bin": 2,
+      "angle_bin": 8,
+      "target_index": 150
+    },
+    {
+      "target": [
+        0.211294,
+        0.979218,
+        1.233338
+      ],
+      "noise_seeds": [
+        2001510523,
+        3772640661,
+        275465568
+      ],
+      "height_bin": 9,
+      "radius_bin": 0,
+      "angle_bin": 2,
+      "target_index": 151
+    },
+    {
+      "target": [
+        0.09113,
+        1.270489,
+        0.285759
+      ],
+      "noise_seeds": [
+        1059926825,
+        1967874332,
+        66007961
+      ],
+      "height_bin": 0,
+      "radius_bin": 1,
+      "angle_bin": 2,
+      "target_index": 152
+    },
+    {
+      "target": [
+        1.105887,
+        -0.119187,
+        0.756943
+      ],
+      "noise_seeds": [
+        340394608,
+        4211121177,
+        227837105
+      ],
+      "height_bin": 5,
+      "radius_bin": 1,
+      "angle_bin": 9,
+      "target_index": 153
+    },
+    {
+      "target": [
+        -1.473846,
+        -0.135326,
+        1.098911
+      ],
+      "noise_seeds": [
+        1643888485,
+        920814945,
+        2252397853
+      ],
+      "height_bin": 8,
+      "radius_bin": 2,
+      "angle_bin": 5,
+      "target_index": 154
+    },
+    {
+      "target": [
+        -0.605183,
+        0.595463,
+        0.665006
+      ],
+      "noise_seeds": [
+        1682132954,
+        2927827925,
+        317181236
+      ],
+      "height_bin": 4,
+      "radius_bin": 0,
+      "angle_bin": 3,
+      "target_index": 155
+    },
+    {
+      "target": [
+        0.372587,
+        -1.215589,
+        0.449903
+      ],
+      "noise_seeds": [
+        191693293,
+        12588881,
+        771520455
+      ],
+      "height_bin": 2,
+      "radius_bin": 1,
+      "angle_bin": 7,
+      "target_index": 156
+    },
+    {
+      "target": [
+        -1.068098,
+        -0.203061,
+        1.230908
+      ],
+      "noise_seeds": [
+        2121351252,
+        2156795194,
+        1635950653
+      ],
+      "height_bin": 9,
+      "radius_bin": 1,
+      "angle_bin": 5,
+      "target_index": 157
+    },
+    {
+      "target": [
+        -0.914662,
+        0.849426,
+        0.96763
+      ],
+      "noise_seeds": [
+        2626135588,
+        1668288418,
+        3379671949
+      ],
+      "height_bin": 6,
+      "radius_bin": 1,
+      "angle_bin": 3,
+      "target_index": 158
+    },
+    {
+      "target": [
+        0.517194,
+        -0.980297,
+        1.020565
+      ],
+      "noise_seeds": [
+        3056658487,
+        3503452181,
+        3681714117
+      ],
+      "height_bin": 7,
+      "radius_bin": 1,
+      "angle_bin": 8,
+      "target_index": 159
+    },
+    {
+      "target": [
+        -0.63471,
+        -0.562001,
+        0.72226
+      ],
+      "noise_seeds": [
+        2671564560,
+        1740674554,
+        3738851955
+      ],
+      "height_bin": 4,
+      "radius_bin": 0,
+      "angle_bin": 6,
+      "target_index": 160
+    },
+    {
+      "target": [
+        -1.427105,
+        0.214124,
+        0.695568
+      ],
+      "noise_seeds": [
+        2059920292,
+        16661904,
+        2941177746
+      ],
+      "height_bin": 4,
+      "radius_bin": 2,
+      "angle_bin": 4,
+      "target_index": 161
+    },
+    {
+      "target": [
+        0.601492,
+        -1.15185,
+        0.231751
+      ],
+      "noise_seeds": [
+        1626176183,
+        1594399136,
+        641482144
+      ],
+      "height_bin": 0,
+      "radius_bin": 2,
+      "angle_bin": 8,
+      "target_index": 162
+    },
+    {
+      "target": [
+        -0.901994,
+        -0.022858,
+        1.141549
+      ],
+      "noise_seeds": [
+        2076397443,
+        3889184194,
+        3812500045
+      ],
+      "height_bin": 8,
+      "radius_bin": 0,
+      "angle_bin": 5,
+      "target_index": 163
+    },
+    {
+      "target": [
+        -0.206212,
+        1.37251,
+        0.512972
+      ],
+      "noise_seeds": [
+        2808791451,
+        748654333,
+        2862436943
+      ],
+      "height_bin": 2,
+      "radius_bin": 2,
+      "angle_bin": 2,
+      "target_index": 164
+    },
+    {
+      "target": [
+        -0.385899,
+        1.372765,
+        0.533931
+      ],
+      "noise_seeds": [
+        1768272569,
+        1456606668,
+        4105544162
+      ],
+      "height_bin": 3,
+      "radius_bin": 2,
+      "angle_bin": 2,
+      "target_index": 165
+    },
+    {
+      "target": [
+        -0.652936,
+        -1.519954,
+        0.732712
+      ],
+      "noise_seeds": [
+        720316740,
+        883698856,
+        419374995
+      ],
+      "height_bin": 4,
+      "radius_bin": 3,
+      "angle_bin": 6,
+      "target_index": 166
+    },
+    {
+      "target": [
+        -1.158834,
+        1.324315,
+        0.552207
+      ],
+      "noise_seeds": [
+        555785809,
+        4068664211,
+        3117706166
+      ],
+      "height_bin": 3,
+      "radius_bin": 3,
+      "angle_bin": 3,
+      "target_index": 167
+    },
+    {
+      "target": [
+        -0.639479,
+        -0.944563,
+        0.323623
+      ],
+      "noise_seeds": [
+        1396287878,
+        2729041644,
+        3629975104
+      ],
+      "height_bin": 1,
+      "radius_bin": 1,
+      "angle_bin": 6,
+      "target_index": 168
+    },
+    {
+      "target": [
+        1.347482,
+        -0.362443,
+        1.29205
+      ],
+      "noise_seeds": [
+        1030285959,
+        1931667520,
+        3144533835
+      ],
+      "height_bin": 9,
+      "radius_bin": 2,
+      "angle_bin": 9,
+      "target_index": 169
+    },
+    {
+      "target": [
+        0.07535,
+        1.942829,
+        1.282054
+      ],
+      "noise_seeds": [
+        4217928007,
+        860442854,
+        3217407131
+      ],
+      "height_bin": 9,
+      "radius_bin": 4,
+      "angle_bin": 2,
+      "target_index": 170
+    },
+    {
+      "target": [
+        -0.643233,
+        -1.313687,
+        0.545808
+      ],
+      "noise_seeds": [
+        2010076786,
+        1441637831,
+        3708971802
+      ],
+      "height_bin": 3,
+      "radius_bin": 2,
+      "angle_bin": 6,
+      "target_index": 171
+    },
+    {
+      "target": [
+        1.662586,
+        -0.701921,
+        0.262672
+      ],
+      "noise_seeds": [
+        3998496960,
+        612595255,
+        2240470133
+      ],
+      "height_bin": 0,
+      "radius_bin": 4,
+      "angle_bin": 9,
+      "target_index": 172
+    },
+    {
+      "target": [
+        0.585337,
+        -0.950976,
+        0.260496
+      ],
+      "noise_seeds": [
+        3535899995,
+        1020162185,
+        361043868
+      ],
+      "height_bin": 0,
+      "radius_bin": 1,
+      "angle_bin": 8,
+      "target_index": 173
+    },
+    {
+      "target": [
+        -0.734394,
+        1.334145,
+        0.788823
+      ],
+      "noise_seeds": [
+        112010321,
+        240278915,
+        2933630892
+      ],
+      "height_bin": 5,
+      "radius_bin": 3,
+      "angle_bin": 3,
+      "target_index": 174
+    },
+    {
+      "target": [
+        -0.973799,
+        0.407872,
+        0.385231
+      ],
+      "noise_seeds": [
+        95742817,
+        2833155721,
+        33373592
+      ],
+      "height_bin": 1,
+      "radius_bin": 1,
+      "angle_bin": 4,
+      "target_index": 175
+    },
+    {
+      "target": [
+        -0.99763,
+        0.675067,
+        1.285201
+      ],
+      "noise_seeds": [
+        2644794893,
+        1975136528,
+        2749411880
+      ],
+      "height_bin": 9,
+      "radius_bin": 1,
+      "angle_bin": 4,
+      "target_index": 176
+    },
+    {
+      "target": [
+        1.627987,
+        -0.284253,
+        0.696937
+      ],
+      "noise_seeds": [
+        3602335734,
+        3077490674,
+        3791114283
+      ],
+      "height_bin": 4,
+      "radius_bin": 3,
+      "angle_bin": 9,
+      "target_index": 177
+    },
+    {
+      "target": [
+        1.591753,
+        0.272672,
+        0.359504
+      ],
+      "noise_seeds": [
+        3582546809,
+        3319334844,
+        3241099672
+      ],
+      "height_bin": 1,
+      "radius_bin": 3,
+      "angle_bin": 0,
+      "target_index": 178
+    },
+    {
+      "target": [
+        -0.898503,
+        0.324889,
+        1.177021
+      ],
+      "noise_seeds": [
+        2853155191,
+        2128396539,
+        2704783656
+      ],
+      "height_bin": 8,
+      "radius_bin": 0,
+      "angle_bin": 4,
+      "target_index": 179
+    },
+    {
+      "target": [
+        1.08669,
+        -0.268871,
+        0.919876
+      ],
+      "noise_seeds": [
+        927823260,
+        1742259640,
+        105010447
+      ],
+      "height_bin": 6,
+      "radius_bin": 1,
+      "angle_bin": 9,
+      "target_index": 180
+    },
+    {
+      "target": [
+        -0.976465,
+        1.417478,
+        1.101649
+      ],
+      "noise_seeds": [
+        951479707,
+        3246041744,
+        1887589206
+      ],
+      "height_bin": 8,
+      "radius_bin": 3,
+      "angle_bin": 3,
+      "target_index": 181
+    },
+    {
+      "target": [
+        -0.456681,
+        1.596059,
+        0.389736
+      ],
+      "noise_seeds": [
+        1816965060,
+        2617555709,
+        2809452154
+      ],
+      "height_bin": 1,
+      "radius_bin": 3,
+      "angle_bin": 2,
+      "target_index": 182
+    },
+    {
+      "target": [
+        -1.082678,
+        0.952027,
+        0.973763
+      ],
+      "noise_seeds": [
+        732668076,
+        3211814667,
+        488340203
+      ],
+      "height_bin": 7,
+      "radius_bin": 2,
+      "angle_bin": 3,
+      "target_index": 183
+    },
+    {
+      "target": [
+        0.473562,
+        1.887831,
+        1.038377
+      ],
+      "noise_seeds": [
+        952830952,
+        1315287155,
+        1230969368
+      ],
+      "height_bin": 7,
+      "radius_bin": 4,
+      "angle_bin": 2,
+      "target_index": 184
+    },
+    {
+      "target": [
+        -0.126884,
+        1.040967,
+        0.869484
+      ],
+      "noise_seeds": [
+        396083330,
+        4100690845,
+        3911763976
+      ],
+      "height_bin": 6,
+      "radius_bin": 1,
+      "angle_bin": 2,
+      "target_index": 185
+    },
+    {
+      "target": [
+        -0.875564,
+        -1.416262,
+        1.079851
+      ],
+      "noise_seeds": [
+        3942128189,
+        1531558024,
+        2825728785
+      ],
+      "height_bin": 7,
+      "radius_bin": 3,
+      "angle_bin": 6,
+      "target_index": 186
+    },
+    {
+      "target": [
+        -1.769964,
+        0.726438,
+        1.16076
+      ],
+      "noise_seeds": [
+        1329789023,
+        336253347,
+        3940792885
+      ],
+      "height_bin": 8,
+      "radius_bin": 4,
+      "angle_bin": 4,
+      "target_index": 187
+    },
+    {
+      "target": [
+        -1.726428,
+        -0.334797,
+        0.798302
+      ],
+      "noise_seeds": [
+        2879148245,
+        2411230442,
+        1865946939
+      ],
+      "height_bin": 5,
+      "radius_bin": 3,
+      "angle_bin": 5,
+      "target_index": 188
+    },
+    {
+      "target": [
+        0.387961,
+        1.1789,
+        0.629854
+      ],
+      "noise_seeds": [
+        1758311454,
+        1596451652,
+        1645361236
+      ],
+      "height_bin": 3,
+      "radius_bin": 1,
+      "angle_bin": 1,
+      "target_index": 189
+    },
+    {
+      "target": [
+        1.192469,
+        -1.024031,
+        0.713638
+      ],
+      "noise_seeds": [
+        820415657,
+        1672353082,
+        930872667
+      ],
+      "height_bin": 4,
+      "radius_bin": 3,
+      "angle_bin": 8,
+      "target_index": 190
+    },
+    {
+      "target": [
+        0.138542,
+        1.056424,
+        0.507943
+      ],
+      "noise_seeds": [
+        3176986293,
+        1449597230,
+        3294015666
+      ],
+      "height_bin": 2,
+      "radius_bin": 1,
+      "angle_bin": 2,
+      "target_index": 191
+    },
+    {
+      "target": [
+        -0.854881,
+        -1.615672,
+        1.254358
+      ],
+      "noise_seeds": [
+        4287270963,
+        3722591489,
+        1298980638
+      ],
+      "height_bin": 9,
+      "radius_bin": 4,
+      "angle_bin": 6,
+      "target_index": 192
+    },
+    {
+      "target": [
+        0.84569,
+        0.05599,
+        0.232072
+      ],
+      "noise_seeds": [
+        180403568,
+        497387081,
+        582989873
+      ],
+      "height_bin": 0,
+      "radius_bin": 0,
+      "angle_bin": 0,
+      "target_index": 193
+    },
+    {
+      "target": [
+        0.503278,
+        1.512651,
+        0.72176
+      ],
+      "noise_seeds": [
+        3905284413,
+        1703832983,
+        1342912736
+      ],
+      "height_bin": 4,
+      "radius_bin": 3,
+      "angle_bin": 1,
+      "target_index": 194
+    },
+    {
+      "target": [
+        -1.146177,
+        0.564995,
+        0.720382
+      ],
+      "noise_seeds": [
+        2158740351,
+        1495611787,
+        1968858039
+      ],
+      "height_bin": 4,
+      "radius_bin": 1,
+      "angle_bin": 4,
+      "target_index": 195
+    },
+    {
+      "target": [
+        0.876667,
+        -0.528423,
+        0.330557
+      ],
+      "noise_seeds": [
+        4272239023,
+        563275237,
+        3335469488
+      ],
+      "height_bin": 1,
+      "radius_bin": 0,
+      "angle_bin": 9,
+      "target_index": 196
+    },
+    {
+      "target": [
+        -1.289896,
+        1.189307,
+        0.363956
+      ],
+      "noise_seeds": [
+        2875330307,
+        1042261713,
+        821724818
+      ],
+      "height_bin": 1,
+      "radius_bin": 3,
+      "angle_bin": 3,
+      "target_index": 197
+    },
+    {
+      "target": [
+        -0.490818,
+        1.680651,
+        0.542813
+      ],
+      "noise_seeds": [
+        3724785952,
+        3731600163,
+        2254236019
+      ],
+      "height_bin": 3,
+      "radius_bin": 3,
+      "angle_bin": 2,
+      "target_index": 198
+    },
+    {
+      "target": [
+        -0.590164,
+        -0.722959,
+        0.801488
+      ],
+      "noise_seeds": [
+        1492342541,
+        1782798685,
+        845340811
+      ],
+      "height_bin": 5,
+      "radius_bin": 0,
+      "angle_bin": 6,
+      "target_index": 199
+    },
+    {
+      "target": [
+        0.574072,
+        -1.744007,
+        0.630046
+      ],
+      "noise_seeds": [
+        940623125,
+        977422040,
+        3971185643
+      ],
+      "height_bin": 3,
+      "radius_bin": 4,
+      "angle_bin": 8,
+      "target_index": 200
+    },
+    {
+      "target": [
+        -0.746527,
+        0.794728,
+        0.689731
+      ],
+      "noise_seeds": [
+        1756711616,
+        907282816,
+        1734650656
+      ],
+      "height_bin": 4,
+      "radius_bin": 1,
+      "angle_bin": 3,
+      "target_index": 201
+    },
+    {
+      "target": [
+        1.653409,
+        0.423302,
+        0.892057
+      ],
+      "noise_seeds": [
+        530722272,
+        448078310,
+        973241579
+      ],
+      "height_bin": 6,
+      "radius_bin": 3,
+      "angle_bin": 0,
+      "target_index": 202
+    },
+    {
+      "target": [
+        -0.888289,
+        0.651113,
+        0.571047
+      ],
+      "noise_seeds": [
+        735068064,
+        3913941772,
+        841619023
+      ],
+      "height_bin": 3,
+      "radius_bin": 1,
+      "angle_bin": 3,
+      "target_index": 203
+    },
+    {
+      "target": [
+        0.761701,
+        0.426404,
+        1.200199
+      ],
+      "noise_seeds": [
+        2901411372,
+        2310423868,
+        2448714213
+      ],
+      "height_bin": 9,
+      "radius_bin": 0,
+      "angle_bin": 0,
+      "target_index": 204
+    },
+    {
+      "target": [
+        0.129306,
+        1.128718,
+        1.189716
+      ],
+      "noise_seeds": [
+        2742346921,
+        1287532723,
+        1634495752
+      ],
+      "height_bin": 8,
+      "radius_bin": 1,
+      "angle_bin": 2,
+      "target_index": 205
+    },
+    {
+      "target": [
+        -0.967815,
+        -0.663651,
+        0.214506
+      ],
+      "noise_seeds": [
+        1527232861,
+        3388967509,
+        2628743495
+      ],
+      "height_bin": 0,
+      "radius_bin": 1,
+      "angle_bin": 5,
+      "target_index": 206
+    },
+    {
+      "target": [
+        0.956902,
+        -0.563551,
+        1.286752
+      ],
+      "noise_seeds": [
+        3577813799,
+        3115133110,
+        1709713998
+      ],
+      "height_bin": 9,
+      "radius_bin": 1,
+      "angle_bin": 9,
+      "target_index": 207
+    },
+    {
+      "target": [
+        -0.308427,
+        0.912412,
+        0.772714
+      ],
+      "noise_seeds": [
+        253954032,
+        2705378682,
+        1510104767
+      ],
+      "height_bin": 5,
+      "radius_bin": 0,
+      "angle_bin": 3,
+      "target_index": 208
+    },
+    {
+      "target": [
+        0.044756,
+        1.706551,
+        1.2021
+      ],
+      "noise_seeds": [
+        1497967833,
+        2081953309,
+        3806660109
+      ],
+      "height_bin": 9,
+      "radius_bin": 3,
+      "angle_bin": 2,
+      "target_index": 209
+    },
+    {
+      "target": [
+        1.036327,
+        1.658263,
+        1.296431
+      ],
+      "noise_seeds": [
+        1993015463,
+        928577678,
+        469648592
+      ],
+      "height_bin": 9,
+      "radius_bin": 4,
+      "angle_bin": 1,
+      "target_index": 210
+    },
+    {
+      "target": [
+        0.238626,
+        -0.884416,
+        0.740516
+      ],
+      "noise_seeds": [
+        1378691346,
+        2688896860,
+        2895143314
+      ],
+      "height_bin": 4,
+      "radius_bin": 0,
+      "angle_bin": 7,
+      "target_index": 211
+    },
+    {
+      "target": [
+        -1.020259,
+        -1.171103,
+        0.469545
+      ],
+      "noise_seeds": [
+        1530479354,
+        2765320847,
+        3183075408
+      ],
+      "height_bin": 2,
+      "radius_bin": 3,
+      "angle_bin": 6,
+      "target_index": 212
+    },
+    {
+      "target": [
+        0.75118,
+        -1.594139,
+        0.447569
+      ],
+      "noise_seeds": [
+        2443737010,
+        125908000,
+        2027720446
+      ],
+      "height_bin": 2,
+      "radius_bin": 4,
+      "angle_bin": 8,
+      "target_index": 213
+    },
+    {
+      "target": [
+        -0.414658,
+        -0.828155,
+        1.222459
+      ],
+      "noise_seeds": [
+        611679982,
+        2805992014,
+        1823068762
+      ],
+      "height_bin": 9,
+      "radius_bin": 0,
+      "angle_bin": 6,
+      "target_index": 214
+    },
+    {
+      "target": [
+        0.400225,
+        -1.577784,
+        0.732639
+      ],
+      "noise_seeds": [
+        2285452614,
+        104426201,
+        2516460196
+      ],
+      "height_bin": 4,
+      "radius_bin": 3,
+      "angle_bin": 7,
+      "target_index": 215
+    },
+    {
+      "target": [
+        -1.35407,
+        -0.475942,
+        1.000952
+      ],
+      "noise_seeds": [
+        3111726638,
+        2062429261,
+        1294947883
+      ],
+      "height_bin": 7,
+      "radius_bin": 2,
+      "angle_bin": 5,
+      "target_index": 216
+    },
+    {
+      "target": [
+        -0.369365,
+        1.887695,
+        0.8163
+      ],
+      "noise_seeds": [
+        3913519477,
+        287444545,
+        2171229306
+      ],
+      "height_bin": 5,
+      "radius_bin": 4,
+      "angle_bin": 2,
+      "target_index": 217
+    },
+    {
+      "target": [
+        0.251009,
+        0.787279,
+        1.04734
+      ],
+      "noise_seeds": [
+        3481060708,
+        1977070510,
+        3260523045
+      ],
+      "height_bin": 7,
+      "radius_bin": 0,
+      "angle_bin": 2,
+      "target_index": 218
+    },
+    {
+      "target": [
+        -0.974203,
+        1.058843,
+        0.402849
+      ],
+      "noise_seeds": [
+        2038918977,
+        3624228722,
+        3440059376
+      ],
+      "height_bin": 1,
+      "radius_bin": 2,
+      "angle_bin": 3,
+      "target_index": 219
+    },
+    {
+      "target": [
+        -1.572602,
+        -0.319857,
+        0.634042
+      ],
+      "noise_seeds": [
+        3136907604,
+        2538013886,
+        1994604443
+      ],
+      "height_bin": 3,
+      "radius_bin": 3,
+      "angle_bin": 5,
+      "target_index": 220
+    },
+    {
+      "target": [
+        -1.202913,
+        -0.518285,
+        0.842969
+      ],
+      "noise_seeds": [
+        735392611,
+        2189445382,
+        930703450
+      ],
+      "height_bin": 5,
+      "radius_bin": 2,
+      "angle_bin": 5,
+      "target_index": 221
+    },
+    {
+      "target": [
+        0.78047,
+        1.59746,
+        0.520974
+      ],
+      "noise_seeds": [
+        4186667934,
+        3713282502,
+        835769037
+      ],
+      "height_bin": 2,
+      "radius_bin": 4,
+      "angle_bin": 1,
+      "target_index": 222
+    },
+    {
+      "target": [
+        -0.205356,
+        -1.480134,
+        1.076605
+      ],
+      "noise_seeds": [
+        2624313929,
+        3820009610,
+        2818484857
+      ],
+      "height_bin": 7,
+      "radius_bin": 2,
+      "angle_bin": 7,
+      "target_index": 223
+    },
+    {
+      "target": [
+        -0.629457,
+        -0.747122,
+        0.320458
+      ],
+      "noise_seeds": [
+        3875396515,
+        361886899,
+        2907173181
+      ],
+      "height_bin": 1,
+      "radius_bin": 0,
+      "angle_bin": 6,
+      "target_index": 224
+    },
+    {
+      "target": [
+        -0.545794,
+        -0.789226,
+        1.011482
+      ],
+      "noise_seeds": [
+        3402564330,
+        2340641126,
+        3923777884
+      ],
+      "height_bin": 7,
+      "radius_bin": 0,
+      "angle_bin": 6,
+      "target_index": 225
+    },
+    {
+      "target": [
+        -0.844073,
+        -0.149855,
+        1.004006
+      ],
+      "noise_seeds": [
+        3353561964,
+        3358306686,
+        1876626280
+      ],
+      "height_bin": 7,
+      "radius_bin": 0,
+      "angle_bin": 5,
+      "target_index": 226
+    },
+    {
+      "target": [
+        1.684583,
+        -0.497463,
+        0.62103
+      ],
+      "noise_seeds": [
+        4140569282,
+        724795666,
+        108260474
+      ],
+      "height_bin": 3,
+      "radius_bin": 3,
+      "angle_bin": 9,
+      "target_index": 227
+    },
+    {
+      "target": [
+        -1.580417,
+        1.022321,
+        1.215044
+      ],
+      "noise_seeds": [
+        4013238285,
+        2002384127,
+        3005942935
+      ],
+      "height_bin": 9,
+      "radius_bin": 4,
+      "angle_bin": 4,
+      "target_index": 228
+    },
+    {
+      "target": [
+        -0.495818,
+        -1.591488,
+        0.5428
+      ],
+      "noise_seeds": [
+        1793081864,
+        3447599898,
+        3948806051
+      ],
+      "height_bin": 3,
+      "radius_bin": 3,
+      "angle_bin": 7,
+      "target_index": 229
+    },
+    {
+      "target": [
+        1.141238,
+        -1.321989,
+        0.834513
+      ],
+      "noise_seeds": [
+        976445028,
+        1619054612,
+        1910066711
+      ],
+      "height_bin": 5,
+      "radius_bin": 3,
+      "angle_bin": 8,
+      "target_index": 230
+    },
+    {
+      "target": [
+        -0.275613,
+        1.834353,
+        0.209767
+      ],
+      "noise_seeds": [
+        2401594616,
+        3994501276,
+        748543839
+      ],
+      "height_bin": 0,
+      "radius_bin": 4,
+      "angle_bin": 2,
+      "target_index": 231
+    },
+    {
+      "target": [
+        -0.575509,
+        -0.914116,
+        0.746329
+      ],
+      "noise_seeds": [
+        1166394161,
+        487300725,
+        3854098466
+      ],
+      "height_bin": 4,
+      "radius_bin": 1,
+      "angle_bin": 6,
+      "target_index": 232
+    },
+    {
+      "target": [
+        1.342802,
+        0.177969,
+        1.277859
+      ],
+      "noise_seeds": [
+        89128701,
+        3291806357,
+        1169956129
+      ],
+      "height_bin": 9,
+      "radius_bin": 2,
+      "angle_bin": 0,
+      "target_index": 233
+    },
+    {
+      "target": [
+        1.372871,
+        -0.674781,
+        1.078123
+      ],
+      "noise_seeds": [
+        2914135573,
+        3897572552,
+        2839061894
+      ],
+      "height_bin": 7,
+      "radius_bin": 3,
+      "angle_bin": 9,
+      "target_index": 234
+    },
+    {
+      "target": [
+        -1.031792,
+        0.244715,
+        0.609333
+      ],
+      "noise_seeds": [
+        3647685822,
+        367959670,
+        973710836
+      ],
+      "height_bin": 3,
+      "radius_bin": 1,
+      "angle_bin": 4,
+      "target_index": 235
+    },
+    {
+      "target": [
+        1.02271,
+        -0.134203,
+        0.597743
+      ],
+      "noise_seeds": [
+        2251112713,
+        2103510146,
+        1915821218
+      ],
+      "height_bin": 3,
+      "radius_bin": 0,
+      "angle_bin": 9,
+      "target_index": 236
+    },
+    {
+      "target": [
+        0.976419,
+        0.151263,
+        0.802295
+      ],
+      "noise_seeds": [
+        2114689001,
+        4170085354,
+        2068741776
+      ],
+      "height_bin": 5,
+      "radius_bin": 0,
+      "angle_bin": 0,
+      "target_index": 237
+    },
+    {
+      "target": [
+        1.115867,
+        1.261023,
+        1.182496
+      ],
+      "noise_seeds": [
+        2982349706,
+        1217238033,
+        661557459
+      ],
+      "height_bin": 8,
+      "radius_bin": 3,
+      "angle_bin": 1,
+      "target_index": 238
+    },
+    {
+      "target": [
+        0.669862,
+        -0.535039,
+        0.343155
+      ],
+      "noise_seeds": [
+        3156321453,
+        2113929261,
+        2174839116
+      ],
+      "height_bin": 1,
+      "radius_bin": 0,
+      "angle_bin": 8,
+      "target_index": 239
+    },
+    {
+      "target": [
+        0.992334,
+        -0.206944,
+        0.9694
+      ],
+      "noise_seeds": [
+        2719340166,
+        2990769057,
+        4112891063
+      ],
+      "height_bin": 6,
+      "radius_bin": 0,
+      "angle_bin": 9,
+      "target_index": 240
+    },
+    {
+      "target": [
+        1.239966,
+        -1.156501,
+        0.448018
+      ],
+      "noise_seeds": [
+        2147844456,
+        3399827116,
+        1321541653
+      ],
+      "height_bin": 2,
+      "radius_bin": 3,
+      "angle_bin": 8,
+      "target_index": 241
+    },
+    {
+      "target": [
+        -0.930828,
+        1.401868,
+        0.74635
+      ],
+      "noise_seeds": [
+        4200865833,
+        541569355,
+        3098220901
+      ],
+      "height_bin": 4,
+      "radius_bin": 3,
+      "angle_bin": 3,
+      "target_index": 242
+    },
+    {
+      "target": [
+        -0.962829,
+        0.265022,
+        0.615141
+      ],
+      "noise_seeds": [
+        2665137190,
+        2597000638,
+        3303535589
+      ],
+      "height_bin": 3,
+      "radius_bin": 0,
+      "angle_bin": 4,
+      "target_index": 243
+    },
+    {
+      "target": [
+        0.225265,
+        -1.465725,
+        0.832287
+      ],
+      "noise_seeds": [
+        1247420240,
+        2087662548,
+        776884053
+      ],
+      "height_bin": 5,
+      "radius_bin": 2,
+      "angle_bin": 7,
+      "target_index": 244
+    },
+    {
+      "target": [
+        0.635843,
+        -1.795195,
+        1.173221
+      ],
+      "noise_seeds": [
+        3890485247,
+        26852230,
+        2921498698
+      ],
+      "height_bin": 8,
+      "radius_bin": 4,
+      "angle_bin": 8,
+      "target_index": 245
+    },
+    {
+      "target": [
+        -0.151714,
+        0.873588,
+        0.774323
+      ],
+      "noise_seeds": [
+        3939630428,
+        2525823755,
+        1972806051
+      ],
+      "height_bin": 5,
+      "radius_bin": 0,
+      "angle_bin": 2,
+      "target_index": 246
+    },
+    {
+      "target": [
+        0.025442,
+        -1.265659,
+        0.854734
+      ],
+      "noise_seeds": [
+        413522242,
+        2975917261,
+        3704644242
+      ],
+      "height_bin": 5,
+      "radius_bin": 1,
+      "angle_bin": 7,
+      "target_index": 247
+    },
+    {
+      "target": [
+        0.703647,
+        -1.111433,
+        0.533066
+      ],
+      "noise_seeds": [
+        3723792653,
+        2630894708,
+        1198260820
+      ],
+      "height_bin": 3,
+      "radius_bin": 2,
+      "angle_bin": 8,
+      "target_index": 248
+    },
+    {
+      "target": [
+        -0.696713,
+        0.568871,
+        0.900405
+      ],
+      "noise_seeds": [
+        1504355707,
+        389173238,
+        2422372408
+      ],
+      "height_bin": 6,
+      "radius_bin": 0,
+      "angle_bin": 3,
+      "target_index": 249
+    },
+    {
+      "target": [
+        0.346954,
+        1.027044,
+        0.821969
+      ],
+      "noise_seeds": [
+        3769399346,
+        1805466801,
+        1580750586
+      ],
+      "height_bin": 5,
+      "radius_bin": 1,
+      "angle_bin": 1,
+      "target_index": 250
+    },
+    {
+      "target": [
+        0.069799,
+        1.574644,
+        0.694826
+      ],
+      "noise_seeds": [
+        2904804314,
+        4033376774,
+        1801485964
+      ],
+      "height_bin": 4,
+      "radius_bin": 3,
+      "angle_bin": 2,
+      "target_index": 251
+    },
+    {
+      "target": [
+        -0.026729,
+        0.991903,
+        0.209594
+      ],
+      "noise_seeds": [
+        1035422422,
+        2754902587,
+        2622528752
+      ],
+      "height_bin": 0,
+      "radius_bin": 0,
+      "angle_bin": 2,
+      "target_index": 252
+    },
+    {
+      "target": [
+        -0.718671,
+        -1.457365,
+        0.567085
+      ],
+      "noise_seeds": [
+        1342998062,
+        1363968015,
+        1425018194
+      ],
+      "height_bin": 3,
+      "radius_bin": 3,
+      "angle_bin": 6,
+      "target_index": 253
+    },
+    {
+      "target": [
+        -0.966506,
+        0.124941,
+        0.271679
+      ],
+      "noise_seeds": [
+        2824840812,
+        202909166,
+        3871188609
+      ],
+      "height_bin": 0,
+      "radius_bin": 0,
+      "angle_bin": 4,
+      "target_index": 254
+    },
+    {
+      "target": [
+        -0.829109,
+        1.762172,
+        0.612299
+      ],
+      "noise_seeds": [
+        1087311044,
+        2867313458,
+        3008728597
+      ],
+      "height_bin": 3,
+      "radius_bin": 4,
+      "angle_bin": 3,
+      "target_index": 255
+    },
+    {
+      "target": [
+        1.659819,
+        0.585454,
+        1.003615
+      ],
+      "noise_seeds": [
+        3366610753,
+        2698126477,
+        794065843
+      ],
+      "height_bin": 7,
+      "radius_bin": 4,
+      "angle_bin": 0,
+      "target_index": 256
+    },
+    {
+      "target": [
+        0.201501,
+        -0.895871,
+        1.188235
+      ],
+      "noise_seeds": [
+        2080522785,
+        3458894601,
+        3985879876
+      ],
+      "height_bin": 8,
+      "radius_bin": 0,
+      "angle_bin": 7,
+      "target_index": 257
+    },
+    {
+      "target": [
+        0.575293,
+        -1.073088,
+        0.727376
+      ],
+      "noise_seeds": [
+        3352686103,
+        3954857110,
+        2918570980
+      ],
+      "height_bin": 4,
+      "radius_bin": 1,
+      "angle_bin": 8,
+      "target_index": 258
+    },
+    {
+      "target": [
+        -0.299322,
+        -1.547734,
+        1.175089
+      ],
+      "noise_seeds": [
+        1778491942,
+        4273388769,
+        3942722812
+      ],
+      "height_bin": 8,
+      "radius_bin": 3,
+      "angle_bin": 7,
+      "target_index": 259
+    },
+    {
+      "target": [
+        -0.908424,
+        -0.78611,
+        1.127955
+      ],
+      "noise_seeds": [
+        2088571054,
+        2880418637,
+        202501050
+      ],
+      "height_bin": 8,
+      "radius_bin": 1,
+      "angle_bin": 6,
+      "target_index": 260
+    },
+    {
+      "target": [
+        -0.823282,
+        0.073455,
+        1.269197
+      ],
+      "noise_seeds": [
+        694235514,
+        301232818,
+        2155340948
+      ],
+      "height_bin": 9,
+      "radius_bin": 0,
+      "angle_bin": 4,
+      "target_index": 261
+    },
+    {
+      "target": [
+        -0.764055,
+        -0.300952,
+        0.445172
+      ],
+      "noise_seeds": [
+        3250710137,
+        316169719,
+        3533010960
+      ],
+      "height_bin": 2,
+      "radius_bin": 0,
+      "angle_bin": 5,
+      "target_index": 262
+    },
+    {
+      "target": [
+        1.325085,
+        -0.98277,
+        1.229235
+      ],
+      "noise_seeds": [
+        2758278676,
+        4108421771,
+        2596878715
+      ],
+      "height_bin": 9,
+      "radius_bin": 3,
+      "angle_bin": 8,
+      "target_index": 263
+    },
+    {
+      "target": [
+        -0.191401,
+        -1.689318,
+        0.886438
+      ],
+      "noise_seeds": [
+        3647846820,
+        3511692817,
+        2815624538
+      ],
+      "height_bin": 6,
+      "radius_bin": 3,
+      "angle_bin": 7,
+      "target_index": 264
+    },
+    {
+      "target": [
+        -0.838144,
+        0.954198,
+        1.067292
+      ],
+      "noise_seeds": [
+        260543224,
+        3724991227,
+        1935232145
+      ],
+      "height_bin": 7,
+      "radius_bin": 1,
+      "angle_bin": 3,
+      "target_index": 265
+    },
+    {
+      "target": [
+        -1.511584,
+        0.199951,
+        0.82244
+      ],
+      "noise_seeds": [
+        2106951355,
+        1482508968,
+        2171436267
+      ],
+      "height_bin": 5,
+      "radius_bin": 3,
+      "angle_bin": 4,
+      "target_index": 266
+    },
+    {
+      "target": [
+        0.371152,
+        -1.558402,
+        1.229063
+      ],
+      "noise_seeds": [
+        2625623283,
+        34911954,
+        4241860419
+      ],
+      "height_bin": 9,
+      "radius_bin": 3,
+      "angle_bin": 7,
+      "target_index": 267
+    },
+    {
+      "target": [
+        1.293114,
+        -1.252829,
+        0.354805
+      ],
+      "noise_seeds": [
+        1221135997,
+        3051793219,
+        1819736809
+      ],
+      "height_bin": 1,
+      "radius_bin": 4,
+      "angle_bin": 8,
+      "target_index": 268
+    },
+    {
+      "target": [
+        0.071095,
+        0.887963,
+        0.405551
+      ],
+      "noise_seeds": [
+        1834555174,
+        1398241982,
+        812168863
+      ],
+      "height_bin": 1,
+      "radius_bin": 0,
+      "angle_bin": 2,
+      "target_index": 269
+    },
+    {
+      "target": [
+        -1.198606,
+        -1.526845,
+        0.795557
+      ],
+      "noise_seeds": [
+        1621551655,
+        1193541725,
+        3794961376
+      ],
+      "height_bin": 5,
+      "radius_bin": 4,
+      "angle_bin": 6,
+      "target_index": 270
+    },
+    {
+      "target": [
+        0.830741,
+        -0.790029,
+        0.476336
+      ],
+      "noise_seeds": [
+        3674243633,
+        3851858560,
+        2049985424
+      ],
+      "height_bin": 2,
+      "radius_bin": 1,
+      "angle_bin": 8,
+      "target_index": 271
+    },
+    {
+      "target": [
+        1.306231,
+        -0.578918,
+        0.769841
+      ],
+      "noise_seeds": [
+        3725051769,
+        888986263,
+        3389303007
+      ],
+      "height_bin": 5,
+      "radius_bin": 2,
+      "angle_bin": 9,
+      "target_index": 272
+    },
+    {
+      "target": [
+        -0.854236,
+        1.163139,
+        0.957662
+      ],
+      "noise_seeds": [
+        2133445581,
+        769015376,
+        1824029976
+      ],
+      "height_bin": 6,
+      "radius_bin": 2,
+      "angle_bin": 3,
+      "target_index": 273
+    },
+    {
+      "target": [
+        -1.365923,
+        -0.191557,
+        1.197159
+      ],
+      "noise_seeds": [
+        250401753,
+        32531204,
+        1297917087
+      ],
+      "height_bin": 9,
+      "radius_bin": 2,
+      "angle_bin": 5,
+      "target_index": 274
+    },
+    {
+      "target": [
+        -0.524828,
+        1.710454,
+        0.55886
+      ],
+      "noise_seeds": [
+        874956929,
+        2915302061,
+        413201853
+      ],
+      "height_bin": 3,
+      "radius_bin": 4,
+      "angle_bin": 2,
+      "target_index": 275
+    },
+    {
+      "target": [
+        1.732683,
+        0.272075,
+        0.630043
+      ],
+      "noise_seeds": [
+        3887050938,
+        3471832631,
+        1466557117
+      ],
+      "height_bin": 3,
+      "radius_bin": 3,
+      "angle_bin": 0,
+      "target_index": 276
+    },
+    {
+      "target": [
+        0.236113,
+        -0.899113,
+        0.352129
+      ],
+      "noise_seeds": [
+        1615743502,
+        128826502,
+        1815599992
+      ],
+      "height_bin": 1,
+      "radius_bin": 0,
+      "angle_bin": 7,
+      "target_index": 277
+    },
+    {
+      "target": [
+        1.035243,
+        0.424043,
+        0.532595
+      ],
+      "noise_seeds": [
+        1121203067,
+        2634773515,
+        2776003354
+      ],
+      "height_bin": 3,
+      "radius_bin": 1,
+      "angle_bin": 0,
+      "target_index": 278
+    },
+    {
+      "target": [
+        -0.39361,
+        1.806169,
+        0.387967
+      ],
+      "noise_seeds": [
+        961919746,
+        2829690464,
+        1535697360
+      ],
+      "height_bin": 1,
+      "radius_bin": 4,
+      "angle_bin": 2,
+      "target_index": 279
+    },
+    {
+      "target": [
+        1.034526,
+        -0.323508,
+        0.512
+      ],
+      "noise_seeds": [
+        167513730,
+        1188362680,
+        1430796581
+      ],
+      "height_bin": 2,
+      "radius_bin": 1,
+      "angle_bin": 9,
+      "target_index": 280
+    },
+    {
+      "target": [
+        -1.08265,
+        0.724305,
+        0.809667
+      ],
+      "noise_seeds": [
+        2803616005,
+        814319664,
+        7268177
+      ],
+      "height_bin": 5,
+      "radius_bin": 2,
+      "angle_bin": 4,
+      "target_index": 281
+    },
+    {
+      "target": [
+        -0.236675,
+        -1.344666,
+        1.291582
+      ],
+      "noise_seeds": [
+        557835894,
+        3490347501,
+        2073487411
+      ],
+      "height_bin": 9,
+      "radius_bin": 2,
+      "angle_bin": 7,
+      "target_index": 282
+    },
+    {
+      "target": [
+        -1.553913,
+        0.62266,
+        0.469065
+      ],
+      "noise_seeds": [
+        3091856348,
+        116448323,
+        607587648
+      ],
+      "height_bin": 2,
+      "radius_bin": 3,
+      "angle_bin": 4,
+      "target_index": 283
+    },
+    {
+      "target": [
+        -1.477933,
+        -1.287274,
+        0.457259
+      ],
+      "noise_seeds": [
+        2037926527,
+        3961942240,
+        776993262
+      ],
+      "height_bin": 2,
+      "radius_bin": 4,
+      "angle_bin": 6,
+      "target_index": 284
+    },
+    {
+      "target": [
+        -0.790957,
+        1.756909,
+        0.460776
+      ],
+      "noise_seeds": [
+        1037324272,
+        104917320,
+        3531113045
+      ],
+      "height_bin": 2,
+      "radius_bin": 4,
+      "angle_bin": 3,
+      "target_index": 285
+    },
+    {
+      "target": [
+        -0.18527,
+        -0.847953,
+        0.919471
+      ],
+      "noise_seeds": [
+        3299022036,
+        2283917711,
+        3929738622
+      ],
+      "height_bin": 6,
+      "radius_bin": 0,
+      "angle_bin": 7,
+      "target_index": 286
+    },
+    {
+      "target": [
+        -0.289323,
+        1.742034,
+        0.910254
+      ],
+      "noise_seeds": [
+        2301922240,
+        987626129,
+        4179751368
+      ],
+      "height_bin": 6,
+      "radius_bin": 4,
+      "angle_bin": 2,
+      "target_index": 287
+    },
+    {
+      "target": [
+        1.895141,
+        0.500275,
+        0.574884
+      ],
+      "noise_seeds": [
+        3569176975,
+        2028018085,
+        949001701
+      ],
+      "height_bin": 3,
+      "radius_bin": 4,
+      "angle_bin": 0,
+      "target_index": 288
+    },
+    {
+      "target": [
+        -1.446679,
+        -0.7901,
+        1.003904
+      ],
+      "noise_seeds": [
+        75014139,
+        3247076902,
+        1288106745
+      ],
+      "height_bin": 7,
+      "radius_bin": 3,
+      "angle_bin": 5,
+      "target_index": 289
+    },
+    {
+      "target": [
+        -1.738232,
+        -0.471448,
+        0.335084
+      ],
+      "noise_seeds": [
+        2045221736,
+        2008948323,
+        3029693045
+      ],
+      "height_bin": 1,
+      "radius_bin": 4,
+      "angle_bin": 5,
+      "target_index": 290
+    },
+    {
+      "target": [
+        0.604797,
+        0.858854,
+        0.203651
+      ],
+      "noise_seeds": [
+        4148636273,
+        3945062037,
+        927451633
+      ],
+      "height_bin": 0,
+      "radius_bin": 1,
+      "angle_bin": 1,
+      "target_index": 291
+    },
+    {
+      "target": [
+        0.84267,
+        -0.325062,
+        1.19492
+      ],
+      "noise_seeds": [
+        1040333234,
+        4096672879,
+        2222295834
+      ],
+      "height_bin": 9,
+      "radius_bin": 0,
+      "angle_bin": 9,
+      "target_index": 292
+    },
+    {
+      "target": [
+        0.876742,
+        -0.634589,
+        0.605502
+      ],
+      "noise_seeds": [
+        3488353005,
+        481396700,
+        2788252478
+      ],
+      "height_bin": 3,
+      "radius_bin": 1,
+      "angle_bin": 9,
+      "target_index": 293
+    },
+    {
+      "target": [
+        0.411374,
+        -1.255985,
+        1.089094
+      ],
+      "noise_seeds": [
+        1400984894,
+        3530538023,
+        221114432
+      ],
+      "height_bin": 8,
+      "radius_bin": 2,
+      "angle_bin": 8,
+      "target_index": 294
+    },
+    {
+      "target": [
+        -1.024056,
+        -0.000567,
+        0.215464
+      ],
+      "noise_seeds": [
+        365694682,
+        1849245471,
+        2735570011
+      ],
+      "height_bin": 0,
+      "radius_bin": 0,
+      "angle_bin": 5,
+      "target_index": 295
+    },
+    {
+      "target": [
+        -0.415153,
+        1.89897,
+        0.452742
+      ],
+      "noise_seeds": [
+        247359056,
+        441390640,
+        1073786957
+      ],
+      "height_bin": 2,
+      "radius_bin": 4,
+      "angle_bin": 2,
+      "target_index": 296
+    },
+    {
+      "target": [
+        -0.144462,
+        1.522694,
+        0.281603
+      ],
+      "noise_seeds": [
+        3031797040,
+        2017756069,
+        856935379
+      ],
+      "height_bin": 0,
+      "radius_bin": 3,
+      "angle_bin": 2,
+      "target_index": 297
+    },
+    {
+      "target": [
+        0.632283,
+        -1.145591,
+        0.362129
+      ],
+      "noise_seeds": [
+        2332948985,
+        3789184614,
+        1640113378
+      ],
+      "height_bin": 1,
+      "radius_bin": 2,
+      "angle_bin": 8,
+      "target_index": 298
+    },
+    {
+      "target": [
+        -1.660797,
+        -0.341365,
+        0.349046
+      ],
+      "noise_seeds": [
+        3771776428,
+        3567319241,
+        2624696553
+      ],
+      "height_bin": 1,
+      "radius_bin": 3,
+      "angle_bin": 5,
+      "target_index": 299
+    },
+    {
+      "target": [
+        -1.549229,
+        -0.869448,
+        0.941985
+      ],
+      "noise_seeds": [
+        3349119089,
+        2129009768,
+        2245456625
+      ],
+      "height_bin": 6,
+      "radius_bin": 4,
+      "angle_bin": 5,
+      "target_index": 300
+    },
+    {
+      "target": [
+        -0.539312,
+        1.573204,
+        0.921071
+      ],
+      "noise_seeds": [
+        3236159124,
+        521792893,
+        3900442297
+      ],
+      "height_bin": 6,
+      "radius_bin": 3,
+      "angle_bin": 3,
+      "target_index": 301
+    },
+    {
+      "target": [
+        -0.847217,
+        -0.229119,
+        0.814618
+      ],
+      "noise_seeds": [
+        3428484454,
+        3567341360,
+        1604996547
+      ],
+      "height_bin": 5,
+      "radius_bin": 0,
+      "angle_bin": 5,
+      "target_index": 302
+    },
+    {
+      "target": [
+        1.286609,
+        0.040002,
+        0.377408
+      ],
+      "noise_seeds": [
+        1337460175,
+        138473648,
+        77570367
+      ],
+      "height_bin": 1,
+      "radius_bin": 2,
+      "angle_bin": 0,
+      "target_index": 303
+    },
+    {
+      "target": [
+        -1.107537,
+        0.137258,
+        0.917593
+      ],
+      "noise_seeds": [
+        1319953105,
+        4088849702,
+        1401808210
+      ],
+      "height_bin": 6,
+      "radius_bin": 1,
+      "angle_bin": 4,
+      "target_index": 304
+    },
+    {
+      "target": [
+        -1.003125,
+        0.969802,
+        0.441431
+      ],
+      "noise_seeds": [
+        1341237076,
+        2867451780,
+        2850363218
+      ],
+      "height_bin": 2,
+      "radius_bin": 2,
+      "angle_bin": 3,
+      "target_index": 305
+    },
+    {
+      "target": [
+        1.468091,
+        1.321229,
+        0.650694
+      ],
+      "noise_seeds": [
+        1232440373,
+        3546632332,
+        3253748082
+      ],
+      "height_bin": 4,
+      "radius_bin": 4,
+      "angle_bin": 1,
+      "target_index": 306
+    },
+    {
+      "target": [
+        1.440725,
+        -0.987468,
+        0.785114
+      ],
+      "noise_seeds": [
+        3635821395,
+        2297420691,
+        4130353303
+      ],
+      "height_bin": 5,
+      "radius_bin": 3,
+      "angle_bin": 9,
+      "target_index": 307
+    },
+    {
+      "target": [
+        0.361101,
+        -1.122758,
+        0.381861
+      ],
+      "noise_seeds": [
+        435164885,
+        2592840503,
+        3417859560
+      ],
+      "height_bin": 1,
+      "radius_bin": 1,
+      "angle_bin": 7,
+      "target_index": 308
+    },
+    {
+      "target": [
+        -1.38366,
+        1.260284,
+        0.384208
+      ],
+      "noise_seeds": [
+        1959466803,
+        1002695122,
+        2698740002
+      ],
+      "height_bin": 1,
+      "radius_bin": 4,
+      "angle_bin": 3,
+      "target_index": 309
+    },
+    {
+      "target": [
+        0.692474,
+        1.247371,
+        0.261454
+      ],
+      "noise_seeds": [
+        3252933734,
+        3427159103,
+        421147729
+      ],
+      "height_bin": 0,
+      "radius_bin": 2,
+      "angle_bin": 1,
+      "target_index": 310
+    },
+    {
+      "target": [
+        0.296417,
+        0.977442,
+        0.61204
+      ],
+      "noise_seeds": [
+        3599810817,
+        4248535985,
+        3152682341
+      ],
+      "height_bin": 3,
+      "radius_bin": 0,
+      "angle_bin": 2,
+      "target_index": 311
+    },
+    {
+      "target": [
+        1.86861,
+        -0.587287,
+        1.022543
+      ],
+      "noise_seeds": [
+        2416052282,
+        2105020409,
+        559275607
+      ],
+      "height_bin": 7,
+      "radius_bin": 4,
+      "angle_bin": 9,
+      "target_index": 312
+    },
+    {
+      "target": [
+        -0.219898,
+        -1.011765,
+        1.041591
+      ],
+      "noise_seeds": [
+        269917615,
+        785066917,
+        559061104
+      ],
+      "height_bin": 7,
+      "radius_bin": 0,
+      "angle_bin": 7,
+      "target_index": 313
+    },
+    {
+      "target": [
+        -0.280445,
+        -1.834033,
+        0.637591
+      ],
+      "noise_seeds": [
+        2142984029,
+        1721860876,
+        3786147913
+      ],
+      "height_bin": 3,
+      "radius_bin": 4,
+      "angle_bin": 7,
+      "target_index": 314
+    },
+    {
+      "target": [
+        -0.314302,
+        1.135407,
+        0.345696
+      ],
+      "noise_seeds": [
+        2993923376,
+        3985985237,
+        589899651
+      ],
+      "height_bin": 1,
+      "radius_bin": 1,
+      "angle_bin": 2,
+      "target_index": 315
+    },
+    {
+      "target": [
+        1.705996,
+        -0.819597,
+        0.350847
+      ],
+      "noise_seeds": [
+        644146712,
+        3489480875,
+        2091606869
+      ],
+      "height_bin": 1,
+      "radius_bin": 4,
+      "angle_bin": 9,
+      "target_index": 316
+    },
+    {
+      "target": [
+        -0.220866,
+        -1.869102,
+        0.383771
+      ],
+      "noise_seeds": [
+        1235964251,
+        2704914651,
+        969186175
+      ],
+      "height_bin": 1,
+      "radius_bin": 4,
+      "angle_bin": 7,
+      "target_index": 317
+    },
+    {
+      "target": [
+        -0.223701,
+        1.675765,
+        1.018029
+      ],
+      "noise_seeds": [
+        1312502840,
+        694890128,
+        3799805954
+      ],
+      "height_bin": 7,
+      "radius_bin": 3,
+      "angle_bin": 2,
+      "target_index": 318
+    },
+    {
+      "target": [
+        -0.877765,
+        -0.54165,
+        0.652129
+      ],
+      "noise_seeds": [
+        934956607,
+        2275871255,
+        1253209871
+      ],
+      "height_bin": 4,
+      "radius_bin": 0,
+      "angle_bin": 5,
+      "target_index": 319
+    },
+    {
+      "target": [
+        0.835427,
+        0.2928,
+        0.994918
+      ],
+      "noise_seeds": [
+        2396614791,
+        3109838130,
+        2089595593
+      ],
+      "height_bin": 7,
+      "radius_bin": 0,
+      "angle_bin": 0,
+      "target_index": 320
+    },
+    {
+      "target": [
+        -0.109218,
+        1.289042,
+        0.207729
+      ],
+      "noise_seeds": [
+        1822484321,
+        2683780315,
+        3739632064
+      ],
+      "height_bin": 0,
+      "radius_bin": 2,
+      "angle_bin": 2,
+      "target_index": 321
+    },
+    {
+      "target": [
+        1.172166,
+        1.345612,
+        0.94092
+      ],
+      "noise_seeds": [
+        2277718491,
+        1651595437,
+        32142261
+      ],
+      "height_bin": 6,
+      "radius_bin": 4,
+      "angle_bin": 1,
+      "target_index": 322
+    },
+    {
+      "target": [
+        0.06543,
+        -1.574849,
+        0.857178
+      ],
+      "noise_seeds": [
+        2650869277,
+        2890264613,
+        1398827058
+      ],
+      "height_bin": 5,
+      "radius_bin": 3,
+      "angle_bin": 7,
+      "target_index": 323
+    },
+    {
+      "target": [
+        -1.137336,
+        0.087135,
+        0.853436
+      ],
+      "noise_seeds": [
+        2527736473,
+        1899386906,
+        3532905965
+      ],
+      "height_bin": 5,
+      "radius_bin": 1,
+      "angle_bin": 4,
+      "target_index": 324
+    },
+    {
+      "target": [
+        0.395861,
+        -1.208096,
+        0.594134
+      ],
+      "noise_seeds": [
+        1880145329,
+        4238934654,
+        3100518258
+      ],
+      "height_bin": 3,
+      "radius_bin": 1,
+      "angle_bin": 8,
+      "target_index": 325
+    },
+    {
+      "target": [
+        0.033036,
+        1.142117,
+        1.069612
+      ],
+      "noise_seeds": [
+        3602986872,
+        2342761306,
+        3169605681
+      ],
+      "height_bin": 7,
+      "radius_bin": 1,
+      "angle_bin": 2,
+      "target_index": 326
+    },
+    {
+      "target": [
+        0.306375,
+        1.367561,
+        1.009913
+      ],
+      "noise_seeds": [
+        1600757541,
+        946909897,
+        3039932294
+      ],
+      "height_bin": 7,
+      "radius_bin": 2,
+      "angle_bin": 2,
+      "target_index": 327
+    },
+    {
+      "target": [
+        -1.325407,
+        1.023834,
+        1.297392
+      ],
+      "noise_seeds": [
+        3880649851,
+        2738245828,
+        3516227107
+      ],
+      "height_bin": 9,
+      "radius_bin": 3,
+      "angle_bin": 3,
+      "target_index": 328
+    },
+    {
+      "target": [
+        0.27275,
+        1.510674,
+        0.76035
+      ],
+      "noise_seeds": [
+        2601689675,
+        898358289,
+        3671560582
+      ],
+      "height_bin": 5,
+      "radius_bin": 3,
+      "angle_bin": 2,
+      "target_index": 329
+    },
+    {
+      "target": [
+        -0.075425,
+        0.896127,
+        1.1434
+      ],
+      "noise_seeds": [
+        2119356080,
+        389168119,
+        2036627510
+      ],
+      "height_bin": 8,
+      "radius_bin": 0,
+      "angle_bin": 2,
+      "target_index": 330
+    },
+    {
+      "target": [
+        0.476075,
+        -1.781995,
+        1.088724
+      ],
+      "noise_seeds": [
+        1943043997,
+        1474570684,
+        1570329339
+      ],
+      "height_bin": 8,
+      "radius_bin": 4,
+      "angle_bin": 7,
+      "target_index": 331
+    },
+    {
+      "target": [
+        1.103867,
+        -0.299917,
+        0.25738
+      ],
+      "noise_seeds": [
+        1452602448,
+        251495940,
+        3354504206
+      ],
+      "height_bin": 0,
+      "radius_bin": 1,
+      "angle_bin": 9,
+      "target_index": 332
+    },
+    {
+      "target": [
+        0.685123,
+        -0.772906,
+        0.911897
+      ],
+      "noise_seeds": [
+        4151211813,
+        3161826352,
+        473550998
+      ],
+      "height_bin": 6,
+      "radius_bin": 0,
+      "angle_bin": 8,
+      "target_index": 333
+    },
+    {
+      "target": [
+        0.76671,
+        -0.517593,
+        0.759021
+      ],
+      "noise_seeds": [
+        3351204366,
+        1346159932,
+        585380656
+      ],
+      "height_bin": 5,
+      "radius_bin": 0,
+      "angle_bin": 9,
+      "target_index": 334
+    },
+    {
+      "target": [
+        0.347487,
+        0.780217,
+        0.37203
+      ],
+      "noise_seeds": [
+        1801329829,
+        1794466549,
+        2741792207
+      ],
+      "height_bin": 1,
+      "radius_bin": 0,
+      "angle_bin": 1,
+      "target_index": 335
+    },
+    {
+      "target": [
+        -1.358805,
+        0.657274,
+        1.291979
+      ],
+      "noise_seeds": [
+        1296054404,
+        3535516695,
+        1255243593
+      ],
+      "height_bin": 9,
+      "radius_bin": 2,
+      "angle_bin": 4,
+      "target_index": 336
+    },
+    {
+      "target": [
+        -1.277231,
+        -0.522822,
+        0.510652
+      ],
+      "noise_seeds": [
+        2739589089,
+        3337934816,
+        2067699478
+      ],
+      "height_bin": 2,
+      "radius_bin": 2,
+      "angle_bin": 5,
+      "target_index": 337
+    },
+    {
+      "target": [
+        0.36649,
+        1.426643,
+        0.672092
+      ],
+      "noise_seeds": [
+        1645063089,
+        2998549435,
+        2521332466
+      ],
+      "height_bin": 4,
+      "radius_bin": 2,
+      "angle_bin": 2,
+      "target_index": 338
+    },
+    {
+      "target": [
+        1.475359,
+        -0.257277,
+        0.427122
+      ],
+      "noise_seeds": [
+        2676237781,
+        3629237146,
+        1931758786
+      ],
+      "height_bin": 2,
+      "radius_bin": 2,
+      "angle_bin": 9,
+      "target_index": 339
+    },
+    {
+      "target": [
+        -1.421427,
+        -0.097062,
+        0.660224
+      ],
+      "noise_seeds": [
+        1540231912,
+        2795812644,
+        66594382
+      ],
+      "height_bin": 4,
+      "radius_bin": 2,
+      "angle_bin": 5,
+      "target_index": 340
+    },
+    {
+      "target": [
+        1.901324,
+        0.117665,
+        0.276123
+      ],
+      "noise_seeds": [
+        2154271824,
+        4146019507,
+        555997861
+      ],
+      "height_bin": 0,
+      "radius_bin": 4,
+      "angle_bin": 0,
+      "target_index": 341
+    },
+    {
+      "target": [
+        0.927069,
+        -1.36767,
+        0.8786
+      ],
+      "noise_seeds": [
+        353344273,
+        4085373133,
+        3051268801
+      ],
+      "height_bin": 6,
+      "radius_bin": 3,
+      "angle_bin": 8,
+      "target_index": 342
+    },
+    {
+      "target": [
+        0.860662,
+        0.955243,
+        1.225909
+      ],
+      "noise_seeds": [
+        3027478986,
+        3826251739,
+        1225216563
+      ],
+      "height_bin": 9,
+      "radius_bin": 2,
+      "angle_bin": 1,
+      "target_index": 343
+    },
+    {
+      "target": [
+        -0.440172,
+        1.150755,
+        1.281546
+      ],
+      "noise_seeds": [
+        638480657,
+        656308614,
+        1055397062
+      ],
+      "height_bin": 9,
+      "radius_bin": 1,
+      "angle_bin": 3,
+      "target_index": 344
+    },
+    {
+      "target": [
+        1.402443,
+        -0.643946,
+        0.436242
+      ],
+      "noise_seeds": [
+        2766622500,
+        2279738535,
+        2511321383
+      ],
+      "height_bin": 2,
+      "radius_bin": 3,
+      "angle_bin": 9,
+      "target_index": 345
+    },
+    {
+      "target": [
+        1.505505,
+        0.344223,
+        0.253796
+      ],
+      "noise_seeds": [
+        4110654662,
+        2941360362,
+        3247147482
+      ],
+      "height_bin": 0,
+      "radius_bin": 3,
+      "angle_bin": 0,
+      "target_index": 346
+    },
+    {
+      "target": [
+        0.463571,
+        1.119668,
+        1.135425
+      ],
+      "noise_seeds": [
+        3561579058,
+        445665429,
+        331539315
+      ],
+      "height_bin": 8,
+      "radius_bin": 1,
+      "angle_bin": 1,
+      "target_index": 347
+    },
+    {
+      "target": [
+        0.539945,
+        -0.93537,
+        1.186006
+      ],
+      "noise_seeds": [
+        377282331,
+        2741325396,
+        1093603202
+      ],
+      "height_bin": 8,
+      "radius_bin": 1,
+      "angle_bin": 8,
+      "target_index": 348
+    },
+    {
+      "target": [
+        0.115483,
+        -1.204402,
+        0.884675
+      ],
+      "noise_seeds": [
+        299440794,
+        3932330555,
+        2797364949
+      ],
+      "height_bin": 6,
+      "radius_bin": 1,
+      "angle_bin": 7,
+      "target_index": 349
+    },
+    {
+      "target": [
+        -0.888238,
+        -0.116456,
+        0.381729
+      ],
+      "noise_seeds": [
+        1242076977,
+        1060766906,
+        3097125839
+      ],
+      "height_bin": 1,
+      "radius_bin": 0,
+      "angle_bin": 5,
+      "target_index": 350
+    },
+    {
+      "target": [
+        -0.772202,
+        -1.090164,
+        0.736951
+      ],
+      "noise_seeds": [
+        4229666948,
+        61611388,
+        432561786
+      ],
+      "height_bin": 4,
+      "radius_bin": 2,
+      "angle_bin": 6,
+      "target_index": 351
+    },
+    {
+      "target": [
+        -0.790437,
+        1.061485,
+        0.642513
+      ],
+      "noise_seeds": [
+        886651022,
+        447357453,
+        2172271168
+      ],
+      "height_bin": 4,
+      "radius_bin": 2,
+      "angle_bin": 3,
+      "target_index": 352
+    },
+    {
+      "target": [
+        0.985729,
+        0.945656,
+        0.409429
+      ],
+      "noise_seeds": [
+        2983494935,
+        782961761,
+        1434129344
+      ],
+      "height_bin": 1,
+      "radius_bin": 2,
+      "angle_bin": 1,
+      "target_index": 353
+    },
+    {
+      "target": [
+        0.47662,
+        -0.684242,
+        1.044571
+      ],
+      "noise_seeds": [
+        494796253,
+        2582071349,
+        1448741735
+      ],
+      "height_bin": 7,
+      "radius_bin": 0,
+      "angle_bin": 8,
+      "target_index": 354
+    },
+    {
+      "target": [
+        1.375592,
+        0.048398,
+        0.43832
+      ],
+      "noise_seeds": [
+        2280917677,
+        2537841293,
+        3325334580
+      ],
+      "height_bin": 2,
+      "radius_bin": 2,
+      "angle_bin": 0,
+      "target_index": 355
+    },
+    {
+      "target": [
+        1.72922,
+        0.838372,
+        0.706212
+      ],
+      "noise_seeds": [
+        3386010998,
+        1470936836,
+        2935292460
+      ],
+      "height_bin": 4,
+      "radius_bin": 4,
+      "angle_bin": 0,
+      "target_index": 356
+    },
+    {
+      "target": [
+        -0.95027,
+        1.70155,
+        0.669824
+      ],
+      "noise_seeds": [
+        1087082726,
+        3003999947,
+        483874585
+      ],
+      "height_bin": 4,
+      "radius_bin": 4,
+      "angle_bin": 3,
+      "target_index": 357
+    },
+    {
+      "target": [
+        0.526563,
+        0.855941,
+        0.852182
+      ],
+      "noise_seeds": [
+        2858425938,
+        1183429181,
+        2613352666
+      ],
+      "height_bin": 5,
+      "radius_bin": 0,
+      "angle_bin": 1,
+      "target_index": 358
+    },
+    {
+      "target": [
+        -0.89637,
+        -1.526941,
+        0.637132
+      ],
+      "noise_seeds": [
+        2118185936,
+        2418735123,
+        2241102943
+      ],
+      "height_bin": 3,
+      "radius_bin": 4,
+      "angle_bin": 6,
+      "target_index": 359
+    },
+    {
+      "target": [
+        1.017556,
+        0.27726,
+        1.225585
+      ],
+      "noise_seeds": [
+        3493130961,
+        501087503,
+        258576953
+      ],
+      "height_bin": 9,
+      "radius_bin": 1,
+      "angle_bin": 0,
+      "target_index": 360
+    },
+    {
+      "target": [
+        -0.57675,
+        -0.59401,
+        0.588176
+      ],
+      "noise_seeds": [
+        3720506367,
+        558590832,
+        1955859144
+      ],
+      "height_bin": 3,
+      "radius_bin": 0,
+      "angle_bin": 6,
+      "target_index": 361
+    },
+    {
+      "target": [
+        -0.724543,
+        0.619255,
+        1.046749
+      ],
+      "noise_seeds": [
+        4177444098,
+        985091396,
+        4132248785
+      ],
+      "height_bin": 7,
+      "radius_bin": 0,
+      "angle_bin": 3,
+      "target_index": 362
+    },
+    {
+      "target": [
+        -0.098684,
+        -1.928829,
+        1.038694
+      ],
+      "noise_seeds": [
+        2662830667,
+        518652102,
+        1940728303
+      ],
+      "height_bin": 7,
+      "radius_bin": 4,
+      "angle_bin": 7,
+      "target_index": 363
+    },
+    {
+      "target": [
+        -0.795129,
+        -1.686523,
+        1.10236
+      ],
+      "noise_seeds": [
+        3007422278,
+        1690946913,
+        2631797619
+      ],
+      "height_bin": 8,
+      "radius_bin": 4,
+      "angle_bin": 6,
+      "target_index": 364
+    },
+    {
+      "target": [
+        0.585423,
+        1.249443,
+        0.621169
+      ],
+      "noise_seeds": [
+        3763371943,
+        1882658832,
+        1907102751
+      ],
+      "height_bin": 3,
+      "radius_bin": 2,
+      "angle_bin": 1,
+      "target_index": 365
+    },
+    {
+      "target": [
+        1.477063,
+        0.770119,
+        0.832923
+      ],
+      "noise_seeds": [
+        1780265178,
+        176661651,
+        2506074383
+      ],
+      "height_bin": 5,
+      "radius_bin": 3,
+      "angle_bin": 0,
+      "target_index": 366
+    },
+    {
+      "target": [
+        -1.188729,
+        -0.896245,
+        1.105189
+      ],
+      "noise_seeds": [
+        3847412950,
+        875772365,
+        516900239
+      ],
+      "height_bin": 8,
+      "radius_bin": 2,
+      "angle_bin": 6,
+      "target_index": 367
+    },
+    {
+      "target": [
+        0.67885,
+        0.920653,
+        0.929095
+      ],
+      "noise_seeds": [
+        418137849,
+        2444473950,
+        4264000233
+      ],
+      "height_bin": 6,
+      "radius_bin": 1,
+      "angle_bin": 1,
+      "target_index": 368
+    },
+    {
+      "target": [
+        -0.378198,
+        1.14915,
+        0.37109
+      ],
+      "noise_seeds": [
+        524419260,
+        898038879,
+        278217251
+      ],
+      "height_bin": 1,
+      "radius_bin": 1,
+      "angle_bin": 3,
+      "target_index": 369
+    },
+    {
+      "target": [
+        -1.703863,
+        -0.790635,
+        0.260767
+      ],
+      "noise_seeds": [
+        3136701266,
+        2425402102,
+        284734978
+      ],
+      "height_bin": 0,
+      "radius_bin": 4,
+      "angle_bin": 5,
+      "target_index": 370
+    },
+    {
+      "target": [
+        1.001093,
+        1.144495,
+        0.226665
+      ],
+      "noise_seeds": [
+        4064166163,
+        3006806413,
+        3424545413
+      ],
+      "height_bin": 0,
+      "radius_bin": 3,
+      "angle_bin": 1,
+      "target_index": 371
+    },
+    {
+      "target": [
+        0.590468,
+        -0.604651,
+        0.829247
+      ],
+      "noise_seeds": [
+        4270203111,
+        2633985512,
+        3871878378
+      ],
+      "height_bin": 5,
+      "radius_bin": 0,
+      "angle_bin": 8,
+      "target_index": 372
+    },
+    {
+      "target": [
+        -1.595279,
+        -0.286474,
+        1.128292
+      ],
+      "noise_seeds": [
+        2091057235,
+        2298901616,
+        2050408995
+      ],
+      "height_bin": 8,
+      "radius_bin": 3,
+      "angle_bin": 5,
+      "target_index": 373
+    },
+    {
+      "target": [
+        0.946587,
+        -0.130554,
+        0.996415
+      ],
+      "noise_seeds": [
+        1960537724,
+        543238336,
+        163446044
+      ],
+      "height_bin": 7,
+      "radius_bin": 0,
+      "angle_bin": 9,
+      "target_index": 374
+    },
+    {
+      "target": [
+        1.016173,
+        -1.675885,
+        0.22076
+      ],
+      "noise_seeds": [
+        2010497161,
+        2540289246,
+        1576885303
+      ],
+      "height_bin": 0,
+      "radius_bin": 4,
+      "angle_bin": 8,
+      "target_index": 375
+    },
+    {
+      "target": [
+        0.25318,
+        -0.945163,
+        1.261714
+      ],
+      "noise_seeds": [
+        587573069,
+        1964037732,
+        3392134473
+      ],
+      "height_bin": 9,
+      "radius_bin": 0,
+      "angle_bin": 7,
+      "target_index": 376
+    },
+    {
+      "target": [
+        -1.123377,
+        -0.042495,
+        1.185518
+      ],
+      "noise_seeds": [
+        1962995237,
+        670031428,
+        3524461906
+      ],
+      "height_bin": 8,
+      "radius_bin": 1,
+      "angle_bin": 5,
+      "target_index": 377
+    },
+    {
+      "target": [
+        -0.208027,
+        1.48072,
+        1.197995
+      ],
+      "noise_seeds": [
+        3534797356,
+        1767065198,
+        2333338211
+      ],
+      "height_bin": 9,
+      "radius_bin": 2,
+      "angle_bin": 2,
+      "target_index": 378
+    },
+    {
+      "target": [
+        -0.517431,
+        -0.878307,
+        0.216376
+      ],
+      "noise_seeds": [
+        995607450,
+        2413739772,
+        1071072654
+      ],
+      "height_bin": 0,
+      "radius_bin": 0,
+      "angle_bin": 6,
+      "target_index": 379
+    },
+    {
+      "target": [
+        -1.696773,
+        1.058153,
+        0.384521
+      ],
+      "noise_seeds": [
+        40725361,
+        1383204255,
+        4056996161
+      ],
+      "height_bin": 1,
+      "radius_bin": 4,
+      "angle_bin": 4,
+      "target_index": 380
+    },
+    {
+      "target": [
+        -1.673743,
+        0.206135,
+        0.265731
+      ],
+      "noise_seeds": [
+        1197314010,
+        3589608068,
+        2312163810
+      ],
+      "height_bin": 0,
+      "radius_bin": 3,
+      "angle_bin": 4,
+      "target_index": 381
+    },
+    {
+      "target": [
+        -1.499017,
+        0.737802,
+        0.945225
+      ],
+      "noise_seeds": [
+        3178098998,
+        1551395117,
+        3590238252
+      ],
+      "height_bin": 6,
+      "radius_bin": 3,
+      "angle_bin": 4,
+      "target_index": 382
+    },
+    {
+      "target": [
+        0.755848,
+        -0.886197,
+        0.956097
+      ],
+      "noise_seeds": [
+        321418085,
+        807312352,
+        2517316173
+      ],
+      "height_bin": 6,
+      "radius_bin": 1,
+      "angle_bin": 8,
+      "target_index": 383
+    },
+    {
+      "target": [
+        0.05912,
+        -1.607695,
+        0.497149
+      ],
+      "noise_seeds": [
+        1215624436,
+        2471361511,
+        3565196266
+      ],
+      "height_bin": 2,
+      "radius_bin": 3,
+      "angle_bin": 7,
+      "target_index": 384
+    },
+    {
+      "target": [
+        0.918689,
+        1.498994,
+        0.583053
+      ],
+      "noise_seeds": [
+        353369029,
+        4015444443,
+        1555418023
+      ],
+      "height_bin": 3,
+      "radius_bin": 3,
+      "angle_bin": 1,
+      "target_index": 385
+    },
+    {
+      "target": [
+        -0.019563,
+        1.081291,
+        0.604753
+      ],
+      "noise_seeds": [
+        687981772,
+        4114981966,
+        910261801
+      ],
+      "height_bin": 3,
+      "radius_bin": 1,
+      "angle_bin": 2,
+      "target_index": 386
+    },
+    {
+      "target": [
+        0.038854,
+        -1.058852,
+        1.095391
+      ],
+      "noise_seeds": [
+        2244717430,
+        1592437998,
+        940137097
+      ],
+      "height_bin": 8,
+      "radius_bin": 1,
+      "angle_bin": 7,
+      "target_index": 387
+    },
+    {
+      "target": [
+        -0.950272,
+        -1.227769,
+        1.20557
+      ],
+      "noise_seeds": [
+        2201533912,
+        2425220735,
+        4074581968
+      ],
+      "height_bin": 9,
+      "radius_bin": 3,
+      "angle_bin": 6,
+      "target_index": 388
+    },
+    {
+      "target": [
+        1.013977,
+        0.644523,
+        0.320277
+      ],
+      "noise_seeds": [
+        423070852,
+        244927719,
+        4150594309
+      ],
+      "height_bin": 1,
+      "radius_bin": 1,
+      "angle_bin": 0,
+      "target_index": 389
+    },
+    {
+      "target": [
+        -0.846288,
+        1.547232,
+        0.779327
+      ],
+      "noise_seeds": [
+        3384317201,
+        3505608656,
+        3444930080
+      ],
+      "height_bin": 5,
+      "radius_bin": 4,
+      "angle_bin": 3,
+      "target_index": 390
+    },
+    {
+      "target": [
+        -0.828725,
+        0.979748,
+        0.784981
+      ],
+      "noise_seeds": [
+        1222368246,
+        2985056913,
+        1109596750
+      ],
+      "height_bin": 5,
+      "radius_bin": 2,
+      "angle_bin": 3,
+      "target_index": 391
+    },
+    {
+      "target": [
+        0.409026,
+        -0.724357,
+        0.449844
+      ],
+      "noise_seeds": [
+        3528934910,
+        3868838393,
+        128866315
+      ],
+      "height_bin": 2,
+      "radius_bin": 0,
+      "angle_bin": 8,
+      "target_index": 392
+    },
+    {
+      "target": [
+        0.170035,
+        -1.217597,
+        0.990327
+      ],
+      "noise_seeds": [
+        2730134063,
+        3379569272,
+        2931112593
+      ],
+      "height_bin": 7,
+      "radius_bin": 1,
+      "angle_bin": 7,
+      "target_index": 393
+    },
+    {
+      "target": [
+        1.246296,
+        0.14051,
+        0.493846
+      ],
+      "noise_seeds": [
+        483937164,
+        3164366749,
+        3885048656
+      ],
+      "height_bin": 2,
+      "radius_bin": 1,
+      "angle_bin": 0,
+      "target_index": 394
+    },
+    {
+      "target": [
+        0.907334,
+        -1.02068,
+        1.281528
+      ],
+      "noise_seeds": [
+        3889819975,
+        717595,
+        2810883904
+      ],
+      "height_bin": 9,
+      "radius_bin": 2,
+      "angle_bin": 8,
+      "target_index": 395
+    },
+    {
+      "target": [
+        0.067335,
+        0.850302,
+        0.674191
+      ],
+      "noise_seeds": [
+        776107667,
+        3889084764,
+        1670927751
+      ],
+      "height_bin": 4,
+      "radius_bin": 0,
+      "angle_bin": 2,
+      "target_index": 396
+    },
+    {
+      "target": [
+        1.248158,
+        1.080635,
+        0.753315
+      ],
+      "noise_seeds": [
+        3061035992,
+        3503217704,
+        2201954807
+      ],
+      "height_bin": 5,
+      "radius_bin": 3,
+      "angle_bin": 1,
+      "target_index": 397
+    },
+    {
+      "target": [
+        -0.834062,
+        -1.021125,
+        0.831888
+      ],
+      "noise_seeds": [
+        2359520907,
+        2704218690,
+        3845563996
+      ],
+      "height_bin": 5,
+      "radius_bin": 2,
+      "angle_bin": 6,
+      "target_index": 398
+    },
+    {
+      "target": [
+        1.764106,
+        0.714582,
+        1.269667
+      ],
+      "noise_seeds": [
+        1832714596,
+        1956008746,
+        3646926071
+      ],
+      "height_bin": 9,
+      "radius_bin": 4,
+      "angle_bin": 0,
+      "target_index": 399
+    },
+    {
+      "target": [
+        -1.664748,
+        0.845281,
+        0.821186
+      ],
+      "noise_seeds": [
+        1455827460,
+        373309253,
+        372312957
+      ],
+      "height_bin": 5,
+      "radius_bin": 4,
+      "angle_bin": 4,
+      "target_index": 400
+    },
+    {
+      "target": [
+        1.302561,
+        -0.10638,
+        0.602064
+      ],
+      "noise_seeds": [
+        2750315527,
+        1580641524,
+        427142505
+      ],
+      "height_bin": 3,
+      "radius_bin": 2,
+      "angle_bin": 9,
+      "target_index": 401
+    },
+    {
+      "target": [
+        1.443807,
+        0.817118,
+        1.073765
+      ],
+      "noise_seeds": [
+        2325527134,
+        671005729,
+        629222576
+      ],
+      "height_bin": 7,
+      "radius_bin": 3,
+      "angle_bin": 0,
+      "target_index": 402
+    },
+    {
+      "target": [
+        -0.890072,
+        -0.821081,
+        0.205802
+      ],
+      "noise_seeds": [
+        3233419741,
+        648047390,
+        4020155320
+      ],
+      "height_bin": 0,
+      "radius_bin": 1,
+      "angle_bin": 6,
+      "target_index": 403
+    },
+    {
+      "target": [
+        0.189089,
+        -1.418325,
+        1.109077
+      ],
+      "noise_seeds": [
+        3291933833,
+        3725934103,
+        1549487851
+      ],
+      "height_bin": 8,
+      "radius_bin": 2,
+      "angle_bin": 7,
+      "target_index": 404
+    },
+    {
+      "target": [
+        -0.599436,
+        1.806507,
+        0.298793
+      ],
+      "noise_seeds": [
+        1910552197,
+        380116350,
+        2297511310
+      ],
+      "height_bin": 0,
+      "radius_bin": 4,
+      "angle_bin": 3,
+      "target_index": 405
+    },
+    {
+      "target": [
+        -1.084188,
+        -0.399476,
+        0.500611
+      ],
+      "noise_seeds": [
+        1040395970,
+        183798742,
+        3050592117
+      ],
+      "height_bin": 2,
+      "radius_bin": 1,
+      "angle_bin": 5,
+      "target_index": 406
+    },
+    {
+      "target": [
+        -1.364299,
+        0.303857,
+        0.496253
+      ],
+      "noise_seeds": [
+        878123623,
+        439993086,
+        3717061473
+      ],
+      "height_bin": 2,
+      "radius_bin": 2,
+      "angle_bin": 4,
+      "target_index": 407
+    },
+    {
+      "target": [
+        -1.184727,
+        -0.930692,
+        0.375397
+      ],
+      "noise_seeds": [
+        508511392,
+        3327261336,
+        4218635177
+      ],
+      "height_bin": 1,
+      "radius_bin": 2,
+      "angle_bin": 6,
+      "target_index": 408
+    },
+    {
+      "target": [
+        1.070193,
+        1.137136,
+        0.870561
+      ],
+      "noise_seeds": [
+        932082346,
+        2283521449,
+        1417562123
+      ],
+      "height_bin": 6,
+      "radius_bin": 3,
+      "angle_bin": 1,
+      "target_index": 409
+    },
+    {
+      "target": [
+        -1.31839,
+        0.935025,
+        1.099572
+      ],
+      "noise_seeds": [
+        1570800185,
+        523553542,
+        607444351
+      ],
+      "height_bin": 8,
+      "radius_bin": 3,
+      "angle_bin": 4,
+      "target_index": 410
+    },
+    {
+      "target": [
+        0.31845,
+        1.251626,
+        1.178047
+      ],
+      "noise_seeds": [
+        4160060521,
+        4094271066,
+        2306565838
+      ],
+      "height_bin": 8,
+      "radius_bin": 2,
+      "angle_bin": 2,
+      "target_index": 411
+    },
+    {
+      "target": [
+        0.145415,
+        0.816768,
+        0.924829
+      ],
+      "noise_seeds": [
+        585925304,
+        2588044257,
+        4016107692
+      ],
+      "height_bin": 6,
+      "radius_bin": 0,
+      "angle_bin": 2,
+      "target_index": 412
+    },
+    {
+      "target": [
+        1.459999,
+        -0.536516,
+        0.249618
+      ],
+      "noise_seeds": [
+        2584602926,
+        3244787354,
+        3379446707
+      ],
+      "height_bin": 0,
+      "radius_bin": 3,
+      "angle_bin": 9,
+      "target_index": 413
+    },
+    {
+      "target": [
+        0.533205,
+        -0.607264,
+        1.191436
+      ],
+      "noise_seeds": [
+        3218312957,
+        119199178,
+        1976077307
+      ],
+      "height_bin": 9,
+      "radius_bin": 0,
+      "angle_bin": 8,
+      "target_index": 414
+    },
+    {
+      "target": [
+        -0.737146,
+        -0.492702,
+        0.904529
+      ],
+      "noise_seeds": [
+        1453857560,
+        3405063367,
+        2080298208
+      ],
+      "height_bin": 6,
+      "radius_bin": 0,
+      "angle_bin": 5,
+      "target_index": 415
+    },
+    {
+      "target": [
+        -1.283511,
+        0.698824,
+        1.157741
+      ],
+      "noise_seeds": [
+        294578787,
+        566445504,
+        1598876960
+      ],
+      "height_bin": 8,
+      "radius_bin": 2,
+      "angle_bin": 4,
+      "target_index": 416
+    },
+    {
+      "target": [
+        1.797549,
+        -0.728031,
+        0.862201
+      ],
+      "noise_seeds": [
+        2591217572,
+        3579832886,
+        2045346182
+      ],
+      "height_bin": 6,
+      "radius_bin": 4,
+      "angle_bin": 9,
+      "target_index": 417
+    },
+    {
+      "target": [
+        -1.165324,
+        0.40347,
+        1.043456
+      ],
+      "noise_seeds": [
+        2374286928,
+        3516809632,
+        746296247
+      ],
+      "height_bin": 7,
+      "radius_bin": 1,
+      "angle_bin": 4,
+      "target_index": 418
+    },
+    {
+      "target": [
+        0.744903,
+        -0.643809,
+        1.180125
+      ],
+      "noise_seeds": [
+        2088818127,
+        3526641263,
+        590635171
+      ],
+      "height_bin": 8,
+      "radius_bin": 0,
+      "angle_bin": 8,
+      "target_index": 419
+    },
+    {
+      "target": [
+        1.314063,
+        0.456208,
+        0.262372
+      ],
+      "noise_seeds": [
+        1245767492,
+        4096591680,
+        2562012022
+      ],
+      "height_bin": 0,
+      "radius_bin": 2,
+      "angle_bin": 0,
+      "target_index": 420
+    },
+    {
+      "target": [
+        -0.629426,
+        1.03336,
+        1.083602
+      ],
+      "noise_seeds": [
+        136218525,
+        1757175540,
+        2839951770
+      ],
+      "height_bin": 8,
+      "radius_bin": 1,
+      "angle_bin": 3,
+      "target_index": 421
+    },
+    {
+      "target": [
+        0.629397,
+        0.635926,
+        0.454034
+      ],
+      "noise_seeds": [
+        3317210546,
+        1770799765,
+        1556290256
+      ],
+      "height_bin": 2,
+      "radius_bin": 0,
+      "angle_bin": 1,
+      "target_index": 422
+    },
+    {
+      "target": [
+        -1.004133,
+        -1.115677,
+        0.502823
+      ],
+      "noise_seeds": [
+        2980154388,
+        989902507,
+        1811140086
+      ],
+      "height_bin": 2,
+      "radius_bin": 2,
+      "angle_bin": 6,
+      "target_index": 423
+    },
+    {
+      "target": [
+        1.921157,
+        -0.392922,
+        0.492738
+      ],
+      "noise_seeds": [
+        1018118618,
+        1252553040,
+        1510507850
+      ],
+      "height_bin": 2,
+      "radius_bin": 4,
+      "angle_bin": 9,
+      "target_index": 424
+    },
+    {
+      "target": [
+        1.396172,
+        0.564794,
+        0.562355
+      ],
+      "noise_seeds": [
+        37170366,
+        2835713275,
+        735032299
+      ],
+      "height_bin": 3,
+      "radius_bin": 2,
+      "angle_bin": 0,
+      "target_index": 425
+    },
+    {
+      "target": [
+        -0.340954,
+        -1.180069,
+        0.621321
+      ],
+      "noise_seeds": [
+        1107570543,
+        454215344,
+        3356532696
+      ],
+      "height_bin": 3,
+      "radius_bin": 1,
+      "angle_bin": 7,
+      "target_index": 426
+    },
+    {
+      "target": [
+        1.283647,
+        0.11706,
+        1.10229
+      ],
+      "noise_seeds": [
+        3559571268,
+        4277277127,
+        1998250117
+      ],
+      "height_bin": 8,
+      "radius_bin": 2,
+      "angle_bin": 0,
+      "target_index": 427
+    },
+    {
+      "target": [
+        1.540191,
+        -0.994748,
+        0.643483
+      ],
+      "noise_seeds": [
+        328317893,
+        261720538,
+        452839443
+      ],
+      "height_bin": 4,
+      "radius_bin": 4,
+      "angle_bin": 9,
+      "target_index": 428
+    },
+    {
+      "target": [
+        -1.264522,
+        -1.421529,
+        0.961621
+      ],
+      "noise_seeds": [
+        2128446978,
+        1506536014,
+        1021389373
+      ],
+      "height_bin": 6,
+      "radius_bin": 4,
+      "angle_bin": 6,
+      "target_index": 429
+    },
+    {
+      "target": [
+        -0.914755,
+        -0.670423,
+        0.484496
+      ],
+      "noise_seeds": [
+        780091812,
+        1623932053,
+        4013280161
+      ],
+      "height_bin": 2,
+      "radius_bin": 1,
+      "angle_bin": 6,
+      "target_index": 430
+    },
+    {
+      "target": [
+        0.6932,
+        -1.550954,
+        0.260327
+      ],
+      "noise_seeds": [
+        1799310805,
+        2425779462,
+        3146969866
+      ],
+      "height_bin": 0,
+      "radius_bin": 3,
+      "angle_bin": 8,
+      "target_index": 431
+    },
+    {
+      "target": [
+        0.038683,
+        -0.961442,
+        0.436417
+      ],
+      "noise_seeds": [
+        459919079,
+        2933028209,
+        757455672
+      ],
+      "height_bin": 2,
+      "radius_bin": 0,
+      "angle_bin": 7,
+      "target_index": 432
+    },
+    {
+      "target": [
+        1.318688,
+        -0.661666,
+        1.106986
+      ],
+      "noise_seeds": [
+        2991974935,
+        2335332196,
+        2414819843
+      ],
+      "height_bin": 8,
+      "radius_bin": 2,
+      "angle_bin": 9,
+      "target_index": 433
+    },
+    {
+      "target": [
+        -1.139992,
+        -0.652964,
+        0.225188
+      ],
+      "noise_seeds": [
+        3706985681,
+        2982729001,
+        1624070237
+      ],
+      "height_bin": 0,
+      "radius_bin": 2,
+      "angle_bin": 5,
+      "target_index": 434
+    },
+    {
+      "target": [
+        -1.715135,
+        0.108689,
+        1.055716
+      ],
+      "noise_seeds": [
+        1306154416,
+        867497565,
+        3496573520
+      ],
+      "height_bin": 7,
+      "radius_bin": 3,
+      "angle_bin": 4,
+      "target_index": 435
+    },
+    {
+      "target": [
+        0.345885,
+        -0.991854,
+        0.334383
+      ],
+      "noise_seeds": [
+        4294475044,
+        1756423369,
+        1161754929
+      ],
+      "height_bin": 1,
+      "radius_bin": 1,
+      "angle_bin": 8,
+      "target_index": 436
+    },
+    {
+      "target": [
+        -0.327092,
+        0.895575,
+        1.25961
+      ],
+      "noise_seeds": [
+        819819515,
+        768008480,
+        648754558
+      ],
+      "height_bin": 9,
+      "radius_bin": 0,
+      "angle_bin": 3,
+      "target_index": 437
+    },
+    {
+      "target": [
+        -0.774277,
+        -0.379063,
+        1.269875
+      ],
+      "noise_seeds": [
+        2544354324,
+        4060212740,
+        1721290258
+      ],
+      "height_bin": 9,
+      "radius_bin": 0,
+      "angle_bin": 5,
+      "target_index": 438
+    },
+    {
+      "target": [
+        -1.696874,
+        -0.746885,
+        0.820281
+      ],
+      "noise_seeds": [
+        2428783136,
+        3060072616,
+        2714539406
+      ],
+      "height_bin": 5,
+      "radius_bin": 4,
+      "angle_bin": 5,
+      "target_index": 439
+    },
+    {
+      "target": [
+        -1.337292,
+        -0.399399,
+        0.383922
+      ],
+      "noise_seeds": [
+        3809254345,
+        3040799622,
+        2098858325
+      ],
+      "height_bin": 1,
+      "radius_bin": 2,
+      "angle_bin": 5,
+      "target_index": 440
+    },
+    {
+      "target": [
+        1.066258,
+        0.894755,
+        0.434178
+      ],
+      "noise_seeds": [
+        1730235984,
+        806098055,
+        2007068902
+      ],
+      "height_bin": 2,
+      "radius_bin": 2,
+      "angle_bin": 1,
+      "target_index": 441
+    },
+    {
+      "target": [
+        -0.567083,
+        0.853395,
+        0.249464
+      ],
+      "noise_seeds": [
+        2834104588,
+        36575227,
+        104931767
+      ],
+      "height_bin": 0,
+      "radius_bin": 0,
+      "angle_bin": 3,
+      "target_index": 442
+    },
+    {
+      "target": [
+        -0.593684,
+        0.54736,
+        1.107557
+      ],
+      "noise_seeds": [
+        1352174752,
+        1155370103,
+        784794781
+      ],
+      "height_bin": 8,
+      "radius_bin": 0,
+      "angle_bin": 3,
+      "target_index": 443
+    },
+    {
+      "target": [
+        -1.204644,
+        -0.293938,
+        0.964876
+      ],
+      "noise_seeds": [
+        3305986664,
+        2536281168,
+        3962713217
+      ],
+      "height_bin": 6,
+      "radius_bin": 1,
+      "angle_bin": 5,
+      "target_index": 444
+    },
+    {
+      "target": [
+        0.220334,
+        -1.398242,
+        0.24748
+      ],
+      "noise_seeds": [
+        944630373,
+        746283027,
+        1146580699
+      ],
+      "height_bin": 0,
+      "radius_bin": 2,
+      "angle_bin": 7,
+      "target_index": 445
+    },
+    {
+      "target": [
+        1.030477,
+        0.445284,
+        0.908273
+      ],
+      "noise_seeds": [
+        4239998604,
+        4190985546,
+        2237352754
+      ],
+      "height_bin": 6,
+      "radius_bin": 1,
+      "angle_bin": 0,
+      "target_index": 446
+    },
+    {
+      "target": [
+        0.587433,
+        -0.588465,
+        0.228802
+      ],
+      "noise_seeds": [
+        1462249025,
+        3152888711,
+        3660839259
+      ],
+      "height_bin": 0,
+      "radius_bin": 0,
+      "angle_bin": 8,
+      "target_index": 447
+    },
+    {
+      "target": [
+        -0.020562,
+        1.303706,
+        0.848688
+      ],
+      "noise_seeds": [
+        2322654793,
+        3835194839,
+        2033538524
+      ],
+      "height_bin": 5,
+      "radius_bin": 2,
+      "angle_bin": 2,
+      "target_index": 448
+    },
+    {
+      "target": [
+        1.594848,
+        0.842492,
+        1.094933
+      ],
+      "noise_seeds": [
+        1657976712,
+        2892471493,
+        379911318
+      ],
+      "height_bin": 8,
+      "radius_bin": 4,
+      "angle_bin": 0,
+      "target_index": 449
+    },
+    {
+      "target": [
+        0.442799,
+        0.829866,
+        0.860149
+      ],
+      "noise_seeds": [
+        1923426441,
+        3114398150,
+        1485252378
+      ],
+      "height_bin": 6,
+      "radius_bin": 0,
+      "angle_bin": 1,
+      "target_index": 450
+    },
+    {
+      "target": [
+        -1.222263,
+        0.261137,
+        0.270454
+      ],
+      "noise_seeds": [
+        1958000746,
+        1157820081,
+        915887823
+      ],
+      "height_bin": 0,
+      "radius_bin": 1,
+      "angle_bin": 4,
+      "target_index": 451
+    },
+    {
+      "target": [
+        -1.484035,
+        -0.764994,
+        0.744823
+      ],
+      "noise_seeds": [
+        1273919612,
+        1761951905,
+        3381313322
+      ],
+      "height_bin": 4,
+      "radius_bin": 3,
+      "angle_bin": 5,
+      "target_index": 452
+    },
+    {
+      "target": [
+        -1.345094,
+        0.306756,
+        0.939953
+      ],
+      "noise_seeds": [
+        4262134248,
+        3831487739,
+        1542762988
+      ],
+      "height_bin": 6,
+      "radius_bin": 2,
+      "angle_bin": 4,
+      "target_index": 453
+    },
+    {
+      "target": [
+        -1.775315,
+        0.665484,
+        0.98784
+      ],
+      "noise_seeds": [
+        3907281805,
+        56613291,
+        55775354
+      ],
+      "height_bin": 7,
+      "radius_bin": 4,
+      "angle_bin": 4,
+      "target_index": 454
+    },
+    {
+      "target": [
+        1.047261,
+        0.056032,
+        1.174989
+      ],
+      "noise_seeds": [
+        2604099389,
+        3468211274,
+        1499514459
+      ],
+      "height_bin": 8,
+      "radius_bin": 1,
+      "angle_bin": 0,
+      "target_index": 455
+    },
+    {
+      "target": [
+        0.042935,
+        -1.466264,
+        0.572678
+      ],
+      "noise_seeds": [
+        4002987602,
+        107012115,
+        1525316368
+      ],
+      "height_bin": 3,
+      "radius_bin": 2,
+      "angle_bin": 7,
+      "target_index": 456
+    },
+    {
+      "target": [
+        -0.129935,
+        0.858038,
+        0.521263
+      ],
+      "noise_seeds": [
+        3232117536,
+        3719309004,
+        1155058360
+      ],
+      "height_bin": 2,
+      "radius_bin": 0,
+      "angle_bin": 2,
+      "target_index": 457
+    },
+    {
+      "target": [
+        -0.075344,
+        -1.056345,
+        1.224732
+      ],
+      "noise_seeds": [
+        3397230406,
+        2292465825,
+        3255149232
+      ],
+      "height_bin": 9,
+      "radius_bin": 1,
+      "angle_bin": 7,
+      "target_index": 458
+    },
+    {
+      "target": [
+        0.32032,
+        -1.258178,
+        0.396713
+      ],
+      "noise_seeds": [
+        243176546,
+        3531510433,
+        3186379546
+      ],
+      "height_bin": 1,
+      "radius_bin": 2,
+      "angle_bin": 7,
+      "target_index": 459
+    },
+    {
+      "target": [
+        1.196,
+        -0.054474,
+        0.401928
+      ],
+      "noise_seeds": [
+        1169415878,
+        946996318,
+        437081916
+      ],
+      "height_bin": 1,
+      "radius_bin": 1,
+      "angle_bin": 9,
+      "target_index": 460
+    },
+    {
+      "target": [
+        1.921496,
+        -0.131452,
+        1.270486
+      ],
+      "noise_seeds": [
+        3193696090,
+        3453381268,
+        3127221511
+      ],
+      "height_bin": 9,
+      "radius_bin": 4,
+      "angle_bin": 9,
+      "target_index": 461
+    },
+    {
+      "target": [
+        0.463625,
+        1.325285,
+        1.181466
+      ],
+      "noise_seeds": [
+        3594389051,
+        1813804267,
+        1444236162
+      ],
+      "height_bin": 8,
+      "radius_bin": 2,
+      "angle_bin": 1,
+      "target_index": 462
+    },
+    {
+      "target": [
+        0.480706,
+        1.700317,
+        0.677752
+      ],
+      "noise_seeds": [
+        4027668094,
+        2372656297,
+        3212136149
+      ],
+      "height_bin": 4,
+      "radius_bin": 4,
+      "angle_bin": 2,
+      "target_index": 463
+    },
+    {
+      "target": [
+        -1.917896,
+        0.008371,
+        0.687736
+      ],
+      "noise_seeds": [
+        2118600082,
+        3208233096,
+        781946857
+      ],
+      "height_bin": 4,
+      "radius_bin": 4,
+      "angle_bin": 4,
+      "target_index": 464
+    },
+    {
+      "target": [
+        -0.066481,
+        -0.837803,
+        0.600135
+      ],
+      "noise_seeds": [
+        2135489622,
+        3462347314,
+        179568473
+      ],
+      "height_bin": 3,
+      "radius_bin": 0,
+      "angle_bin": 7,
+      "target_index": 465
+    },
+    {
+      "target": [
+        -0.031964,
+        1.5887,
+        0.909831
+      ],
+      "noise_seeds": [
+        455805434,
+        1501157028,
+        456452048
+      ],
+      "height_bin": 6,
+      "radius_bin": 3,
+      "angle_bin": 2,
+      "target_index": 466
+    },
+    {
+      "target": [
+        1.36726,
+        -0.400546,
+        0.871364
+      ],
+      "noise_seeds": [
+        3877822595,
+        3419535219,
+        1571809573
+      ],
+      "height_bin": 6,
+      "radius_bin": 2,
+      "angle_bin": 9,
+      "target_index": 467
+    },
+    {
+      "target": [
+        0.696718,
+        0.570711,
+        0.97942
+      ],
+      "noise_seeds": [
+        4267487382,
+        2384454068,
+        2089987523
+      ],
+      "height_bin": 7,
+      "radius_bin": 0,
+      "angle_bin": 1,
+      "target_index": 468
+    },
+    {
+      "target": [
+        -1.291994,
+        -0.164264,
+        0.633519
+      ],
+      "noise_seeds": [
+        2765656851,
+        3345055209,
+        3853571651
+      ],
+      "height_bin": 3,
+      "radius_bin": 2,
+      "angle_bin": 5,
+      "target_index": 469
+    },
+    {
+      "target": [
+        -1.011351,
+        0.376545,
+        0.426593
+      ],
+      "noise_seeds": [
+        1525509076,
+        2504790633,
+        3340809050
+      ],
+      "height_bin": 2,
+      "radius_bin": 1,
+      "angle_bin": 4,
+      "target_index": 470
+    },
+    {
+      "target": [
+        -0.431995,
+        -0.983191,
+        0.982092
+      ],
+      "noise_seeds": [
+        3888385315,
+        1627786730,
+        1018559015
+      ],
+      "height_bin": 7,
+      "radius_bin": 1,
+      "angle_bin": 6,
+      "target_index": 471
+    },
+    {
+      "target": [
+        0.961872,
+        0.675823,
+        0.300301
+      ],
+      "noise_seeds": [
+        665737710,
+        166449120,
+        3483447189
+      ],
+      "height_bin": 0,
+      "radius_bin": 1,
+      "angle_bin": 0,
+      "target_index": 472
+    },
+    {
+      "target": [
+        0.563842,
+        0.571209,
+        0.562328
+      ],
+      "noise_seeds": [
+        2666634216,
+        2400639772,
+        3077905253
+      ],
+      "height_bin": 3,
+      "radius_bin": 0,
+      "angle_bin": 1,
+      "target_index": 473
+    },
+    {
+      "target": [
+        0.110693,
+        1.227883,
+        0.665673
+      ],
+      "noise_seeds": [
+        3922356827,
+        172494171,
+        61177907
+      ],
+      "height_bin": 4,
+      "radius_bin": 1,
+      "angle_bin": 2,
+      "target_index": 474
+    },
+    {
+      "target": [
+        1.488202,
+        -0.792008,
+        1.17145
+      ],
+      "noise_seeds": [
+        3718539992,
+        110574146,
+        2313495399
+      ],
+      "height_bin": 8,
+      "radius_bin": 3,
+      "angle_bin": 9,
+      "target_index": 475
+    },
+    {
+      "target": [
+        1.422918,
+        0.688235,
+        1.161163
+      ],
+      "noise_seeds": [
+        1976763495,
+        2156258791,
+        1384757428
+      ],
+      "height_bin": 8,
+      "radius_bin": 3,
+      "angle_bin": 0,
+      "target_index": 476
+    },
+    {
+      "target": [
+        0.89483,
+        0.565771,
+        1.041988
+      ],
+      "noise_seeds": [
+        3300137591,
+        3960016324,
+        1163288228
+      ],
+      "height_bin": 7,
+      "radius_bin": 1,
+      "angle_bin": 0,
+      "target_index": 477
+    },
+    {
+      "target": [
+        1.392004,
+        0.4192,
+        0.819397
+      ],
+      "noise_seeds": [
+        3028106082,
+        3013763943,
+        4004346361
+      ],
+      "height_bin": 5,
+      "radius_bin": 2,
+      "angle_bin": 0,
+      "target_index": 478
+    },
+    {
+      "target": [
+        1.298503,
+        1.502279,
+        0.350752
+      ],
+      "noise_seeds": [
+        1486535682,
+        2782335390,
+        3456415480
+      ],
+      "height_bin": 1,
+      "radius_bin": 4,
+      "angle_bin": 1,
+      "target_index": 479
+    },
+    {
+      "target": [
+        0.679784,
+        -1.178699,
+        0.762359
+      ],
+      "noise_seeds": [
+        4056756703,
+        1315888908,
+        3573737389
+      ],
+      "height_bin": 5,
+      "radius_bin": 2,
+      "angle_bin": 8,
+      "target_index": 480
+    },
+    {
+      "target": [
+        -0.791081,
+        0.137482,
+        0.702283
+      ],
+      "noise_seeds": [
+        1579280250,
+        3431359242,
+        2394685387
+      ],
+      "height_bin": 4,
+      "radius_bin": 0,
+      "angle_bin": 4,
+      "target_index": 481
+    },
+    {
+      "target": [
+        -1.216197,
+        1.392549,
+        1.189472
+      ],
+      "noise_seeds": [
+        1080685382,
+        3978531309,
+        645884823
+      ],
+      "height_bin": 8,
+      "radius_bin": 4,
+      "angle_bin": 3,
+      "target_index": 482
+    },
+    {
+      "target": [
+        -1.097359,
+        -0.052174,
+        0.534021
+      ],
+      "noise_seeds": [
+        2870284051,
+        2479835857,
+        3471505097
+      ],
+      "height_bin": 3,
+      "radius_bin": 1,
+      "angle_bin": 5,
+      "target_index": 483
+    },
+    {
+      "target": [
+        -0.095081,
+        1.2048,
+        0.816003
+      ],
+      "noise_seeds": [
+        1594137075,
+        1341161442,
+        2585593086
+      ],
+      "height_bin": 5,
+      "radius_bin": 1,
+      "angle_bin": 2,
+      "target_index": 484
+    },
+    {
+      "target": [
+        1.695225,
+        -0.486592,
+        1.123189
+      ],
+      "noise_seeds": [
+        679387740,
+        1869381885,
+        4262590113
+      ],
+      "height_bin": 8,
+      "radius_bin": 4,
+      "angle_bin": 9,
+      "target_index": 485
+    },
+    {
+      "target": [
+        -0.864159,
+        1.382608,
+        0.205516
+      ],
+      "noise_seeds": [
+        4112793373,
+        4073616775,
+        3016582154
+      ],
+      "height_bin": 0,
+      "radius_bin": 3,
+      "angle_bin": 3,
+      "target_index": 486
+    },
+    {
+      "target": [
+        -0.934672,
+        0.432024,
+        0.435421
+      ],
+      "noise_seeds": [
+        2501643538,
+        1552083577,
+        4235641635
+      ],
+      "height_bin": 2,
+      "radius_bin": 0,
+      "angle_bin": 4,
+      "target_index": 487
+    },
+    {
+      "target": [
+        1.550524,
+        1.010389,
+        0.51318
+      ],
+      "noise_seeds": [
+        1378635231,
+        1295006862,
+        1625841812
+      ],
+      "height_bin": 2,
+      "radius_bin": 4,
+      "angle_bin": 0,
+      "target_index": 488
+    },
+    {
+      "target": [
+        1.393565,
+        1.198942,
+        0.822993
+      ],
+      "noise_seeds": [
+        3282685235,
+        3842133569,
+        493352260
+      ],
+      "height_bin": 5,
+      "radius_bin": 4,
+      "angle_bin": 1,
+      "target_index": 489
+    },
+    {
+      "target": [
+        -0.010011,
+        -0.935308,
+        0.301553
+      ],
+      "noise_seeds": [
+        300737850,
+        837033924,
+        32220638
+      ],
+      "height_bin": 0,
+      "radius_bin": 0,
+      "angle_bin": 7,
+      "target_index": 490
+    },
+    {
+      "target": [
+        -1.479356,
+        -1.045705,
+        1.114647
+      ],
+      "noise_seeds": [
+        443629122,
+        3692996031,
+        402693127
+      ],
+      "height_bin": 8,
+      "radius_bin": 4,
+      "angle_bin": 5,
+      "target_index": 491
+    },
+    {
+      "target": [
+        -0.215752,
+        -1.49586,
+        0.681674
+      ],
+      "noise_seeds": [
+        428827608,
+        2661740217,
+        2425054656
+      ],
+      "height_bin": 4,
+      "radius_bin": 2,
+      "angle_bin": 7,
+      "target_index": 492
+    },
+    {
+      "target": [
+        -1.517065,
+        0.232271,
+        1.241028
+      ],
+      "noise_seeds": [
+        3169054878,
+        1141622892,
+        1925008894
+      ],
+      "height_bin": 9,
+      "radius_bin": 3,
+      "angle_bin": 4,
+      "target_index": 493
+    },
+    {
+      "target": [
+        -1.929928,
+        -0.379879,
+        1.023568
+      ],
+      "noise_seeds": [
+        3956505354,
+        2898392277,
+        1094785292
+      ],
+      "height_bin": 7,
+      "radius_bin": 4,
+      "angle_bin": 5,
+      "target_index": 494
+    },
+    {
+      "target": [
+        -1.880506,
+        0.506943,
+        0.489418
+      ],
+      "noise_seeds": [
+        386608388,
+        2207722178,
+        1226304076
+      ],
+      "height_bin": 2,
+      "radius_bin": 4,
+      "angle_bin": 4,
+      "target_index": 495
+    },
+    {
+      "target": [
+        -1.401208,
+        -0.854944,
+        1.24868
+      ],
+      "noise_seeds": [
+        1096044674,
+        1913077207,
+        3987183089
+      ],
+      "height_bin": 9,
+      "radius_bin": 3,
+      "angle_bin": 5,
+      "target_index": 496
+    },
+    {
+      "target": [
+        -0.958171,
+        -0.547688,
+        0.326371
+      ],
+      "noise_seeds": [
+        4074673579,
+        360592542,
+        438895460
+      ],
+      "height_bin": 1,
+      "radius_bin": 1,
+      "angle_bin": 5,
+      "target_index": 497
+    },
+    {
+      "target": [
+        -0.519422,
+        -1.85185,
+        0.78306
+      ],
+      "noise_seeds": [
+        2786242756,
+        1855124866,
+        1688467780
+      ],
+      "height_bin": 5,
+      "radius_bin": 4,
+      "angle_bin": 7,
+      "target_index": 498
+    },
+    {
+      "target": [
+        1.020612,
+        -0.065079,
+        0.271571
+      ],
+      "noise_seeds": [
+        3678831810,
+        505967125,
+        284520250
+      ],
+      "height_bin": 0,
+      "radius_bin": 0,
+      "angle_bin": 9,
+      "target_index": 499
+    }
+  ],
+  "do_not_filter_failed_targets": true
+}

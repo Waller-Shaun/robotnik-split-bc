@@ -1,0 +1,19 @@
+{
+  "run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_23d\\run_20261028_204007_921743",
+  "rollout": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_23d\\run_20261028_204007_921743\\rollouts\\bc_20261028_214148_024668.npz",
+  "expert": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_data_23d\\expert_episode_20261027_181518_875282.npz",
+  "expert_split": "val",
+  "target": [
+    0.5,
+    1.1,
+    0.8
+  ],
+  "expert_phase_time": 4.692999999999902,
+  "bc_phase_time": 4.939,
+  "checkpoint_epoch": 107,
+  "plot_window_s": [
+    0.0,
+    10.0
+  ],
+  "note": "Offline RMSE is matched-state; closed-loop time curves are not matched-state comparisons."
+}

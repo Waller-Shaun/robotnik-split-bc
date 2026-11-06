@@ -1,0 +1,1656 @@
+{
+  "schema": "expert_recovery_pre_action_bodyframe26_arm7_v1",
+  "created_at": "2026-11-04T11:51:44.027002",
+  "target_owner": "train",
+  "feature_version": "obs23_target_and_ee_error_base_yaw_frame_v1",
+  "input_dim": 26,
+  "arm_output_dim": 7,
+  "parent_arm_run": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2_control\\run_20261104_025706_206181",
+  "parent_sha256": {
+    "best_model.pt": "f3374c43fa37d65df682ced14885181e0b2654bfd1ca28f1acb51155b8ff7168",
+    "normalization.npz": "9feb9d07c1eb962e705629a35995716160ed6a72f1e7dfbd8a4bf3bd113557bf",
+    "config.json": "dcc5c3fe362ff9d36384bfb053d28fb32bd47f087b8e622f0b37c1eac85eb752",
+    "data_split.json": "55f068dc2126e21661156236d992e68ef7f960b16493308701137f0a0c6c557f"
+  },
+  "diagnostics_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics",
+  "diagnostics_summary_sha256": "0401bca0fd9e2c7b97ae62dfde720219e0e8a0bc1371687c44b1b530ebe1dd13",
+  "acceptance": "expert_only_true_distance_lt_1cm_continuous_hold_ge_1s",
+  "model_prefix_used_as_labels": false,
+  "true_position_used_as_input": false,
+  "trajectories": 102,
+  "frames": 233150,
+  "entries": [
+    {
+      "file": "recovery_0001.npz",
+      "sha256": "b46b052ab68b0efe8a7e85a8fed3fa63d92cadb15dd536fc42338cfaf6b5aaa9",
+      "frames": 2514,
+      "target": [
+        0.0,
+        -1.8,
+        0.2
+      ],
+      "seed": 30103,
+      "train_index": 61,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_003\\summary.json",
+      "source_report_sha256": "e3307be80aa9f55456491a18663c94a47584b12239971e08152875c3e8d82d8a",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_003\\expert_continuation.npz",
+      "source_trace_sha256": "41a06fa215e70057f1c1ca0ce56b547b4df445373fabb8244f8a87e4b998ad9a"
+    },
+    {
+      "file": "recovery_0002.npz",
+      "sha256": "b668c3807af8df2ef5d895efd200684cd65d163b7b9ef9411ffabd2a7fa77a6b",
+      "frames": 1977,
+      "target": [
+        1.6,
+        0.0,
+        0.35
+      ],
+      "seed": 30169,
+      "train_index": 127,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_007\\summary.json",
+      "source_report_sha256": "0639cfe415b857a7794b6175b6cb6c782f1b71c7dfcb1f33fcb92c5e8b8822e9",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_007\\expert_continuation.npz",
+      "source_trace_sha256": "5fff0ed961a279626d96ea3b7cc00bf9e7655558f01c4dc6c2ae28d60c23c9ff"
+    },
+    {
+      "file": "recovery_0003.npz",
+      "sha256": "e645212f827fd5fc904936e7c4f5e4240b4b391fd3ead3fd5a6aba5791787cb2",
+      "frames": 2225,
+      "target": [
+        -1.075555,
+        -1.48837,
+        0.26555
+      ],
+      "seed": 30724,
+      "train_index": 682,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_008\\summary.json",
+      "source_report_sha256": "bfcd18c40493b013c4d7adb74d1163f24df59d55c59f8bc38e64b89342d26e6a",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_008\\expert_continuation.npz",
+      "source_trace_sha256": "8a6fa1466b2ca8af3b9db2e67e3b3fe6cb51e558c74629f0c92066f11175268e"
+    },
+    {
+      "file": "recovery_0004.npz",
+      "sha256": "9e0063bb39ed66f5e24ec4b8696b5c15c6502fae628d35b5f15777e08a854f3a",
+      "frames": 1930,
+      "target": [
+        -1.081163,
+        0.52066,
+        0.2
+      ],
+      "seed": 30061,
+      "train_index": 19,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_009\\summary.json",
+      "source_report_sha256": "a1a28d0a5bec3034c428dd1f7ddfbaee25cb63778e412ccdd6bcaf6274803c04",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_009\\expert_continuation.npz",
+      "source_trace_sha256": "285da8ea18f1e7f00babb4cd01a9941524e2720752cc960e6a89cc711e5b22dd"
+    },
+    {
+      "file": "recovery_0005.npz",
+      "sha256": "e9613bbcf3c055395ac5a862dd74528d10f9be6effea81cd4dd823cc26be2bd6",
+      "frames": 2434,
+      "target": [
+        -0.256615,
+        -1.798605,
+        0.353784
+      ],
+      "seed": 30730,
+      "train_index": 688,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_012\\summary.json",
+      "source_report_sha256": "fa784d38809123e34a67b9d1153312b365d484b0e49beff1b85783be760c1d23",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_012\\expert_continuation.npz",
+      "source_trace_sha256": "713611f1d305274cc2a1c8a0c8cbc9094e60f317f26f01b53b6b6349bea48280"
+    },
+    {
+      "file": "recovery_0006.npz",
+      "sha256": "ca0744be6d3d86284f630616dcf4b323b5675a7b2634f9c45dadf97713e5009d",
+      "frames": 2429,
+      "target": [
+        -1.503508,
+        0.547232,
+        0.2
+      ],
+      "seed": 30088,
+      "train_index": 46,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_014\\summary.json",
+      "source_report_sha256": "142fe87ef378aad33f12d3e6d50164a770449308d145358bd1ec196210363cc2",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_014\\expert_continuation.npz",
+      "source_trace_sha256": "0d5b4c869be670963f0fb8c85bcad4d0ed13a91e7a366b7b5b969bf533c5a2bb"
+    },
+    {
+      "file": "recovery_0007.npz",
+      "sha256": "e9848d95b298ed1a829988e6e416d32eee0e886ebca232c405e6a5a10b0dd689",
+      "frames": 2460,
+      "target": [
+        1.955127,
+        -0.169471,
+        0.273372
+      ],
+      "seed": 30736,
+      "train_index": 694,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_015\\summary.json",
+      "source_report_sha256": "711cdd3a8e024362844e2ed4e455856953b39f4f9e28b42eb4f589ec328b969f",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_015\\expert_continuation.npz",
+      "source_trace_sha256": "ff4d45615a54a80109bcac8216814545164a917c36c70f4b992cb53b971f589b"
+    },
+    {
+      "file": "recovery_0008.npz",
+      "sha256": "3f7160a79f00978223d9dec1341bf204684ef07f6779e3b6b0da63fefbab60d3",
+      "frames": 2222,
+      "target": [
+        0.791046,
+        0.867764,
+        0.307766
+      ],
+      "seed": 30633,
+      "train_index": 591,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_016\\summary.json",
+      "source_report_sha256": "5db87094cb6a72e798622d7bb4f9b6a23777adf38a33cd363a1d51aec06e5af6",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_016\\expert_continuation.npz",
+      "source_trace_sha256": "915409a1e9f74e9dc043e73409ba538c11234b93aac062b96bdd016b707cef86"
+    },
+    {
+      "file": "recovery_0009.npz",
+      "sha256": "5bbad97828efc245d59c4b57b116b34438e3b01c6881431d2a3a2ecb5028121e",
+      "frames": 2539,
+      "target": [
+        1.711902,
+        0.556231,
+        0.2
+      ],
+      "seed": 30093,
+      "train_index": 51,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_018\\summary.json",
+      "source_report_sha256": "874fb9f4d867ed78bd5bee9fffc2007997db85cc5426a13f8e7a82fa0a3873e8",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_018\\expert_continuation.npz",
+      "source_trace_sha256": "a9a15c4cab58ea7d152b3ffab69fb76b270a1518422291db00a4f83a36b4150f"
+    },
+    {
+      "file": "recovery_0010.npz",
+      "sha256": "63e818fe43c103c45b70d98ae3022f7772b89058f02a4108490d4f0c6c484954",
+      "frames": 2522,
+      "target": [
+        0.957558,
+        -0.150025,
+        0.234427
+      ],
+      "seed": 30624,
+      "train_index": 582,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_020\\summary.json",
+      "source_report_sha256": "538d00c808bd5e878a13ac493ffe6cc020bd1cb678a24da3d2044495e2547bfc",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_020\\expert_continuation.npz",
+      "source_trace_sha256": "18ab634e0a2ac9b0a8f658ba5d00b903d2a96c2465ae845751250536a56af9cb"
+    },
+    {
+      "file": "recovery_0011.npz",
+      "sha256": "2bf81a99527d5828808890a6358949659ce4555cbbc036e93da68bee25317dd9",
+      "frames": 2376,
+      "target": [
+        -0.83279,
+        0.827045,
+        0.305498
+      ],
+      "seed": 30641,
+      "train_index": 599,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_029\\summary.json",
+      "source_report_sha256": "5d9decefe2f1128fc2a2de760eea76b762973989a106f83e057504c7f19829ec",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_029\\expert_continuation.npz",
+      "source_trace_sha256": "8c363ab75cb8a57a0516f73140b04a2e76fdc95e838b3e50a8393b0417d5ebd7"
+    },
+    {
+      "file": "recovery_0012.npz",
+      "sha256": "54f04a8b897026981fd029ed25e1457e94797c19db7a480ea5655dafc04235e7",
+      "frames": 2442,
+      "target": [
+        -1.711902,
+        0.556231,
+        0.2
+      ],
+      "seed": 30092,
+      "train_index": 50,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_033\\summary.json",
+      "source_report_sha256": "3df760b81b4d114180728503bfb15b38d903be374ded060d4baee3a54dda85fa",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_033\\expert_continuation.npz",
+      "source_trace_sha256": "963ff81230ae281baab4b89cba1e2e0278434ef3fe7405bf5ae035f3591eec67"
+    },
+    {
+      "file": "recovery_0013.npz",
+      "sha256": "c3e18d5963d14ade44146bd04de548fe1e277c62eb453973ba719891100047ab",
+      "frames": 2145,
+      "target": [
+        -1.360205,
+        0.685872,
+        0.20996
+      ],
+      "seed": 30696,
+      "train_index": 654,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_034\\summary.json",
+      "source_report_sha256": "535335e8decf775dd1d1f4161f93077a5a454ef623b722bc84b2ab3298080592",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_034\\expert_continuation.npz",
+      "source_trace_sha256": "7d8bec1adaf0848349a0e0f2331cc0f32ad3303eaa8c2b03ba1bec7de664e86d"
+    },
+    {
+      "file": "recovery_0014.npz",
+      "sha256": "e09ada7872c5a0e3f6a25d385eb55cfba222e0c6861c86ac7cfd6c3a7beeffbc",
+      "frames": 2622,
+      "target": [
+        0.866025,
+        0.5,
+        0.2
+      ],
+      "seed": 30054,
+      "train_index": 12,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_040\\summary.json",
+      "source_report_sha256": "19013a7f259c03aa2949f60ac72383e7a2f649936d52e912b4abce9f50629b43",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_040\\expert_continuation.npz",
+      "source_trace_sha256": "27ea40f6e2ce46b0755a908265a8f069e0d7555129acb6790be279d2521acc80"
+    },
+    {
+      "file": "recovery_0015.npz",
+      "sha256": "877ccb9501e1ea0b760b158fa4efedf0d32841f76b306084f676be64cbd3bd3e",
+      "frames": 2535,
+      "target": [
+        0.247214,
+        -0.760845,
+        0.2
+      ],
+      "seed": 30045,
+      "train_index": 3,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_041\\summary.json",
+      "source_report_sha256": "e5dd0a5fd408fe658b7fce90bb60d83c896b5dae2b68ca950533da0894534cc2",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_041\\expert_continuation.npz",
+      "source_trace_sha256": "6fe0802d68631996b955e6b0f3a996d9ddcdf38e12bfd4feb7779c9be4fbf86d"
+    },
+    {
+      "file": "recovery_0016.npz",
+      "sha256": "7c04e8b2286bf40adb92acbc60282583d2ebb4966653387baf61ff0568388f1b",
+      "frames": 2400,
+      "target": [
+        -0.748188,
+        0.938198,
+        0.35
+      ],
+      "seed": 30143,
+      "train_index": 101,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_042\\summary.json",
+      "source_report_sha256": "b1c9355ed08667813ffae6f478b858e0985c701dd56b2950a9a0ccbf9fb8c27d",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_042\\expert_continuation.npz",
+      "source_trace_sha256": "aebd8f072a0c72633be51e21a741f79fdd6fba9b020aaebc17a43e774b26953d"
+    },
+    {
+      "file": "recovery_0017.npz",
+      "sha256": "85e0cd03d24449cf74c30ffb1a93d7c90ca1cb9285cd4d47a38f3af769de8492",
+      "frames": 2300,
+      "target": [
+        0.748188,
+        0.938198,
+        0.35
+      ],
+      "seed": 30142,
+      "train_index": 100,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_043\\summary.json",
+      "source_report_sha256": "27691eea20e2a08c56242237ab6ae9573b7112959476b5221b5b86b7b2b30f87",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_043\\expert_continuation.npz",
+      "source_trace_sha256": "a8b8facebf46cd182bb1902269669ddd27bdf5ac694b8bc984a1fa9d9f809aaf"
+    },
+    {
+      "file": "recovery_0018.npz",
+      "sha256": "9779d0a8a1f8c76be77633873772a2ec11a6b06b804578825897248539867d90",
+      "frames": 2311,
+      "target": [
+        0.265596,
+        1.849967,
+        0.411179
+      ],
+      "seed": 30714,
+      "train_index": 672,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_047\\summary.json",
+      "source_report_sha256": "50a02c0e3282f8f2fdd10d38f51bf4e8128f6370a8db4237bf817d7369572b96",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_047\\expert_continuation.npz",
+      "source_trace_sha256": "c11c707757cae5daa5af52159d69595bcefe17c50b56cd1ee0d21e479423d386"
+    },
+    {
+      "file": "recovery_0019.npz",
+      "sha256": "3652b1e9c2afab3d0781fad9e47a9d0d52578c63ce764d57ee667a7db6cd4e84",
+      "frames": 2612,
+      "target": [
+        1.726361,
+        -0.246888,
+        0.3338
+      ],
+      "seed": 30709,
+      "train_index": 667,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_049\\summary.json",
+      "source_report_sha256": "95908b4a3381794aa90b0cdfad76694ac4fb692aad4dd616995dde559f8b5721",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_049\\expert_continuation.npz",
+      "source_trace_sha256": "31dfd3268fde08a3b934de552fb20937709be4778b6879c815b4b4d918039095"
+    },
+    {
+      "file": "recovery_0020.npz",
+      "sha256": "cff6968df7c8d96dbf31f6b79503df71cf1fbec73fa57cb1be8ebf44b924e678",
+      "frames": 1634,
+      "target": [
+        1.002362,
+        0.917935,
+        0.207835
+      ],
+      "seed": 30660,
+      "train_index": 618,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_053\\summary.json",
+      "source_report_sha256": "da78aaa2bb7fbdf73c49c7c6f2bd84294ff15716592f5b38a9d2a3e45feea230",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_053\\expert_continuation.npz",
+      "source_trace_sha256": "3d57565fdbc1cad6f50ccda63cc254271429ec49cee26ad0c954af39f4062c5d"
+    },
+    {
+      "file": "recovery_0021.npz",
+      "sha256": "9cf7cb0a829f8f91ce2a5f39513e80966a91ed44b565a426161d46d304b49d06",
+      "frames": 2457,
+      "target": [
+        -1.456231,
+        -1.058013,
+        0.2
+      ],
+      "seed": 30098,
+      "train_index": 56,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_056\\summary.json",
+      "source_report_sha256": "d73bf5ab1c554893713f2919f10cf215554af98d9f24e40a5783e26d560cac98",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_056\\expert_continuation.npz",
+      "source_trace_sha256": "2064c98d518ba5679814ce2e7cf47c4407ee12b9fedd47d27aa4c4bd47ece4f0"
+    },
+    {
+      "file": "recovery_0022.npz",
+      "sha256": "d4feb0ca9abfdc6f74aa7c1a2419deb9bc4ede9231dc02bd7e564f0e39a083be",
+      "frames": 2003,
+      "target": [
+        -0.872161,
+        0.461663,
+        0.235011
+      ],
+      "seed": 30608,
+      "train_index": 566,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_059\\summary.json",
+      "source_report_sha256": "87a82b1dbaa6add125ddff1ded76a01a8b1e7bede16758c52146e0ca0964b709",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_059\\expert_continuation.npz",
+      "source_trace_sha256": "1bdb49b3088d73b37fc74830f511985b71f553711ba693edc9ab3e79e8a1577c"
+    },
+    {
+      "file": "recovery_0023.npz",
+      "sha256": "4f5156e993bfc2c6661ae831eef4607b95091f3fbfd716bfb937f0f6211c32be",
+      "frames": 1685,
+      "target": [
+        -0.345315,
+        -1.289827,
+        0.412168
+      ],
+      "seed": 30678,
+      "train_index": 636,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_060\\summary.json",
+      "source_report_sha256": "b267e62a4ad5cfbfa192fbebce979c73c788f0ef10b764a67fb4788f3b324b59",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_060\\expert_continuation.npz",
+      "source_trace_sha256": "c6138e27d2812ed6b44cebf516109b83066bf5f3b04111302344519dc861b54e"
+    },
+    {
+      "file": "recovery_0024.npz",
+      "sha256": "a09e4a491fefb298dd2365b68f837a6c0758ed2372d06fa9c757e436bcd51434",
+      "frames": 2532,
+      "target": [
+        1.225671,
+        -1.02846,
+        0.2
+      ],
+      "seed": 30082,
+      "train_index": 40,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_061\\summary.json",
+      "source_report_sha256": "b5f2911fefcf74cd1b45613539ef9108bc89205b15c6c192f0365a5f182ad3ff",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_061\\expert_continuation.npz",
+      "source_trace_sha256": "ff2c6768a8091d9f4f268104eeac2b92a0087317b1bf030f0ad56c7e727c100e"
+    },
+    {
+      "file": "recovery_0025.npz",
+      "sha256": "bd193fbcc31c8814fada74d8e493119411d70c887e3079ea3e0718d3706c8be6",
+      "frames": 2458,
+      "target": [
+        1.002362,
+        0.917935,
+        0.319056
+      ],
+      "seed": 30661,
+      "train_index": 619,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_062\\summary.json",
+      "source_report_sha256": "d80f959ee65cb8cf69d9f741aa8507a820ba76932de54d1ab2d86b0856be8a47",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_062\\expert_continuation.npz",
+      "source_trace_sha256": "4dbc0ceb179737155f34e67066f1ee605951851067f0042b90b5bb1ba0da191c"
+    },
+    {
+      "file": "recovery_0026.npz",
+      "sha256": "1445526f7b28e6735b63cbe5bc45b6dd024cd677e013a506b9cd9f28ef439b22",
+      "frames": 2394,
+      "target": [
+        -1.758292,
+        -0.230184,
+        0.204093
+      ],
+      "seed": 30720,
+      "train_index": 678,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_064\\summary.json",
+      "source_report_sha256": "5a9bfef9e0d8c11bf22c4350395fe0cac0e109384abc04e4d37572d07e5bb65c",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_064\\expert_continuation.npz",
+      "source_trace_sha256": "06416ba68de9cb09ee94ff79569875c97d64c4a247d9022f4a003079ba480823"
+    },
+    {
+      "file": "recovery_0027.npz",
+      "sha256": "2c2f8ed222d0dd8e6ccc877cdf2587b933ef12539920c4a8ebfe252b419933cd",
+      "frames": 2470,
+      "target": [
+        0.0,
+        1.0,
+        0.35
+      ],
+      "seed": 30131,
+      "train_index": 89,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_075\\summary.json",
+      "source_report_sha256": "9a2c18ca28edeafd5c2fa6edbc46e68dd304054fef6fcdba54b1f1bea47a6695",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_075\\expert_continuation.npz",
+      "source_trace_sha256": "347883a427fbea80546b31cae601ce4ebe4b41083f42a3cc5365f6d9d8abafcb"
+    },
+    {
+      "file": "recovery_0028.npz",
+      "sha256": "9528bb040aff29189f46644ebdc576577695276420b824bc59ff8719cccfa01a",
+      "frames": 2337,
+      "target": [
+        1.0,
+        1.732051,
+        0.2
+      ],
+      "seed": 30112,
+      "train_index": 70,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_076\\summary.json",
+      "source_report_sha256": "31976df2c7883cc4d3db11d9775e1fce5f9cd9a5034fa93eeb745f02014ec422",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_076\\expert_continuation.npz",
+      "source_trace_sha256": "8c58e4445de79d5e0c6ce27c4ae3e2d8c6861b3a9fe4fff1c8182ac713c0bd53"
+    },
+    {
+      "file": "recovery_0029.npz",
+      "sha256": "b1deba9cda64ad1c53b031cc35f4eb1a30bde28b3f56a95bcf96557a08094788",
+      "frames": 2116,
+      "target": [
+        -0.980705,
+        -0.444058,
+        0.3036
+      ],
+      "seed": 30645,
+      "train_index": 603,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_077\\summary.json",
+      "source_report_sha256": "dec01b3b3a8c49c6f859e858646ec08bb4e219c24c69f99f3fae2a8d57a1cbf1",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_077\\expert_continuation.npz",
+      "source_trace_sha256": "2edc0765908124823ac0fff8abc0d7886e7a1e665166b04b12d774262893b9ec"
+    },
+    {
+      "file": "recovery_0030.npz",
+      "sha256": "483a6765f1170a7e6bc11316b3fbc8df7254138a7c098ab258859d0d69c1ba31",
+      "frames": 2478,
+      "target": [
+        -1.058013,
+        1.456231,
+        0.2
+      ],
+      "seed": 30096,
+      "train_index": 54,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_079\\summary.json",
+      "source_report_sha256": "25fbfe32eee81ceea392f17862d41d94ba9a0555f883a82be5e9db5939ad2302",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_079\\expert_continuation.npz",
+      "source_trace_sha256": "88d2d013e690dc89bbcf3b895ee0f0b9470efdf886d50f3e2d234d2530c3a20a"
+    },
+    {
+      "file": "recovery_0031.npz",
+      "sha256": "44a0d72c361d8a03f28d4dba1d6066dd367949ec7ccf30ed628d2a111628ec24",
+      "frames": 2475,
+      "target": [
+        -1.075555,
+        -1.48837,
+        0.353352
+      ],
+      "seed": 30726,
+      "train_index": 684,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_084\\summary.json",
+      "source_report_sha256": "583105d3e55db893f0de5db65e4c0d741112ca9c778be1d47cbf400d504299dd",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_084\\expert_continuation.npz",
+      "source_trace_sha256": "37706d9b2f85876f07c5e1746ea29b616df44a4ef28131ecd0962f897e39d89e"
+    },
+    {
+      "file": "recovery_0032.npz",
+      "sha256": "745dcb5f5dbbeee4c4d89c3be03ad0e74a1f769d051b292945877373922a4397",
+      "frames": 2183,
+      "target": [
+        0.517638,
+        -1.931852,
+        0.35
+      ],
+      "seed": 30192,
+      "train_index": 150,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_085\\summary.json",
+      "source_report_sha256": "103acd0b5d8ca7e922506faf9cbbc55f93fd968f7a4444a41332ada1347e42f9",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_085\\expert_continuation.npz",
+      "source_trace_sha256": "71ef0786a0cda9b55af88e8259d7a3747ae8a0dd40bd9113d1f92f2e32645668"
+    },
+    {
+      "file": "recovery_0033.npz",
+      "sha256": "4226aa97c1fcf602a495bdbf1cccb4e4b42dab59bbb16b5464012780666c9b64",
+      "frames": 1894,
+      "target": [
+        -0.83279,
+        0.827045,
+        0.410989
+      ],
+      "seed": 30642,
+      "train_index": 600,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_091\\summary.json",
+      "source_report_sha256": "30def8d1dec3ab963c2efc06d04bd8ec301beedb83f13b89e967d72f175834f0",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_091\\expert_continuation.npz",
+      "source_trace_sha256": "c4f866c67505006cd9337caca65f31e77714805d87e0ba119315140cf1004ac4"
+    },
+    {
+      "file": "recovery_0034.npz",
+      "sha256": "64eb6591c066a7ef754545cb7110e026f5f17ec304f924953520f34016d3374c",
+      "frames": 2314,
+      "target": [
+        -1.225671,
+        -1.02846,
+        0.2
+      ],
+      "seed": 30089,
+      "train_index": 47,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_092\\summary.json",
+      "source_report_sha256": "39114beda4f262b42b61083374bcd3b8668b06e1f6dbc15b268514208bccd22a",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_092\\expert_continuation.npz",
+      "source_trace_sha256": "94ab9ddbe3bcfddd7a823408a9932e226727451978c3c74f9f330f8307f35564"
+    },
+    {
+      "file": "recovery_0035.npz",
+      "sha256": "491e6fad6c4741f40ec38c54c94008aaa4642b914ab8825bcbd68937800cd8f5",
+      "frames": 1913,
+      "target": [
+        0.791046,
+        0.867764,
+        0.202405
+      ],
+      "seed": 30632,
+      "train_index": 590,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_093\\summary.json",
+      "source_report_sha256": "edc8346dc9761feefd0a0fee11ccaba702fbd3c128a8c2b64d49785b4527a297",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_093\\expert_continuation.npz",
+      "source_trace_sha256": "8dbb399ef804e61a4cab4833d1ba07722e5711196fd11ffd889107427df10391"
+    },
+    {
+      "file": "recovery_0036.npz",
+      "sha256": "4f9c9a68fac3fbf217a61fadfe5953c286eb8af53a50374e0d642d81e2f953ce",
+      "frames": 2517,
+      "target": [
+        -1.058013,
+        -1.456231,
+        0.2
+      ],
+      "seed": 30100,
+      "train_index": 58,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_095\\summary.json",
+      "source_report_sha256": "21d5fb37a2f05f6d21155beecc83224df67b80356b745f513b7b01b942454b2b",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_095\\expert_continuation.npz",
+      "source_trace_sha256": "8d9aa5f02ca2f30386771f580e93be711dbbce918bfd622b025b5b7037e442b1"
+    },
+    {
+      "file": "recovery_0037.npz",
+      "sha256": "c04bacb04724b9721049b4bd90608be3eadaa2404156ac179db4268e655c0b72",
+      "frames": 2481,
+      "target": [
+        0.0,
+        1.0,
+        0.2
+      ],
+      "seed": 30049,
+      "train_index": 7,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_096\\summary.json",
+      "source_report_sha256": "a8561358e9880e1f9f45fe31f19dc3ab7042af508f277dbce2423fe296609cee",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_096\\expert_continuation.npz",
+      "source_trace_sha256": "0fa4a5d3b62d856673c1df2e6dcf56ae6f4efae53b4b3337ac093991076e8a7c"
+    },
+    {
+      "file": "recovery_0038.npz",
+      "sha256": "2ba28fed27ebd80d5533e34666913a5ffec02a6f0139ee3c8a60697717a52248",
+      "frames": 2490,
+      "target": [
+        0.0,
+        1.8,
+        0.2
+      ],
+      "seed": 30102,
+      "train_index": 60,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_100\\summary.json",
+      "source_report_sha256": "26e9152f9687aaccd9e7cabc0b76ff0fcb1b01bfc3c22cee03ad13fa6ddba421",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_100\\expert_continuation.npz",
+      "source_trace_sha256": "614db265d5403e2e5a089c68ffbf969f7dd78ed6f0bd809131fa17e61b57d9ed"
+    },
+    {
+      "file": "recovery_0039.npz",
+      "sha256": "6dfdd116fb04f1df133c3d2375ceb4079df54732d22b7ff3963eeed84b19206c",
+      "frames": 2484,
+      "target": [
+        -1.075555,
+        -1.48837,
+        0.338765
+      ],
+      "seed": 30725,
+      "train_index": 683,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_103\\summary.json",
+      "source_report_sha256": "e14b0d218d19165ee2db76edb95dc0d79ccb64d40103913cb30767632e44eecd",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_103\\expert_continuation.npz",
+      "source_trace_sha256": "9d5022ca71606179fe7e1dcd43f89881be53d1f3671f4795fd1d0ca9ef84d719"
+    },
+    {
+      "file": "recovery_0040.npz",
+      "sha256": "993e916b8f8092e5aa6f766cd0a72679669c3236f0fd66029e8eb2ff39718850",
+      "frames": 2437,
+      "target": [
+        0.0,
+        -1.8,
+        0.35
+      ],
+      "seed": 30174,
+      "train_index": 132,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_105\\summary.json",
+      "source_report_sha256": "19d3c0128be3ca00a4b1e0e70f0cf7aa16d716f27c35217a8b5bb1db264d74a5",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_105\\expert_continuation.npz",
+      "source_trace_sha256": "f8c0ed727ef48d18deb623a8d2c58b6f1006098fd5ef5035ed13a92a5d57d844"
+    },
+    {
+      "file": "recovery_0041.npz",
+      "sha256": "2b19389715985b43aca86fa02e6c2a08ab8a25fd9d7b947c71dddd60af26bebc",
+      "frames": 2379,
+      "target": [
+        -0.173252,
+        0.938673,
+        0.233267
+      ],
+      "seed": 30604,
+      "train_index": 562,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_107\\summary.json",
+      "source_report_sha256": "f0a6f2f824adc9d8d694acfb5b068a2f97e25bf786b8d5fbb490414fcfd87919",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_107\\expert_continuation.npz",
+      "source_trace_sha256": "1a3ece7a56641e79e6d1636b3fa3d2731a4dc0b462eba50a9c29d2ea713e5eca"
+    },
+    {
+      "file": "recovery_0042.npz",
+      "sha256": "92215ecf34cafb79819b1d507bad1532bc8fd4256c7ad69d0be2d904ae1602f2",
+      "frames": 2422,
+      "target": [
+        -1.503508,
+        -0.547232,
+        0.2
+      ],
+      "seed": 30079,
+      "train_index": 37,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_109\\summary.json",
+      "source_report_sha256": "fe9d301f0a4093b31ecf83fb5b35d564f016e327e8bd1a85389b6311a96bdeaa",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_109\\expert_continuation.npz",
+      "source_trace_sha256": "3d3ab5db87e6c8a00e0c8c6ef8fdfbc319fb4c2ed7fb15fc8f783af3458177ef"
+    },
+    {
+      "file": "recovery_0043.npz",
+      "sha256": "723766566a588f5e8be7a593ee3ee96af2998f61b306fa2763f347ee86f05f48",
+      "frames": 1209,
+      "target": [
+        -1.578487,
+        -0.594201,
+        0.403612
+      ],
+      "seed": 30702,
+      "train_index": 660,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_117\\summary.json",
+      "source_report_sha256": "9b720c4811af3b6daa6f0ff5c8a2737d58da2483c1ed55d730265a5fc8188e96",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_117\\expert_continuation.npz",
+      "source_trace_sha256": "cb2d1bc3092e1e8fede941c01c7e44298629182829bdab5ea8f3f1f591db9a80"
+    },
+    {
+      "file": "recovery_0044.npz",
+      "sha256": "eb14abdb9880ccac3c9c4848b6803d0396d09e659cca511bf32294ca568c2de6",
+      "frames": 2397,
+      "target": [
+        1.0,
+        -1.732051,
+        0.35
+      ],
+      "seed": 30198,
+      "train_index": 156,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_120\\summary.json",
+      "source_report_sha256": "155ab000c569918678965fc56ea068bd947a0b112143a0e2c0294faeb814eda0",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_120\\expert_continuation.npz",
+      "source_trace_sha256": "5c31249793d9e9fa0d2ba73996739042e1a70e965f43734c7476a3f4f96505f0"
+    },
+    {
+      "file": "recovery_0045.npz",
+      "sha256": "bd3306501ae6f4b1a95dd9293345afec40f1c2ce22140f101346fa7125fc6d90",
+      "frames": 2282,
+      "target": [
+        1.456231,
+        -1.058013,
+        0.35
+      ],
+      "seed": 30173,
+      "train_index": 131,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_124\\summary.json",
+      "source_report_sha256": "f3fdd19158c46cc760a6a0a94a0c85104670c8d14574ccc0340ec258109b3ed0",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_124\\expert_continuation.npz",
+      "source_trace_sha256": "696ed5148796ac9a8cc7fdc89d184a05743a717c3003ccc861e6aced5e237475"
+    },
+    {
+      "file": "recovery_0046.npz",
+      "sha256": "4058f596cb61807b0a3d66a7a4f4f3a12996fde7d0168c3602ecc0ccf773c824",
+      "frames": 1813,
+      "target": [
+        -0.855063,
+        -0.73391,
+        0.418062
+      ],
+      "seed": 30650,
+      "train_index": 608,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_128\\summary.json",
+      "source_report_sha256": "df6fc7cdedb0e53267bf59a5d1779480148a4104e27a168ad6bb37f3392b8ba2",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_128\\expert_continuation.npz",
+      "source_trace_sha256": "7ac5c4799de0c2dccd14363efb87a39f5349cfd61f4154ef003f26b1e05dfd2c"
+    },
+    {
+      "file": "recovery_0047.npz",
+      "sha256": "cad092a298a76fc618a74dca8334345940d876c62cad5cab4c2cdc44e0e76ff1",
+      "frames": 2115,
+      "target": [
+        -0.81947,
+        -0.53517,
+        0.30281
+      ],
+      "seed": 30613,
+      "train_index": 571,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_130\\summary.json",
+      "source_report_sha256": "7b02aa36e1c01d8f6718c7f6df1c1f7039676b9792ccd9a4b08073810ab70d38",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_130\\expert_continuation.npz",
+      "source_trace_sha256": "92ee0f3c853e16ae24ec4b5d010eb7175ab7b83bebdc31e0129f97fe01c62693"
+    },
+    {
+      "file": "recovery_0048.npz",
+      "sha256": "bb21a617c06321019e6d1269dadec42c74569ecbbeddf228170969f87d10f008",
+      "frames": 2348,
+      "target": [
+        0.0,
+        2.0,
+        0.2
+      ],
+      "seed": 30121,
+      "train_index": 79,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_132\\summary.json",
+      "source_report_sha256": "3226652bd2f84e968b7a0c7461daaa21be580b20fd0a0428d9492e6c68e16960",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_132\\expert_continuation.npz",
+      "source_trace_sha256": "8455e445d161e1768ce7d79d650a18bcb07db32191fa548f1a531b63c438650c"
+    },
+    {
+      "file": "recovery_0049.npz",
+      "sha256": "e5d1c3d72e7c72303865776037be910e4d0e8e2e05b161256c2ee26ad51992f9",
+      "frames": 2472,
+      "target": [
+        1.002362,
+        0.917935,
+        0.36286
+      ],
+      "seed": 30662,
+      "train_index": 620,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_133\\summary.json",
+      "source_report_sha256": "6fc2a9c1a339f31fbbc35f5bbfd742b3f3d847870d162ccce4cf4777d4fd7a8a",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_133\\expert_continuation.npz",
+      "source_trace_sha256": "6389663b5e86cef4246a27e47b836a5b01a931537fd55cd870728d6d1927c0e7"
+    },
+    {
+      "file": "recovery_0050.npz",
+      "sha256": "515b418eca61ece261e76a5aff8c1cf19caa395dc4dd34f3d17f001c50eab4d1",
+      "frames": 2511,
+      "target": [
+        -1.414214,
+        -1.414214,
+        0.2
+      ],
+      "seed": 30108,
+      "train_index": 66,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_134\\summary.json",
+      "source_report_sha256": "413bf98b012e7bc1c20b921d942d41bb443ebacebd72f00ba4948bfe20e5f315",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_134\\expert_continuation.npz",
+      "source_trace_sha256": "c3c2216da48cbac82cb3ec3bedc58305d7436b2adc70612481e88de572ef3e4c"
+    },
+    {
+      "file": "recovery_0051.npz",
+      "sha256": "270a3a82cef3e5be07404457463c47132b6f1e27d8212973e99146169f49c23d",
+      "frames": 2394,
+      "target": [
+        0.247214,
+        0.760845,
+        0.2
+      ],
+      "seed": 30046,
+      "train_index": 4,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_141\\summary.json",
+      "source_report_sha256": "be1fccaabb4ddc9016eadeb8683aae083cfc73b34cbd3baab196a4869f7f2b82",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_141\\expert_continuation.npz",
+      "source_trace_sha256": "e98e55df3d57c144bcd4632ac2752c45e3fd3dd120d5496c8f94934cb006848e"
+    },
+    {
+      "file": "recovery_0052.npz",
+      "sha256": "ed266d38db726c1b4b2ec41c46de15334fc5428948c5d57bf031b5fc9aa16f9c",
+      "frames": 2416,
+      "target": [
+        0.0,
+        -2.0,
+        0.35
+      ],
+      "seed": 30187,
+      "train_index": 145,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_142\\summary.json",
+      "source_report_sha256": "41bb8e98e45bfd1c835560bbfd0e5f13a6f4709fb50e2c9e7ed41bff2f978d20",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_142\\expert_continuation.npz",
+      "source_trace_sha256": "e288088ce1e2feb85f1b312e3732ba8156ca3480fa29b30441f7d82cfa68647c"
+    },
+    {
+      "file": "recovery_0053.npz",
+      "sha256": "c529379ea06e1d86ab1c6a4aaa6326481c5a13513ff692aa270b6d213d6e900d",
+      "frames": 2497,
+      "target": [
+        -0.277837,
+        -1.575692,
+        0.2
+      ],
+      "seed": 30090,
+      "train_index": 48,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_143\\summary.json",
+      "source_report_sha256": "a1ad90ecf73f9acfad40ac4315a03e313c880f4cfeeb8751f1d0ea7c89f371e6",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_143\\expert_continuation.npz",
+      "source_trace_sha256": "272c814ac23ffbfedad92d73ea9102af0635ca65e78eec2de5aceaafd28f65c2"
+    },
+    {
+      "file": "recovery_0054.npz",
+      "sha256": "39cc7aab2df03c36847f14706488e8d92b7a47377a03f48f920c2361c5d57acf",
+      "frames": 2572,
+      "target": [
+        -1.414214,
+        -1.414214,
+        0.35
+      ],
+      "seed": 30200,
+      "train_index": 158,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_147\\summary.json",
+      "source_report_sha256": "f736339362df8118bc3a042f813e62ef0c20e88927f8d8c057d20b91b1f357b9",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_147\\expert_continuation.npz",
+      "source_trace_sha256": "407ce2097e70fc10392e4be7c2ed3089db818b95561f02849b75f2e32890a971"
+    },
+    {
+      "file": "recovery_0055.npz",
+      "sha256": "4147b595e6aa7b2551f68d7fc2e58494439e51cade22739160af599b0b1e8b90",
+      "frames": 2595,
+      "target": [
+        -1.732051,
+        1.0,
+        0.2
+      ],
+      "seed": 30114,
+      "train_index": 72,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_150\\summary.json",
+      "source_report_sha256": "f264ec4b3ffd490a0078163ae5edc2934d5cd9796b6857566f62b22aee3ca8bf",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_150\\expert_continuation.npz",
+      "source_trace_sha256": "13f1d932dd2752d2c781dcec17fc87bb92759f2251262f32417c0c2368f8e66e"
+    },
+    {
+      "file": "recovery_0056.npz",
+      "sha256": "6c211fdf6063b37b298e391d658748a30db5088349c772092652af84fe70ce40",
+      "frames": 2059,
+      "target": [
+        -0.173252,
+        0.938673,
+        0.292097
+      ],
+      "seed": 30605,
+      "train_index": 563,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_153\\summary.json",
+      "source_report_sha256": "0555a3aefe2a7c48af921e19f9e90c131bbf0b57f5e4972fea7aaf590540c421",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_153\\expert_continuation.npz",
+      "source_trace_sha256": "973f7976e9db3557f504d587fb2bb20b8b3df63f16b4aa82b684653cda35bb31"
+    },
+    {
+      "file": "recovery_0057.npz",
+      "sha256": "6a06d88d43ff99a6904c36d5db3fe55627ca61a52f29f812a932159c79350b31",
+      "frames": 2503,
+      "target": [
+        -1.73538,
+        0.955484,
+        0.221397
+      ],
+      "seed": 30716,
+      "train_index": 674,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_158\\summary.json",
+      "source_report_sha256": "ed82da5911cbeba1bad3c37d3f71fb827158e511c2ad16418558d5a5869bec0a",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_158\\expert_continuation.npz",
+      "source_trace_sha256": "2efc53cbcd3c772270917ea73154d0c4a379e68b5ab233b6a123d6eb7e5d3ffe"
+    },
+    {
+      "file": "recovery_0058.npz",
+      "sha256": "77d0cc8df0d04d39e0aea6390ef7f16efd4befc1a7c9485ba393eacb54fc7b88",
+      "frames": 2300,
+      "target": [
+        -0.535757,
+        1.293431,
+        0.35
+      ],
+      "seed": 30150,
+      "train_index": 108,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_163\\summary.json",
+      "source_report_sha256": "5259617c16e1cbdde1de74ef0c02ed29f369ad23c29cf645aea658800dcb7c4b",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_163\\expert_continuation.npz",
+      "source_trace_sha256": "44cbd6678e2f13f136be0e90ef6d2f63ee770ffd251a03970746b3ae6123f793"
+    },
+    {
+      "file": "recovery_0059.npz",
+      "sha256": "b5bbe09289daf6d3579fdbaeb1d7349b85d53f3c6051276a522f5dadd6d9e596",
+      "frames": 2242,
+      "target": [
+        1.726361,
+        -0.246888,
+        0.23506
+      ],
+      "seed": 30708,
+      "train_index": 666,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_164\\summary.json",
+      "source_report_sha256": "20c55c02bb5554bcc036523a98e72eeeb5db1baa9a3e4503153d23e0faa268c8",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_164\\expert_continuation.npz",
+      "source_trace_sha256": "8ae9f9bc33cc908453eb71af1d97c59753411f33e8c2cfaa79b8b66176720845"
+    },
+    {
+      "file": "recovery_0060.npz",
+      "sha256": "bec84e628e296f69775681f975987f9c24def6ec800abcf8e444052365436b0f",
+      "frames": 2401,
+      "target": [
+        0.647214,
+        -0.470228,
+        0.35
+      ],
+      "seed": 30123,
+      "train_index": 81,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_165\\summary.json",
+      "source_report_sha256": "f9ea72a8a02f310defb02191cd2a582d1200429ad9642452bcd12a14d503e0ef",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_165\\expert_continuation.npz",
+      "source_trace_sha256": "c4c4e3204c6628ce742803f47c921b8be1618ed881a40239d632c17ff8f58080"
+    },
+    {
+      "file": "recovery_0061.npz",
+      "sha256": "bf639639e1c601d4994572eea021340a30fa62f781066ee861a44809ea14c080",
+      "frames": 2093,
+      "target": [
+        -0.872161,
+        0.461663,
+        0.278377
+      ],
+      "seed": 30609,
+      "train_index": 567,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_166\\summary.json",
+      "source_report_sha256": "ea05230af1869071a28b10e95f048bcb8a0dd30ed522166206d663e9711508e8",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_166\\expert_continuation.npz",
+      "source_trace_sha256": "9b981861c63952771ea424957dfd56bf8d7523b264da4fabaa9189044052c621"
+    },
+    {
+      "file": "recovery_0062.npz",
+      "sha256": "4ab9430cc94e94d8808207b956565ec93e7e830c2f2e455ff78520303cea9523",
+      "frames": 2529,
+      "target": [
+        -1.456231,
+        1.058013,
+        0.2
+      ],
+      "seed": 30097,
+      "train_index": 55,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_168\\summary.json",
+      "source_report_sha256": "ca37d59ffc09454874fc60412d0ea07775390976fd98d070461f82c5fd562653",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_168\\expert_continuation.npz",
+      "source_trace_sha256": "bd054eb7a772db20d5c11c2c0aa524a1b52ad986e141b8b2ebab4343717ba3c7"
+    },
+    {
+      "file": "recovery_0063.npz",
+      "sha256": "18132dc7fd99bba75043977437e11dd97343d01a8a6511e764a3e86fa3908e71",
+      "frames": 2442,
+      "target": [
+        0.556231,
+        -1.711902,
+        0.2
+      ],
+      "seed": 30094,
+      "train_index": 52,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_170\\summary.json",
+      "source_report_sha256": "c04ee90affbf844f8b2c4c09cb76d1884d84f561e23db1e42aebf97cc5790343",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_170\\expert_continuation.npz",
+      "source_trace_sha256": "368f999c62b5b4469ad8b6761d983c8869937bc6c91a3ebe8de2f484170afa6d"
+    },
+    {
+      "file": "recovery_0064.npz",
+      "sha256": "5633533bac4acb6c9fbfa167693ce4257dc6be6262e22bbec5596ea5685f3603",
+      "frames": 2283,
+      "target": [
+        -1.293431,
+        0.535757,
+        0.2
+      ],
+      "seed": 30070,
+      "train_index": 28,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_173\\summary.json",
+      "source_report_sha256": "f26cb7152e68ac131e298919a672f667262e8c11e0e8c0f7d2db50386b04640c",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_173\\expert_continuation.npz",
+      "source_trace_sha256": "2a23a7780da2416e066545ce987424169014c8a4d1a21a423c9db2ad7c37bcb4"
+    },
+    {
+      "file": "recovery_0065.npz",
+      "sha256": "807d36cee25e77bd6a77a223e62829f9e920617391da294429c647275ce25bbf",
+      "frames": 2348,
+      "target": [
+        0.866025,
+        -0.5,
+        0.35
+      ],
+      "seed": 30133,
+      "train_index": 91,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_184\\summary.json",
+      "source_report_sha256": "538102e14f6a5a854e483087a6f8146d557717260e9e76302ce1b5477ab7d795",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_184\\expert_continuation.npz",
+      "source_trace_sha256": "22a7e79f026c2ea88cfd5911ad7743d3031152483c1d4c17f71e41a7f67515e4"
+    },
+    {
+      "file": "recovery_0066.npz",
+      "sha256": "9da2e523f5523b2fed30981c0f73ae8acb28445ec459e625a206ee6567c52a19",
+      "frames": 2084,
+      "target": [
+        0.957558,
+        -0.150025,
+        0.317642
+      ],
+      "seed": 30625,
+      "train_index": 583,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_185\\summary.json",
+      "source_report_sha256": "0aae6ca2b3926660022c6a4086022108ae1ac04fa161c71e9f4a9b10d1143246",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_185\\expert_continuation.npz",
+      "source_trace_sha256": "608e04fd100e84d12efae45ebe6adda054c015fa52dc7533aa6327d381455e26"
+    },
+    {
+      "file": "recovery_0067.npz",
+      "sha256": "6349b9902fe5bed9ece6152f12f804d7e3a1459354b22ae352f01ac458d5f025",
+      "frames": 2658,
+      "target": [
+        -0.247214,
+        0.760845,
+        0.2
+      ],
+      "seed": 30047,
+      "train_index": 5,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_192\\summary.json",
+      "source_report_sha256": "741d51b482e5979ac4beb4956ff09db48cb3072a3ed552d9b0666bb9d5060cd8",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_192\\expert_continuation.npz",
+      "source_trace_sha256": "225f6e9948bc507ed31b3db030b7b9c5092652f0f0f0db2e65e9259a8d07bbc5"
+    },
+    {
+      "file": "recovery_0068.npz",
+      "sha256": "2b8809a82c1298e19506375b4f16dc06ca7a50149b0aa07701428f1bc5869c74",
+      "frames": 2418,
+      "target": [
+        -1.578487,
+        -0.594201,
+        0.215043
+      ],
+      "seed": 30700,
+      "train_index": 658,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_201\\summary.json",
+      "source_report_sha256": "f57ce4445ea03835c8cfea955e7463e59db93bf6a560c8ad20c28a51b6f4630c",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_201\\expert_continuation.npz",
+      "source_trace_sha256": "9a3727ca54f6abe15a59ae254b3978e32b252f434d4149eb041180e4dbdd92eb"
+    },
+    {
+      "file": "recovery_0069.npz",
+      "sha256": "c9f7c56e67013e3d65bfd76364c1fade10b5b3f61603f253c34ff874854f8fa2",
+      "frames": 2589,
+      "target": [
+        -1.0,
+        1.732051,
+        0.2
+      ],
+      "seed": 30120,
+      "train_index": 78,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_204\\summary.json",
+      "source_report_sha256": "21f76bb9e1d64cfd649ce7dcf933797d90bcfffe485624b179eda43a381dc4f7",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_204\\expert_continuation.npz",
+      "source_trace_sha256": "c82d247e46fb1bc1baffa922e0089e22fcb6a27c01dc4495b76e97176317cf3d"
+    },
+    {
+      "file": "recovery_0070.npz",
+      "sha256": "c6a48ee960a6c07faf5b2bdcfc3d31261166318acf15a2d86fbb660679966437",
+      "frames": 2394,
+      "target": [
+        1.6,
+        0.0,
+        0.2
+      ],
+      "seed": 30086,
+      "train_index": 44,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_205\\summary.json",
+      "source_report_sha256": "fe844ab62968054b82d6a3e4b0a4f8871b99220d94c668d1bb04431172554839",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_205\\expert_continuation.npz",
+      "source_trace_sha256": "cff550b8af3ac8a6231b087916f4946e35c318c2b9c3e2798f9a4d553b50a1b2"
+    },
+    {
+      "file": "recovery_0071.npz",
+      "sha256": "ccd40678a3ee225d84d4937a4a2b4f671eb773c0dfca33e49359c7dc5f756ae7",
+      "frames": 2498,
+      "target": [
+        0.8,
+        1.385641,
+        0.35
+      ],
+      "seed": 30161,
+      "train_index": 119,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_206\\summary.json",
+      "source_report_sha256": "017fc1587ba1f7b05b929223d56e49079d45fe8744752251659b485066801b67",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_206\\expert_continuation.npz",
+      "source_trace_sha256": "97f9611d7c8e602042b77501a04335ce35590b0dc4cc352996ae5f3f835c8c6b"
+    },
+    {
+      "file": "recovery_0072.npz",
+      "sha256": "84ec96a5ae579e2156fcb1fdfb441354cff0b7d585c30b5c920bee49431e9528",
+      "frames": 2306,
+      "target": [
+        1.503508,
+        -0.547232,
+        0.2
+      ],
+      "seed": 30087,
+      "train_index": 45,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_212\\summary.json",
+      "source_report_sha256": "96d6aa643a7e714b2a2e75fab09c2b08818461857543878853848b7e018fbd5b",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_212\\expert_continuation.npz",
+      "source_trace_sha256": "3db649f99d1ccba210c178eb9e7c6fa15a2326161c70b7302a5ade21cfa2fd0a"
+    },
+    {
+      "file": "recovery_0073.npz",
+      "sha256": "390b35b757bc148960ab6fa12ef477289fd9b28df645a05d18b0f6ab7e7e9932",
+      "frames": 2131,
+      "target": [
+        -1.2,
+        0.0,
+        0.2
+      ],
+      "seed": 30060,
+      "train_index": 18,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_216\\summary.json",
+      "source_report_sha256": "7fa88f9595a2f533a15bea7cf772b6043b78aaea0082c1c4fd3e74f44b60ba02",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_216\\expert_continuation.npz",
+      "source_trace_sha256": "2fdfaa7c3b454577279a94b120d2e34b4dd7ecf5b0ce2e82cfe6b263fb12849d"
+    },
+    {
+      "file": "recovery_0074.npz",
+      "sha256": "e07423ad8d7c4eb481c27e79d91b33506291ebe8bac730017a484dffe2583f25",
+      "frames": 2010,
+      "target": [
+        -0.83279,
+        0.827045,
+        0.249791
+      ],
+      "seed": 30640,
+      "train_index": 598,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_220\\summary.json",
+      "source_report_sha256": "5f13a0c3abcb11578dd05a5719befa7c0a8c723ec1ce3fb9259ae1acf52d53ec",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_220\\expert_continuation.npz",
+      "source_trace_sha256": "31e6a91e09463b214a891bd0ae1b923b557d1e9b40ba3d933cdb208f38515383"
+    },
+    {
+      "file": "recovery_0075.npz",
+      "sha256": "0a0ef3f12e9afc1bcaa8fe475ec91a13c1e64737cfdfbe693d76d0bb4de42b33",
+      "frames": 2411,
+      "target": [
+        -1.414214,
+        1.414214,
+        0.2
+      ],
+      "seed": 30115,
+      "train_index": 73,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_224\\summary.json",
+      "source_report_sha256": "384dd69c9d0ac54d664197fb09c405eda973fcd0b54629929d79914d1db42928",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_224\\expert_continuation.npz",
+      "source_trace_sha256": "1525f23c24572a0576be39a18711ec6d314becad00e75bc223addd306dd1d532"
+    },
+    {
+      "file": "recovery_0076.npz",
+      "sha256": "4d7b691d41006a9e19591b0aeb1a6262c83da44baf0ac5f5b7f9c1069560b039",
+      "frames": 2042,
+      "target": [
+        -0.267025,
+        1.169913,
+        0.2
+      ],
+      "seed": 30063,
+      "train_index": 21,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_226\\summary.json",
+      "source_report_sha256": "e3f1477cdf1f86bbc1c922e9e0d164506ed4910cf36395c537a568e5f4504040",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_226\\expert_continuation.npz",
+      "source_trace_sha256": "78ed7238df3da58eaa859e61c36adcb8ddf8ff9b62a2df09310c7ff01bb38cb6"
+    },
+    {
+      "file": "recovery_0077.npz",
+      "sha256": "17be4de610d94b94f2c7b2cf93a4f3dfddf64503c41f9fa9a59c272ca28589d4",
+      "frames": 1806,
+      "target": [
+        0.802897,
+        -0.696858,
+        0.468426
+      ],
+      "seed": 30655,
+      "train_index": 613,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_230\\summary.json",
+      "source_report_sha256": "9b4137f8fddfec0f23f67edd1290958c31fa21211493d866f488634fcd58a970",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_230\\expert_continuation.npz",
+      "source_trace_sha256": "3abf7f060867cec14c58e0530211ff24ebb58be5ae162d8977f11b55a601cd9b"
+    },
+    {
+      "file": "recovery_0078.npz",
+      "sha256": "85c51b6386bdacad82854f1eb48c858ab568adc49e22a28276f932ecc5897402",
+      "frames": 1784,
+      "target": [
+        0.957558,
+        -0.150025,
+        0.433667
+      ],
+      "seed": 30627,
+      "train_index": 585,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_232\\summary.json",
+      "source_report_sha256": "990e3c4cf64ff57fce10b86c215e5eb39730e209991fb8ade3f01bd9de55b4a1",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_232\\expert_continuation.npz",
+      "source_trace_sha256": "2f1d9dcd19a70d1f26f49a2c3997303620f4f276b7f5a6c98d40137074c295f5"
+    },
+    {
+      "file": "recovery_0079.npz",
+      "sha256": "92142ec613dec058cfa6164be113e51203062b378192b5c10899a28854c4d9d8",
+      "frames": 2266,
+      "target": [
+        1.931852,
+        0.517638,
+        0.2
+      ],
+      "seed": 30107,
+      "train_index": 65,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_233\\summary.json",
+      "source_report_sha256": "340466cdbb4b7d5922cec337dbe95d17fd913d05610be36ed222a67bd32d03cc",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_233\\expert_continuation.npz",
+      "source_trace_sha256": "c2847fd7f0e49924b1b33a73583047b36357d92e177ae674f529c78a3682dc5e"
+    },
+    {
+      "file": "recovery_0080.npz",
+      "sha256": "718844e01547a78040e71f75e6a33314bf7f676bdc3ef4d27bff3399bfc35703",
+      "frames": 1762,
+      "target": [
+        -1.758292,
+        -0.230184,
+        0.401017
+      ],
+      "seed": 30722,
+      "train_index": 680,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_234\\summary.json",
+      "source_report_sha256": "77695ce8b1109abf009b63f41815f142688eb18494453a11fb0597f07d1c132f",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_234\\expert_continuation.npz",
+      "source_trace_sha256": "8150fb388ebabc786270ee7d6699aceab06d8a41ef5231c0ef19241e83470cf0"
+    },
+    {
+      "file": "recovery_0081.npz",
+      "sha256": "76e18aea5faca53289214846b4cde83b8e4e9a3d17ffa1721e04d63b7e3bdffb",
+      "frames": 2555,
+      "target": [
+        -1.931852,
+        0.517638,
+        0.2
+      ],
+      "seed": 30113,
+      "train_index": 71,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_236\\summary.json",
+      "source_report_sha256": "dae2baf30b6dd7172ab519a87596424ece5deaad134b3ebf0bf0d9c2b874ae45",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_236\\expert_continuation.npz",
+      "source_trace_sha256": "be72429cf60b061da28c970dcc58b3d62a772b7caf822677d8288748dd85f0ce"
+    },
+    {
+      "file": "recovery_0082.npz",
+      "sha256": "5223c3bd1dc67be8d506c44e30ab4e7b9d2352b2feecdc0e1669bdbac4593b00",
+      "frames": 2518,
+      "target": [
+        1.0,
+        -1.732051,
+        0.2
+      ],
+      "seed": 30111,
+      "train_index": 69,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_238\\summary.json",
+      "source_report_sha256": "362506129e25dbe0597c1258df9c38fe84a14e4703f8430a869a3e35cdc80b05",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_238\\expert_continuation.npz",
+      "source_trace_sha256": "a2188ee34be72bea8420996beab28aa69742f1f60dff6964ca87e305672101a4"
+    },
+    {
+      "file": "recovery_0083.npz",
+      "sha256": "7273d8f90a97bfdb51822078ddbc9bbe4f6fce8d1b1219c3450b9e98ad5b4728",
+      "frames": 1353,
+      "target": [
+        -0.561262,
+        1.356314,
+        0.236502
+      ],
+      "seed": 30664,
+      "train_index": 622,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_243\\summary.json",
+      "source_report_sha256": "c8ce54e41658145ec0bd1c3aaa9f692aef23811c5e94f5cc7c8b0aac039b034c",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_243\\expert_continuation.npz",
+      "source_trace_sha256": "3b157a88465f731feb306710d8c534824ee463f5caac7c7b090811e3a9a536c3"
+    },
+    {
+      "file": "recovery_0084.npz",
+      "sha256": "3ec252ead84667b62cc414a17260ef78156802cf1d60f193b53c0a75fd325d7b",
+      "frames": 2453,
+      "target": [
+        -0.277837,
+        -1.575692,
+        0.35
+      ],
+      "seed": 30159,
+      "train_index": 117,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_245\\summary.json",
+      "source_report_sha256": "1b1e982d8cdf46c170247413369a14a6f16dddf590a91eebb4a960a24ab332ae",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_245\\expert_continuation.npz",
+      "source_trace_sha256": "f88df393c94d4c4d9de7ef64330e507dd0d43be0cf667916876fa30cc7ffd3a3"
+    },
+    {
+      "file": "recovery_0085.npz",
+      "sha256": "192d64402c3edf825678b07d27fe7e1e795896dbcf7441b3ab220bf4dce7294d",
+      "frames": 2538,
+      "target": [
+        0.0,
+        -2.0,
+        0.2
+      ],
+      "seed": 30116,
+      "train_index": 74,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_246\\summary.json",
+      "source_report_sha256": "974baa69f603efd060cd8afd155cf334d0927d36e05760b9913ca838e8e7e893",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_246\\expert_continuation.npz",
+      "source_trace_sha256": "9bbdce4afc47da85e70fb61e725453eeb2f7e6a5c02f0b57473a7da5bb90a5b0"
+    },
+    {
+      "file": "recovery_0086.npz",
+      "sha256": "c4a0259c35597e58d3627ac11a84d82f7c89ad3c53251eed3ce7b7dc5b0ab283",
+      "frames": 2226,
+      "target": [
+        -0.5,
+        0.866025,
+        0.2
+      ],
+      "seed": 30052,
+      "train_index": 10,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_248\\summary.json",
+      "source_report_sha256": "97b98e0bda9b99c08ae4430f1f27bcf6ab83318441321e6da0904639d75656b2",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_248\\expert_continuation.npz",
+      "source_trace_sha256": "15fdb27511a01c1e8a6a58d4d41a8cad78a94ab6b0f9c2aa487a260418ee0ecf"
+    },
+    {
+      "file": "recovery_0087.npz",
+      "sha256": "eeca98f4623c29a1f98bcb997c1dfeeac11bb45c639b3348233642f819f21ccd",
+      "frames": 2277,
+      "target": [
+        1.711902,
+        -0.556231,
+        0.2
+      ],
+      "seed": 30095,
+      "train_index": 53,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_250\\summary.json",
+      "source_report_sha256": "6bd7bb1ca71297ef08e7ca2ee57a650768f9f8a8ca668a283dc21e4874a60556",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_250\\expert_continuation.npz",
+      "source_trace_sha256": "2b468529d78cef6e43baaca1d742934ce2f8f8bb69ba406ee1843a687fac5f15"
+    },
+    {
+      "file": "recovery_0088.npz",
+      "sha256": "c1cf0705be5f6fdaf488049438f06dcb57c4f606a6b4807d5dff5f453ad52d15",
+      "frames": 2534,
+      "target": [
+        0.517638,
+        -1.931852,
+        0.2
+      ],
+      "seed": 30105,
+      "train_index": 63,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_252\\summary.json",
+      "source_report_sha256": "9f8ec95281ae40417b780f91fc815306694d1659b1f8c594e051708be8b7f989",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_252\\expert_continuation.npz",
+      "source_trace_sha256": "a8619bcd1af62408c8172acfc4f675919d84d5afb69266b9ac0379c6ae611d15"
+    },
+    {
+      "file": "recovery_0089.npz",
+      "sha256": "5f9713deb7c7803cc2d1dec289f49dfd4dd82c7f77b5c4231705dd37248e20de",
+      "frames": 2837,
+      "target": [
+        -0.647214,
+        -0.470228,
+        0.2
+      ],
+      "seed": 30043,
+      "train_index": 1,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_256\\summary.json",
+      "source_report_sha256": "09314b73455747f5374c721b33633a3f2c4648a8af94c254bb214edb466894d0",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_256\\expert_continuation.npz",
+      "source_trace_sha256": "ed4a8ea1776e21d3ac8c91dcc560e22c931ef1e2f57df2ebd5b8c5bcbf494d93"
+    },
+    {
+      "file": "recovery_0090.npz",
+      "sha256": "3b6812c9dc8492e98969a918dbb90d034f44cc0209005be96c01b62514928fa3",
+      "frames": 1621,
+      "target": [
+        -0.173252,
+        0.938673,
+        0.429874
+      ],
+      "seed": 30607,
+      "train_index": 565,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_260\\summary.json",
+      "source_report_sha256": "08cabe02f6b8b0f96a8c74fd26a10f4a2cf467cd4442a718dad788b0c09420e9",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_260\\expert_continuation.npz",
+      "source_trace_sha256": "2fbe517f89931a6079c005063d8c8e979534d3d32b21967beb027fe71fb4754f"
+    },
+    {
+      "file": "recovery_0091.npz",
+      "sha256": "6350630ef3cbf70bc93000d56c3ccbdad5eaa13ea6816340b0c3d2a2d7ee3e7f",
+      "frames": 2367,
+      "target": [
+        0.535757,
+        1.293431,
+        0.2
+      ],
+      "seed": 30073,
+      "train_index": 31,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_263\\summary.json",
+      "source_report_sha256": "0d8da6bfba4b7719c6dcac5e4b4dca826b866b9f2241fa9fd9b2695cce0185e6",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_263\\expert_continuation.npz",
+      "source_trace_sha256": "22fcba49d521598eff63a1f78a42b2c8b4fbff4e5e482025e2ca507560c38de0"
+    },
+    {
+      "file": "recovery_0092.npz",
+      "sha256": "7daefbb0224bc0ded575f741afdee950be0bf5f1fa81a40503c62711e27a9260",
+      "frames": 2483,
+      "target": [
+        0.535757,
+        1.293431,
+        0.35
+      ],
+      "seed": 30147,
+      "train_index": 105,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_265\\summary.json",
+      "source_report_sha256": "706756ceacc844f88d3449098941de136c4f3478c77e332275eec756fdb82a62",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_265\\expert_continuation.npz",
+      "source_trace_sha256": "62ef509f0d4868fc6ae52b8bbb3f82ab54724735cdbdf8dfc90e1bf51309461b"
+    },
+    {
+      "file": "recovery_0093.npz",
+      "sha256": "eebb89f76ecae4f79cc6cb27f613c8cf362aa022a3d6a91311167d94725f6b3d",
+      "frames": 2269,
+      "target": [
+        1.456231,
+        1.058013,
+        0.2
+      ],
+      "seed": 30099,
+      "train_index": 57,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_270\\summary.json",
+      "source_report_sha256": "9ff92f875206368f095903de0193854e22143b60e1923b426ad2e6fc9cf9bee0",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_270\\expert_continuation.npz",
+      "source_trace_sha256": "c3fe0bd39a0e5fb37851bc7331a7442414b063a58361b7756a6692d20655874a"
+    },
+    {
+      "file": "recovery_0094.npz",
+      "sha256": "2e6aea751764a4ca861da84c407d123b19977129d759e1b6edd612b986386acb",
+      "frames": 2177,
+      "target": [
+        -1.0,
+        0.0,
+        0.2
+      ],
+      "seed": 30057,
+      "train_index": 15,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_272\\summary.json",
+      "source_report_sha256": "b41f2493448a08b63072f17ca58a98f8811c3b22e91dcf4a7165d2a40daadb07",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_272\\expert_continuation.npz",
+      "source_trace_sha256": "1b44984967fbcb2405fcff682b3a125963914212f0c32311705f15cd01fbb579"
+    },
+    {
+      "file": "recovery_0095.npz",
+      "sha256": "de8304cce3d6a8dc93bb66603e3d8217c90545e7278e9aeaa1fa4bba17f5c011",
+      "frames": 2632,
+      "target": [
+        -1.456231,
+        -1.058013,
+        0.35
+      ],
+      "seed": 30179,
+      "train_index": 137,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_274\\summary.json",
+      "source_report_sha256": "ba6923b2d31757103e9c089f3f1f18d68773fadc0de7054f66ad372fd35664c7",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_274\\expert_continuation.npz",
+      "source_trace_sha256": "a9bacaba9ccadff8677ebb6a7b79045394ef71af7859be3ff4e6cb4976ba665a"
+    },
+    {
+      "file": "recovery_0096.npz",
+      "sha256": "b40342dabbbf29f9e9b7670b812b9d62d439b254750c2887934abbee0771a7d4",
+      "frames": 1668,
+      "target": [
+        1.147574,
+        0.35224,
+        0.397577
+      ],
+      "seed": 30630,
+      "train_index": 588,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_275\\summary.json",
+      "source_report_sha256": "e591968770a61e5d275160e5a17e562678d030409ed00ff94cf44566514a35a1",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_275\\expert_continuation.npz",
+      "source_trace_sha256": "b4a1e8d2e9a41a676ac1bfcb1d5b0da66fcee1efdd2feaabd4146b5b46c9ae0f"
+    },
+    {
+      "file": "recovery_0097.npz",
+      "sha256": "42c306992ce88d68f715e0a4401bd18a178c4c0758be92fb5de8d140a6471035",
+      "frames": 1926,
+      "target": [
+        0.397046,
+        -0.878216,
+        0.408962
+      ],
+      "seed": 30622,
+      "train_index": 580,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_282\\summary.json",
+      "source_report_sha256": "d5e8daa14f0fc0624168da6ba6018e9bb646b7ce8261ecb6fd634574ac24afab",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_282\\expert_continuation.npz",
+      "source_trace_sha256": "76ee78f932ccdf31ac80e9faef7bdb4bdeede09fe7532940042fe0aaad8c1f73"
+    },
+    {
+      "file": "recovery_0098.npz",
+      "sha256": "5a5de350fe2da09c4d5b50f2b93f9acb259c95e3665de823e1f5239e71ae81c4",
+      "frames": 2570,
+      "target": [
+        -0.556231,
+        1.711902,
+        0.2
+      ],
+      "seed": 30091,
+      "train_index": 49,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_283\\summary.json",
+      "source_report_sha256": "27234836f619628fb8bfe369b17491fc95d66c3460ac552878c0427dfe7508fd",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_283\\expert_continuation.npz",
+      "source_trace_sha256": "d30b8d0b4120f19192848685802f2ea95c1419604bceae02599ad977b9608bf3"
+    },
+    {
+      "file": "recovery_0099.npz",
+      "sha256": "323ae035d4ef38533c894f0beb4ecab1f74da9262a5be31e4708fa356f3c0412",
+      "frames": 1404,
+      "target": [
+        -0.81947,
+        -0.53517,
+        0.439272
+      ],
+      "seed": 30615,
+      "train_index": 573,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_286\\summary.json",
+      "source_report_sha256": "42943ead5977714f652768d1ba7db52e068333cae6efea9e2ccb4d94697f4c72",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_286\\expert_continuation.npz",
+      "source_trace_sha256": "fd0d27b7e791d049c27768230e034679bba89adc14b04ce4d5f0aa5eabf37f4a"
+    },
+    {
+      "file": "recovery_0100.npz",
+      "sha256": "33fb5c9873c063ceb4098a288db675ed8f932fc593416ef3e20971930b33d5cf",
+      "frames": 2195,
+      "target": [
+        0.8,
+        1.385641,
+        0.2
+      ],
+      "seed": 30083,
+      "train_index": 41,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_289\\summary.json",
+      "source_report_sha256": "4d1b590c4537032ad921af1f1e457827ad0f15df0d043927689d658e9b499143",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_289\\expert_continuation.npz",
+      "source_trace_sha256": "c5b26bbe8700a04f0813097cff0ae862ea8667eef47330682f7b32daeb11c4e4"
+    },
+    {
+      "file": "recovery_0101.npz",
+      "sha256": "40e3619e96ac6f9728806db800c33b64d06b566993056b893fa11f73f65a705b",
+      "frames": 2594,
+      "target": [
+        1.0,
+        0.0,
+        0.2
+      ],
+      "seed": 30056,
+      "train_index": 14,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_295\\summary.json",
+      "source_report_sha256": "9847dee2cd8c23c1961556f678a8accc64b55f45b0962a63e18fb41ad252d82f",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_295\\expert_continuation.npz",
+      "source_trace_sha256": "f19a77deac42e0dbbf429fe27c0031fbc1f8f90e141e647f66573e2f8c05502f"
+    },
+    {
+      "file": "recovery_0102.npz",
+      "sha256": "68b85007b4d9cf8c6eccf7254d6d58d2ac6005fc79db7bb6d9b8ee17decbf716",
+      "frames": 2425,
+      "target": [
+        1.058013,
+        -1.456231,
+        0.35
+      ],
+      "seed": 30178,
+      "train_index": 136,
+      "source_report": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_300\\summary.json",
+      "source_report_sha256": "bb48b4abdda096eaf3667148a93c7d22c18faa9dff3cda5b48ff543a820f0f1c",
+      "source_trace": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_recovery_data\\collection_20261104_112547_770894\\diagnostics\\case_300\\expert_continuation.npz",
+      "source_trace_sha256": "84e0170090ec7ea7376c1f35e45fd24f6e4dcff6a4f580b4230edc21071a7539"
+    }
+  ]
+}

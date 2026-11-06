@@ -1,0 +1,104 @@
+{
+  "training_mode": "navigation_from_scratch_pretrained_arm_frozen",
+  "input_dim": 8,
+  "output_dim": 4,
+  "input_feature_version": "parking_body_xy_signed_heading_errors_phase4_v1",
+  "hidden_dims": [
+    64,
+    64
+  ],
+  "activation": "ReLU",
+  "feature_columns": [
+    "parking_goal_body_x",
+    "parking_goal_body_y",
+    "heading_to_parking_error_rad",
+    "final_heading_error_rad",
+    "align",
+    "drive",
+    "orient",
+    "done"
+  ],
+  "navigation_parameters": {
+    "nav_timeout": 25.0,
+    "kp_pos": 1.0,
+    "kp_ori": 3.0,
+    "max_lin_vel": 0.25,
+    "min_lin_vel": 0.05,
+    "max_ang_vel": 1.0,
+    "pos_tol": 0.08,
+    "ang_tol": 0.05,
+    "wheel_radius": 0.11,
+    "wheel_base_width": 0.66
+  },
+  "phase_source": "reconstructed_original_state_machine_checked_against_phase_and_actions",
+  "feature_module_sha256": "878995bc75ce5bba8aafecfb99c22405c49d67032a4873825a3106ae20ca422c",
+  "controller_sha256": "f863b91c882f8570c082d4bcbd7879ac7d9d8805a4488be218b15d49d2214dcf",
+  "source_split_path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_nav_ring_r08\\data_split.json",
+  "source_split_sha256": "8cb81d9e33c91b62727f44d614e5e6b0e1ae3542a2c91fc5611a6c0ff2a21717",
+  "data_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_data_23d_noise_ring",
+  "target_counts": {
+    "train": 558,
+    "val": 116,
+    "test": 124
+  },
+  "minimum_horizontal_radius_m": 0.8,
+  "frame_stride": 10,
+  "transition_neighbor_frames_preserved": true,
+  "validation_temporally_subsampled": true,
+  "phase_balanced_training": true,
+  "sampling_replacement": true,
+  "samples_per_epoch": 250000,
+  "batch_size": 8192,
+  "max_epochs": 120,
+  "learning_rate": 0.001,
+  "patience": 12,
+  "stop_weight": 2.0,
+  "seed": 42,
+  "scheduler": "ReduceLROnPlateau factor=0.5 patience=4 min_lr=1e-5",
+  "selection_metric": "val_loss",
+  "train_report": {
+    "trajectories": 558,
+    "raw_steps": 5881845,
+    "sampled_steps": 593247,
+    "phase_mismatch_steps": 0,
+    "max_rebuilt_wheel_error_rad_s": 4.203238998412573e-06,
+    "raw_phase_counts": [
+      930079,
+      2220833,
+      258030,
+      2472903
+    ]
+  },
+  "val_report": {
+    "trajectories": 116,
+    "raw_steps": 1207380,
+    "sampled_steps": 121782,
+    "phase_mismatch_steps": 0,
+    "max_rebuilt_wheel_error_rad_s": 3.6388950743967974e-06,
+    "raw_phase_counts": [
+      189132,
+      459440,
+      53813,
+      504995
+    ]
+  },
+  "sampled_train_phase_counts": [
+    93714,
+    223535,
+    27219,
+    248779
+  ],
+  "arm_run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring_bodyframe\\run_20261102_184221_743102",
+  "arm_feature_version": "obs23_target_and_ee_error_base_yaw_frame_v1",
+  "arm_weights_updated": false,
+  "arm_pretrained_on_original_train_targets": 651,
+  "arm_pretraining_includes_excluded_near_train_targets": true,
+  "arm_file_sha256": {
+    "best_model.pt": "69e5c877ea804ceec2407d3e4dd30c3cd1c764098e88786c8c64d51571566e5b",
+    "normalization.npz": "9feb9d07c1eb962e705629a35995716160ed6a72f1e7dfbd8a4bf3bd113557bf",
+    "config.json": "e42a32b3606a977d54f2eecfbb529491d116787582ff48d449d649f69800e91c"
+  },
+  "smoke_only": false,
+  "device": "cuda",
+  "torch_version": "2.11.0+cu128"
+}

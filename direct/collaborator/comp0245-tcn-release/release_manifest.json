@@ -1,0 +1,592 @@
+{
+  "created_utc": "2026-11-04T23:17:32.973127+00:00",
+  "release": "current frozen hybrid TCN 2026-11-04",
+  "default_model": "tcn",
+  "original_test_plan_sha256": "d41f7f5a84dc095a47666f78060633523b5f966ca0043659268ffd2faeedd2b4",
+  "models": {
+    "mlp": {
+      "directory": "models/mlp",
+      "checkpoint": "best_model.pt",
+      "checkpoint_sha256": "57e7d780478bbd4caaa68aa6306ac4622e687804c7c760342a55a4a2193abc96",
+      "original_run": "RoboEnv/bc_structured_mlp/run_20261104_142229_917028_full"
+    },
+    "tcn": {
+      "directory": "models/tcn",
+      "checkpoint": "best_model.pt",
+      "checkpoint_sha256": "eb1defbcf8ff787c897d8a202d2c0c22be59e2d1b9c259546ccc607722c4ca1e",
+      "original_run": "RoboEnv/bc_structured_tcn/run_20261104_142321_275280_full"
+    },
+    "baseline": {
+      "directory": "models/baseline",
+      "checkpoint": "initial_model.pt",
+      "checkpoint_sha256": "3c2c0a95f5749aebcbff16a82888e85716abf225fb777d6a5a3c18b0bfc62052",
+      "original_run": "RoboEnv/bc_arm_transfer_mlp/run_20261104_131523_545333_full"
+    }
+  },
+  "file_sha256": {
+    "docs/RELEASE_VERIFICATION.json": "9006671b308b7c4e84530fdd2f3f86d09f458034198cf9cc04214bc841db6549",
+    "run_model.py": "e785948d440714ca8e20173fac008150886e09aef8835ff923737183fae9069d",
+    "README.md": "3bd6f1b062539edffaf61ad0083f500ac89587e5a7081f260cf7957f7b386bdb",
+    ".gitignore": "5284f2e5fca009ed93a0b17313e30924085f4ef3ddef882a350339b7efddfe61",
+    ".gitattributes": "28ed1c70ffd9911b715b1a8b1c5d18e33ce96751871f3f9d0ee797d9004d0853",
+    "run_batch.py": "688caba1aa83d3e131b39a0fd49784e54b64613b81311c80ab3b0a990d58dc99",
+    "artifacts/provenance.json": "2071563c4ffb65768c0f318cc433d216eb625b659e892166686e8eef55ef423c",
+    "artifacts/RoboEnv/expert_collection_logs/ring_20261102_011739_685582/collection_config.json": "98b662b87c665c2ec2ac3b3f09b15a04bafdffab2b03ef942a3e3a259d3a0168",
+    "artifacts/RoboEnv/bc_training_26d_noise_ring/data_split.json": "3e439d7935bd69fd2cad7226fbc8cbebe509cade6ff14b0cfc6d1c176509dec8",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/training_finished.json": "87941bf24b12c72efd4a8c28f8ed733eed999666c1f089a2605159e01db94167",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/config.json": "9d7339c83c38b96f810c9f4f03c9d6fbb719953a9b1f5766123872b00e4cded4",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/history.csv": "70fafb2adfc275715484c3654f1572866715481d075193567b874ea2cf30876c",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/training_source.py": "c9e4853233488a984d1f3aafc754a4e1941edf3678906ae2e20e45d0d3c796e6",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/best_model.pt": "091efe05724b527cb1f6660f8f4bd68cc377cdbd03abdbd3a40855d0c224da3a",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/initial_validation.json": "8ddbd33b5682517b9bc1c81a3baafbbf2093aa26c365069db987ac897654b4c2",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/normalization.npz": "9feb9d07c1eb962e705629a35995716160ed6a72f1e7dfbd8a4bf3bd113557bf",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/data_split.json": "7fa0879ce2f71b0ed38b1345a561a4e3006394a4a08e35aa1bc9cd928375d4b1",
+    "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/config.json": "944acaca9a430770b9579ad6b41decd985475e80cfdfa6342366dc78195964b6",
+    "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/history.csv": "af737b8b33e224bfb69ea9fcf7405cf6060fd871bc1ba90333d46ea04643f0b5",
+    "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/best_model.pt": "b3f561b401cf4aed3d7653ee43f3848ecdf77530d7b8b40b63ef92d6f1805092",
+    "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/normalization.npz": "9feb9d07c1eb962e705629a35995716160ed6a72f1e7dfbd8a4bf3bd113557bf",
+    "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/data_split.json": "3e439d7935bd69fd2cad7226fbc8cbebe509cade6ff14b0cfc6d1c176509dec8",
+    "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/batch_tests/val_20261102_230205_714031/results.csv": "dac51e121e068c3ff5285c9c89db027547393be2b28a7e520b616e796b9ca566",
+    "artifacts/RoboEnv/bc_training_26d_noise_wide_extended/run_20261101_150934_422124/data_split.json": "eeb78b9e4620abd37e39ce66decb7592aeb92b8eebad0351057d16c9fff4b0e3",
+    "artifacts/RoboEnv/expert_data_23d_noise_ring_lowz_supplement/collection_plan.json": "c870d79a8a8cbfa4662232280384370bdf75fa0f3fd1806dd6c841a6b6230bd9",
+    "artifacts/RoboEnv/configs/robotnik_arm.json": "78c439d2c09ee172e8056154a7558ba7fe7e6f4c020b8ce0ed5db8674e4b4d74",
+    "artifacts/RoboEnv/configs/robotnik_arm_noise_0p001.json": "f77566643f93e72aad0195a96e114563735b0bc8a3372c1a9c5b855e56b2a64a",
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/data_split.json": "7fa0879ce2f71b0ed38b1345a561a4e3006394a4a08e35aa1bc9cd928375d4b1",
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/training_finished.json": "d59a9c4c528c8372f85cf0c87647bc1d1e302d3364f20b9bb8750f51c7f4aa58",
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/config.json": "e54e0a3146f2c8503e3dc41edb4cf222a5d20cdd9b8d1deecc274a6131a22493",
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/history.csv": "dd8bee8d739f68688fc8669466cf218677b0588bf8b35fde87e124a936566bd3",
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/training_source.py": "fcd914ef6df3137b9721433fe1a17eb5c5cc204f2a6d7902ae19c5b9d93ffcce",
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/best_model.pt": "2659ce24ff5264938833045c6d7114da1c3044a068f82704efc80f826b845281",
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/navigation_feature_source.py": "95a237cb6b8a2a035ff1ead43c45735ec6540c4c63d954a1ddfa34bb098684e6",
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/normalization.npz": "f5c3c274e4f60afa1c2d7f7fc7e9cd18279a7a844a3c46a8a35ea6ff1350b5c4",
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/data_split.json": "7fa0879ce2f71b0ed38b1345a561a4e3006394a4a08e35aa1bc9cd928375d4b1",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/data_split.json": "0a4a7553e7044d6fe2d228be5f28fddf06ad48163b727ffffa36712d69e802b2",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/training_finished.json": "ec006f632d9bfea7b8f9ae1aebaee80b25c79feb9ce5223cac11a2d746400d3f",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/config.json": "aa8873646e493f7fb17fa46449cc8e3a4aca2c210fa6098fc08577e34a56ae94",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/history.csv": "c542d03a669b4db4fce7e87181f379ff0cb06329c19214ed9851b3aff0cc035b",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/training_source.py": "57df565a645106a18267424abaddd788bffb9b3c5c5124f4361fc9e635c6a65f",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/best_model.pt": "f758b1a8b54294c4140d96a86d605a4c2dd73a9558ea4ed203418790c08b719b",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/initial_validation.json": "52d33099f4f84e88653b58db2497e4fc6cdf395302a76cc309403134d72f01fb",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/normalization.npz": "9feb9d07c1eb962e705629a35995716160ed6a72f1e7dfbd8a4bf3bd113557bf",
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/data_split.json": "0a4a7553e7044d6fe2d228be5f28fddf06ad48163b727ffffa36712d69e802b2",
+    "tools/setup_dependencies.py": "a5c5cb0804f6b140994458c412161010113514264c7e72acc25208be2548cd10",
+    "tools/verify_release.py": "f5d8ab1268853d8a680781984cc7d0e4f033f68af96a9f51ebe9ed3a096b9d3a",
+    "models/tcn/training_finished.json": "f276fbeed4ffee34eb1f1f200bfd4ed5fb2bcf07b33ac0e1fd24cf13000af10c",
+    "models/tcn/config.json": "c9d488093d99d026cf11098786a9b9dbc15f4e353bff15e817f49c93ebb1877c",
+    "models/tcn/history.csv": "13eb67b588b14e3f4b64c0fb5864d2bd203667d3103f7d5f2df4a549411bff75",
+    "models/tcn/best_model.pt": "eb1defbcf8ff787c897d8a202d2c0c22be59e2d1b9c259546ccc607722c4ca1e",
+    "models/tcn/normalization.npz": "ef8a2fa7f1bb6feff62a66b82fa962a240e9d3c85e30c5e84374e11bb11b80e4",
+    "models/tcn/data_split.json": "0a4a7553e7044d6fe2d228be5f28fddf06ad48163b727ffffa36712d69e802b2",
+    "models/tcn/used_trajectories.json": "6018646f82fb5a3ccd6abd3ca49b44f8662019244373665f67fcb9fb5a65d570",
+    "models/baseline/training_finished.json": "ce831cd0434170e4f3e77b1a793ca432a97fc3e7461135901abff2f9c5e743b1",
+    "models/baseline/config.json": "ceef64a9694938e839a3203518069183503967beb13fca40b87461bcb3411e09",
+    "models/baseline/history.csv": "7a2913c6797ec6b3bcdaf28cc14915e15e26b0b83cedb47e4fb1f0cbde478eb6",
+    "models/baseline/normalization.npz": "ed52b7434d5c2b942b12d2a8bd7ef21b91a837072c596d3f27453edf362bafbe",
+    "models/baseline/data_split.json": "0a4a7553e7044d6fe2d228be5f28fddf06ad48163b727ffffa36712d69e802b2",
+    "models/baseline/used_trajectories.json": "6018646f82fb5a3ccd6abd3ca49b44f8662019244373665f67fcb9fb5a65d570",
+    "models/baseline/initial_model.pt": "3c2c0a95f5749aebcbff16a82888e85716abf225fb777d6a5a3c18b0bfc62052",
+    "models/mlp/training_finished.json": "a3466fe97d5d9afa767bae6a822e6f41cccf564367aa92b1c80a2b6a763a8205",
+    "models/mlp/config.json": "466458a4aef7647b5b6055035a96336c35356844537cedf73652b2d523bb0f8c",
+    "models/mlp/history.csv": "6f0758e2735f028e0804d75e15c02a0804467c66a376bc26fae7cc1e3b7ddc95",
+    "models/mlp/best_model.pt": "57e7d780478bbd4caaa68aa6306ac4622e687804c7c760342a55a4a2193abc96",
+    "models/mlp/normalization.npz": "ef8a2fa7f1bb6feff62a66b82fa962a240e9d3c85e30c5e84374e11bb11b80e4",
+    "models/mlp/data_split.json": "0a4a7553e7044d6fe2d228be5f28fddf06ad48163b727ffffa36712d69e802b2",
+    "models/mlp/used_trajectories.json": "6018646f82fb5a3ccd6abd3ca49b44f8662019244373665f67fcb9fb5a65d570",
+    "docs/PROTOCOL_zh.md": "9524a441c9ab3e0e0dc8bdd94e1c1361c92722f605c7213995ef916a4c0cebb5",
+    "docs/PRIMARY_RESULTS_zh.md": "0eed77cf29e91dc4f89f48bf807fd1aa6b59f692583c56c1852fd69663515d85",
+    "docs/FINAL_RESULTS_zh.md": "b0a95cd18ada65474028d8359ca0a9fa74143b955c67b22618fcf18ff4ec9b0d",
+    "docs/PROVENANCE.md": "5847865831afa61a9ea4c25232ab7866f03c8db6cf14b511849264a746285b9c",
+    "results/nav_repair_selection.json": "17dd62a8fe9e4b1d75f7ab828aa717a0ff617f04c11a6a23f78634002e4d0f77",
+    "results/primary_tcn_audited_report.json": "3d134691fc677117d3e56030eedc47f4d09b7ed62163be21cf85ee89f1804537",
+    "results/shared_test_targets.json": "79b1270cd6ca080b699fbe464a4fb2df5450ab523438627b7a0145797a008339",
+    "results/geometry_audit.json": "86eb6bcd99517ea8b1f5f127269174f21c0d238c8dfe6e2791d22bd3abdb89da",
+    "results/episode_reset_audit.json": "bfa4447407e261f5c8124e5d679ffaab16bc91387101c69e83136cb65284a060",
+    "results/early_recovery_selection.json": "5542d9a1e63b6eece93a5c5f8c3ca4cd8101d61039be348af951c47ab8adc154",
+    "results/guarded_nav_selection.json": "259f1716d34c75fd7c84818519c66626be576a4b1237f84aeda4cea73a271071",
+    "results/recorded_primary/friend/summary.json": "fcbe24e834232305fed2e9eb8af922adbe26eacdd7acc6c6f6d512c45b1040a6",
+    "results/recorded_primary/friend/results.json": "d3fe2ae03ca489564b2ca8c5d590bfb2d267740a188854d9e5830daf4d7b22ca",
+    "results/recorded_primary/off/summary.json": "18fde95463a95de660b593ab4290d7cbc355e711846ffc6c1b56d26696a5ed3b",
+    "results/recorded_primary/off/results.json": "8c82c014c109d776ee71e5b79cad4a537bd5004e6595e4bcc1eb049d8b72072b",
+    "dataset_info/DATASET.md": "470de40157e27d65b24f2fe158149987cf2fe295af5bfd89f03544c6ded195c1",
+    "dataset_info/model_release_provenance.json": "2071563c4ffb65768c0f318cc433d216eb625b659e892166686e8eef55ef423c",
+    "dataset_info/collection_plan.json": "c870d79a8a8cbfa4662232280384370bdf75fa0f3fd1806dd6c841a6b6230bd9",
+    "dataset_info/packaging/dataset_index.json": "d8d1a72a350b2e645c26b8c144daa3d4ad20d21c334a2066646c2e550f79efec",
+    "dataset_info/packaging/packaging_report.json": "d2ce65c9d3a52c231d11ebfe512e698bd6f7f1cf523b9198d9de8d2c5a9de7dd",
+    "dataset_info/packaging/SHA256SUMS.txt": "3e74873665f1af9b2956955ecc1f62e48a8718caa63efe7cab28309e2ab15965",
+    "dataset_info/manifests/r08_798/data_split.json": "7fa0879ce2f71b0ed38b1345a561a4e3006394a4a08e35aa1bc9cd928375d4b1",
+    "dataset_info/manifests/merged998/data_split.json": "0a4a7553e7044d6fe2d228be5f28fddf06ad48163b727ffffa36712d69e802b2",
+    "dataset_info/manifests/full931/data_split.json": "3e439d7935bd69fd2cad7226fbc8cbebe509cade6ff14b0cfc6d1c176509dec8",
+    "examples/expert_sample.npz": "48c902a0aa01bdfa2e11d0b9bac408d84c4d2aa04f5fde82e4356c8435618f3b",
+    "environment/pixi.toml": "8fee1190b722d9bfd8715b12008acb5c39b7ab18e8e5e0bfe75fb23b797919c2",
+    "environment/pixi.lock": "129740b292aaeb5d11cef9e6ebee5163e3022d5e93d11410de5c6ad4f7be2f92",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_navigation_policy.py": "878995bc75ce5bba8aafecfb99c22405c49d67032a4873825a3106ae20ca422c",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_bodyframe_features.py": "c8abd9315afe1b615600a3f089f56487fd41586786338287e63c426d0d3d3478",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/arm_finetune_experiment.py": "595b12899789137a77c41b7e5099005be495eba2e4d6a192eb1982e61842c8df",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/test_bc_split_nav_arm_lowz_supplement.py": "1cd19797359d1cbeeede9a69a1b7a4bef040762b54cd1da32a2d1171b96c8cf2",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/arm_lowz_supplement_experiment.py": "fbbdfda150026cbba9d0d546213eb42e0cf6013a81042b21ca85fde71d3d32df",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_arm_control.py": "f863b91c882f8570c082d4bcbd7879ac7d9d8805a4488be218b15d49d2214dcf",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_tcn.py": "031da74bee8e90b9f0ad398aaaac504c5a43ea1c526e96fd5d1a6b9d910ac1a7",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/fast_gui_demo.py": "2593e8196cb46a196e793f925f0e2f5f6c5c20a343a2ba3cbd30ff6fae05ef15",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_fast_gui_demo.py": "3a1db8d74c44df4853418eec8c38f21cb64b60de56636f66e44398c055f797b7",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/train_structured_arm.py": "5dc25452621032c67fdbeaea84a5c9fa3b03ebcb955ed56afde72bf61703c6d8",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/check_reference_mlp.py": "d8cac3827d9619b63e72c5c0fcdd82db03d450874edfaa5c25eda8ebe7354113",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_structured_arm.py": "40660f63720a59702ed575ce897bbf36edddfe82eb57cbef06bce474a4b0d65e",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/tcn_model.py": "248cd53de0a3f90e4f09e031b5841109bb28546fb53d8812dc522a58ce326883",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_noise_protocol.py": "0cf625ff90ee490ea0fa506a0475db81294b19cb3dfed256d223e40259bdbfdb",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/structured_arm.py": "26d81d70e499ce843304cad07175bb77d80a47f5407e7e56a071825dec972fc4",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/rollout_noisy.py": "6ba3ce2afaa3ce37379375f9f22756a43c0af4cf0d0c14a39f71d59864e0a029",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/mlp_model.py": "17a099b43618ea4d2af5bcf07da94d40018632794841e3d1827005abfcf2e598",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/tcn_dataset.py": "f8bf8be813ba273078f12f58a84e60b50db81dff8012fc6e8d9eb389c2923ecb",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/arm_compare_models.py": "7c802f7da178374b3ce9ec9ae5a0db96987517881c9e1452c21322f1ae7bd4bf",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/train_arm_compare.py": "235f586ab4d5090d58415e284ea060ddc62882748609194528ec46a259a10499",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/train_tcn.py": "7e61c75a81d7222d76713fb604aad35ae1ddf6507014087fa5b59587c7af18ef",
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_arm_compare.py": "236ecebfba471c759686d78861864e0ad79b3934f3ca193832a81cf8b1193f42"
+  },
+  "byte_identical_source_copies": {
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/arm_finetune_experiment.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/arm_finetune_experiment.py",
+      "sha256": "595b12899789137a77c41b7e5099005be495eba2e4d6a192eb1982e61842c8df"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/arm_lowz_supplement_experiment.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/arm_lowz_supplement_experiment.py",
+      "sha256": "fbbdfda150026cbba9d0d546213eb42e0cf6013a81042b21ca85fde71d3d32df"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_arm_control.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_arm_control.py",
+      "sha256": "f863b91c882f8570c082d4bcbd7879ac7d9d8805a4488be218b15d49d2214dcf"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_bodyframe_features.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_bodyframe_features.py",
+      "sha256": "c8abd9315afe1b615600a3f089f56487fd41586786338287e63c426d0d3d3478"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_navigation_policy.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_navigation_policy.py",
+      "sha256": "878995bc75ce5bba8aafecfb99c22405c49d67032a4873825a3106ae20ca422c"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/arm_compare_models.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/arm_compare_models.py",
+      "sha256": "7c802f7da178374b3ce9ec9ae5a0db96987517881c9e1452c21322f1ae7bd4bf"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/check_reference_mlp.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/check_reference_mlp.py",
+      "sha256": "d8cac3827d9619b63e72c5c0fcdd82db03d450874edfaa5c25eda8ebe7354113"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/fast_gui_demo.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/fast_gui_demo.py",
+      "sha256": "2593e8196cb46a196e793f925f0e2f5f6c5c20a343a2ba3cbd30ff6fae05ef15"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/mlp_model.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/mlp_model.py",
+      "sha256": "17a099b43618ea4d2af5bcf07da94d40018632794841e3d1827005abfcf2e598"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/rollout_noisy.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/rollout_noisy.py",
+      "sha256": "6ba3ce2afaa3ce37379375f9f22756a43c0af4cf0d0c14a39f71d59864e0a029"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/structured_arm.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/structured_arm.py",
+      "sha256": "26d81d70e499ce843304cad07175bb77d80a47f5407e7e56a071825dec972fc4"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/tcn_dataset.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/tcn_dataset.py",
+      "sha256": "f8bf8be813ba273078f12f58a84e60b50db81dff8012fc6e8d9eb389c2923ecb"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/tcn_model.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/tcn_model.py",
+      "sha256": "248cd53de0a3f90e4f09e031b5841109bb28546fb53d8812dc522a58ce326883"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_arm_compare.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_arm_compare.py",
+      "sha256": "236ecebfba471c759686d78861864e0ad79b3934f3ca193832a81cf8b1193f42"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_fast_gui_demo.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_fast_gui_demo.py",
+      "sha256": "3a1db8d74c44df4853418eec8c38f21cb64b60de56636f66e44398c055f797b7"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_noise_protocol.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_noise_protocol.py",
+      "sha256": "0cf625ff90ee490ea0fa506a0475db81294b19cb3dfed256d223e40259bdbfdb"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_structured_arm.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_structured_arm.py",
+      "sha256": "40660f63720a59702ed575ce897bbf36edddfe82eb57cbef06bce474a4b0d65e"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_tcn.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_tcn.py",
+      "sha256": "031da74bee8e90b9f0ad398aaaac504c5a43ea1c526e96fd5d1a6b9d910ac1a7"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/train_arm_compare.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/train_arm_compare.py",
+      "sha256": "235f586ab4d5090d58415e284ea060ddc62882748609194528ec46a259a10499"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/train_structured_arm.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/train_structured_arm.py",
+      "sha256": "5dc25452621032c67fdbeaea84a5c9fa3b03ebcb955ed56afde72bf61703c6d8"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/train_tcn.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/train_tcn.py",
+      "sha256": "7e61c75a81d7222d76713fb604aad35ae1ddf6507014087fa5b59587c7af18ef"
+    },
+    "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/test_bc_split_nav_arm_lowz_supplement.py": {
+      "source": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/test_bc_split_nav_arm_lowz_supplement.py",
+      "sha256": "1cd19797359d1cbeeede9a69a1b7a4bef040762b54cd1da32a2d1171b96c8cf2"
+    },
+    "artifacts/provenance.json": {
+      "source": "artifacts/provenance.json",
+      "sha256": "2071563c4ffb65768c0f318cc433d216eb625b659e892166686e8eef55ef423c"
+    },
+    "artifacts/RoboEnv/expert_collection_logs/ring_20261102_011739_685582/collection_config.json": {
+      "source": "artifacts/RoboEnv/expert_collection_logs/ring_20261102_011739_685582/collection_config.json",
+      "sha256": "98b662b87c665c2ec2ac3b3f09b15a04bafdffab2b03ef942a3e3a259d3a0168"
+    },
+    "artifacts/RoboEnv/bc_training_26d_noise_ring/data_split.json": {
+      "source": "artifacts/RoboEnv/bc_training_26d_noise_ring/data_split.json",
+      "sha256": "3e439d7935bd69fd2cad7226fbc8cbebe509cade6ff14b0cfc6d1c176509dec8"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/training_finished.json": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/training_finished.json",
+      "sha256": "87941bf24b12c72efd4a8c28f8ed733eed999666c1f089a2605159e01db94167"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/config.json": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/config.json",
+      "sha256": "9d7339c83c38b96f810c9f4f03c9d6fbb719953a9b1f5766123872b00e4cded4"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/history.csv": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/history.csv",
+      "sha256": "70fafb2adfc275715484c3654f1572866715481d075193567b874ea2cf30876c"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/training_source.py": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/training_source.py",
+      "sha256": "c9e4853233488a984d1f3aafc754a4e1941edf3678906ae2e20e45d0d3c796e6"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/best_model.pt": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/best_model.pt",
+      "sha256": "091efe05724b527cb1f6660f8f4bd68cc377cdbd03abdbd3a40855d0c224da3a"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/initial_validation.json": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/initial_validation.json",
+      "sha256": "8ddbd33b5682517b9bc1c81a3baafbbf2093aa26c365069db987ac897654b4c2"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/normalization.npz": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/normalization.npz",
+      "sha256": "9feb9d07c1eb962e705629a35995716160ed6a72f1e7dfbd8a4bf3bd113557bf"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/data_split.json": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/data_split.json",
+      "sha256": "7fa0879ce2f71b0ed38b1345a561a4e3006394a4a08e35aa1bc9cd928375d4b1"
+    },
+    "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/config.json": {
+      "source": "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/config.json",
+      "sha256": "944acaca9a430770b9579ad6b41decd985475e80cfdfa6342366dc78195964b6"
+    },
+    "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/history.csv": {
+      "source": "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/history.csv",
+      "sha256": "af737b8b33e224bfb69ea9fcf7405cf6060fd871bc1ba90333d46ea04643f0b5"
+    },
+    "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/best_model.pt": {
+      "source": "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/best_model.pt",
+      "sha256": "b3f561b401cf4aed3d7653ee43f3848ecdf77530d7b8b40b63ef92d6f1805092"
+    },
+    "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/normalization.npz": {
+      "source": "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/normalization.npz",
+      "sha256": "9feb9d07c1eb962e705629a35995716160ed6a72f1e7dfbd8a4bf3bd113557bf"
+    },
+    "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/data_split.json": {
+      "source": "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/data_split.json",
+      "sha256": "3e439d7935bd69fd2cad7226fbc8cbebe509cade6ff14b0cfc6d1c176509dec8"
+    },
+    "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/batch_tests/val_20261102_230205_714031/results.csv": {
+      "source": "artifacts/RoboEnv/bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102/batch_tests/val_20261102_230205_714031/results.csv",
+      "sha256": "dac51e121e068c3ff5285c9c89db027547393be2b28a7e520b616e796b9ca566"
+    },
+    "artifacts/RoboEnv/bc_training_26d_noise_wide_extended/run_20261101_150934_422124/data_split.json": {
+      "source": "artifacts/RoboEnv/bc_training_26d_noise_wide_extended/run_20261101_150934_422124/data_split.json",
+      "sha256": "eeb78b9e4620abd37e39ce66decb7592aeb92b8eebad0351057d16c9fff4b0e3"
+    },
+    "artifacts/RoboEnv/expert_data_23d_noise_ring_lowz_supplement/collection_plan.json": {
+      "source": "artifacts/RoboEnv/expert_data_23d_noise_ring_lowz_supplement/collection_plan.json",
+      "sha256": "c870d79a8a8cbfa4662232280384370bdf75fa0f3fd1806dd6c841a6b6230bd9"
+    },
+    "artifacts/RoboEnv/configs/robotnik_arm.json": {
+      "source": "artifacts/RoboEnv/configs/robotnik_arm.json",
+      "sha256": "78c439d2c09ee172e8056154a7558ba7fe7e6f4c020b8ce0ed5db8674e4b4d74"
+    },
+    "artifacts/RoboEnv/configs/robotnik_arm_noise_0p001.json": {
+      "source": "artifacts/RoboEnv/configs/robotnik_arm_noise_0p001.json",
+      "sha256": "f77566643f93e72aad0195a96e114563735b0bc8a3372c1a9c5b855e56b2a64a"
+    },
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/data_split.json": {
+      "source": "artifacts/RoboEnv/bc_training_nav_ring_r08/data_split.json",
+      "sha256": "7fa0879ce2f71b0ed38b1345a561a4e3006394a4a08e35aa1bc9cd928375d4b1"
+    },
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/training_finished.json": {
+      "source": "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/training_finished.json",
+      "sha256": "d59a9c4c528c8372f85cf0c87647bc1d1e302d3364f20b9bb8750f51c7f4aa58"
+    },
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/config.json": {
+      "source": "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/config.json",
+      "sha256": "e54e0a3146f2c8503e3dc41edb4cf222a5d20cdd9b8d1deecc274a6131a22493"
+    },
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/history.csv": {
+      "source": "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/history.csv",
+      "sha256": "dd8bee8d739f68688fc8669466cf218677b0588bf8b35fde87e124a936566bd3"
+    },
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/training_source.py": {
+      "source": "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/training_source.py",
+      "sha256": "fcd914ef6df3137b9721433fe1a17eb5c5cc204f2a6d7902ae19c5b9d93ffcce"
+    },
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/best_model.pt": {
+      "source": "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/best_model.pt",
+      "sha256": "2659ce24ff5264938833045c6d7114da1c3044a068f82704efc80f826b845281"
+    },
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/navigation_feature_source.py": {
+      "source": "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/navigation_feature_source.py",
+      "sha256": "95a237cb6b8a2a035ff1ead43c45735ec6540c4c63d954a1ddfa34bb098684e6"
+    },
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/normalization.npz": {
+      "source": "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/normalization.npz",
+      "sha256": "f5c3c274e4f60afa1c2d7f7fc7e9cd18279a7a844a3c46a8a35ea6ff1350b5c4"
+    },
+    "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/data_split.json": {
+      "source": "artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160/data_split.json",
+      "sha256": "7fa0879ce2f71b0ed38b1345a561a4e3006394a4a08e35aa1bc9cd928375d4b1"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/data_split.json": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/data_split.json",
+      "sha256": "0a4a7553e7044d6fe2d228be5f28fddf06ad48163b727ffffa36712d69e802b2"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/training_finished.json": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/training_finished.json",
+      "sha256": "ec006f632d9bfea7b8f9ae1aebaee80b25c79feb9ce5223cac11a2d746400d3f"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/config.json": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/config.json",
+      "sha256": "aa8873646e493f7fb17fa46449cc8e3a4aca2c210fa6098fc08577e34a56ae94"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/history.csv": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/history.csv",
+      "sha256": "c542d03a669b4db4fce7e87181f379ff0cb06329c19214ed9851b3aff0cc035b"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/training_source.py": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/training_source.py",
+      "sha256": "57df565a645106a18267424abaddd788bffb9b3c5c5124f4361fc9e635c6a65f"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/best_model.pt": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/best_model.pt",
+      "sha256": "f758b1a8b54294c4140d96a86d605a4c2dd73a9558ea4ed203418790c08b719b"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/initial_validation.json": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/initial_validation.json",
+      "sha256": "52d33099f4f84e88653b58db2497e4fc6cdf395302a76cc309403134d72f01fb"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/normalization.npz": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/normalization.npz",
+      "sha256": "9feb9d07c1eb962e705629a35995716160ed6a72f1e7dfbd8a4bf3bd113557bf"
+    },
+    "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/data_split.json": {
+      "source": "artifacts/RoboEnv/bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306/data_split.json",
+      "sha256": "0a4a7553e7044d6fe2d228be5f28fddf06ad48163b727ffffa36712d69e802b2"
+    },
+    "dataset_info/DATASET.md": {
+      "source": "dataset_info/DATASET.md",
+      "sha256": "470de40157e27d65b24f2fe158149987cf2fe295af5bfd89f03544c6ded195c1"
+    },
+    "dataset_info/model_release_provenance.json": {
+      "source": "dataset_info/model_release_provenance.json",
+      "sha256": "2071563c4ffb65768c0f318cc433d216eb625b659e892166686e8eef55ef423c"
+    },
+    "dataset_info/collection_plan.json": {
+      "source": "dataset_info/collection_plan.json",
+      "sha256": "c870d79a8a8cbfa4662232280384370bdf75fa0f3fd1806dd6c841a6b6230bd9"
+    },
+    "dataset_info/manifests/r08_798/data_split.json": {
+      "source": "dataset_info/manifests/r08_798/data_split.json",
+      "sha256": "7fa0879ce2f71b0ed38b1345a561a4e3006394a4a08e35aa1bc9cd928375d4b1"
+    },
+    "dataset_info/manifests/merged998/data_split.json": {
+      "source": "dataset_info/manifests/merged998/data_split.json",
+      "sha256": "0a4a7553e7044d6fe2d228be5f28fddf06ad48163b727ffffa36712d69e802b2"
+    },
+    "dataset_info/manifests/full931/data_split.json": {
+      "source": "dataset_info/manifests/full931/data_split.json",
+      "sha256": "3e439d7935bd69fd2cad7226fbc8cbebe509cade6ff14b0cfc6d1c176509dec8"
+    },
+    "dataset_info/packaging/dataset_index.json": {
+      "source": "dataset_info/original_packaging/dataset_index.json",
+      "sha256": "d8d1a72a350b2e645c26b8c144daa3d4ad20d21c334a2066646c2e550f79efec"
+    },
+    "dataset_info/packaging/packaging_report.json": {
+      "source": "dataset_info/original_packaging/packaging_report.json",
+      "sha256": "d2ce65c9d3a52c231d11ebfe512e698bd6f7f1cf523b9198d9de8d2c5a9de7dd"
+    },
+    "dataset_info/packaging/SHA256SUMS.txt": {
+      "source": "dataset_info/original_packaging/SHA256SUMS.txt",
+      "sha256": "3e74873665f1af9b2956955ecc1f62e48a8718caa63efe7cab28309e2ab15965"
+    },
+    "examples/expert_sample.npz": {
+      "source": "examples/expert_sample.npz",
+      "sha256": "48c902a0aa01bdfa2e11d0b9bac408d84c4d2aa04f5fde82e4356c8435618f3b"
+    },
+    "environment/pixi.toml": {
+      "source": "external/RoboEnv/pixi.toml",
+      "sha256": "8fee1190b722d9bfd8715b12008acb5c39b7ab18e8e5e0bfe75fb23b797919c2"
+    },
+    "environment/pixi.lock": {
+      "source": "external/RoboEnv/pixi.lock",
+      "sha256": "129740b292aaeb5d11cef9e6ebee5163e3022d5e93d11410de5c6ad4f7be2f92"
+    },
+    "models/mlp/best_model.pt": {
+      "source": "RoboEnv/bc_structured_mlp/run_20261104_142229_917028_full/best_model.pt",
+      "sha256": "57e7d780478bbd4caaa68aa6306ac4622e687804c7c760342a55a4a2193abc96"
+    },
+    "models/mlp/normalization.npz": {
+      "source": "RoboEnv/bc_structured_mlp/run_20261104_142229_917028_full/normalization.npz",
+      "sha256": "ef8a2fa7f1bb6feff62a66b82fa962a240e9d3c85e30c5e84374e11bb11b80e4"
+    },
+    "models/mlp/config.json": {
+      "source": "RoboEnv/bc_structured_mlp/run_20261104_142229_917028_full/config.json",
+      "sha256": "466458a4aef7647b5b6055035a96336c35356844537cedf73652b2d523bb0f8c"
+    },
+    "models/mlp/data_split.json": {
+      "source": "RoboEnv/bc_structured_mlp/run_20261104_142229_917028_full/data_split.json",
+      "sha256": "0a4a7553e7044d6fe2d228be5f28fddf06ad48163b727ffffa36712d69e802b2"
+    },
+    "models/mlp/history.csv": {
+      "source": "RoboEnv/bc_structured_mlp/run_20261104_142229_917028_full/history.csv",
+      "sha256": "6f0758e2735f028e0804d75e15c02a0804467c66a376bc26fae7cc1e3b7ddc95"
+    },
+    "models/mlp/training_finished.json": {
+      "source": "RoboEnv/bc_structured_mlp/run_20261104_142229_917028_full/training_finished.json",
+      "sha256": "a3466fe97d5d9afa767bae6a822e6f41cccf564367aa92b1c80a2b6a763a8205"
+    },
+    "models/mlp/used_trajectories.json": {
+      "source": "RoboEnv/bc_structured_mlp/run_20261104_142229_917028_full/used_trajectories.json",
+      "sha256": "6018646f82fb5a3ccd6abd3ca49b44f8662019244373665f67fcb9fb5a65d570"
+    },
+    "models/tcn/best_model.pt": {
+      "source": "RoboEnv/bc_structured_tcn/run_20261104_142321_275280_full/best_model.pt",
+      "sha256": "eb1defbcf8ff787c897d8a202d2c0c22be59e2d1b9c259546ccc607722c4ca1e"
+    },
+    "models/tcn/normalization.npz": {
+      "source": "RoboEnv/bc_structured_tcn/run_20261104_142321_275280_full/normalization.npz",
+      "sha256": "ef8a2fa7f1bb6feff62a66b82fa962a240e9d3c85e30c5e84374e11bb11b80e4"
+    },
+    "models/tcn/config.json": {
+      "source": "RoboEnv/bc_structured_tcn/run_20261104_142321_275280_full/config.json",
+      "sha256": "c9d488093d99d026cf11098786a9b9dbc15f4e353bff15e817f49c93ebb1877c"
+    },
+    "models/tcn/data_split.json": {
+      "source": "RoboEnv/bc_structured_tcn/run_20261104_142321_275280_full/data_split.json",
+      "sha256": "0a4a7553e7044d6fe2d228be5f28fddf06ad48163b727ffffa36712d69e802b2"
+    },
+    "models/tcn/history.csv": {
+      "source": "RoboEnv/bc_structured_tcn/run_20261104_142321_275280_full/history.csv",
+      "sha256": "13eb67b588b14e3f4b64c0fb5864d2bd203667d3103f7d5f2df4a549411bff75"
+    },
+    "models/tcn/training_finished.json": {
+      "source": "RoboEnv/bc_structured_tcn/run_20261104_142321_275280_full/training_finished.json",
+      "sha256": "f276fbeed4ffee34eb1f1f200bfd4ed5fb2bcf07b33ac0e1fd24cf13000af10c"
+    },
+    "models/tcn/used_trajectories.json": {
+      "source": "RoboEnv/bc_structured_tcn/run_20261104_142321_275280_full/used_trajectories.json",
+      "sha256": "6018646f82fb5a3ccd6abd3ca49b44f8662019244373665f67fcb9fb5a65d570"
+    },
+    "models/baseline/initial_model.pt": {
+      "source": "RoboEnv/bc_arm_transfer_mlp/run_20261104_131523_545333_full/initial_model.pt",
+      "sha256": "3c2c0a95f5749aebcbff16a82888e85716abf225fb777d6a5a3c18b0bfc62052"
+    },
+    "models/baseline/normalization.npz": {
+      "source": "RoboEnv/bc_arm_transfer_mlp/run_20261104_131523_545333_full/normalization.npz",
+      "sha256": "ed52b7434d5c2b942b12d2a8bd7ef21b91a837072c596d3f27453edf362bafbe"
+    },
+    "models/baseline/config.json": {
+      "source": "RoboEnv/bc_arm_transfer_mlp/run_20261104_131523_545333_full/config.json",
+      "sha256": "ceef64a9694938e839a3203518069183503967beb13fca40b87461bcb3411e09"
+    },
+    "models/baseline/data_split.json": {
+      "source": "RoboEnv/bc_arm_transfer_mlp/run_20261104_131523_545333_full/data_split.json",
+      "sha256": "0a4a7553e7044d6fe2d228be5f28fddf06ad48163b727ffffa36712d69e802b2"
+    },
+    "models/baseline/history.csv": {
+      "source": "RoboEnv/bc_arm_transfer_mlp/run_20261104_131523_545333_full/history.csv",
+      "sha256": "7a2913c6797ec6b3bcdaf28cc14915e15e26b0b83cedb47e4fb1f0cbde478eb6"
+    },
+    "models/baseline/training_finished.json": {
+      "source": "RoboEnv/bc_arm_transfer_mlp/run_20261104_131523_545333_full/training_finished.json",
+      "sha256": "ce831cd0434170e4f3e77b1a793ca432a97fc3e7461135901abff2f9c5e743b1"
+    },
+    "models/baseline/used_trajectories.json": {
+      "source": "RoboEnv/bc_arm_transfer_mlp/run_20261104_131523_545333_full/used_trajectories.json",
+      "sha256": "6018646f82fb5a3ccd6abd3ca49b44f8662019244373665f67fcb9fb5a65d570"
+    },
+    "results/primary_tcn_audited_report.json": {
+      "source": "RoboEnv/prospective_noise_20261104/primary_tcn_audited_report.json",
+      "sha256": "3d134691fc677117d3e56030eedc47f4d09b7ed62163be21cf85ee89f1804537"
+    },
+    "results/episode_reset_audit.json": {
+      "source": "RoboEnv/prospective_noise_20261104/episode_reset_audit.json",
+      "sha256": "bfa4447407e261f5c8124e5d679ffaab16bc91387101c69e83136cb65284a060"
+    },
+    "results/geometry_audit.json": {
+      "source": "RoboEnv/prospective_noise_20261104/geometry_audit.json",
+      "sha256": "86eb6bcd99517ea8b1f5f127269174f21c0d238c8dfe6e2791d22bd3abdb89da"
+    },
+    "results/nav_repair_selection.json": {
+      "source": "RoboEnv/prospective_noise_20261104/nav_repair_selection.json",
+      "sha256": "17dd62a8fe9e4b1d75f7ab828aa717a0ff617f04c11a6a23f78634002e4d0f77"
+    },
+    "results/guarded_nav_selection.json": {
+      "source": "RoboEnv/prospective_noise_20261104/guarded_nav_selection.json",
+      "sha256": "259f1716d34c75fd7c84818519c66626be576a4b1237f84aeda4cea73a271071"
+    },
+    "results/early_recovery_selection.json": {
+      "source": "RoboEnv/prospective_noise_20261104/early_recovery_selection.json",
+      "sha256": "5542d9a1e63b6eece93a5c5f8c3ca4cd8101d61039be348af951c47ab8adc154"
+    },
+    "results/shared_test_targets.json": {
+      "source": "RoboEnv/prospective_noise_20261104/共享测试目标和种子.json",
+      "sha256": "79b1270cd6ca080b699fbe464a4fb2df5450ab523438627b7a0145797a008339"
+    },
+    "results/recorded_primary/friend/results.json": {
+      "source": "RoboEnv/prospective_noise_20261104/primary_tcn_friend/results.json",
+      "sha256": "d3fe2ae03ca489564b2ca8c5d590bfb2d267740a188854d9e5830daf4d7b22ca"
+    },
+    "results/recorded_primary/friend/summary.json": {
+      "source": "RoboEnv/prospective_noise_20261104/primary_tcn_friend/summary.json",
+      "sha256": "fcbe24e834232305fed2e9eb8af922adbe26eacdd7acc6c6f6d512c45b1040a6"
+    },
+    "results/recorded_primary/off/results.json": {
+      "source": "RoboEnv/prospective_noise_20261104/primary_tcn_off/results.json",
+      "sha256": "8c82c014c109d776ee71e5b79cad4a537bd5004e6595e4bcc1eb049d8b72072b"
+    },
+    "results/recorded_primary/off/summary.json": {
+      "source": "RoboEnv/prospective_noise_20261104/primary_tcn_off/summary.json",
+      "sha256": "18fde95463a95de660b593ab4290d7cbc355e711846ffc6c1b56d26696a5ed3b"
+    },
+    "docs/FINAL_RESULTS_zh.md": {
+      "source": "RoboEnv/prospective_noise_20261104/最终测试与模型检查.md",
+      "sha256": "b0a95cd18ada65474028d8359ca0a9fa74143b955c67b22618fcf18ff4ec9b0d"
+    },
+    "docs/PRIMARY_RESULTS_zh.md": {
+      "source": "RoboEnv/prospective_noise_20261104/当前模型主测试结果.md",
+      "sha256": "0eed77cf29e91dc4f89f48bf807fd1aa6b59f692583c56c1852fd69663515d85"
+    },
+    "docs/PROTOCOL_zh.md": {
+      "source": "RoboEnv/prospective_noise_20261104/测试协议.md",
+      "sha256": "9524a441c9ab3e0e0dc8bdd94e1c1361c92722f605c7213995ef916a4c0cebb5"
+    }
+  },
+  "dependencies": {
+    "roboenv_url": "https://github.com/VModugno/RoboEnv.git",
+    "roboenv_commit": "7bb49439677c2ac111347b40e997025ce87bff50",
+    "simulation_and_control_commit": "df5850526affcc33b25b15d3096c4d21b614bacd",
+    "file_sha256": {
+      "external/RoboEnv/models/summit_xl_arm_description/summit_xl_complete.urdf": "25923594d151ed8fdf953de09072adc41e07ba29374b6bcdf44fa3a90bb1b180",
+      "external/RoboEnv/models/summit_xl_arm_description/summit_xl_complete_pin.urdf": "aea40a17a794e73d1b8058b0308431130f9b055e35a6092c51074406e951f369",
+      "external/RoboEnv/simulation_and_control/simulation_and_control/sim/pybullet_robot_interface.py": "4635296328b78d8e5c4444ba97dbd4fae2323d1bf722faee67114bcd5705534f"
+    }
+  },
+  "full_raw_data_included": false,
+  "unused_reserve_targets_included": false,
+  "original_files_modified": false
+}

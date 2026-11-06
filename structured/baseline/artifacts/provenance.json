@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-03",
+  "release": "split-navigation-arm-lowz-supplement",
+  "source_workspace": "@WORKSPACE@",
+  "runs_in_dependency_order": [
+    "bc_training_26d_noise_ring_bodyframe/run_20261102_184221_743102",
+    "bc_training_nav_ring_r08/run_20261103_022339_570160",
+    "bc_training_arm_ring_r08_finetune/run_20261103_111655_849512",
+    "bc_training_arm_ring_r08_lowz_supplement/run_20261103_141232_983306"
+  ],
+  "source_files": [
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_arm_control.py",
+      "sha256": "f863b91c882f8570c082d4bcbd7879ac7d9d8805a4488be218b15d49d2214dcf",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_arm_task_3.py",
+      "sha256": "b7dcda5925c7e0f77e66b63e2ff5f82a645c2e26d05aac6fd278d74c4fad5e4f",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_bodyframe_features.py",
+      "sha256": "c8abd9315afe1b615600a3f089f56487fd41586786338287e63c426d0d3d3478",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/robotnik_navigation_policy.py",
+      "sha256": "878995bc75ce5bba8aafecfb99c22405c49d67032a4873825a3106ae20ca422c",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/collect_expert_ring.py",
+      "sha256": "ef30187469374a22bbcb5c49e4753814857668ae3121867908704706a1d1e787",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/collect_expert_ring_lowz_supplement.py",
+      "sha256": "c6042f3c6369c074c42acd98dd97fb7b514a74183b4137a0492c367e60103302",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/split_expert_data_ring.py",
+      "sha256": "c05b2e2309a927c7ad172a79ee4ea584cb4b8d64a8569aa76dab99584f4f4407",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/prepare_expert_data_ring_r08.py",
+      "sha256": "b4836e6a317162e4f12ef9fe1cb14ee01890b39c21a1f26ccb4ed07f6e7089ca",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/merge_expert_data_ring_lowz.py",
+      "sha256": "a5602f1907a4094acfca8d951b9d2a21e55a4e362c15a34d7403f6ec32167886",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/train_bc_26d_noise_ring_bodyframe.py",
+      "sha256": "f4878ea27bd2f5cb70b42d2b279f2631d931009bde4c8ae6d3d57e750335097e",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/train_nav_bc_ring_r08.py",
+      "sha256": "b83b9ce3c55421dfb8cafc9892ab8bab4f87bf338be1f995c56370df720cc909",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/finetune_arm_bc_ring_r08.py",
+      "sha256": "21e7062605f074edd6a39920090a3526c55457ae7f50e334d0e02a5588943b09",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/finetune_arm_bc_ring_lowz_supplement.py",
+      "sha256": "516443cbe8951ed99912d4372788393752a1b8147c71c609c75a5dfc737e2988",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/arm_finetune_experiment.py",
+      "sha256": "595b12899789137a77c41b7e5099005be495eba2e4d6a192eb1982e61842c8df",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/arm_lowz_supplement_experiment.py",
+      "sha256": "fbbdfda150026cbba9d0d546213eb42e0cf6013a81042b21ca85fde71d3d32df",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/test_bc_26d_ring_bodyframe.py",
+      "sha256": "a84174ce7604dc02d82b62631efa3c81f7538f02bda5e30cff69fc9a556c29f4",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/batch_test_bc_26d_ring_bodyframe.py",
+      "sha256": "c513cfb683d8c7ffcb91eff5c6f4f924bbd98df4e9b5d650f8cab64fb1363cc1",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/test_bc_split_nav_arm.py",
+      "sha256": "03fb7cd80f261715b19db683b944dc9c29f4ebb80ad7979736fa0a830f8d34f2",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/batch_test_bc_split_nav_arm.py",
+      "sha256": "261640d3d21d5e60b3b5bd89d31279812362e6b3fc8fbd8f3d3651a670459a7c",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/test_bc_split_nav_arm_finetuned.py",
+      "sha256": "3ccee6eed1a3460df2900da9aae6f9882b89b8f973d1ee316d48f7543bb63e2f",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/batch_test_bc_split_nav_arm_finetuned.py",
+      "sha256": "86a15cdafdf2bfde2984b475def3ea3a2b4c74bfd3f0e761bf6763890aa5e7bf",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/test_bc_split_nav_arm_lowz_supplement.py",
+      "sha256": "1cd19797359d1cbeeede9a69a1b7a4bef040762b54cd1da32a2d1171b96c8cf2",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/batch_test_bc_split_nav_arm_lowz_supplement.py",
+      "sha256": "b27e5a4d2b8065ec57dbff281d40a42a86557e1410775914f3ac21e3918749a4",
+      "role": "unmodified_experiment_source"
+    },
+    {
+      "file": "LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/demo_robotnik_bc.py",
+      "sha256": "86ffdd3cdc3de5e8b56ade019180dccd9983f9f3ede6658bb0b8d4a24b489318",
+      "role": "unmodified_experiment_source"
+    }
+  ],
+  "sample_original_relative_path": "expert_data_23d_noise_ring/expert_episode_20261102_012009_226957.npz",
+  "sample_split": "train",
+  "sample_sha256": "48c902a0aa01bdfa2e11d0b9bac408d84c4d2aa04f5fde82e4356c8435618f3b",
+  "raw_dataset_in_git": false,
+  "model_weights_in_git": true,
+  "upstream_roboenv_commit": "7bb49439677c2ac111347b40e997025ce87bff50",
+  "upstream_simulation_and_control_commit": "df5850526affcc33b25b15d3096c4d21b614bacd"
+}

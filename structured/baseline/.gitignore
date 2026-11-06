@@ -1,0 +1,12 @@
+/external/
+/outputs/
+/RoboEnv/
+__pycache__/
+*.py[cod]
+.pixi/
+.venv/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example

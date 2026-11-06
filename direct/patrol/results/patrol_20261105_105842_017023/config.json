@@ -1,0 +1,39 @@
+{
+  "schema": "frozen_recovery120_continuous_patrol_v1",
+  "arm_run": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_recovery\\run_20261104_152933_829681",
+  "arm_epoch": 138,
+  "navigation_run": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_nav_ring_r08\\run_20261103_022339_570160",
+  "targets": [
+    [
+      0.4,
+      1.2,
+      1.0
+    ]
+  ],
+  "visit_order": "as_given_no_route_optimizer",
+  "sensor_noise_mode": "config",
+  "seed": 42,
+  "per_target_limit_s": 20.0,
+  "continue_after_timeout": false,
+  "required_hold_s": 1.0,
+  "reach_tolerance_m": 0.01,
+  "task_switch_source": "observed_FK_continuous_hold_only",
+  "success_scoring": "true_PyBullet_EE_continuous_hold",
+  "true_state_used_as_model_input": false,
+  "true_state_used_for_task_switch": false,
+  "robot_reset_between_targets": false,
+  "forced_parking": false,
+  "expert_arm_actions": false,
+  "route_optimality_claimed": false,
+  "training_performed": false,
+  "source_hashes": {
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_recovery\\run_20261104_152933_829681\\best_model.pt": "751fe1d4d9310ee79ccb36d9d78db820ae930dd8145146938b22b5295534d86d",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_nav_ring_r08\\run_20261103_022339_570160\\best_model.pt": "110e547e46b8bec3deb2b83b5142294be2f60562aabbbd8aecd843bb4ca07aba",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\configs\\robotnik_arm.json": "f7e00e19532bd3cc9b024f6d06fd34a6980d1a0773683fcde69cd04de38dbf22"
+  },
+  "script_sha256": "f63ad3f770da2c9308f6045c84a2a9d927cbd4a877f9f0bb6e7b4c97f414944e",
+  "task_state_sha256": "77042ac30ae3989c648f50f548078d1859a5056bd1c4ec8451714a95b26674a9",
+  "sensor_noise_enabled": [
+    true
+  ]
+}

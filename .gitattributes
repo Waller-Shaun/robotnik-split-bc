@@ -1,8 +1,5 @@
-*.py -text
-*.json -text
-*.csv -text
-*.md text eol=lf
+# Preserve frozen source/checkpoint/config bytes for manifest verification.
+* -text
 *.pt binary
 *.npz binary
-*.lock -text
-*.toml -text
+*.png binary

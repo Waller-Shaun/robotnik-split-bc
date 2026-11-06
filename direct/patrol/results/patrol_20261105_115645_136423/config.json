@@ -1,0 +1,53 @@
+{
+  "schema": "frozen_recovery120_continuous_patrol_v3",
+  "arm_run": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_recovery\\run_20261104_152933_829681",
+  "arm_epoch": 138,
+  "navigation_run": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_nav_ring_r08\\run_20261103_022339_570160",
+  "targets": [
+    [
+      0.0,
+      1.2,
+      1.0
+    ],
+    [
+      0.4,
+      1.2,
+      1.0
+    ],
+    [
+      0.8,
+      1.2,
+      1.0
+    ]
+  ],
+  "visit_order": "as_given_no_route_optimizer",
+  "sensor_noise_mode": "config",
+  "seed": 42,
+  "per_target_limit_s": 20.0,
+  "continue_after_timeout": false,
+  "required_hold_s": 1.0,
+  "reach_tolerance_m": 0.05,
+  "task_switch_source": "observed_FK_continuous_hold_only",
+  "success_scoring": "true_PyBullet_EE_continuous_hold",
+  "true_state_used_as_model_input": false,
+  "true_state_used_for_task_switch": false,
+  "robot_reset_between_targets": false,
+  "forced_parking": false,
+  "expert_arm_actions": false,
+  "route_optimality_claimed": false,
+  "training_performed": false,
+  "source_hashes": {
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_recovery\\run_20261104_152933_829681\\best_model.pt": "751fe1d4d9310ee79ccb36d9d78db820ae930dd8145146938b22b5295534d86d",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_nav_ring_r08\\run_20261103_022339_570160\\best_model.pt": "110e547e46b8bec3deb2b83b5142294be2f60562aabbbd8aecd843bb4ca07aba",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\configs\\robotnik_arm.json": "f7e00e19532bd3cc9b024f6d06fd34a6980d1a0773683fcde69cd04de38dbf22"
+  },
+  "script_sha256": "286c7cc340c9f30f64d4e74a04fd2eb6c484de23ab9a258671e29199eaec7cf6",
+  "task_state_sha256": "37001d95569fca40add06b77945fbbb176f1b21e8d2205ff94f18442f07f90a3",
+  "parking_geometry_version": "target_minus_observed_stage_start_base_xy_v1",
+  "parking_geometry_source": "first_observed_base_pose_of_each_stage",
+  "parking_goal_fixed_within_stage": true,
+  "parking_geometry_sha256": "9df5d91a344b9d269668bd4dca708d98599c970798149f981356ee41d2c6dbd5",
+  "sensor_noise_enabled": [
+    true
+  ]
+}

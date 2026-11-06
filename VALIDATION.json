@@ -1,0 +1,32 @@
+{
+  "variant": "assignment_upload_code_and_main_models",
+  "created_utc": "2026-11-06T00:59:18.627162+00:00",
+  "status": "passed",
+  "original_included_source_files": 1484,
+  "all_source_hashes_equal": true,
+  "omitted_optional_files": 163,
+  "omitted_optional_bytes": 90217110,
+  "python_syntax_parsed": 275,
+  "json_parsed_before_final_metadata": 803,
+  "checks": [
+    {
+      "name": "dynamic_integrity",
+      "status": "passed"
+    },
+    {
+      "name": "recorded_counts",
+      "status": "passed"
+    },
+    {
+      "name": "dispatch",
+      "status": "passed"
+    }
+  ],
+  "full_archive_check": "Passed in the complete backup; not claimed for this reduced archive",
+  "main_patrol_sources_and_models": "Byte-identical to complete backup that passed33 offline tests and bitwise model parity",
+  "training_executed": false,
+  "simulation_executed": false,
+  "dependencies_installed": false,
+  "network_accessed": false,
+  "fresh_machine_runtime_and_physical_rollouts_verified": false
+}

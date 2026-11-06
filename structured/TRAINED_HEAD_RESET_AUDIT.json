@@ -1,0 +1,23 @@
+{
+  "trained_head_reset_first_action_bit_identical": true,
+  "weights_unchanged": true,
+  "no_gradients_created": true,
+  "finite_actions": true,
+  "gain_std_after_synthetic_history": [
+    0.0856605715666561,
+    0.08682596017747614,
+    0.1890306821289229,
+    0.08902753691745609,
+    1.4434434099212972,
+    0.47550737137727955,
+    0.03048732202458826,
+    0.5642251570317277,
+    0.02935342764311664,
+    0.47651062963433155,
+    0.5535283813560247,
+    0.773481611901708,
+    0.11385607848104821,
+    0.016023865064862298
+  ],
+  "purpose": "Synthetic trained-head reset smoke check, not task success evaluation"
+}

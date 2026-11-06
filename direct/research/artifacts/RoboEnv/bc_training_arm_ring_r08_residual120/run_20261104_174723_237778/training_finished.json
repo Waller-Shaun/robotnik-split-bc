@@ -1,0 +1,12 @@
+{
+  "best_epoch": 43,
+  "last_epoch": 58,
+  "best_balanced_validation_arm_mse": 0.013018610573083116,
+  "baseline_balanced_validation_arm_mse": 0.0130293772056303,
+  "best_minus_baseline_mse": -1.076663254718363e-05,
+  "base_parameters_unchanged": true,
+  "navigation_unchanged": true,
+  "smoke_only": false,
+  "resumed": false,
+  "resume_from_epoch": 0
+}

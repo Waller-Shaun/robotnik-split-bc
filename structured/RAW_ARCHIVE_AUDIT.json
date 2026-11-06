@@ -1,0 +1,24 @@
+{
+  "passes": true,
+  "completed_trial_records": 3000,
+  "raw_archives_checked": 3000,
+  "process_errors_retained": 0,
+  "forward_kinematics_samples": 9000,
+  "maximum_true_fk_disagreement_m": 0.0,
+  "full_rate_action_clipping_verified": true,
+  "full_rate_true_error_and_success_verified": true,
+  "timestamps_and_noise_metadata_verified": true,
+  "runtime": {
+    "fixed": {
+      "action_steps": 13295362,
+      "mean_per_control_step_inference_ms": 0.583792635762418,
+      "mean_of_trial_mean_inference_ms": 0.5833945252438548
+    },
+    "dynamic": {
+      "action_steps": 13321138,
+      "mean_per_control_step_inference_ms": 0.6227265149483538,
+      "mean_of_trial_mean_inference_ms": 0.6222862324652358
+    }
+  },
+  "timing_scope": "CPU inference under concurrent benchmark load, not an isolated latency guarantee"
+}

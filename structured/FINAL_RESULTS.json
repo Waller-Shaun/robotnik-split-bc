@@ -1,0 +1,215 @@
+{
+  "created_utc": "2026-11-05T20:01:31.117678+00:00",
+  "final_test_complete": true,
+  "raw_trajectory_audit_passed": true,
+  "original_baseline_and_submission_unchanged": true,
+  "candidate_frozen_before_test": true,
+  "metrics": {
+    "fixed": {
+      "successes": 1495,
+      "episodes": 1500,
+      "distinct_targets": 500,
+      "success_rate_percent": 99.66666666666667,
+      "target_cluster_stratified_bootstrap_95_percent": [
+        99.33333333333333,
+        99.93333333333332
+      ],
+      "success_by_repeat": [
+        499,
+        499,
+        497
+      ],
+      "all_three_success_targets": 495,
+      "process_errors": 0,
+      "navigation_incomplete_failures": 5,
+      "mean_success_time_s": 8.826329096989967,
+      "mean_clipped_fraction": 0.11194718656643295,
+      "failures": [
+        {
+          "target_index": 96,
+          "repeat_index": 1,
+          "status": "episode_failure",
+          "min_error_m": 0.17304368740121945,
+          "final_error_m": 2.4237713430308694,
+          "phase_switch_time_s": null
+        },
+        {
+          "target_index": 110,
+          "repeat_index": 2,
+          "status": "episode_failure",
+          "min_error_m": 0.22098177904027624,
+          "final_error_m": 2.418410624639579,
+          "phase_switch_time_s": null
+        },
+        {
+          "target_index": 213,
+          "repeat_index": 2,
+          "status": "episode_failure",
+          "min_error_m": 0.5091430814510828,
+          "final_error_m": 2.5638370743068988,
+          "phase_switch_time_s": null
+        },
+        {
+          "target_index": 281,
+          "repeat_index": 0,
+          "status": "episode_failure",
+          "min_error_m": 0.3648431050895059,
+          "final_error_m": 2.3513722832492037,
+          "phase_switch_time_s": null
+        },
+        {
+          "target_index": 464,
+          "repeat_index": 2,
+          "status": "episode_failure",
+          "min_error_m": 0.16301074067987714,
+          "final_error_m": 2.4820093654371247,
+          "phase_switch_time_s": null
+        }
+      ]
+    },
+    "dynamic": {
+      "successes": 1492,
+      "episodes": 1500,
+      "distinct_targets": 500,
+      "success_rate_percent": 99.46666666666667,
+      "target_cluster_stratified_bootstrap_95_percent": [
+        98.86666666666666,
+        99.93333333333332
+      ],
+      "success_by_repeat": [
+        497,
+        497,
+        498
+      ],
+      "all_three_success_targets": 495,
+      "process_errors": 0,
+      "navigation_incomplete_failures": 5,
+      "mean_success_time_s": 8.821138069705093,
+      "mean_clipped_fraction": 0.11214168417702604,
+      "failures": [
+        {
+          "target_index": 96,
+          "repeat_index": 1,
+          "status": "episode_failure",
+          "min_error_m": 0.17305176838864805,
+          "final_error_m": 2.423749752087702,
+          "phase_switch_time_s": null
+        },
+        {
+          "target_index": 96,
+          "repeat_index": 2,
+          "status": "episode_failure",
+          "min_error_m": 0.17562559369734967,
+          "final_error_m": 2.4311205268890284,
+          "phase_switch_time_s": null
+        },
+        {
+          "target_index": 134,
+          "repeat_index": 1,
+          "status": "episode_failure",
+          "min_error_m": 0.228225070373615,
+          "final_error_m": 2.464968019382068,
+          "phase_switch_time_s": null
+        },
+        {
+          "target_index": 281,
+          "repeat_index": 0,
+          "status": "episode_failure",
+          "min_error_m": 0.3652079537107019,
+          "final_error_m": 2.3494423191565588,
+          "phase_switch_time_s": null
+        },
+        {
+          "target_index": 326,
+          "repeat_index": 0,
+          "status": "episode_failure",
+          "min_error_m": 0.4556002462751271,
+          "final_error_m": 2.446111788718021,
+          "phase_switch_time_s": null
+        },
+        {
+          "target_index": 435,
+          "repeat_index": 0,
+          "status": "episode_failure",
+          "min_error_m": 0.010491271845883688,
+          "final_error_m": 0.015480624150756616,
+          "phase_switch_time_s": 7.571
+        },
+        {
+          "target_index": 435,
+          "repeat_index": 1,
+          "status": "episode_failure",
+          "min_error_m": 0.010464760166256989,
+          "final_error_m": 0.01314858578587855,
+          "phase_switch_time_s": 7.569
+        },
+        {
+          "target_index": 435,
+          "repeat_index": 2,
+          "status": "episode_failure",
+          "min_error_m": 0.011275598244887487,
+          "final_error_m": 0.01546616035466057,
+          "phase_switch_time_s": 7.577
+        }
+      ]
+    }
+  },
+  "paired_difference_percentage_points": -0.2,
+  "paired_target_cluster_95_percent": [
+    -0.8,
+    0.26666666666666666
+  ],
+  "paired_improvements": 3,
+  "paired_regressions": 6,
+  "gain_min": [
+    97.04861633282864,
+    92.06713180387435,
+    95.8172847416587,
+    96.69046508168057,
+    97.12738503965566,
+    96.4299055743596,
+    99.56623969909876,
+    24.189737566948935,
+    26.88997026194469,
+    24.118770328663523,
+    24.212328878854965,
+    24.000847183359173,
+    25.609668724749007,
+    29.88546952659194
+  ],
+  "gain_max": [
+    105.4149131320394,
+    103.05857749750571,
+    115.99484113760454,
+    104.84177293395608,
+    119.14639658458212,
+    113.1320035648885,
+    100.5203514347585,
+    30.810440203803896,
+    30.833889410080282,
+    30.80983545606485,
+    30.969715506819387,
+    30.650648999421705,
+    30.39634300374013,
+    30.226196835218484
+  ],
+  "mean_within_episode_gain_std": [
+    0.21427386808378426,
+    0.5275038953644042,
+    0.47271283241205464,
+    0.4393518329654048,
+    0.6480451831044811,
+    0.4949902530865144,
+    0.023267662944071694,
+    0.23625662083324436,
+    0.24313534406096404,
+    0.22737004850663414,
+    0.320896013087311,
+    0.29183495007358584,
+    0.19880417617442747,
+    0.01320768333982326
+  ],
+  "is_structured_hybrid_not_unrestricted_torque_TCN": true,
+  "instructor_acceptance_not_confirmed": true,
+  "old_99p07_not_new_model_score": true
+}

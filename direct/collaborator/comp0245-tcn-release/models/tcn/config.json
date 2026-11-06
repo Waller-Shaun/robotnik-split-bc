@@ -1,0 +1,55 @@
+{
+  "schema_version": 3,
+  "model_type": "tcn",
+  "feature_version": "sin_cos_q_velocity_local_goal_phase_error_base_gravity_v1",
+  "seed": 42,
+  "raw_dt_s": 0.001,
+  "window_size": 20,
+  "stride": 10,
+  "effective_context_samples": 20,
+  "mode": "full",
+  "trained_from_scratch": true,
+  "architecture": "learned gain field and gravity; reference integrator plus fixed PD tracking",
+  "is_hybrid_controller": true,
+  "expert_ik_during_inference": false,
+  "expert_gravity_during_inference": false,
+  "kp": 100.0,
+  "kd": 30.0,
+  "max_lead": 0.15,
+  "max_joint_velocity": 1.0,
+  "torque_limit": 30.0,
+  "source_manifest_sha256": "0a4a7553e7044d6fe2d228be5f28fddf06ad48163b727ffffa36712d69e802b2",
+  "nav_run": "/Users/mac/Desktop/comp0245(2)/robotnik-split-bc-main/artifacts/RoboEnv/bc_training_nav_ring_r08/run_20261103_022339_570160",
+  "frozen_nav_file_sha256": {
+    "best_model.pt": "2659ce24ff5264938833045c6d7114da1c3044a068f82704efc80f826b845281",
+    "config.json": "e54e0a3146f2c8503e3dc41edb4cf222a5d20cdd9b8d1deecc274a6131a22493",
+    "normalization.npz": "f5c3c274e4f60afa1c2d7f7fc7e9cd18279a7a844a3c46a8a35ea6ff1350b5c4",
+    "data_split.json": "7fa0879ce2f71b0ed38b1345a561a4e3006394a4a08e35aa1bc9cd928375d4b1"
+  },
+  "source_sha256": {
+    "train_structured_arm.py": "5dc25452621032c67fdbeaea84a5c9fa3b03ebcb955ed56afde72bf61703c6d8",
+    "structured_arm.py": "26d81d70e499ce843304cad07175bb77d80a47f5407e7e56a071825dec972fc4",
+    "robotnik_bodyframe_features.py": "c8abd9315afe1b615600a3f089f56487fd41586786338287e63c426d0d3d3478"
+  },
+  "parameters": 114204,
+  "auxiliary_labels": [
+    "qd_des_arm",
+    "unsaturated gravity reconstructed from q_des_arm and actions"
+  ],
+  "inference_internal_state": "self integrated learned velocity, never recorded expert q_des",
+  "sampling": "low z<=0.5 / other 50:50; 3x focus for reaching error below 10cm",
+  "selection_metric": "validation auxiliary loss; closed-loop assessment separate",
+  "max_epochs": 30,
+  "batch_size": 1024,
+  "learning_rate": 0.0003,
+  "samples_per_epoch": 200000,
+  "normalization_policy": "robust",
+  "normalization_std_floors": {
+    "sin_cos_q": 0.1,
+    "joint_velocity": 0.1,
+    "unit_gravity_direction": 0.05
+  },
+  "test_evaluated": false,
+  "device": "mps",
+  "torch_version": "2.15.0"
+}

@@ -1,0 +1,17 @@
+{
+  "state": "completed",
+  "selected_targets": 931,
+  "processed_targets": 931,
+  "saved_episodes": 931,
+  "held_successes": 927,
+  "reached_once_count": 930,
+  "total_layout_targets": 931,
+  "skipped_existing_targets": 0,
+  "episode_failures": 4,
+  "process_errors": 0,
+  "missing_targets_before_run": 931,
+  "missing_after_saved_episodes": 0,
+  "data_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_data_23d_noise_ring",
+  "log_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_collection_logs\\ring_20261102_011739_685582",
+  "partial_run": false
+}

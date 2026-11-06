@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "mode": "full",
+  "seed": 42,
+  "trained_parameters": 4590,
+  "initialized_p": 100.0,
+  "initialized_d": 30.0,
+  "p_bounds": [
+    80.0,
+    120.0
+  ],
+  "d_bounds": [
+    24.0,
+    36.0
+  ],
+  "maximum_epochs": 20,
+  "batch_size": 4096,
+  "samples_per_epoch": 200000,
+  "torque_supervision": "recorded expert actions; no fabricated variable gain labels",
+  "offline_qref": "recorded expert q_des_arm for offline action loss only",
+  "online_qref": "policy integrated velocity, never recorded reference",
+  "motion_and_navigation_frozen": true,
+  "normalization_fit_on": "train only",
+  "final_test_used": false,
+  "device": "mps",
+  "regularization": {
+    "deviation": 0.02,
+    "temporal": 0.02
+  },
+  "gain_filter_time_constant_s": 0.01,
+  "source_sha256": {
+    "dynamic_pd/train.py": "12ded6f616c52ae6c9c257706912c08d82eaf9d1cac03c50d9e0c431f020a6da",
+    "dynamic_pd/model.py": "bc7771ada0b73872891c77e1817b15a9e31c9d34e26e97193b145a162353860c",
+    "dynamic_pd/dataset.py": "4f3c99efdfd37d7fe4a41a7a86dab98015ff0ea6387a0c5ac933c3b89b4829b5",
+    "dynamic_pd/controller.py": "d4e17d7e9b01e53bdc86f0d645ae18ed330b4a717f9e753bb517f1c37f230b3b"
+  }
+}

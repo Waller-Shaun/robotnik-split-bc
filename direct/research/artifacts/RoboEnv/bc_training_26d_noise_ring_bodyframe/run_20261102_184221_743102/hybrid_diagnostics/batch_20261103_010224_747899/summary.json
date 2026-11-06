@@ -1,0 +1,29 @@
+{
+  "state": "completed",
+  "diagnostic_only": true,
+  "selected_targets": 10,
+  "planned_episodes": 20,
+  "processed_episodes": 20,
+  "process_errors": 0,
+  "by_mode": {
+    "expert_base_model_arm": {
+      "planned_episodes": 10,
+      "processed_episodes": 10,
+      "successes": 7,
+      "process_errors": 0,
+      "diagnostic_success_percent_of_planned": 70.0
+    },
+    "model_base_expert_arm": {
+      "planned_episodes": 10,
+      "processed_episodes": 10,
+      "successes": 6,
+      "process_errors": 0,
+      "diagnostic_success_percent_of_planned": 60.0
+    }
+  },
+  "baseline_conditions_match": true,
+  "baseline_model_successes_on_selected_targets": 0,
+  "baseline_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring_bodyframe\\run_20261102_184221_743102\\batch_tests\\val_20261102_230205_714031",
+  "interpretation_note": "Selected failure-case interventions only; never report as pure-model/generalization success rate.",
+  "output_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring_bodyframe\\run_20261102_184221_743102\\hybrid_diagnostics\\batch_20261103_010224_747899"
+}

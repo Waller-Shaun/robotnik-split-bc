@@ -1,0 +1,22 @@
+{
+  "stage": "final",
+  "state": "completed",
+  "planned": 3000,
+  "processed": 3000,
+  "process_errors": 0,
+  "wall_s": 4776.257110250066,
+  "variants": {
+    "fixed": {
+      "successes": 1495,
+      "processed": 1500,
+      "planned": 1500,
+      "success_rate_percent": 99.66666666666667
+    },
+    "dynamic": {
+      "successes": 1492,
+      "processed": 1500,
+      "planned": 1500,
+      "success_rate_percent": 99.46666666666667
+    }
+  }
+}

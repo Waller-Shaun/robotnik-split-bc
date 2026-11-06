@@ -1,0 +1,14 @@
+{
+  "state": "completed",
+  "selected_targets": 546,
+  "processed_targets": 546,
+  "saved_episodes": 546,
+  "held_successes": 546,
+  "episode_failures": 0,
+  "process_errors": 0,
+  "missing_targets_before_run": 546,
+  "missing_after_saved_episodes": 0,
+  "data_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_data_23d_noise",
+  "log_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_collection_logs\\extend_z_20261031_115340_941606",
+  "partial_run": false
+}

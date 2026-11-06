@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "best_epoch": 0,
+  "best_balanced_validation_arm_mse": 0.013394218382142522,
+  "epochs_completed": 6,
+  "checkpoint_reload_passed": true,
+  "test_evaluated": false,
+  "subset_only": false,
+  "initial_balanced_arm_mse": 0.013394218382142522,
+  "navigation_unchanged": true
+}

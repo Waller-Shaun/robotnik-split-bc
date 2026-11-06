@@ -1,0 +1,17 @@
+{
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passes": true,
+  "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:04:32) [Clang 20.1.8 ]",
+  "torch": "2.11.0",
+  "numpy": "2.5.3",
+  "source_sha256": {
+    "dynamic_pd/test_dynamic_pd.py": "062f88f4b02d6c925198b9660609096707e831c027858e0ec49d1b5849dd5df8",
+    "baseline/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/tcn/test_fast_gui_demo.py": "3a1db8d74c44df4853418eec8c38f21cb64b60de56636f66e44398c055f797b7",
+    "tools/test_retrain_gain.py": "48b60560220d87a99cf7e380801169e49a82602057694aa9a51ac6af60e24162",
+    "tools/retrain_gain.py": "908f456944f22c6746af73609b362e435a8a4e434b46af908950f4bd73dc31bb"
+  },
+  "note": "Synthetic/adapter/cache-RNG tests; not a closed-loop success-rate measurement"
+}

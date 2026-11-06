@@ -1,0 +1,28 @@
+{
+  "independent_new_pixi_environment": true,
+  "simulator_module": "/Users/mac/Desktop/comp0245(2)/comp0245-dynamic-pd-experiment/baseline/external/RoboEnv/simulation_and_control/simulation_and_control/__init__.py",
+  "demo_target": [
+    -0.9,
+    1.2,
+    1.1
+  ],
+  "seed": 137,
+  "success": true,
+  "simulation_end_time_s": 9.582,
+  "arrays_bit_identical_to_original_runtime": [
+    "target",
+    "timestamps",
+    "ee_positions",
+    "estimated_ee_positions",
+    "ground_truth_states",
+    "ee_errors",
+    "observations",
+    "actions",
+    "raw_actions",
+    "action_timestamps",
+    "success",
+    "termination_reason"
+  ],
+  "gain_tests_passed": 4,
+  "integrity_file_hash_checks": 134
+}

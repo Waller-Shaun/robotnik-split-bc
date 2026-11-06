@@ -1,0 +1,19 @@
+{
+  "planned_targets": 70,
+  "processed_targets": 70,
+  "successes": 52,
+  "unsuccessful_completed_episodes": 18,
+  "process_errors": 0,
+  "unprocessed_targets": 0,
+  "success_rate_percent": 74.28571428571429,
+  "mean_final_error_m_finite_results": 0.05038006617407761,
+  "median_final_error_m_finite_results": 0.009997926807489815,
+  "finite_error_results": 70,
+  "mean_success_time_s": 7.992384615384615,
+  "all_planned_targets_processed": true,
+  "state": "completed",
+  "split": "val",
+  "partial_subset": false,
+  "available_split_targets": 70,
+  "output_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_23d_noise_resample\\run_20261029_170007_131617\\batch_tests\\val_20261029_183200_912219"
+}

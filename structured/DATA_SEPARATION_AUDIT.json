@@ -1,0 +1,14 @@
+{
+  "old_unique_targets": 1131,
+  "final_distinct_targets": 500,
+  "minimum_xy_distance_from_any_old_target_m": 0.020935571355948274,
+  "development_final_overlap": 0,
+  "train_trajectories": 698,
+  "validation_trajectories": 144,
+  "final_trajectories_used_for_training": 0,
+  "training_manifest_sha256": "82bcc25578622cbcee1fcc2e50d5f034d360ca1871550f93d2c9924899b2b6bf",
+  "passes": true,
+  "claim": "Novel goals within the same task distribution, not arbitrary out-of-domain generalization",
+  "final_noise_seeds_unique": 1500,
+  "noise_seed_overlap_with_old_development_primary": 0
+}

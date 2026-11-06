@@ -1,0 +1,208 @@
+{
+  "diagnostic_only": true,
+  "target_owner": "train",
+  "pure_model_success_rate": null,
+  "cases": [
+    {
+      "train_index": 75,
+      "target": [
+        -1.931852,
+        -0.517638,
+        0.2
+      ],
+      "seed": 30117
+    },
+    {
+      "train_index": 157,
+      "target": [
+        -1.931852,
+        -0.517638,
+        0.35
+      ],
+      "seed": 30199
+    },
+    {
+      "train_index": 678,
+      "target": [
+        -1.758292,
+        -0.230184,
+        0.204093
+      ],
+      "seed": 30720
+    },
+    {
+      "train_index": 68,
+      "target": [
+        1.931852,
+        -0.517638,
+        0.2
+      ],
+      "seed": 30110
+    },
+    {
+      "train_index": 125,
+      "target": [
+        1.503508,
+        -0.547232,
+        0.35
+      ],
+      "seed": 30167
+    },
+    {
+      "train_index": 647,
+      "target": [
+        1.217403,
+        1.053087,
+        0.294732
+      ],
+      "seed": 30689
+    },
+    {
+      "train_index": 73,
+      "target": [
+        -1.414214,
+        1.414214,
+        0.2
+      ],
+      "seed": 30115
+    },
+    {
+      "train_index": 95,
+      "target": [
+        -0.5,
+        0.866025,
+        0.35
+      ],
+      "seed": 30137
+    },
+    {
+      "train_index": 636,
+      "target": [
+        -0.345315,
+        -1.289827,
+        0.412168
+      ],
+      "seed": 30678
+    },
+    {
+      "train_index": 48,
+      "target": [
+        -0.277837,
+        -1.575692,
+        0.2
+      ],
+      "seed": 30090
+    },
+    {
+      "train_index": 117,
+      "target": [
+        -0.277837,
+        -1.575692,
+        0.35
+      ],
+      "seed": 30159
+    },
+    {
+      "train_index": 625,
+      "target": [
+        -0.561262,
+        1.356314,
+        0.467865
+      ],
+      "seed": 30667
+    },
+    {
+      "train_index": 2,
+      "target": [
+        0.647214,
+        0.470228,
+        0.2
+      ],
+      "seed": 30044
+    },
+    {
+      "train_index": 148,
+      "target": [
+        1.414214,
+        1.414214,
+        0.35
+      ],
+      "seed": 30190
+    },
+    {
+      "train_index": 666,
+      "target": [
+        1.726361,
+        -0.246888,
+        0.23506
+      ],
+      "seed": 30708
+    },
+    {
+      "train_index": 76,
+      "target": [
+        1.414214,
+        -1.414214,
+        0.2
+      ],
+      "seed": 30118
+    },
+    {
+      "train_index": 136,
+      "target": [
+        1.058013,
+        -1.456231,
+        0.35
+      ],
+      "seed": 30178
+    },
+    {
+      "train_index": 627,
+      "target": [
+        -1.269338,
+        -0.757747,
+        0.316542
+      ],
+      "seed": 30669
+    },
+    {
+      "train_index": 21,
+      "target": [
+        -0.267025,
+        1.169913,
+        0.2
+      ],
+      "seed": 30063
+    },
+    {
+      "train_index": 151,
+      "target": [
+        0.0,
+        2.0,
+        0.35
+      ],
+      "seed": 30193
+    }
+  ],
+  "arm_run": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2_control\\run_20261104_025706_206181",
+  "workers": 4,
+  "sensor_noise": "config",
+  "policy_seconds": 20.0,
+  "recovery_seconds": 10.0,
+  "hold_seconds": 1.0,
+  "min_switch_time": 8.0,
+  "switch_at": null,
+  "available_memory_gib": 5.546092987060547,
+  "cpu_busy_fraction": 0.04487179487179482,
+  "training_data_generated": false,
+  "expert_takeover_is_not_pure_model_success": true,
+  "source_sha256": {
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2_control\\run_20261104_025706_206181\\best_model.pt": "f3374c43fa37d65df682ced14885181e0b2654bfd1ca28f1acb51155b8ff7168",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2_control\\run_20261104_025706_206181\\normalization.npz": "9feb9d07c1eb962e705629a35995716160ed6a72f1e7dfbd8a4bf3bd113557bf",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2_control\\run_20261104_025706_206181\\config.json": "dcc5c3fe362ff9d36384bfb053d28fb32bd47f087b8e622f0b37c1eac85eb752",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_arm_ring_r08_aux_b2_control\\run_20261104_025706_206181\\data_split.json": "55f068dc2126e21661156236d992e68ef7f960b16493308701137f0a0c6c557f",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\configs\\robotnik_arm.json": "f7e00e19532bd3cc9b024f6d06fd34a6980d1a0773683fcde69cd04de38dbf22",
+    "F:\\UCL\\COMP0245 Labs\\LAB_SESSION_COMP_0245_2026_PUBLIC\\final\\robotnik_arm_task\\diagnose_arm_recovery.py": "b870bb371b05c439c615151bf8c544199b085a49f010717153d7e46f8de11796",
+    "F:\\UCL\\COMP0245 Labs\\LAB_SESSION_COMP_0245_2026_PUBLIC\\final\\robotnik_arm_task\\robotnik_arm_control.py": "f863b91c882f8570c082d4bcbd7879ac7d9d8805a4488be218b15d49d2214dcf"
+  }
+}

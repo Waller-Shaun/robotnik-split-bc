@@ -1,0 +1,430 @@
+{
+  "run_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring\\run_20261102_032833_505981",
+  "split": "train",
+  "evaluation_purpose": "diagnostic_closed_loop_on_seen_training_targets_not_generalization",
+  "selection_method": "one_per_height_and_radius_band_fixed_rng_seed",
+  "radius_bands_m": [
+    [
+      0.0,
+      0.8
+    ],
+    [
+      0.8,
+      1.4
+    ],
+    [
+      1.4,
+      null
+    ]
+  ],
+  "input_dim": 26,
+  "source_input_dim": 23,
+  "input_feature_version": "obs23_plus_target_minus_ee_xyz_v1",
+  "available_split_targets": 651,
+  "selected_targets": 21,
+  "partial_subset": true,
+  "duration_limit_seconds": 20.0,
+  "sensor_noise_mode": "off",
+  "reach_tolerance_m": 0.01,
+  "min_success_time_seconds": 0.0,
+  "required_hold_seconds": 0.0,
+  "success_definition": "first observed EE distance < 0.01 m at any time within horizon; no minimum time or hold",
+  "phase_source": "expert_navigation_rules_commands_discarded",
+  "forced_parking": false,
+  "action_limits": [
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0
+  ],
+  "base_seed": 42,
+  "target_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62
+  ],
+  "targets": [
+    [
+      0.0,
+      -0.2,
+      0.2
+    ],
+    [
+      0.267025,
+      1.169913,
+      0.2
+    ],
+    [
+      0.0,
+      -1.8,
+      0.2
+    ],
+    [
+      -0.2,
+      -0.34641,
+      0.35
+    ],
+    [
+      0.0,
+      -1.0,
+      0.35
+    ],
+    [
+      2.0,
+      0.0,
+      0.35
+    ],
+    [
+      -0.2,
+      0.0,
+      0.5
+    ],
+    [
+      1.2,
+      0.0,
+      0.5
+    ],
+    [
+      0.277837,
+      1.575692,
+      0.5
+    ],
+    [
+      0.0,
+      0.2,
+      0.75
+    ],
+    [
+      0.5,
+      -0.866025,
+      0.75
+    ],
+    [
+      -1.931852,
+      -0.517638,
+      0.75
+    ],
+    [
+      0.424264,
+      -0.424264,
+      1.0
+    ],
+    [
+      1.081163,
+      0.52066,
+      1.0
+    ],
+    [
+      1.414214,
+      1.414214,
+      1.0
+    ],
+    [
+      -0.424264,
+      0.424264,
+      1.15
+    ],
+    [
+      0.0,
+      -1.0,
+      1.15
+    ],
+    [
+      -1.4,
+      0.0,
+      1.15
+    ],
+    [
+      -0.424264,
+      0.424264,
+      1.3
+    ],
+    [
+      1.0,
+      0.0,
+      1.3
+    ],
+    [
+      1.058013,
+      -1.456231,
+      1.3
+    ]
+  ],
+  "file_sha256": {
+    "F:\\UCL\\COMP0245 Labs\\LAB_SESSION_COMP_0245_2026_PUBLIC\\final\\robotnik_arm_task\\batch_test_bc_26d_ring_train_probe.py": "81b527008da779ddcc2f9961b691d92d821c66706ead3801836e71efbcb5da1a",
+    "F:\\UCL\\COMP0245 Labs\\LAB_SESSION_COMP_0245_2026_PUBLIC\\final\\robotnik_arm_task\\test_bc_26d.py": "2b79f7ef657ce4a8c49c7ab1ecddb1110786579f9eccad31add4f93864ae60a0",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring\\run_20261102_032833_505981\\best_model.pt": "9b96356bf2e2c239e267631f69c5e20dccab4dd8540d4c1a6b14e020b11643e4",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring\\run_20261102_032833_505981\\normalization.npz": "d8e453529530db87c4b6194982af22726fb1397e6b9ae0a9cce11cdecd2ecc97",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring\\run_20261102_032833_505981\\data_split.json": "08d865a10e8a5268e5caf7467cc1c4ea8d0972274befc2c5a0d4138ccf997430",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring\\run_20261102_032833_505981\\config.json": "75885d65646de47751d7b27eb6a7557c19ec951dcab0427187aec18097962570",
+    "F:\\UCL\\COMP0245 Labs\\RoboEnv\\configs\\robotnik_arm.json": "c6c461e5ccfec6913e77a1c6366a201c881f07e75b57162fc3fdf53954b9a2c3"
+  },
+  "robot_config_snapshot": {
+    "sim": {
+      "time_step": 0.001,
+      "experiment_duration": 5,
+      "FL": [
+        [
+          "FL_foot",
+          "FL_foot_fixed"
+        ]
+      ],
+      "FR": [
+        [
+          "FR_foot",
+          "FR_foot_fixed"
+        ]
+      ],
+      "RL": [
+        [
+          "RL_foot",
+          "RL_foot_fixed"
+        ]
+      ],
+      "RR": [
+        [
+          "RR_foot",
+          "RR_foot_fixed"
+        ]
+      ],
+      "feet_contact_names": [
+        [
+          "FR_foot",
+          "FL_foot",
+          "RL_foot",
+          "RR_foot"
+        ]
+      ]
+    },
+    "robot_pybullet": {
+      "base_type": [
+        "floating"
+      ],
+      "collision_enable": [
+        0
+      ],
+      "robot_description_model": [
+        ""
+      ],
+      "urdf_path": [
+        "summit_xl_arm_description/summit_xl_complete.urdf"
+      ],
+      "ros_urdf_path": "",
+      "init_link_base_position": [
+        [
+          0,
+          0,
+          0.0
+        ]
+      ],
+      "init_link_base_vel": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "init_link_base_orientation": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "init_link_base_ang_vel": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "init_motor_angles": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.57,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ],
+      "init_motor_vel": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "motor_offset": [
+        []
+      ],
+      "motor_direction": [
+        []
+      ],
+      "motor_damping": [
+        0
+      ],
+      "motor_damping_coeff": [
+        0
+      ],
+      "motor_elastic_torque": [
+        0
+      ],
+      "motor_elastic_coeff": [
+        0
+      ],
+      "motor_inertia": [
+        0
+      ],
+      "motor_inertia_coeff": [
+        0
+      ],
+      "foot_friction": [
+        2
+      ],
+      "foot_restitution": [
+        0
+      ],
+      "enable_feet_joint_force_sensors": [
+        [
+          "RL_foot_fixed",
+          "RR_foot_fixed",
+          "FL_foot_fixed",
+          "FR_foot_fixed"
+        ]
+      ],
+      "floating_base_name": [
+        "floating_base"
+      ],
+      "servo_pos_gains": [
+        400
+      ],
+      "servo_vel_gains": [
+        3
+      ],
+      "delay_measure_flag": [
+        0
+      ],
+      "delay_measure_steps": [
+        3
+      ],
+      "noise_flag": [
+        0
+      ],
+      "robot_noise": [
+        {
+          "joint_cov": 0.0001,
+          "joint_vel_cov": 0.0001,
+          "joint_acc_cov": 0.0001,
+          "base_pos_cov": 0.0001,
+          "base_ori_cov": 0.0001,
+          "base_lin_vel_cov": 0.0001,
+          "base_ang_vel_cov": 0.0001,
+          "joint_torque_cov": 0.0001
+        }
+      ]
+    },
+    "env_pybullet": {
+      "env_script_name": ""
+    },
+    "robot_pin": {
+      "base_type": [
+        "floating"
+      ],
+      "robot_description_model": [
+        ""
+      ],
+      "urdf_path": [
+        "summit_xl_arm_description/summit_xl_complete_pin.urdf"
+      ],
+      "ros_urdf_path": [
+        ""
+      ],
+      "floating_base_name": [
+        "robot_base_footprint"
+      ],
+      "joint_state_conversion_active": [
+        1
+      ],
+      "control_groups": [
+        {
+          "wheels_joints": [
+            "robot_front_right_wheel_joint",
+            "robot_front_left_wheel_joint",
+            "robot_back_left_wheel_joint",
+            "robot_back_right_wheel_joint"
+          ],
+          "arms_joints": [
+            "robot_j2s7s300_joint_1",
+            "robot_j2s7s300_joint_2",
+            "robot_j2s7s300_joint_3",
+            "robot_j2s7s300_joint_4",
+            "robot_j2s7s300_joint_5",
+            "robot_j2s7s300_joint_6",
+            "robot_j2s7s300_joint_7"
+          ],
+          "hand_joints": [
+            "robot_j2s7s300_joint_finger_1",
+            "robot_j2s7s300_joint_finger_tip_1",
+            "robot_j2s7s300_joint_finger_2",
+            "robot_j2s7s300_joint_finger_tip_2",
+            "robot_j2s7s300_joint_finger_3",
+            "robot_j2s7s300_joint_finger_tip_3"
+          ]
+        }
+      ]
+    }
+  },
+  "noise_override_note": "off disables measurement noise in memory; snapshot itself is not modified"
+}

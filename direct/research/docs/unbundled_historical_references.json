@@ -1,0 +1,62 @@
+[
+  {
+    "document": "research/docs/研究过程与结果分析.md",
+    "original_reference": "../记录 张书畅 26.10.23.docx"
+  },
+  {
+    "document": "research/docs/结果核验索引.md",
+    "original_reference": "../记录 张书畅 26.10.23.docx"
+  },
+  {
+    "document": "research/docs/结果核验索引.md",
+    "original_reference": "../../../../RoboEnv/bc_training_23d_noise_wide_finetune/run_20261031_025012_026265/rollouts/bc_20261031_101144_666495.npz"
+  },
+  {
+    "document": "research/docs/结果核验索引.md",
+    "original_reference": "../../../../RoboEnv/bc_training_26d_noise_wide_extended/run_20261101_150934_422124/rollouts/bc_20261101_233927_775100.npz"
+  },
+  {
+    "document": "research/docs/结果核验索引.md",
+    "original_reference": "../../../../RoboEnv/expert_generalization_checks/expert_episode_20261102_003352_560448.npz"
+  },
+  {
+    "document": "research/docs/结果核验索引.md",
+    "original_reference": "../../../../RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/rollouts/arm_finetuned_20261103_121215_086512.npz"
+  },
+  {
+    "document": "research/docs/结果核验索引.md",
+    "original_reference": "../../../../RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/rollouts/arm_finetuned_20261103_121340_078306.npz"
+  },
+  {
+    "document": "research/docs/结果核验索引.md",
+    "original_reference": "../../../../RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/rollouts/arm_finetuned_20261103_122011_090648.npz"
+  },
+  {
+    "document": "research/docs/结果核验索引.md",
+    "original_reference": "../../../../RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/rollouts/arm_finetuned_20261103_122104_535514.npz"
+  },
+  {
+    "document": "research/docs/结果核验索引.md",
+    "original_reference": "../../../../RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/rollouts/arm_finetuned_20261103_122844_812482.npz"
+  },
+  {
+    "document": "research/docs/结果核验索引.md",
+    "original_reference": "../../../../RoboEnv/bc_training_arm_ring_r08_finetune/run_20261103_111655_849512/rollouts/arm_finetuned_20261103_124119_310617.npz"
+  },
+  {
+    "document": "research/docs/结果核验索引.md",
+    "original_reference": "../../../../RoboEnv/bc_training_arm_ring_r08_gru_b1/run_20261103_220030_514697/rollouts/arm_gru_b1_20261104_013741_520135.npz"
+  },
+  {
+    "document": "research/docs/结果核验索引.md",
+    "original_reference": "../../../../RoboEnv/bc_training_arm_ring_r08_aux_b2_control/run_20261104_025706_206181/batch_tests/parallel_aux_b2_noise_truth_val_20261104_030443_830614/rollouts/episode_124.npz"
+  },
+  {
+    "document": "research/docs/结果核验索引.md",
+    "original_reference": "../../../../RoboEnv/bc_training_arm_ring_r08_recovery/run_20261104_152933_829681/batch_tests/parallel_aux_b2_noise_truth_val_20261104_153603_746917/rollouts/episode_124.npz"
+  },
+  {
+    "document": "research/docs/结果核验索引.md",
+    "original_reference": "../../../../RoboEnv/bc_training_arm_ring_r08_rl_td3/run_20261104_200609_974210/rollouts/rl_td3_noise_truth_20261104_203238_254360.npz"
+  }
+]

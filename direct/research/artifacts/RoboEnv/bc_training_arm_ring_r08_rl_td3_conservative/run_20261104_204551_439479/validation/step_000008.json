@@ -1,0 +1,42 @@
+{
+  "result": {
+    "cases": [
+      {
+        "index": 30,
+        "target": [
+          1.732051,
+          1.0,
+          0.35
+        ],
+        "seed": 79,
+        "success": false,
+        "min_error_m": 1.4930262858729424,
+        "final_error_m": 1.4930262858729424,
+        "end_time_s": 0.02,
+        "residual_rms_nm": 0.0
+      },
+      {
+        "index": 90,
+        "target": [
+          -0.277837,
+          -1.575692,
+          1.15
+        ],
+        "seed": 153,
+        "success": false,
+        "min_error_m": 1.892673761852277,
+        "final_error_m": 1.892802199766139,
+        "end_time_s": 0.02,
+        "residual_rms_nm": 0.0
+      }
+    ],
+    "successes": 0,
+    "count": 2,
+    "mean_final_error_m": 1.6929142428195407,
+    "transition_steps": 8
+  },
+  "new_best": false,
+  "lost_initial_success_indices": [],
+  "bad_checks": 2,
+  "partial_validation_subset": true
+}

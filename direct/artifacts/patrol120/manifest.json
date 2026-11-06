@@ -1,0 +1,26 @@
+{
+  "schema": "patrol120_portable_original_bytes_v1",
+  "files": {
+    "arm120/best_model.pt": "751fe1d4d9310ee79ccb36d9d78db820ae930dd8145146938b22b5295534d86d",
+    "arm120/normalization.npz": "9feb9d07c1eb962e705629a35995716160ed6a72f1e7dfbd8a4bf3bd113557bf",
+    "arm120/config.json": "43c675e944ffb1e6dc27536fbf396963633d953bd6196b4ac8b351cfdc5d0be2",
+    "navigation/best_model.pt": "110e547e46b8bec3deb2b83b5142294be2f60562aabbbd8aecd843bb4ca07aba",
+    "navigation/normalization.npz": "f5c3c274e4f60afa1c2d7f7fc7e9cd18279a7a844a3c46a8a35ea6ff1350b5c4",
+    "navigation/config.json": "2cc31a85b98e929df116c8d351ada2054ea3078d537f993af62a20f6b16cc340",
+    "configs/robotnik_arm.json": "f7e00e19532bd3cc9b024f6d06fd34a6980d1a0773683fcde69cd04de38dbf22"
+  },
+  "models": {
+    "arm120": {
+      "historical_source_run": "bc_training_arm_ring_r08_recovery/run_20261104_152933_829681",
+      "best_epoch": 138,
+      "weights_sha256": "751fe1d4d9310ee79ccb36d9d78db820ae930dd8145146938b22b5295534d86d"
+    },
+    "navigation": {
+      "historical_source_run": "bc_training_nav_ring_r08/run_20261103_022339_570160",
+      "best_epoch": null,
+      "weights_sha256": "110e547e46b8bec3deb2b83b5142294be2f60562aabbbd8aecd843bb4ca07aba"
+    }
+  },
+  "training_performed_for_release": false,
+  "tensor_or_normalization_rewritten": false
+}

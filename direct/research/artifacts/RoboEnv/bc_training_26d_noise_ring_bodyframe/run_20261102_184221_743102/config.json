@@ -1,0 +1,108 @@
+{
+  "training_mode": "from_scratch",
+  "experiment_variant": "26d_target_and_ee_error_body_yaw_frame_ring_931",
+  "source_split_path": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring\\data_split.json",
+  "split_source_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring",
+  "target_counts": {
+    "train": 651,
+    "val": 140,
+    "test": 140
+  },
+  "pretrained_weights_loaded": false,
+  "loss_type": "arm_mse_plus_wheel_mse_plus_stop_wheel_mse",
+  "wheel_weight": 1.0,
+  "stop_weight": 2.0,
+  "selection_metric": "val_loss",
+  "dataset_variant": "config_measurement_noise_plus_hold_ring_0_to_2m_7_heights",
+  "data_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\expert_data_23d_noise_ring",
+  "old_dataset_merged": false,
+  "unsuccessful_files_included": [
+    "expert_episode_20261102_014955_849181.npz",
+    "expert_episode_20261102_024500_604563.npz",
+    "expert_episode_20261102_024523_761137.npz",
+    "expert_episode_20261102_024546_825074.npz"
+  ],
+  "action_label_key": "actions",
+  "history_input": false,
+  "sampling_method": "WeightedRandomSampler",
+  "sampling_replacement": true,
+  "samples_per_epoch": 6913520,
+  "sampling_seed": 42,
+  "low_target_max_z_m": 0.4,
+  "near_target_max_error_m": 0.05,
+  "focus_sample_weight": 2.0,
+  "focus_phase": "base_active=0",
+  "sampling_summary": {
+    "boosted_train_samples": 496552,
+    "raw_boosted_fraction": 0.07182332588898274,
+    "expected_boosted_fraction": 0.13402083002702267,
+    "natural_stop_fraction": 0.4412520684108819,
+    "expected_sampled_stop_fraction": 0.4786939991946097
+  },
+  "normalization_distribution": "unweighted_original_training_set",
+  "training_metrics_distribution": "weighted_samples",
+  "validation_metrics_distribution": "unweighted_all_validation_samples",
+  "train_trajectories": 651,
+  "val_trajectories": 140,
+  "seed": 42,
+  "batch_size": 4096,
+  "max_epochs": 300,
+  "learning_rate": 0.0001,
+  "patience": 15,
+  "input_dim": 26,
+  "source_input_dim": 23,
+  "input_feature_version": "obs23_target_and_ee_error_base_yaw_frame_v1",
+  "source_observation_key": "observations",
+  "ee_position_key": "ee_positions",
+  "target_position_columns": [
+    19,
+    20,
+    21
+  ],
+  "source_target_world_columns": [
+    19,
+    20,
+    21
+  ],
+  "target_position_definition": "Rz(-yaw) @ (source_target_world - base_world)",
+  "target_position_frame": "base_yaw_aligned",
+  "target_position_units": "m",
+  "source_base_world_position_columns": [
+    0,
+    1,
+    2
+  ],
+  "source_yaw_sin_cos_columns": [
+    3,
+    4
+  ],
+  "yaw_sin_cos_normalized_for_rotation": true,
+  "base_world_position_retained": true,
+  "absolute_yaw_sin_cos_retained": true,
+  "rotation_definition": "yaw_only; x_body forward, y_body left, z_body world_up; no roll/pitch",
+  "ee_error_columns": [
+    23,
+    24,
+    25
+  ],
+  "ee_error_definition": "Rz(-yaw) @ (source_target_world - ee_world); same pre-action timestep",
+  "ee_error_frame": "base_yaw_aligned",
+  "sampling_height_source": "raw_source_observation_column_21_world_z_before_feature_conversion",
+  "feature_transform_module": "robotnik_bodyframe_features.py",
+  "ee_error_units": "m",
+  "ee_error_standardized": true,
+  "ee_frame_name": "robot_j2s7s300_end_effector",
+  "base_active_column": 22,
+  "base_active_standardized": false,
+  "hidden_dims": [
+    256,
+    256,
+    128
+  ],
+  "output_dim": 11,
+  "activation": "ReLU",
+  "device": "cuda",
+  "torch_version": "2.11.0+cu128",
+  "train_samples": 6913520,
+  "val_samples": 1445607
+}

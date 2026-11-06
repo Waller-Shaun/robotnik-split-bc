@@ -1,0 +1,24 @@
+{
+  "loss_type": "arm_mse_plus_wheel_mse_plus_stop_wheel_mse",
+  "wheel_weight": 1.0,
+  "stop_weight": 2.0,
+  "selection_metric": "val_loss",
+  "seed": 42,
+  "batch_size": 4096,
+  "max_epochs": 200,
+  "learning_rate": 0.001,
+  "patience": 15,
+  "input_dim": 23,
+  "base_active_column": 22,
+  "base_active_standardized": false,
+  "hidden_dims": [
+    128,
+    128
+  ],
+  "output_dim": 11,
+  "activation": "ReLU",
+  "device": "cuda",
+  "torch_version": "2.11.0+cu128",
+  "train_samples": 2657767,
+  "val_samples": 565143
+}

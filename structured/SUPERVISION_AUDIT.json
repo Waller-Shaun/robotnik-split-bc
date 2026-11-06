@@ -1,0 +1,18 @@
+{
+  "train": {
+    "frames": 730909,
+    "episode_starts": 698,
+    "previous_indices_within_episode": true,
+    "torque_min": -30.0,
+    "torque_max": 30.0,
+    "torque_labels_outside_actuator_bound": 0
+  },
+  "val": {
+    "frames": 148185,
+    "episode_starts": 144,
+    "previous_indices_within_episode": true,
+    "torque_min": -30.0,
+    "torque_max": 30.0,
+    "torque_labels_outside_actuator_bound": 0
+  }
+}

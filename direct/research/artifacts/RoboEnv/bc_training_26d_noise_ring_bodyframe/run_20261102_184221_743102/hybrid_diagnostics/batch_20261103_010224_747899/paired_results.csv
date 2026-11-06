@@ -1,0 +1,11 @@
+﻿target_x,target_y,target_z,baseline_group,baseline_final_error_m,expert_base_model_arm_success,expert_base_model_arm_final_error_m,expert_base_model_arm_status,model_base_expert_arm_success,model_base_expert_arm_final_error_m,model_base_expert_arm_status
+0.2,0.0,0.2,baseline_navigation_not_switched,0.5590264200395936,False,0.11487225085053314,episode_failure,False,0.563076673559323,episode_failure
+0.0,0.6,0.2,baseline_navigation_not_switched,0.550182335321864,False,0.015140968513628608,episode_failure,False,0.5761803453572468,episode_failure
+-0.866025,-0.5,0.2,baseline_navigation_not_switched,0.5484177493880007,True,0.009992644790177611,success,True,0.009992632033189924,success
+0.647214,-0.470228,0.75,baseline_navigation_not_switched,0.5226046667455452,True,0.009996246498902565,success,False,0.3860741634878531,episode_failure
+-0.424264,-0.424264,1.3,baseline_navigation_not_switched,0.7125875715414116,True,0.009994787562471722,success,False,0.7202045317377345,episode_failure
+0.866025,0.5,0.35,baseline_switched_then_failed,0.018326435720580094,True,0.009976199948793129,success,True,0.009997724804602462,success
+1.732051,-1.0,0.5,baseline_switched_then_failed,0.030069730965587897,False,0.03709579393033438,episode_failure,True,0.009997264006657552,success
+-0.535757,-1.293431,0.75,baseline_switched_then_failed,0.021353251358064734,True,0.00998889920086416,success,True,0.009987333259836082,success
+0.556231,-1.711902,1.15,baseline_switched_then_failed,0.01852071053634914,True,0.00999053216800501,success,True,0.009985990951416498,success
+0.2,0.34641,1.3,baseline_switched_then_failed,0.01963351168479105,True,0.009994682714788164,success,True,0.009999968292958253,success

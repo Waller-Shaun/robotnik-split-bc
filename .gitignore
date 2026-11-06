@@ -1,19 +1,20 @@
-# Generated environments, external dependency checkout, datasets, runs
-/RoboEnv/
-/dataset_exports/
-/verification_outputs/
+# Generated local environments, outputs and private files only.
 __pycache__/
 *.py[cod]
 .pixi/
 .venv/
+.pytest_cache/
 .DS_Store
 Thumbs.db
-*.log
 .env
 .env.*
 !.env.example
-/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/models/
-# Private working documents are intentionally not part of this release
-*.docx
-*.pdf
-
+*.zip
+/structured/cache/
+/structured/baseline/external/
+/structured/outputs/demos/
+/structured/outputs/replays/
+/structured/baseline/outputs/
+/direct/RoboEnv/
+/direct/dataset_exports/
+/direct/verification_outputs/

@@ -1,0 +1,19 @@
+{
+  "planned_targets": 140,
+  "processed_targets": 3,
+  "successes": 0,
+  "unsuccessful_completed_episodes": 3,
+  "process_errors": 0,
+  "unprocessed_targets": 137,
+  "success_rate_percent": 0.0,
+  "mean_final_error_m_finite_results": 0.12676464260889925,
+  "median_final_error_m_finite_results": 0.12207030363920914,
+  "finite_error_results": 3,
+  "mean_success_time_s": null,
+  "all_planned_targets_processed": false,
+  "state": "interrupted_or_aborted",
+  "split": "val",
+  "partial_subset": false,
+  "available_split_targets": 140,
+  "output_dir": "F:\\UCL\\COMP0245 Labs\\RoboEnv\\bc_training_26d_noise_ring\\run_20261102_032833_505981\\batch_tests\\val_20261102_103158_921194"
+}

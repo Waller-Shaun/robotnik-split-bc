@@ -1,0 +1,201 @@
+{
+  "planner_version": "open_route_sequential_relative_parking_v1",
+  "requested_mode": "shortest",
+  "algorithm": "exact_branch_and_bound",
+  "cost_definition": "sum_of_estimated_base_to_parking_XY_distances",
+  "return_to_start": false,
+  "turning_time_in_cost": false,
+  "arm_time_in_cost": false,
+  "obstacles_considered": false,
+  "world_truth_used_for_planning": false,
+  "observed_start_base_xyz": [
+    0.000822544912103189,
+    -0.0012208436499710222,
+    0.0002088635950047554
+  ],
+  "observed_start_yaw_rad": 0.00019686123940350619,
+  "input_targets": [
+    [
+      -0.7016242457151515,
+      0.49428224659919934,
+      0.7153644165859225
+    ],
+    [
+      1.0511344903074002,
+      0.3334771040331531,
+      0.5124718343649124
+    ],
+    [
+      -0.46430924699797615,
+      -1.1749336650443272,
+      1.080620626882776
+    ],
+    [
+      0.07157299905668774,
+      -1.2588257997344643,
+      0.8435177648699357
+    ],
+    [
+      -1.3779390645122989,
+      1.3298978595341744,
+      1.1044062063273965
+    ]
+  ],
+  "input_order_ids": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "visit_order_indices_zero_based": [
+    1,
+    2,
+    3,
+    0,
+    4
+  ],
+  "visit_order_input_ids": [
+    2,
+    3,
+    4,
+    1,
+    5
+  ],
+  "execution_targets": [
+    [
+      1.0511344903074002,
+      0.3334771040331531,
+      0.5124718343649124
+    ],
+    [
+      -0.46430924699797615,
+      -1.1749336650443272,
+      1.080620626882776
+    ],
+    [
+      0.07157299905668774,
+      -1.2588257997344643,
+      0.8435177648699357
+    ],
+    [
+      -0.7016242457151515,
+      0.49428224659919934,
+      0.7153644165859225
+    ],
+    [
+      -1.3779390645122989,
+      1.3298978595341744,
+      1.1044062063273965
+    ]
+  ],
+  "input_order_estimated_distance_m": 3.505857428949412,
+  "selected_order_estimated_distance_m": 3.1007888853808963,
+  "estimated_saving_m": 0.40506854356851596,
+  "estimated_saving_percent": 11.55405066457313,
+  "exact_optimal_for_estimated_cost": true,
+  "actual_route_optimality_claimed": false,
+  "exact_max_targets": 8,
+  "evaluated_complete_orders": 38,
+  "pruned_prefixes": 65,
+  "search_nodes": 207,
+  "two_opt_passes": 0,
+  "estimated_legs": [
+    {
+      "input_target_index": 2,
+      "target": [
+        1.0511344903074002,
+        0.3334771040331531,
+        0.5124718343649124
+      ],
+      "estimated_start_base_xyz": [
+        0.000822544912103189,
+        -0.0012208436499710222,
+        0.0002088635950047554
+      ],
+      "estimated_parking_xy": [
+        0.4318193027699404,
+        0.13612285785273537
+      ],
+      "estimated_final_heading_rad": 0.3084917335177,
+      "estimated_horizontal_distance_m": 0.45235107784378237
+    },
+    {
+      "input_target_index": 3,
+      "target": [
+        -0.46430924699797615,
+        -1.1749336650443272,
+        1.080620626882776
+      ],
+      "estimated_start_base_xyz": [
+        0.4318193027699404,
+        0.13612285785273537,
+        0.0002088635950047554
+      ],
+      "estimated_parking_xy": [
+        -0.09751847763240712,
+        -0.6383103972779975
+      ],
+      "estimated_final_heading_rad": -2.170373551374024,
+      "estimated_horizontal_distance_m": 0.9380540242510912
+    },
+    {
+      "input_target_index": 4,
+      "target": [
+        0.07157299905668774,
+        -1.2588257997344643,
+        0.8435177648699357
+      ],
+      "estimated_start_base_xyz": [
+        -0.09751847763240712,
+        -0.6383103972779975,
+        0.0002088635950047554
+      ],
+      "estimated_parking_xy": [
+        -0.09932161678029203,
+        -0.6316934131700873
+      ],
+      "estimated_final_heading_rad": -1.3047542838565824,
+      "estimated_horizontal_distance_m": 0.006858264319124165
+    },
+    {
+      "input_target_index": 1,
+      "target": [
+        -0.7016242457151515,
+        0.49428224659919934,
+        0.7153644165859225
+      ],
+      "estimated_start_base_xyz": [
+        -0.09932161678029203,
+        -0.6316934131700873,
+        0.0002088635950047554
+      ],
+      "estimated_parking_xy": [
+        -0.395035805702436,
+        -0.07887002675454874
+      ],
+      "estimated_final_heading_rad": 2.061985183980811,
+      "estimated_horizontal_distance_m": 0.6269454347053061
+    },
+    {
+      "input_target_index": 5,
+      "target": [
+        -1.3779390645122989,
+        1.3298978595341744,
+        1.1044062063273965
+      ],
+      "estimated_start_base_xyz": [
+        -0.395035805702436,
+        -0.07887002675454874,
+        0.0002088635950047554
+      ],
+      "estimated_parking_xy": [
+        -1.0110527972206778,
+        0.8040499832064393
+      ],
+      "estimated_final_heading_rad": 2.1799798175247505,
+      "estimated_horizontal_distance_m": 1.076580084261592
+    }
+  ],
+  "execution_note": "Plan once; recompute each actual stage parking goal from its actual observed starting pose."
+}

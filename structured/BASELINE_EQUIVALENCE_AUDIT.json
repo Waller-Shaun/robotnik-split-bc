@@ -1,0 +1,11 @@
+{
+  "original_fixed_baseline_targets_verified": 100,
+  "all_full_rate_scoring_actions_and_noisy_estimates_bit_identical": true,
+  "reference": "Original development_guarded_nav/development_nav_repair original policy results, repeat 0",
+  "development_outcomes": {
+    "fixed": 100,
+    "dynamic": 100
+  },
+  "trials_per_model": 100,
+  "process_errors": 0
+}

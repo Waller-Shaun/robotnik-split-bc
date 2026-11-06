@@ -1,0 +1,19 @@
+# Generated environments, external dependency checkout, datasets, runs
+/RoboEnv/
+/dataset_exports/
+/verification_outputs/
+__pycache__/
+*.py[cod]
+.pixi/
+.venv/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+!.env.example
+/LAB_SESSION_COMP_0245_2026_PUBLIC/final/robotnik_arm_task/models/
+# Private working documents are intentionally not part of this release
+*.docx
+*.pdf
+
